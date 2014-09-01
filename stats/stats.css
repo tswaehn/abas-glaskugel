@@ -1,0 +1,23 @@
+#stats {
+  
+  border:thin solid gray;
+  margin:5px;
+  
+}
+
+#stats th {
+
+  
+  text-align:center;
+  padding:20px;
+  margin:5px;
+}
+
+#stats td {
+  
+  text-align:center;
+  padding:3px;
+  padding-left:10px;
+  padding-right:10px;  
+  margin:5px;
+}

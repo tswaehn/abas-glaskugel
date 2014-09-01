@@ -1,0 +1,9 @@
+<?php
+
+	$dbname="abas-shadow";
+	$user="root";
+	$pass="";
+	
+	define( "_REAL_EDP_", 1 );
+	define("SITE_DOWN", 0 );
+?>

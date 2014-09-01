@@ -1,0 +1,67 @@
+
+\\hseb-sv2\erp\help\hd\html\stw.html
+
+
+ Selektionsbedingungen
+
+Im Bedingungsfeld können Selektionskriterien gemäß der $-Selektion in abas-ERP eingegeben werden. Außerdem kann festgelegt werden, ob die Einzelbedingungen mit UND oder mit ODER verknüpft werden.
+
+Grundlegende Eingabemöglichkeiten für Selektionskriterien:
+
+feld=wert
+    Legt den Wert fest, den ein Feld besitzen soll.
+    Bei Textfeldern ist die Bedingung aber auch dann erfüllt, wenn ein Feldwert mit dem angegebenen Wert beginnt!
+    Beispiel: name=Müller findet auch den Namen Müller-Lüdenscheid
+    Besonderheit: feld=` liefert alle Datensätze, bei denen das Feld leer ist 
+feld=von1!bis1
+    Legt den Wertebereich für ein Feld fest. Von- oder Bis-Wert können auch weggelassen werden (das "!" ist aber wichtig!)
+    Auch hier gilt, dass für Textfelder auch solche Werte gefunden werden, die mit dem angegebenen Text beginnen. 
+feld<>wert
+    Sucht nach Datensätzen, bei denen das Feld den angegebenen Wert nicht enthält (ungleich)
+    Besonderheit: feld1<>` liefert alle Datensätze, bei denen das Feld nicht leer ist 
+textfeld=`Matchcode
+    Legt den Matchcode für ein Textfeld fest. Alle Textfelder können per Matchcode abgefragt werden. 
+    Syntaxelemente für Matchcode-Suche:
+    * - steht für eine beliebige Anzahl Zeichen
+    ? - steht für ein beliebiges Zeichen
+    /abc/ steht für ein beliebiges Zeichen aus der Menge, hier also für ein a, b oder c
+    ^ - steht für den Feldanfang oder das Feldende. Suche mit textfeld=`^abc^ findet nur Datensätze, bei denen exakt "abc" in textfeld steht. Bei Feldanfang-Kennzeichnung können auch Schlüssel zur effizienten Suche beitragen, bei fehlender Feldanfang-Kennzeichnung jedoch nicht.
+    <leer> - Angabe des Matchcode-Zeichens ` ohne einen Matchcode-Wert sucht nach leerem Feldinhalt. 
+feld~=wert / feld~<>wert / feld~=`Matchcode
+    Wirken analog oben beschriebener Bedingung, aber ohne Berücksichtigung von Groß/Kleinschreibung. 
+feld==wert
+    Exakte Suche, d.h, name==Müller findet nur Müller, aber nicht Müller-Lüdenscheid 
+
+Eine vollständige Beschreibung der möglichen Selektionsangaben finden Sie in der abas-Onlinehilfe.
+
+Tipps
+
+    Bei Datums- und Zeitangaben können Sie auch die aus Masken bekannten speziellen Eingabemöglichkeiten nutzen:
+
+    datum=-10!.
+        liefert alle Sätze, bei denen datum in den letzten 10 Tagen (gerechnet vom Datum der Abfrage) liegt 
+    datum=.
+        liefert alle Sätze, bei denen in datum das heutige Datum (zum Zeitpunkt der Abfrage) steht 
+    zeit=-2!
+        liefert alle Sätze, bei denen in zeit eine Urzeit steht, die in den letzten zwei Stunden vor dem Zeitpunkt der Abfrage liegt. 
+
+    Bei Verweisfeldern können Sie - analog Dialogmasken - eine Identnummer, ein eindeutiges Suchwort oder eine Referenz eingeben, also für einen Kundenverweis beispielsweise die Nummer "89371", das Suchwort "ABAS" (sofern eindeutig) oder die Referenz "(381871,0,0)".
+    Bei allen Arten von Feldern, die eine sprachunabhängige Darstellungsvariante besitzen, können Sie die sprachunabhängige Darstellung immer angeben 
+
+Nebenbedingungen zur Selektion
+
+Für eine Selektion kann festgelegt werden, ob bei Datensätzen mit Tabellenteil für jede Tabellenzeile eine Datenzeile geliefert werden soll (Zeilenselektion). In diesem Fall wird für Datenobjekte, die keine Tabellenzeilen besitzen, nichts geliefert!
+
+Für eine Selektion kann neben den Kriterien festgelegt werden, daß nur Daten aus der Ablage oder eben keine aus der Ablage oder auch beides geliefert werden soll. Die Angabe der Ablageart steuert außerdem die automatische Schlüsselauswahl.
+
+Festlegung der Sortierung für die Abfragen
+
+Für die Sortierung der Ergebnismenge können die Felder festgelegt werden, nach denen sortiert werden soll, sowie die Sortierrichtung (auf-/absteigende Sortierung). Die Felder müssen mit ihrem Namen entsprechend der Sortierreihenfolge eingegeben werden, z.B:
+
+plz,nort,str
+
+Schlüssel
+
+Das System bestimmt aufgrund der obigen Angaben zur Selektion den optimalen Schlüssel zur Durchführung der Selektion selbst. Im allgemeinen ist es deshalb nicht nötig und auch gar nicht sinnvoll, den vom System zu verwendenen Schlüssel vorzugeben. Allerdings gibt es einzelne Schlüssel, die nicht im Rahmen der automatischen Schlüsselbestimmung genutzt werden können. Hier ist die explizite Verwendung sinnvoll.
+
+Liefert der gewählte Schlüssel mehr Datensätze als durch die Ablageart vorgegeben wurde, so werden die passenden Datensätze bei der Selektion gefiltert. Für den aktuell ausgewählten Schlüssel kann mit dem nebenstehenden Info-Button Detail-Information angezeigt werden. Für alle vorhandenen Schlüssel kann über das Kontextmenü der Tabelle in der Tabellenliste die Detail-Information angezeigt werden. 

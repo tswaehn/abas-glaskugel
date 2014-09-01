@@ -1,0 +1,19 @@
+
+-- sucherweiterung füllen mit
+yzeissnr
+zeichn  Zeichnungsnummer
+bzeich   F|toupper('yersteller') Ersteller bzw letzter Änderer
+“Colli"  wenn  mitcolli =JA  Collipflicht
+"Charge" wenn  charge=JA
+",SETA"  wenn  m|earta = "über Stückliste"  Entnahmeart
+",manuell"  wenn  m|earta = "manuell"
+lief     lief1     lief2   Suchwort Lieferant in Großbuchstaben  und Lieferanten Nummer 0 bis 5 wenn vorhanden
+bstnr    0-5    Bestellnummer beim Lieferanten
+kuartnr  Kundenartikelnummer
+ean    EAN Nummer
+zoll  Nummer
+kenn     zeichen  (gesperrt, zum Löschen markiert, siehe hilfe zum Kennnzeichen
+wstoff    Werstoff Suchwort
+m|bem   Bemerkung soviel wie Platz ist
+zuplatz abplatz wenn nicht enthalten
+

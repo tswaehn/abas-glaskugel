@@ -1,0 +1,86 @@
+
+#articleview {
+
+  border:thin solid grey;
+  
+  margin-top:10px;
+  padding:20px;
+
+}
+
+/* short article */
+  #abas_nr {
+    color:blue;
+    padding:5px;
+    font-size:medium;
+    margin-top:10px;
+  }
+
+  #such {
+    font-weight:bold;
+  }
+  
+  #desc {
+    color:gray;
+  }
+
+#artikel {
+  padding:5px;
+  margin:5px;
+  
+  border: thin solid #aaaaaa;
+  
+  font-size:small;
+
+}
+
+  #media {
+    padding:5px;
+    margin:5px;
+    
+    border: thin solid #aaaaaa;
+    
+    font-size:small;  
+    width:500px;
+  
+  }
+  
+  #fertigung {
+    padding:5px;
+    margin:5px;
+    
+    border: thin solid #aaaaaa;
+    
+    font-size:small;
+  
+  }
+  
+  #fertigung td {
+    
+    font-size:small;
+
+  }
+  
+  #fertigungsliste {
+    padding:5px;
+    margin:5px;
+    
+    border: thin solid #aaaaaa;
+    
+    font-size:small;
+
+  }
+  
+  #fertigungsliste td {
+    text-align: center;
+    padding-left:5px;
+    padding-right:5px;
+    font-size:small;
+  }
+  
+  #x {
+    border:thin solid gray;
+    margin-left:10px;
+    margin-top:2px;
+    padding-left:10px;
+  } 
