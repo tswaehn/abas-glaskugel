@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   //phpinfo();
   define('_UPDATE_', 'update' );
   define('_CLEAN_', 'clean' );

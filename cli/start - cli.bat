@@ -5,4 +5,4 @@ cd C:\xampp\htdocs\abas\cli\
 
 C:\xampp\php\php.exe index.php
 
-rem pause
+pause
