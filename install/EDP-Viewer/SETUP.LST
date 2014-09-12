@@ -1,0 +1,147 @@
+[Bootstrap]
+SetupTitle=Installieren
+SetupText=Dateien werden kopiert. Bitte warten...
+CabFile=EDPViewer.CAB
+Spawn=Setup1.exe
+Uninstal=st6unst.exe
+TmpDir=msftqws.pdw
+Cabs=1
+
+[Bootstrap Files]
+File1=@VB6STKIT.DLL,$(WinSysPathSysFile),,,1/14/04 4:01:56 AM,101888,6.0.84.50
+File2=@COMCAT.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,5/31/98 1:00:00 AM,22288,4.71.1460.1
+File3=@VB6DE.DLL,$(WinSysPath),,$(Shared),10/2/00 1:00:00 AM,125712,6.0.89.88
+File4=@STDOLE2.TLB,$(WinSysPathSysFile),$(TLBRegister),,6/3/99 1:00:00 AM,17920,2.40.4275.1
+File5=@ASYCFILT.DLL,$(WinSysPathSysFile),,,3/8/99 1:00:00 AM,147728,2.40.4275.1
+File6=@OLEPRO32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,3/8/99 1:00:00 AM,164112,5.0.4275.1
+File7=@OLEAUT32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,4/12/00 1:00:00 AM,598288,2.40.4275.1
+File8=@msvbvm60.dll,$(WinSysPathSysFile),$(DLLSelfRegister),,4/14/08 2:00:00 PM,1384479,6.0.98.2
+
+[IconGroups]
+Group0=EDPViewer
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[EDPViewer]
+Icon1="EDPViewer.exe"
+Title1=EDPViewer
+StartIn1=$(AppPath)
+
+[Setup]
+Title=EDPViewer
+DefaultDir=$(ProgramFiles)\EDPViewer
+AppExe=EDPViewer.exe
+AppToUninstall=EDPViewer.exe
+
+[Setup1 Files]
+File1=@3.REG,$(AppPath),3.REG,,7/18/13 11:29:27 AM,125,0.0.0.0
+File2=@msg_fr.txt,$(AppPath),,,5/22/12 2:49:05 PM,25452,0.0.0.0
+File3=@EDPViewer-MsgInfo.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,31368,0.0.0.0
+File4=@EDPViewer-InfosysInfo.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,59000,0.0.0.0
+File5=@EDPViewer-EDPEinstellungen2.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,41959,0.0.0.0
+File6=@EDPViewer-Hilfe.html,$(AppPath)\help\d,,,6/8/12 10:50:27 AM,87019,0.0.0.0
+File7=@EDPViewer-ViewerSettings3.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,18339,0.0.0.0
+File8=@EDPViewer-ViewerSettings2.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,17201,0.0.0.0
+File9=@EDPViewer-ViewerSettings1.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,15858,0.0.0.0
+File10=@EDPViewer-SelectionStringWindow.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,14946,0.0.0.0
+File11=@EDPViewer-QuerySettings.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,5750,0.0.0.0
+File12=@EDPViewer-HTMLExportE.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,41166,0.0.0.0
+File13=@EDPViewer-XMLExportE.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,39572,0.0.0.0
+File14=@EDPViewer-ViewerEinstellungen3.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,18754,0.0.0.0
+File15=@EDPViewer-ViewerEinstellungen2.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,17736,0.0.0.0
+File16=@EDPViewer-ViewerEinstellungen1.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,16429,0.0.0.0
+File17=@EDPViewer-Selektionsstringfenster.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,14620,0.0.0.0
+File18=@EDPViewer-HTMLExport.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,46554,0.0.0.0
+File19=@EDPViewer-Abfrageeinstellungen.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,5699,0.0.0.0
+File20=@EDPViewer-XMLExport.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,45150,0.0.0.0
+File21=@msg_de.txt,$(AppPath),,,5/22/12 2:49:05 PM,23411,0.0.0.0
+File22=@msg_en.txt,$(AppPath),,,2/27/12 5:54:56 PM,21137,0.0.0.0
+File23=@EDPViewer-JoinAssistant.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,30266,0.0.0.0
+File24=@EDPViewer-QueryList.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,15073,0.0.0.0
+File25=@EDPViewer-MandInfoE.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,11358,0.0.0.0
+File26=@EDPViewer-EnumInfo.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,21558,0.0.0.0
+File27=@EDPViewer-KeyInfo.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,19159,0.0.0.0
+File28=@EDPViewer-ExcelExportE.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,39345,0.0.0.0
+File29=@EDPViewer-RefInfo.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,26952,0.0.0.0
+File30=@EDPViewer-DBExportE.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,38918,0.0.0.0
+File31=@EDPViewer-FileExport.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,39491,0.0.0.0
+File32=@EDPViewer-ViewerSettings.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,19450,0.0.0.0
+File33=@EDPViewer-EDPSettings.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,32238,0.0.0.0
+File34=@EDPViewer-DBInfoE.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,23674,0.0.0.0
+File35=@EDPViewer-QueryWindow.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,59753,0.0.0.0
+File36=@EDPViewer1E.gif,$(AppPath)\help\e\images,,,11/16/11 10:50:12 AM,96955,0.0.0.0
+File37=@EDPViewer-ConnData.gif,$(AppPath)\help\e\images,,,10/26/09 10:51:23 AM,5493,0.0.0.0
+File38=@EDPViewer-LogonE.gif,$(AppPath)\help\e\images,,,10/26/09 10:51:23 AM,5084,0.0.0.0
+File39=@ToTop.gif,$(AppPath)\help\e\images,,,10/26/09 10:51:23 AM,77,0.0.0.0
+File40=@EDPViewer-Help.html,$(AppPath)\help\e,,,7/3/13 4:36:01 PM,77739,0.0.0.0
+File41=@EbeneHoch.gif,$(AppPath)\help\d\images,,,10/26/09 10:51:20 AM,967,0.0.0.0
+File42=@EDPViewer-VerknAssistent.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,27193,0.0.0.0
+File43=@EDPViewer-Abfragenliste.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,22693,0.0.0.0
+File44=@EDPViewer-MandInfo.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,10226,0.0.0.0
+File45=@EDPViewer-AufzInfo.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,45551,0.0.0.0
+File46=@EDPViewer-SchluesselInfo.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,26635,0.0.0.0
+File47=@EDPViewer-ExcelExport.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,44696,0.0.0.0
+File48=@EDPViewer-VerwInfo.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,49969,0.0.0.0
+File49=@EDPViewer-DBExport.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,45386,0.0.0.0
+File50=@EDPViewer-DateiExport.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,44489,0.0.0.0
+File51=@EDPViewer-ViewerEinstellungen.gif,$(AppPath)\help\d\images,,,10/26/09 10:51:20 AM,20333,0.0.0.0
+File52=@EDPViewer-EDPEinstellungen.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,43643,0.0.0.0
+File53=@EDPViewer-DBInfo.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,54314,0.0.0.0
+File54=@EDPViewer-Abfragefenster.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,63239,0.0.0.0
+File55=@EDPViewer1.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,97268,0.0.0.0
+File56=@EDPViewer-Verbindungsdaten.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,6878,0.0.0.0
+File57=@EDPViewer-Logon.gif,$(AppPath)\help\d\images,,,2/27/12 5:54:56 PM,5737,0.0.0.0
+File58=@NachOben.gif,$(AppPath)\help\d\images,,,10/26/09 10:51:20 AM,77,0.0.0.0
+File59=@MSCC2DE.DLL,$(WinSysPath),,$(Shared),7/6/98 1:00:00 AM,64512,6.0.81.63
+File60=@MSCOMCT2.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 1:00:00 AM,662288,6.1.97.82
+File61=@MSCMCDE.DLL,$(WinSysPath),,$(Shared),7/6/98 1:00:00 AM,158208,6.0.81.63
+File62=@MSCOMCTL.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),5/2/12 12:17:12 PM,1070152,6.1.98.34
+File63=@TABCTDE.DLL,$(WinSysPath),,$(Shared),7/6/98 1:00:00 AM,22528,6.0.81.63
+File64=@TABCTL32.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 1:00:00 AM,224016,6.1.97.82
+File65=@CMDLGDE.DLL,$(WinSysPath),,$(Shared),7/6/98 1:00:00 AM,33792,6.0.81.63
+File66=@COMDLG32.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 1:00:00 AM,152848,6.1.97.82
+File67=@WINSKDE.DLL,$(WinSysPath),,$(Shared),7/6/98 1:00:00 AM,16896,6.0.81.63
+File68=@MSWINSCK.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 1:00:00 AM,124688,6.1.97.82
+File69=@edpapi.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),10/29/12 11:00:46 PM,569344,1.20.0.20
+File70=@edputils.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),5/22/12 2:49:04 PM,69632,1.3.0.4
+File71=@EDPViewer.exe,$(AppPath),,,7/18/13 11:27:12 AM,1032192,1.8.0.33
+
+; Die folgenden Zeilen können gelöscht werden, um zusätzlichen 
+; Platz für die Anpassung dieser Datei auf einer vollen Installationsdiskette 
+; zu schaffen.
+; 
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
