@@ -1,0 +1,266 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>fieldnames
+AnsiToUTF8>fieldnames
+UTF8ToAnsi>fieldnames
+orig>Einkauf:Offener
+AnsiToUTF8>Einkauf:Offener
+UTF8ToAnsi>Einkauf:Offener
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request fieldnames of Einkauf:Offener
+LOG>rec size:244
+DATA>name,edptype,length,desc,type,tableflag,isskip,englname,scrprot,priodisp,prioedit,iscustom,isalias,origname,meaning,meaningdic,meaningmsgnr,prompt,promptdic,promptmsgnr,headtext,headtextdic,headtextmsgnr
+DATA>#grust#N#9#Gruppe#I9#0#0##1#A#A#0#0#grust#Gruppe#vt#1###0###0
+DATA>#gruppe#A#2#Gruppennummer#GRN4#0#0#grpNo#1#A#A#0#1#gruppe#Gruppennummer#vt#2###0###0
+DATA>#grbez#A#80#Gruppenbezeichnung#GRB4#0#0#grpDescr#1#A#A#0#1#grbez#Gruppenbezeichnung#vt#3###0###0
+DATA>#dnr#A#3#Dateinummer#GRDN4#0#1#DBNo#1#A#A#0#0#dnr#Dateinummer#vt#4###0###0
+DATA>#dbez#A#20#Dateibezeichnung#GRDB4#0#1#DBDescr#1#A#A#0#1#dbez#Dateibezeichnung#vt#5###0###0
+DATA>#zn#N#5#Laufende Zeilennummer#I5#0#1#rowNo#1#A#A#0#0#zn#Laufende Zeilennummer#vt#397###0###0
+DATA>#ozeilen#N#5#Anzahl Zeilen im Tabellenteil#I5#0#0#rowCount#1#A#A#0#0#ozeilen#Anzahl Zeilen im Tabellenteil#vt#6###0###0
+DATA>#sn#A#8#Satznummer#P4#0#1#recordNo#1#A#A#0#0#sn#Satznummer#vt#7###0###0
+DATA>#id#A#30#Datensatz-ID#ID4#0#1#id#1#A#A#0#1#id#Datensatz-ID#vt#8###0###0
+DATA>#versionn#A#22#Versionsnummer#ZAE1#0#0#version#1#A#A#0#0#versionn#Versionsnummer#vt#12###0###0
+DATA>#ablagen#A#22#Zeitstempel der Datensatzablage#ZAE1#0#0#recordFilingVersion#1#A#A#0#0#ablagen#Zeitstempel der Datensatzablage#vt#13###0###0
+DATA>#ablagef#A#4#Datensatz abgelegt?#ZAE0#0#0#recordFiled#1#A#A#0#1#ablagef#Datensatz abgelegt?#vt#14###0###0
+DATA>#num4#A#8#Identnummer#N4#0#0##2#A#A#0#0#num4#Identnummer#vt#16###0###0
+DATA>#num#A#8#Rechnungsnummer#GLU8#0#0##2#A#A#0#1#num#Rechnungsnummer#vt#5853###0###0
+DATA>#numrechnung#A#8#Rechnungsnummer#GLU8#0#0#invoiceNo#2#A#A#0#1#numrechnung#Rechnungsnummer#vt#5853###0###0
+DATA>#nummer#A#8#Identnummer#NK4#0#0#idno#2#A#A#0#1#nummer#Identnummer#vt#16###0###0
+DATA>#nummerb#A#8#Identnummer#NL4#0#0#idnoPadded#2#A#A#0#1#nummerb#Identnummer#vt#16###0###0
+DATA>#kenn#A#64#Kennzeichen#T64#0#0#code#2#A#A#0#0#kenn#Kennzeichen#vt#186###0###0
+DATA>#sucherw#A#64#Sucherweiterung#T64#0#1#searchExt#1#A#A#0#0#sucherw#Sucherweiterung#vt#51###0###0
+DATA>#stand#D#10#Änderungsdatum#GD#0#0#modificationDate#1#A#A#0#0#stand#Änderungsdatum#vt#55###0###0
+DATA>#erfass#D#10#Erfassungsdatum#GD#0#0#creationDate#1#A#A#0#0#erfass#Erfassungsdatum#vt#56###0###0
+DATA>#zeich#A#15#Letzter Bearbeiter#GL15#0#0#responsOperator#1#A#A#0#0#zeich#Letzter Bearbeiter#vt#57###0###0
+DATA>#zeichen#A#15#Letzter Bearbeiter#GL15#0#0#lastProcessor#1#A#A#0#1#zeichen#Letzter Bearbeiter#vt#57###0###0
+DATA>#index#A#2#Versionskennung#GLU2#0#1#userDefinedVersion#1#A#A#0#0#index#Versionskennung#vt#58###0###0
+DATA>#urmand#A#15#Ursprungsmandant des Datensatzes#GLA15#0#0#sourceClient#1#A#A#0#0#urmand#Ursprungsmandant des Datensatzes#vt#59###0###0
+DATA>#mandkenn#A#15#Mandantenkennung des Datensatzes#GLA15#0#1#recordClient#1#A#A#0#0#mandkenn#Mandantenkennung des Datensatzes#vt#60###0###0
+DATA>#guid#A#38#GUID des Datensatzes#GLA38#0#0#GUID#5#A#A#0#0#guid#GUID des Datensatzes#vt#61###0###0
+DATA>#paket#A#8#Paketzugehörigkeit#P87:10#0#0#package#8#A#A#0#0#paket#Paketzugehörigkeit#vt#62###0###0
+DATA>#abldat#D#8#Ablagedatum#GD2#0#0#filingDate#1#A#A#0#0#abldat#Ablagedatum#vt#5333###0###0
+DATA>#ktyp#A#3#Datensatztyp#AN4#0#0#typeOfRecord#1#A#A#0#0#ktyp#Datensatztyp#vt#15###0###0
+DATA>#typ#A#28#Datensatztyp#A4#0#0#type#1#A#A#0#1#typ#Datensatztyp#vt#15###0###0
+DATA>#typa#A#28#Datensatztyp#A4#0#0#recordType#1#A#A#0#1#typa#Datensatztyp#vt#15###0###0
+DATA>#kterm#D#5#Zahltermin (Woche)#GW2#0#0#dateWeek#2#A#A#0#0#kterm#Zahltermin (Woche)#vt#5854###0###0
+DATA>#term#D#5#Zahltermin (Woche)#GW2#0#0#dateDueDate#2#A#A#0#1#term#Zahltermin (Woche)#vt#5854###0###0
+DATA>#tterm#D#8#Zahltermin (Tag)#GD2#0#0#dueDateDay#2#A#A#0#1#tterm#Zahltermin (Tag)#vt#912###0###0
+DATA>#iwbu#A#4#Buchungswährung#PS94:1#0#0#postCurr#2#A#A#0#0#iwbu#Buchungswährung#vt#473###0###0
+DATA>#konto#A#11#Buchungskonto, Kunde, Lieferant, Mitarbeiter#VP0#0#0#entAcct#2#A#A#0#0#konto#Buchungskonto, Kunde, Lieferant, Mitarbeiter#vt#563###0###0
+DATA>#ykonto#A#19#Buchungskonto SW, Kunde, Lieferant, Mitarbeiter#VPS0#0#0#ykonto#2#A#A#1#1#ykonto#Buchungskonto SW, Kunde, Lieferant, Mitarbeiter##0###0###0
+DATA>#kokenn#A#1#Kontokennzeichen#NT1#0#0#acctCode#2#A#A#0#0#kokenn#Kontokennzeichen#vt#564###0###0
+DATA>#redm#N#10#Offener Rechnungsbetrag in Inlandswährung#R7.2#0#0#outstInvAmtDomCurr#2#A#A#0#0#redm#Offener Rechnungsbetrag in Inlandswährung#vt#594###0###0
+DATA>#budm#N#10#Zahlungsbetrag Betrag in Inlandswährung#R7.2#0#1#payAmtDomCurr#2#A#A#0#0#budm#Zahlungsbetrag Betrag in Inlandswährung#vt#634###0###0
+DATA>#urdm#N#10#Ursprünglicher Rechnungsbetrag in Inlandswährung#R7.2#0#1#domCurrOrigInvAmt#2#A#A#0#0#urdm#Ursprünglicher Rechnungsbetrag in Inlandswährung#vt#582###0###0
+DATA>#skdm#N#10#Skontobetrag in Inlandswährung#R7.2#0#1#discAmtDomesticCurr#2#A#A#0#0#skdm#Skontobetrag in Inlandswährung#vt#637###0###0
+DATA>#land#A#4#Rechnungswährung#PS94:1#0#0##2#A#A#0#0#land#Rechnungswährung#vt#734###0###0
+DATA>#waehr#A#4#Rechnungswährung#PS94:1#0#0#curr#2#A#A#0#1#waehr#Rechnungswährung#vt#734###0###0
+DATA>#ustid#A#16#Umsatzsteueridentifikationsnummer#NT16#0#0#VATIdno#2#A#A#0#0#ustid#Umsatzsteueridentifikationsnummer#vt#242###0###0
+DATA>#vnum#N#4#Zahlungsträger - Zahlungsvorgangsnummer#I4#0#0#payMedPayProcNo#2#A#A#0#0#vnum#Zahlungsträger - Zahlungsvorgangsnummer#vt#5855###0###0
+DATA>#labank#A#25#Sitz des Kreditinstitutes#PS97:1#0#0##1#A#A#0#0#labank#Sitz des Kreditinstitutes#vt#5856###0###0
+DATA>#mterm#A#4#Fälligkeit manuell pflegen?#B#0#0#maintDueDateManual#2#A#A#0#0#mterm#Fälligkeit manuell pflegen?#vt#610###0###0
+DATA>#top#A#8#Offener Posten#P100:1#0#1#openItem#2#A#A#0#0#top#Offener Posten#vt#554###0###0
+DATA>#tophist#A#8#OP-Verlauf#P100:21#0#1#OIHistoryTab#2#A#A#0#1#tophist#OP-Verlauf#vt#555###0###0
+DATA>#opid#A#30#Offener Posten Datensatz-ID#ID100#0#1#dataRecIdOI#2#A#A#0#1#opid#Offener Posten Datensatz-ID#vt#758###0###0
+DATA>#topz#A#8#OP-Bewegung#P100:2#0#1#IOStateTab#2#A#A#0#0#topz#OP-Bewegung#vt#608###0###0
+DATA>#ustidfa#A#16#Betriebseigene Umsatzsteueridentifikationsnummer#NT16#0#0#ownVATIdno#2#A#A#0#0#ustidfa#Betriebseigene Umsatzsteueridentifikationsnummer#vt#643###0###0
+DATA>#skonto2#A#11#Zweites Skontokonto#VP0#0#0#discount2#2#A#A#0#0#skonto2#Zweites Skontokonto#vt#663###0###0
+DATA>#skproz2#N#5#Anteil des zweiten Skontokontos in %#MP2.2#0#0#shareDiscountAmt2#2#A#A#0#0#skproz2#Anteil des zweiten Skontokontos in %#vt#662###0###0
+DATA>#budat#D#8#Buchungsdatum#GD2#0#0#entDate#2#A#A#0#0#budat#Buchungsdatum#vt#451###0###0
+DATA>#vom#D#8#Rechnungsdatum#GD2#0#0#dateFrom#2#A#A#0#0#vom#Rechnungsdatum#vt#570###0###0
+DATA>#vdat#D#8#Valutadatum#GD2#0#0#valDate#2#A#A#0#0#vdat#Valutadatum#vt#609###0###0
+DATA>#faell#D#8#Neues Fälligkeitsdatum#GD2#0#0#dueDateNew#2#A#A#0#0#faell#Neues Fälligkeitsdatum#vt#5857###0###0
+DATA>#urbetr#N#10#Ursprünglicher Rechnungsbetrag in Rechnungswährung#R7.2#0#0#origAmt#2#A#A#0#0#urbetr#Ursprünglicher Rechnungsbetrag in Rechnungswährung#vt#5858###0###0
+DATA>#rebetr#N#10#Offener Rechnungsbetrag in Zahlungswährung#R7.2#0#0#invoiceAmt#2#A#A#0#0#rebetr#Offener Rechnungsbetrag in Zahlungswährung#vt#5859###0###0
+DATA>#bubetr#N#10#Zahlungsbetrag Betrag in Zahlungswährung#RDT7.2#0#0##2#A#A#0#0#bubetr#Zahlungsbetrag Betrag in Zahlungswährung#vt#633###0###0
+DATA>#opzabetr#N#10#Zahlungsbetrag Betrag in Zahlungswährung#R7.2#0#0#paymtAmtOI#2#A#A#0#1#opzabetr#Zahlungsbetrag Betrag in Zahlungswährung#vt#633###0###0
+DATA>#zbed#A#10#Zahlungsbedingung#PS12:8#0#0#payTerm#2#A#A#0#0#zbed#Zahlungsbedingung#vt#167###0###0
+DATA>#zbedschl#A#8#Zahlungsbedingungsschlüssel#P66:4#0#0#payTermKey#2#A#A#0#0#zbedschl#Zahlungsbedingungsschlüssel#vt#168###0###0
+DATA>#mdatum#D#8#Letztes Mahndatum#GD2#0#0#lastRemDate#2#A#A#0#0#mdatum#Letztes Mahndatum#vt#5860###0###0
+DATA>#mstufe#N#3#Letzte Mahnstufe#IP3#0#0#remLev#2#A#A#0#0#mstufe#Letzte Mahnstufe#vt#5861###0###0
+DATA>#ztrvorg#N#5#Zahlungsvorgang im Zahlungsträger#IP5#0#0#payTransPayForm#2#A#A#0#1#ztrvorg#Zahlungsvorgang im Zahlungsträger#vt#5862###0###0
+DATA>#skbetr#N#8#Skontobetrag in Zahlungswährung#RPDT5.2#0#0#discountAmt#2#A#A#0#0#skbetr#Skontobetrag in Zahlungswährung#vt#635###0###0
+DATA>#sksatz#N#5#Skontosatz#MP2.2#0#0#discountRate#2#A#A#0#0#sksatz#Skontosatz#vt#636###0###0
+DATA>#gkonto#A#11#Skontokonto#VP0#0#0#contraAcct#2#A#A#0#0#gkonto#Skontokonto#vt#5863###0###0
+DATA>#nzahl#N#4#Anzahl der Zahlungsträger pro Sammler#IP4#0#0#countPayFormsColl#2#A#A#0#0#nzahl#Anzahl der Zahlungsträger pro Sammler#vt#5864###0###0
+DATA>#szahl#N#12#Betragssumme des Sammlers in Rechnungswährung#R9.2#0#0#totalAmtCollInvCurr#2#A#A#0#0#szahl#Betragssumme des Sammlers in Rechnungswährung#vt#5865###0###0
+DATA>#sh#A#5#Soll/Haben#A9#0#0#debCredit#2#A#A#0#0#sh#Soll/Haben#vt#591###0###0
+DATA>#sha#A#5#Soll (Einkauf) /Haben (Verkauf)#A9#0#0#debCred#2#A#A#0#1#sha#Soll (Einkauf) /Haben (Verkauf)#vt#592###0###0
+DATA>#bush#A#5#Soll/Haben ursprünglich#A9#0#0##2#A#A#0#0#bush#Soll/Haben ursprünglich#vt#580###0###0
+DATA>#busha#A#5#Soll/Haben ursprünglich#A9#0#0#debitCreditA#2#A#A#0#1#busha#Soll/Haben ursprünglich#vt#580###0###0
+DATA>#bs#A#1#Besonderheiten, z.B.Mahnstufe#NT1#0#0##2#A#A#0#0#bs#Besonderheiten, z.B.Mahnstufe#vt#5866###0###0
+DATA>#besonder#A#1#Besonderheiten, z.B.Mahnstufe#NT1#0#0#particularities#2#A#A#0#1#besonder#Besonderheiten, z.B.Mahnstufe#vt#5866###0###0
+DATA>#rechn#A#11#Rechnung#VPK10#0#0#inv#2#A#A#0#0#rechn#Rechnung#vt#567###0###0
+DATA>#form#A#11#Zahlungsart#A175#0#0##2#A#A#0#0#form#Zahlungsart#vt#243###0###0
+DATA>#zaform#A#11#Zahlungsart#A175#0#0#methodOfPaymt#2#A#A#0#1#zaform#Zahlungsart#vt#243###0###0
+DATA>#kkurs#N#14#Rechnungskurs#RP7.6#0#0#exchangeRate#2#A#A#0#0#kkurs#Rechnungskurs#vt#5867###0###0
+DATA>#abdat#D#8#Abschlussdatum#GD2#0#0#closingDate#2#A#A#0#0#abdat#Abschlussdatum#vt#600###0###0
+DATA>#abgeschl#A#4#Offener Posten abgeschlossen?#B#0#0#closed#2#A#A#0#0#abgeschl#Offener Posten abgeschlossen?#vt#601###0###0
+DATA>#zahlung#A#8#Nummer der Zahlung#P4:6#0#0#payNo#2#A#A#0#0#zahlung#Nummer der Zahlung#vt#5868###0###0
+DATA>#sperre#A#4#Zahlungssperre des offenen Postens#B#0#0#lock#2#A#A#0#0#sperre#Zahlungssperre des offenen Postens#vt#573###0###0
+DATA>#opzasperre#A#4#Zahlungssperre des offenen Postens#B#0#0#paymtLockOI#2#A#A#0#1#opzasperre#Zahlungssperre des offenen Postens#vt#573###0###0
+DATA>#skbbetr#N#10#Skontofähiger Betrag in Rechnungswährung#R7.2#0#0#deductDiscountAmt#2#A#A#0#0#skbbetr#Skontofähiger Betrag in Rechnungswährung#vt#598###0###0
+DATA>#ewewu#A#4#Erfassungswährung gehört zum Raum der Europäischen Währungsunion#B#0#1#entCurrEMU#2#A#A#0#0#ewewu#Erfassungswährung gehört zum Raum der Europäischen Währungsunion#vt#3880###0###0
+DATA>#uw#A#4#Umrechnungswährung#PS94:1#0#0#convCurr#2#A#A#0#0#uw#Umrechnungswährung#vt#627###0###0
+DATA>#ewkurs#N#14#Kurs der Erfassungswährung zur Umrechnungswährung#RP7.6#0#0#entCurrConv#2#A#A#0#0#ewkurs#Kurs der Erfassungswährung zur Umrechnungswährung#vt#628###0###0
+DATA>#buch#A#8#Buchung der Anzahlungsrechnung#P6:0#0#0#ent#2#A#A#0#0#buch#Buchung der Anzahlungsrechnung#vt#622###0###0
+DATA>#urkkurs#N#14#Ursprünglicher Rechnungskurs#RP7.6#0#0#origInvExchRate#2#A#A#0#0#urkkurs#Ursprünglicher Rechnungskurs#vt#5869###0###0
+DATA>#art#A#38#Art der offenen Posten#A26#0#0##2#A#A#0#0#art#Art der offenen Posten#vt#560###0###0
+DATA>#arta#A#38#Art der offenen Posten#A26#0#0#typeOutstItems#2#A#A#0#1#arta#Art der offenen Posten#vt#560###0###0
+DATA>#sammler#A#1#Sammelart#NT1#0#0#collMethod#2#A#A#0#0#sammler#Sammelart#vt#5870###0###0
+DATA>#reanz#N#4#Anzahl Rechnungen im Sammler#IP4#0#0#countInvColl#2#A#A#0#0#reanz#Anzahl Rechnungen im Sammler#vt#5871###0###0
+DATA>#zbelbetr#N#12#Zahlungsbetrag in Rechnungswährung#RDT9.2#0#0#payAmtInvCurr#2#A#A#0#0#zbelbetr#Zahlungsbetrag in Rechnungswährung#vt#629###0###0
+DATA>#zbeldat#D#8#Zahlungsbelegdatum#GD2#0#0#datePayDoc#2#A#A#0#0#zbeldat#Zahlungsbelegdatum#vt#5872###0###0
+DATA>#rebu#A#8#Rechnungsbuchung#P6:0#0#0#invPost#2#A#A#0#0#rebu#Rechnungsbuchung#vt#579###0###0
+DATA>#buneu#A#4#Hilfsfeld, Zeile buchungsrelevant?#B#0#1#rowRelevantForEnt#2#A#A#0#0#buneu#Hilfsfeld, Zeile buchungsrelevant?#vt#5873###0###0
+DATA>#rezakurs#N#14#Kurs der Rechnungswährung zur Zahlungswährung#RP7.6#0#1#exchRateInvCurrPayCurr#2#A#A#0#0#rezakurs#Kurs der Rechnungswährung zur Zahlungswährung#vt#630###0###0
+DATA>#nbetr#N#12#Zahlungsbetrag (Zahlungssammler)#R9.2#0#0##2#A#A#0#0#nbetr#Zahlungsbetrag (Zahlungssammler)#vt#5874###0###0
+DATA>#zabetr#N#12#Zahlungsbetrag (Zahlungssammler)#R9.2#0#0#paymtAmt#2#A#A#0#1#zabetr#Zahlungsbetrag (Zahlungssammler)#vt#5874###0###0
+DATA>#expform#A#20#Exportformat#GL20#0#0#expFormat#3#A#A#0#0#expform#Exportformat#vt#5875###0###0
+DATA>#nskbetr#N#12#Skontobetrag (Zahlungssammler)#R9.2#0#1#discountAmtPaymtCollector#1#A#A#0#0#nskbetr#Skontobetrag (Zahlungssammler)#vt#5876###0###0
+DATA>#buchvorl#A#8#Vorlagebuchung der Anzahlungsrechnung#P6:0#0#1#entTemplate#1#A#A#0#0#buchvorl#Vorlagebuchung der Anzahlungsrechnung#vt#575###0###0
+DATA>#ustposgko#A#8#USt-Position des Gegenkontos#P54:1#0#0#VATItemContraAcct#2#A#A#0#0#ustposgko#USt-Position des Gegenkontos#vt#651###0###0
+DATA>#zmartgko#A#16#Art in der Zusammenfassenden Meldung des Gegenkontos#A234#0#0#ECSLTypeContraAcct#2#A#A#0#0#zmartgko#Art in der Zusammenfassenden Meldung des Gegenkontos#vt#650###0###0
+DATA>#wvorlage#A#4#In Zahlungsobligo#B#0#0#review#2#A#A#0#0#wvorlage#In Zahlungsobligo#vt#5877###0###0
+DATA>#druck#A#4#Drucken#ZAE0#0#0#prnt#2#A#A#0#0#druck#Drucken#vt#9###0###0
+DATA>#doku#A#8#Dokument#P70#0#0#doc#2#A#A#0#0#doku#Dokument#vt#576###0###0
+DATA>#zbeleg#A#13#Zahlungsbeleg#GL13#0#0#payDoc#2#A#A#0#0#zbeleg#Zahlungsbeleg#vt#5878###0###0
+DATA>#opzbeleg#A#13#Zahlungsbeleg#GL13#0#1##2#A#A#0#0#opzbeleg#Zahlungsbeleg#vt#5878###0###0
+DATA>#bank#A#40#Bankverbindung - Bankname#GL40#0#0#bankDetBankName#1#A#A#0#0#bank#Bankverbindung - Bankname#vt#5879###0###0
+DATA>#blz#A#10#Bankverbindung: BLZ#GL10#0#0#bankDetSortCode#1#A#A#0#0#blz#Bankverbindung: BLZ#vt#5880###0###0
+DATA>#konum#A#25#Bankverbindung - Kontonummer#GL25#0#0#bankDetAcctNo#1#A#A#0#0#konum#Bankverbindung - Kontonummer#vt#5881###0###0
+DATA>#vzweck#A#70#Gewünschter Verwendungszweck bei der Zahlung#GL70#0#0#purposeUse#3#A#A#0#0#vzweck#Gewünschter Verwendungszweck bei der Zahlung#vt#673###0###0
+DATA>#kvnum#A#8#Kontenvorgang#GL8#0#0#acctTrans#2#A#A#0#0#kvnum#Kontenvorgang#vt#3825###0###0
+DATA>#baempf#A#35#Bankverbindung: Name des Zahlungsempfängers#GL35#0#0#bankDetPayeeName#1#A#A#0#0#baempf#Bankverbindung: Name des Zahlungsempfängers#vt#5882###0###0
+DATA>#baland#A#25#Bankverbindung - Bankadresse - Land#PS97:1#0#0#bankDetAddrCtry#1#A#A#0#0#baland#Bankverbindung - Bankadresse - Land#vt#5883###0###0
+DATA>#baplz#A#10#Bankverbindung - Bankadresse - PLZ#GL10#0#0#bankDetAddrZip#1#A#A#0#0#baplz#Bankverbindung - Bankadresse - PLZ#vt#5884###0###0
+DATA>#baort#A#34#Bankverbindung - Bankadresse - Ort#T34#0#0#bankDetAddrTown#1#A#A#0#0#baort#Bankverbindung - Bankadresse - Ort#vt#5885###0###0
+DATA>#baiban#A#34#Bankverbindung - IBAN#GL34#0#0#bankDetIBAN#1#A#A#0#0#baiban#Bankverbindung - IBAN#vt#5886###0###0
+DATA>#baswift#A#11#Bankverbindung - SWIFT#GL11#0#0#bankDetSWIFT#1#A#A#0#0#baswift#Bankverbindung - SWIFT#vt#5887###0###0
+DATA>#scheck#A#8#Scheck#P103:3.4.7.8#0#0#checkPay#2#A#A#0#0#scheck#Scheck#vt#866###0###0
+DATA>#neuztr#A#8#Neuer Zahlungsträger#P103:3.4.7.8#0#0#newPayForm#2#A#A#0#1#neuztr#Neuer Zahlungsträger#vt#5888###0###0
+DATA>#schecknum#A#20#Schecknummer#GL20#0#1#checkNo#1#A#A#0#0#schecknum#Schecknummer#vt#843###0###0
+DATA>#scheckgko#A#8#Scheckkonto#P5:1#0#1#checkAcct#1#A#A#0#0#scheckgko#Scheckkonto#vt#5889###0###0
+DATA>#awvware#A#35#Warenbezeichnung 1 für Außenwirtschaftsverordnung#GL35#0#0#GFTRDescrGoods#3#A#A#0#0#awvware#Warenbezeichnung 1 für Außenwirtschaftsverordnung#vt#674###0###0
+DATA>#awvstaat#A#25#Land 1 für Außenwirtschaftsverordnung#PS97:1#0#0#GFTRCtry#3#A#A#0#0#awvstaat#Land 1 für Außenwirtschaftsverordnung#vt#675###0###0
+DATA>#awvaart#A#31#Art für Außenwirtschaftsverordnung (Transithandel/Dienstleistung/Kapitalverkeh#A147#0#0#GFTRType#3#A#A#0#0#awvaart#Art für Außenwirtschaftsverordnung (Transithandel/Dienstleistung/Kapitalverkeh#vt#676###0###0
+DATA>#awvbart#A#1#Belegart 1 für Außenwirtschaftsverordnung#NT1#0#0#GFTRDocumentType#3#A#A#0#0#awvbart#Belegart 1 für Außenwirtschaftsverordnung#vt#677###0###0
+DATA>#awvbkenn#A#4#Kennzahl 1 für Außenwirtschaftsverordnung#NT4#0#0#GFTRKeyFigure#3#A#A#0#0#awvbkenn#Kennzahl 1 für Außenwirtschaftsverordnung#vt#678###0###0
+DATA>#awvftext#A#70#Freier Text für Außenwirtschaftsverordnung#T70#0#0#GFTRFreeText#3#A#A#0#0#awvftext#Freier Text für Außenwirtschaftsverordnung#vt#679###0###0
+DATA>#awvbetr#N#12#Betrag 1 für Außenwirtschaftsverordnung#R9.2#0#0#GFTRAmt#3#A#A#0#0#awvbetr#Betrag 1 für Außenwirtschaftsverordnung#vt#680###0###0
+DATA>#awvwaehr#A#4#Währung 1 für Außenwirtschaftsverordnung#PS94:1#0#0#GFTRCurr#3#A#A#0#0#awvwaehr#Währung 1 für Außenwirtschaftsverordnung#vt#681###0###0
+DATA>#ofbetr#N#10#Offener Betrag in Rechnungswährung#RDT7.2#0#1#outstAmtInvCurr#2#A#A#0#0#ofbetr#Offener Betrag in Rechnungswährung#vt#5890###0###0
+DATA>#ofdm#N#10#Offener Betrag in Inlandswährung#R7.2#0#1#outstAmtDomCurr#2#A#A#0#0#ofdm#Offener Betrag in Inlandswährung#vt#5891###0###0
+DATA>#zkurs#N#14#Zahlungskurs#RP7.6#0#1#paymtExchRate#2#A#A#0#0#zkurs#Zahlungskurs#vt#5892###0###0
+DATA>#zdiff#N#10#Kursdifferenz#R7.2#0#1#exchRateDiff#2#A#A#0#0#zdiff#Kursdifferenz#vt#5893###0###0
+DATA>#urekkurs#N#14#Ursprünglicher Rechnungskurs in Einheiten#RP7.6#0#1#origInvExchRateU#2#A#A#0#0#urekkurs#Ursprünglicher Rechnungskurs in Einheiten#vt#5894###0###0
+DATA>#ekkurs#N#14#Rechnungskurs in Einheiten#RP7.6#0#1#invExchRateUnits#2#A#A#0#0#ekkurs#Rechnungskurs in Einheiten#vt#5895###0###0
+DATA>#ezkurs#N#14#Zahlungskurs bezogen auf die Einheit des Kurses#RP7.6#0#1#unitPayRate#2#A#A#0#0#ezkurs#Zahlungskurs bezogen auf die Einheit des Kurses#vt#5896###0###0
+DATA>#feinh#N#7#Kurseinheit#IP7#0#1#exchangeRateUnit#2#A#A#0#0#feinh#Kurseinheit#vt#5897###0###0
+DATA>#kursfix#A#4#Kurs fixiert?#B#0#1#exRateFixed#3#A#A#0#0#kursfix#Kurs fixiert?#vt#5898###0###0
+DATA>#bsumme#N#10#Summe=Zahlungsbetrag+Skonto#R7.2#0#1#total#2#A#A#0#0#bsumme#Summe=Zahlungsbetrag+Skonto#vt#5899###0###0
+DATA>#skbsumme#N#10#Skontofähiger Betrag in Rechnungswährung#R7.2#0#1#discAmtInInvCurr#2#A#A#0#0#skbsumme#Skontofähiger Betrag in Rechnungswährung#vt#598###0###0
+DATA>#buptext#A#30#Buchungs-Positionstext#T30#0#1#entItemText#2#A#A#0#0#buptext#Buchungs-Positionstext#vt#5900###0###0
+DATA>#iwkurs#N#14#Kurs der Umrechnungswährung zur Buchungswährung#RP7.6#0#1#exchRate#2#A#A#0#0#iwkurs#Kurs der Umrechnungswährung zur Buchungswährung#vt#3876###0###0
+DATA>#iwekurs#N#14#Einheiten Buchungswährung je Einheit(en) der Umrechnungswährung#RP7.6#0#1#exchRateConv#2#A#A#0#0#iwekurs#Einheiten Buchungswährung je Einheit(en) der Umrechnungswährung#vt#3877###0###0
+DATA>#ieinh#N#7#Faktor für die Umrechnungswährung#IP7#0#1#currUnit#2#A#A#0#0#ieinh#Faktor für die Umrechnungswährung#vt#5433###0###0
+DATA>#zewkurs#N#14#Kurs der Erfassungswährung in der Umrechnungswährung#RP7.6#0#1#exchRateEntCurrInConvCurr#2#A#A#0#0#zewkurs#Kurs der Erfassungswährung in der Umrechnungswährung#vt#5908###0###0
+DATA>#eweinh#N#7#Anzahl Einheit(en) der Erfassungswährung#IP7#0#1#factorEntCurr#2#A#A#0#0#eweinh#Anzahl Einheit(en) der Erfassungswährung#vt#3874###0###0
+DATA>#tzaland#A#4#Zahlungswährung#PS94:1#0#1##2#A#A#0#0#tzaland#Zahlungswährung#vt#623###0###0
+DATA>#tzawaehr#A#4#Zahlungswährung#PS94:1#0#1#currPay#2#A#A#0#1#tzawaehr#Zahlungswährung#vt#623###0###0
+DATA>#tiwbu#A#4#Buchungswährung#PS94:1#0#1#postCurrTab#2#A#A#0#0#tiwbu#Buchungswährung#vt#473###0###0
+DATA>#tuw#A#4#Umrechnungswährung#PS94:1#0#1#convCurrTab#2#A#A#0#0#tuw#Umrechnungswährung#vt#627###0###0
+DATA>#zarebetr#N#10#Offener Rechnungsbetrag in Zahlungswährung#R7.2#0#1#payCurrOutstInvAmt#2#A#A#0#0#zarebetr#Offener Rechnungsbetrag in Zahlungswährung#vt#5859###0###0
+DATA>#iwredm#N#10#Offener Rechnungsbetrag in Buchungswährung#R7.2#0#1#outstInvAmt#2#A#A#0#0#iwredm#Offener Rechnungsbetrag in Buchungswährung#vt#5909###0###0
+DATA>#zkstelle#A#8#Konto - Kostenstelle / -träger#P5:2.4.8#0#0#costCenterCostObj#2#A#A#0#0#zkstelle#Konto - Kostenstelle / -träger#vt#644###0###0
+DATA>#zkart#A#1#Konto - Kontenart#NT1#0#1#acctAcctType#2#A#A#0#0#zkart#Konto - Kontenart#vt#5910###0###0
+DATA>#zlaart#A#8#Konto - Landart#A8#0#0##2#A#A#0#0#zlaart#Konto - Landart#vt#5911###0###0
+DATA>#zlaarta#A#8#Konto - Landart#A8#0#0##2#A#A#0#1#zlaarta#Konto - Landart#vt#5911###0###0
+DATA>#zev#A#7#Konto - Einkauf/Verkauf#A7#0#0#purchSalesAcctItem#2#A#A#0#0#zev#Konto - Einkauf/Verkauf#vt#5912###0###0
+DATA>#zeva#A#7#Konto - Einkauf/Verkauf#A7#0#0#purchSalesAcctItemAlias#2#A#A#0#1#zeva#Konto - Einkauf/Verkauf#vt#5912###0###0
+DATA>#zsteuer#A#8#Steuerschlüssel (für Konto)#P58:1#0#0#acctTaxCode#2#A#A#0#0#zsteuer#Steuerschlüssel (für Konto)#vt#5913###0###0
+DATA>#skstelle#A#8#Skontokonto - Kostenstelle / -träger#P5:2.4.8#0#0#discAcctCostElem#2#A#A#0#0#skstelle#Skontokonto - Kostenstelle / -träger#vt#655###0###0
+DATA>#skart#A#1#Skontokonto - Kontenart#NT1#0#1#acctTypeDiscAcct#2#A#A#0#0#skart#Skontokonto - Kontenart#vt#5914###0###0
+DATA>#slaart#A#8#Landart (Skontokonto)#A8#0#0#discAcctCtryType#2#A#A#0#0#slaart#Landart (Skontokonto)#vt#5915###0###0
+DATA>#slaarta#A#8#Landart (Skontokonto)#A8#0#0#discAcctCtryTypeE#2#A#A#0#1#slaarta#Landart (Skontokonto)#vt#5915###0###0
+DATA>#sev#A#7#Einkauf/Verkauf (Skontokonto)#A7#0#0#purchSalesDiscountAcct#2#A#A#0#0#sev#Einkauf/Verkauf (Skontokonto)#vt#5916###0###0
+DATA>#seva#A#7#Einkauf/Verkauf (Skontokonto)#A7#0#0#purchSalesDiscAcct#2#A#A#0#1#seva#Einkauf/Verkauf (Skontokonto)#vt#5916###0###0
+DATA>#ssteuer#A#8#Steuerschlüssel (Skontokonto)#P58:1#0#0#taxCodeDiscAcct#2#A#A#0#0#ssteuer#Steuerschlüssel (Skontokonto)#vt#5917###0###0
+DATA>#sbsts#A#4#Bruttosteuerschlüssel? (Skontokonto)#B#0#0#grossTaxCodeDiscAcct#2#A#A#0#0#sbsts#Bruttosteuerschlüssel? (Skontokonto)#vt#5918###0###0
+DATA>#zbsts#A#4#Bruttosteuerschlüssel? (für Konto)#B#0#0#grossTaxCodeAcct#2#A#A#0#0#zbsts#Bruttosteuerschlüssel? (für Konto)#vt#5919###0###0
+DATA>#s2kstelle#A#8#Skontokonto 2 - Kostenstelle / -träger#P5:2.4.8#0#0#discAcctCostElem2#2#A#A#0#0#s2kstelle#Skontokonto 2 - Kostenstelle / -träger#vt#664###0###0
+DATA>#s2kart#A#1#Skontokonto 2 - Kontenart#NT1#0#1#acctTypeDiscAcct2#2#A#A#0#0#s2kart#Skontokonto 2 - Kontenart#vt#5920###0###0
+DATA>#s2laart#A#8#Skontokonto 2 - Landart#A8#0#0#discAcct2CtryType#2#A#A#0#0#s2laart#Skontokonto 2 - Landart#vt#5921###0###0
+DATA>#s2laarta#A#8#Skontokonto 2 - Landart#A8#0#0#discAcct2CtryTypeE#2#A#A#0#1#s2laarta#Skontokonto 2 - Landart#vt#5921###0###0
+DATA>#s2ev#A#7#Skontokonto 2 - Ein-/Verkaufskonto#A7#0#0#discAcct2#2#A#A#0#0#s2ev#Skontokonto 2 - Ein-/Verkaufskonto#vt#5922###0###0
+DATA>#s2eva#A#7#Skontokonto 2 - Ein-/Verkaufskonto#A7#0#0#discAcct2E#2#A#A#0#1#s2eva#Skontokonto 2 - Ein-/Verkaufskonto#vt#5922###0###0
+DATA>#s2steuer#A#8#Skontokonto 2 - Steuerschlüssel#P58:1#0#0#taxCodeDiscAcct2#2#A#A#0#0#s2steuer#Skontokonto 2 - Steuerschlüssel#vt#5923###0###0
+DATA>#s2bsts#A#4#Bruttosteuerschlüssel? (für Skontokonto 2)#B#0#0#grossTaxCode2#2#A#A#0#0#s2bsts#Bruttosteuerschlüssel? (für Skontokonto 2)#vt#5924###0###0
+DATA>#kobank#A#40#Bankverbindung - Konto - Bankname#GL40#0#1#acctBankName#2#A#A#0#0#kobank#Bankverbindung - Konto - Bankname#vt#5927###0###0
+DATA>#koblz#A#10#Bankverbindung: Konto: BLZ#GL10#0#1#acctBankNo#2#A#A#0#0#koblz#Bankverbindung: Konto: BLZ#vt#5928###0###0
+DATA>#kokonum#A#25#Bankverbindung - Konto - Kontonummer#GL25#0#1#acctAcctNo#2#A#A#0#0#kokonum#Bankverbindung - Konto - Kontonummer#vt#5929###0###0
+DATA>#kobaempf#A#35#Bankverbindung: Konto - Name des Zahlungsempfängers#GL35#0#1#acctNamePayee#2#A#A#0#0#kobaempf#Bankverbindung: Konto - Name des Zahlungsempfängers#vt#5930###0###0
+DATA>#kobaland#A#25#Bankverbindung - Konto - Bankadresse - Land#PS97:1#0#1#acctBankAddrCtry#2#A#A#0#0#kobaland#Bankverbindung - Konto - Bankadresse - Land#vt#5931###0###0
+DATA>#kobaplz#A#10#Bankverbindung - Konto - Bankadresse - Postleitzahl#GL10#0#1#acctBankAddrZip#2#A#A#0#0#kobaplz#Bankverbindung - Konto - Bankadresse - Postleitzahl#vt#5932###0###0
+DATA>#kobaort#A#34#Bankverbindung - Konto - Bankadresse - Ort#T34#0#1#acctBankAddrTown#2#A#A#0#0#kobaort#Bankverbindung - Konto - Bankadresse - Ort#vt#5933###0###0
+DATA>#kobaiban#A#34#Bankverbindung: Konto - IBAN#GL34#0#1#acctIBAN#2#A#A#0#0#kobaiban#Bankverbindung: Konto - IBAN#vt#5934###0###0
+DATA>#kobaswift#A#11#Bankverbindung - Konto - SWIFT#GL11#0#1#acctSWIFT#2#A#A#0#0#kobaswift#Bankverbindung - Konto - SWIFT#vt#5935###0###0
+DATA>#ausfterm#D#10#Ausführungstermin#GD#0#1#execDate#2#A#A#0#0#ausfterm#Ausführungstermin#vt#780###0###0
+DATA>#ebeleg#A#35#Externe Belegnummer#GL35#0#0#extDocNo#2#A#A#0#0#ebeleg#Externe Belegnummer#vt#447###0###0
+DATA>#opneu#A#8#Neuer offener Posten#P100:1#0#1#outstItemNew#1#A#A#0#0#opneu#Neuer offener Posten#vt#5936###0###0
+DATA>#opzneu#A#8#Neue OP-Bewegung#P100:2#0#1#IOStateNew#1#A#A#0#0#opzneu#Neue OP-Bewegung#vt#5937###0###0
+DATA>#ztr#A#8#Zahlungsträger#P4:3#0#1#payForm#1#A#A#0#0#ztr#Zahlungsträger#vt#671###0###0
+DATA>#opgko#A#8#Offener Posten des Gegenkontos#P100:1#0#1#outstItemAcct#1#A#A#0#0#opgko#Offener Posten des Gegenkontos#vt#5938###0###0
+DATA>#opzgko#A#8#OP-Bewegung des Gegenkontos#P100:2#0#1#IOStateTransitAcct#1#A#A#0#0#opzgko#OP-Bewegung des Gegenkontos#vt#5939###0###0
+DATA>#buchung#A#8#Buchung#P6:0#0#1#posting#1#A#A#0#0#buchung#Buchung#vt#3247###0###0
+DATA>#kobverb#A#8#Erste Bankverbindung des Kontos#P96:2#0#1#firstBankDet#1#A#A#0#0#kobverb#Erste Bankverbindung des Kontos#vt#761###0###0
+DATA>#bverb#A#8#Gewünschte Bankverbindung#P96:2#0#0#bankDet#3#A#A#0#0#bverb#Gewünschte Bankverbindung#vt#672###0###0
+DATA>#bstaat#A#25#Land der Bankverbindung#PS97:1#0#1#bankCtry#1#A#A#0#0#bstaat#Land der Bankverbindung#vt#5940###0###0
+DATA>#tsepaland#A#4#SEPA-Teilnehmerland#B#0#1#sepaCountryTab#1#A#A#0#0#tsepaland#SEPA-Teilnehmerland#vt#5941###0###0
+DATA>#referenz#A#35#Referenz aus Zahlungsschein#GL35#0#0#reference#3#A#A#0#0#referenz#Referenz aus Zahlungsschein#vt#5548###0###0
+DATA>#tlnr#A#35#Teilnehmernummer aus Zahlungsschein#GL35#0#0#participNo#3#A#A#0#0#tlnr#Teilnehmernummer aus Zahlungsschein#vt#639###0###0
+DATA>#refpruef#A#35#Prüfziffer aus Zahlungsschein#GL35#0#0#checkSumPayForm#3#A#A#0#0#refpruef#Prüfziffer aus Zahlungsschein#vt#640###0###0
+DATA>#kodzeile#A#55#Kodierzeile aus Zahlschein#GL55#0#0#codingRowP#3#A#A#0#0#kodzeile#Kodierzeile aus Zahlschein#vt#641###0###0
+DATA>#text#A#64#Zusatztext für den Zahlungsvorgang#T64#0#0#descrText#3#A#A#0#0#text#Zusatztext für den Zahlungsvorgang#vt#695###0###0
+DATA>#mahnsperre#A#4#Mahnsperre#B#0#0#reminderLock#2#A#A#0#0#mahnsperre#Mahnsperre#vt#688###0###0
+DATA>#mahnausschl#A#4#Aus der nächsten Mahnung ausschließen?#B#0#0#excludeNextRem#2#A#A#0#0#mahnausschl#Aus der nächsten Mahnung ausschließen?#vt#689###0###0
+DATA>#lmahnung#A#8#Letzte Mahnung#P104:1#0#0#lastReminder#2#A#A#0#0#lmahnung#Letzte Mahnung#vt#588###0###0
+DATA>#opmahntext#A#64#Mahntext 1 des offenen Postens#T64#0#0#remTextOI#3#A#A#0#0#opmahntext#Mahntext 1 des offenen Postens#vt#691###0###0
+DATA>#opmahntext2#A#8#Mahntext 2 (Kurztext) des offenen Postens#P12:3#0#0#remTextOI2#3#A#A#0#0#opmahntext2#Mahntext 2 (Kurztext) des offenen Postens#vt#692###0###0
+DATA>#awvstaat2#A#25#Land 2 für Außenwirtschaftsverordnung#PS97:1#0#0#GFTRCtry2#3#A#A#0#0#awvstaat2#Land 2 für Außenwirtschaftsverordnung#vt#682###0###0
+DATA>#awvware2#A#35#Warenbezeichnung 2 für Außenwirtschaftsverordnung#GL35#0#0#GFTRDescrGoods2#3#A#A#0#0#awvware2#Warenbezeichnung 2 für Außenwirtschaftsverordnung#vt#683###0###0
+DATA>#awvbart2#A#1#Belegart 2 für Außenwirtschaftsverordnung#NT1#0#0#GFTRDocumentType2#3#A#A#0#0#awvbart2#Belegart 2 für Außenwirtschaftsverordnung#vt#684###0###0
+DATA>#awvbkenn2#A#4#Kennzahl 2 für Außenwirtschaftsverordnung#NT4#0#0#GFTRKeyFigure2#3#A#A#0#0#awvbkenn2#Kennzahl 2 für Außenwirtschaftsverordnung#vt#685###0###0
+DATA>#awvbetr2#N#12#Betrag 2 für Außenwirtschaftsverordnung#R9.2#0#0#GFTRAmt2#3#A#A#0#0#awvbetr2#Betrag 2 für Außenwirtschaftsverordnung#vt#686###0###0
+DATA>#awvwaehr2#A#4#Währung 2 für Außenwirtschaftsverordnung#PS94:1#0#0#GFTRCurr2#3#A#A#0#0#awvwaehr2#Währung 2 für Außenwirtschaftsverordnung#vt#687###0###0
+DATA>#zuordnung#A#10#Zuordnung (Bankimport)#P90:6#0#1#alloc#1#A#A#0#0#zuordnung#Zuordnung (Bankimport)#vt#5942###0###0
+DATA>#zuordnungzn#N#5#Zeile der Zuordnung (Bankimport)#IP5#0#1#allocLine#1#A#A#0#0#zuordnungzn#Zeile der Zuordnung (Bankimport)#vt#5943###0###0
+DATA>#tbudat#D#8#Buchungsdatum#GD2#0#0#entDateTab#2#A#A#0#0#tbudat#Buchungsdatum#vt#451###0###0
+DATA>#kozasperre#A#4#Zahlungssperre des Kontos#B#0#1#acctPaymtLock#1#A#A#0#0#kozasperre#Zahlungssperre des Kontos#vt#574###0###0
+DATA>#zasperre#A#4#Zahlungssperre#B#0#1#payLock#1#A#A#0#0#zasperre#Zahlungssperre#vt#299###0###0
+DATA>#sepamand#A#8#SEPA-Lastschriftmandat#P66:3.7#0#0#sepaMandate#2#A#A#0#0#sepamand#SEPA-Lastschriftmandat#vt#305###0###0
+DATA>#sepamref#A#14#Referenz des SEPA-Mandats#GL14#0#1#sepaMandateRef#2#A#A#0#0#sepamref#Referenz des SEPA-Mandats#vt#870###0###0
+DATA>#sepacred#A#35#SEPA-Kreditorenidentifikation#GL35#0#1#sepaCreditorIdentHead#2#A#A#0#0#sepacred#SEPA-Kreditorenidentifikation#vt#832###0###0
+DATA>#sepadebt#A#35#SEPA-Debitorenidentifikation#GL35#0#1#sepaDebitorIdent#2#A#A#0#0#sepadebt#SEPA-Debitorenidentifikation#vt#871###0###0
+DATA>#zmartko#A#16#Art in der Zusammenfassenden Meldung des Kontos#A234#0#0#ECSLTypeAcct#2#A#A#0#0#zmartko#Art in der Zusammenfassenden Meldung des Kontos#vt#645###0###0
+DATA>#zmartsko1#A#16#Art in der Zusammenfassenden Meldung des Skontokontos 1#A234#0#0#ECSLTypeDiscAcct1#2#A#A#0#0#zmartsko1#Art in der Zusammenfassenden Meldung des Skontokontos 1#vt#656###0###0
+DATA>#zmartsko2#A#16#Art in der Zusammenfassenden Meldung des Skontokontos 2#A234#0#0#ECSLTypeDiscAcct2#2#A#A#0#0#zmartsko2#Art in der Zusammenfassenden Meldung des Skontokontos 2#vt#665###0###0
+DATA>#ustposko#A#8#USt-Position des Kontos#P54:1#0#0#VATItemAcct#2#A#A#0#0#ustposko#USt-Position des Kontos#vt#646###0###0
+DATA>#ustpossko1#A#8#USt-Position des Skontokontos 1#P54:1#0#0#VATItemDiscAcct1#2#A#A#0#0#ustpossko1#USt-Position des Skontokontos 1#vt#657###0###0
+DATA>#ustpossko2#A#8#USt-Position des Skontokontos 2#P54:1#0#0#VATItemDiscAcct2#2#A#A#0#0#ustpossko2#USt-Position des Skontokontos 2#vt#666###0###0
+DATA>#ustartsko1#A#17#Art der Umsatzsteuerbuchung des Skontokontos 1#A138#0#0#VATEntTypeDiscAcct1#2#A#A#0#0#ustartsko1#Art der Umsatzsteuerbuchung des Skontokontos 1#vt#5944###0###0
+DATA>#ustartsko2#A#17#Art der Umsatzsteuerbuchung des Skontokontos 2#A138#0#0#VATEntTypeDiscAcct2#2#A#A#0#0#ustartsko2#Art der Umsatzsteuerbuchung des Skontokontos 2#vt#5945###0###0
+DATA>#zatext#A#30#Hinweistext im Maskenkopf#GL30#0#1#addText#2#A#A#0#0#zatext#Hinweistext im Maskenkopf#vt#5946###0###0
+DATA>#ustart#A#17#Art der Umsatzsteuerbuchung#A138#0#0#VATEntType#2#A#A#0#0#ustart#Art der Umsatzsteuerbuchung#vt#642###0###0
+DATA>#gvorg#A#10#Geschäftsvorgang#PS81:3#0#0#businessTrans#2#A#A#0#0#gvorg#Geschäftsvorgang#vt#336###0###0
+DATA>#ydvkto#A#9#Datevnummer aus Stamm#GLU9#0#1#ydvkto#3#A#A#1#0#ydvkto#Datevnummer aus Stamm##0###0###0
+LOG>rec size:244
+LOG>data size:5000
+LOG>field count:23
+LOG>disconnected
+bye

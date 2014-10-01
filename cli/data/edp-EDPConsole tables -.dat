@@ -1,0 +1,384 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>tables
+AnsiToUTF8>tables
+UTF8ToAnsi>tables
+orig>*
+AnsiToUTF8>*
+UTF8ToAnsi>*
+tabellen bersicht
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>rec size:362
+DATA>name,desc,num,type,typestr,databasenr,databasename,groupbits,groupnrs,groupnames,hastable,aliveflag
+DATA>#Kunde:Kunde#Kunde (Kunde)#0:1#1#Selektions-Leiste#0#Kunde#2#1#Kunde#0#9
+DATA>#Kunde:Kundenkontakt#Kundenkontakt (Kunde)#0:2#1#Selektions-Leiste#0#Kunde#4#2#Kundenkontakt#0#9
+DATA>#Kunde:Bewegungsdaten#Bewegungsdaten (Kunde)#0:3#1#Selektions-Leiste#0#Kunde#8#3#Bewegungsdaten#0#9
+DATA>#Kunde:Kunden/Lieferantenbeziehungen#Kunden/Lieferantenbeziehungen (Kunde)#0:5#1#Selektions-Leiste#0#Kunde#32#5#Kunden/Lieferantenbeziehungen#1#9
+DATA>#Kunde:Interessent#Interessent (Kunde)#0:6#1#Selektions-Leiste#0#Kunde#64#6#Interessent#0#9
+DATA>#Kunde:Interessentenkontakt#Interessentenkontakt (Kunde)#0:7#1#Selektions-Leiste#0#Kunde#128#7#Interessentenkontakt#0#9
+DATA>#Lieferant:Lieferant#Lieferant (Lieferant)#1:1#1#Selektions-Leiste#1#Lieferant#2#1#Lieferant#0#9
+DATA>#Lieferant:Lieferantenkontakt#Lieferantenkontakt (Lieferant)#1:2#1#Selektions-Leiste#1#Lieferant#4#2#Lieferantenkontakt#0#9
+DATA>#Lieferant:Bewegungsdaten#Bewegungsdaten (Lieferant)#1:3#1#Selektions-Leiste#1#Lieferant#8#3#Bewegungsdaten#0#9
+DATA>#Lieferant:Kunden/Lieferantenbeziehungen#Kunden/Lieferantenbeziehungen (Lieferant)#1:5#1#Selektions-Leiste#1#Lieferant#32#5#Kunden/Lieferantenbeziehungen#1#9
+DATA>#Teil:Artikel#Artikel (Teil)#2:1#1#Selektions-Leiste#2#Teil#2#1#Artikel#1#9
+DATA>#Teil:Fertigungsmittel#Fertigungsmittel (Teil)#2:2#1#Selektions-Leiste#2#Teil#4#2#Fertigungsmittel#0#9
+DATA>#Teil:Zusatzposition#Zusatzposition (Teil)#2:4#1#Selektions-Leiste#2#Teil#16#4#Zusatzposition#0#9
+DATA>#Teil:Dienstleistung#Dienstleistung (Teil)#2:5#1#Selektions-Leiste#2#Teil#32#5#Dienstleistung#1#9
+DATA>#Teil:Kundenartikeleigenschaft#Kundenartikeleigenschaft (Teil)#2:6#1#Selektions-Leiste#2#Teil#64#6#Kundenartikeleigenschaft#0#9
+DATA>#Teil:Zugänge/Abgänge#Zugänge/Abgänge (Teil)#2:8#1#Selektions-Leiste#2#Teil#256#8#Zugänge/Abgänge#0#9
+DATA>#Verkauf:Verkauf#Verkauf (Verkauf)#3:1#1#Selektions-Leiste#3#Verkauf#2#1#Verkauf#0#9
+DATA>#Verkauf:Position#Position (Verkauf)#3:2#1#Selektions-Leiste#3#Verkauf#4#2#Position#0#9
+DATA>#Verkauf:Rahmenauftrag#Rahmenauftrag (Verkauf)#3:20#1#Selektions-Leiste#3#Verkauf#1048576#20#Rahmenauftrag#1#9
+DATA>#Verkauf:Angebot#Angebot (Verkauf)#3:21#1#Selektions-Leiste#3#Verkauf#2097152#21#Angebot#1#9
+DATA>#Verkauf:Webauftrag#Webauftrag (Verkauf)#3:25#1#Selektions-Leiste#3#Verkauf#33554432#25#Webauftrag#1#9
+DATA>#Verkauf:Auftrag#Auftrag (Verkauf)#3:22#1#Selektions-Leiste#3#Verkauf#4194304#22#Auftrag#1#9
+DATA>#Verkauf:Lieferschein#Lieferschein (Verkauf)#3:23#1#Selektions-Leiste#3#Verkauf#8388608#23#Lieferschein#1#9
+DATA>#Verkauf:Rechnung#Rechnung (Verkauf)#3:24#1#Selektions-Leiste#3#Verkauf#16777216#24#Rechnung#1#9
+DATA>#Verkauf:Serviceangebot#Serviceangebot (Verkauf)#3:27#1#Selektions-Leiste#3#Verkauf#134217728#27#Serviceangebot#1#9
+DATA>#Verkauf:Serviceauftrag#Serviceauftrag (Verkauf)#3:28#1#Selektions-Leiste#3#Verkauf#268435456#28#Serviceauftrag#1#9
+DATA>#Verkauf:Reparaturauftrag#Reparaturauftrag (Verkauf)#3:29#1#Selektions-Leiste#3#Verkauf#536870912#29#Reparaturauftrag#1#9
+DATA>#Verkauf:Chance#Chance (Verkauf)#3:30#1#Selektions-Leiste#3#Verkauf#1073741824#30#Chance#1#9
+DATA>#Verkauf:Kostenvoranschlag#Kostenvoranschlag (Verkauf)#3:31#1#Selektions-Leiste#3#Verkauf#2147483648#31#Kostenvoranschlag#1#9
+DATA>#Einkauf:Einkauf#Einkauf (Einkauf)#4:1#1#Selektions-Leiste#4#Einkauf#2#1#Einkauf#0#9
+DATA>#Einkauf:Position#Position (Einkauf)#4:2#1#Selektions-Leiste#4#Einkauf#4#2#Position#0#9
+DATA>#Einkauf:Offener Posten#Offener Posten (Einkauf)#4:3#1#Selektions-Leiste#4#Einkauf#8#3#Offener Posten#0#9
+DATA>#Einkauf:Reservierungen#Reservierungen (Einkauf)#4:4#1#Selektions-Leiste#4#Einkauf#16#4#Reservierungen#0#9
+DATA>#Einkauf:Fertigungsvorschlag#Fertigungsvorschlag (Einkauf)#4:5#1#Selektions-Leiste#4#Einkauf#32#5#Fertigungsvorschlag#0#9
+DATA>#Einkauf:Zahlungen#Zahlungen (Einkauf)#4:6#1#Selektions-Leiste#4#Einkauf#64#6#Zahlungen#1#9
+DATA>#Einkauf:Rahmenauftrag#Rahmenauftrag (Einkauf)#4:20#1#Selektions-Leiste#4#Einkauf#1048576#20#Rahmenauftrag#1#9
+DATA>#Einkauf:Anfrage#Anfrage (Einkauf)#4:21#1#Selektions-Leiste#4#Einkauf#2097152#21#Anfrage#1#9
+DATA>#Einkauf:Bestellung#Bestellung (Einkauf)#4:22#1#Selektions-Leiste#4#Einkauf#4194304#22#Bestellung#1#9
+DATA>#Einkauf:Lieferschein#Lieferschein (Einkauf)#4:23#1#Selektions-Leiste#4#Einkauf#8388608#23#Lieferschein#1#9
+DATA>#Einkauf:Rechnung#Rechnung (Einkauf)#4:24#1#Selektions-Leiste#4#Einkauf#16777216#24#Rechnung#1#9
+DATA>#Konto:Konto#Konto (Konto)#5:1#1#Selektions-Leiste#5#Konto#2#1#Konto#1#9
+DATA>#Konto:Kostenstelle#Kostenstelle (Konto)#5:2#1#Selektions-Leiste#5#Konto#4#2#Kostenstelle#1#9
+DATA>#Konto:Verkehrszahlen#Verkehrszahlen (Konto)#5:3#1#Selektions-Leiste#5#Konto#8#3#Verkehrszahlen#0#9
+DATA>#Konto:Kostenträger#Kostenträger (Konto)#5:4#1#Selektions-Leiste#5#Konto#16#4#Kostenträger#0#9
+DATA>#Konto:Kostenverteilung#Kostenverteilung (Konto)#5:8#1#Selektions-Leiste#5#Konto#256#8#Kostenverteilung#1#9
+DATA>#Konto:Kostenfeld#Kostenfeld (Konto)#5:16#1#Selektions-Leiste#5#Konto#65536#16#Kostenfeld#0#9
+DATA>#Buchung:Buchung#Buchung (Buchung)#6:0#1#Selektions-Leiste#6#Buchung#1#0#Buchung#1#9
+DATA>#Buchung:statistische Buchung#statistische Buchung (Buchung)#6:1#1#Selektions-Leiste#6#Buchung#2#1#statistische Buchung#1#9
+DATA>#Arbeitsgang:Arbeitsgang#Arbeitsgang (Arbeitsgang)#7:0#1#Selektions-Leiste#7#Arbeitsgang#1#0#Arbeitsgang#0#9
+DATA>#Kapazität:Abteilung#Abteilung (Kapazität)#8:1#1#Selektions-Leiste#8#Kapazität#2#1#Abteilung#1#9
+DATA>#Kapazität:Maschinengruppe#Maschinengruppe (Kapazität)#8:2#1#Selektions-Leiste#8#Kapazität#4#2#Maschinengruppe#1#9
+DATA>#Betr-Auftrag:Betriebsaufträge#Betriebsaufträge (Betr-Auftrag)#9:1#1#Selektions-Leiste#9#Betr-Auftrag#2#1#Betriebsaufträge#1#9
+DATA>#Betr-Auftrag:Rückmeldungen#Rückmeldungen (Betr-Auftrag)#9:2#1#Selektions-Leiste#9#Betr-Auftrag#4#2#Rückmeldungen#1#9
+DATA>#Journal:Journal#Journal (Journal)#10:1#1#Selektions-Leiste#10#Journal#2#1#Journal#1#9
+DATA>#Mitarbeiter:Mitarbeiter#Mitarbeiter (Mitarbeiter)#11:1#1#Selektions-Leiste#11#Mitarbeiter#2#1#Mitarbeiter#1#9
+DATA>#Mitarbeiter:Bewegungsdaten#Bewegungsdaten (Mitarbeiter)#11:3#1#Selektions-Leiste#11#Mitarbeiter#8#3#Bewegungsdaten#0#9
+DATA>#Firma:Kurztext#Kurztext (Firma)#12:3#1#Selektions-Leiste#12#Firma#8#3#Kurztext#0#9
+DATA>#Firma:Zahlungsbedingung#Zahlungsbedingung (Firma)#12:8#1#Selektions-Leiste#12#Firma#256#8#Zahlungsbedingung#1#9
+DATA>#Firma:Rechnungsstellung#Rechnungsstellung (Firma)#12:2#1#Selektions-Leiste#12#Firma#4#2#Rechnungsstellung#1#9
+DATA>#Firma:Werkstoff#Werkstoff (Firma)#12:4#1#Selektions-Leiste#12#Firma#16#4#Werkstoff#0#9
+DATA>#Firma:Materialzuschlagskopf#Materialzuschlagskopf (Firma)#12:5#1#Selektions-Leiste#12#Firma#32#5#Materialzuschlagskopf#0#9
+DATA>#Firma:Gemeinkostensätze#Gemeinkostensätze (Firma)#12:6#1#Selektions-Leiste#12#Firma#64#6#Gemeinkostensätze#0#9
+DATA>#Firma:Nummernzähler#Nummernzähler (Firma)#12:9#1#Selektions-Leiste#12#Firma#512#9#Nummernzähler#0#9
+DATA>#Firma:Ländertabelle#Ländertabelle (Firma)#12:19#1#Selektions-Leiste#12#Firma#524288#19#Ländertabelle#1#9
+DATA>#Firma:Tagesplan#Tagesplan (Firma)#12:20#1#Selektions-Leiste#12#Firma#1048576#20#Tagesplan#1#9
+DATA>#Firma:Schichtplan#Schichtplan (Firma)#12:21#1#Selektions-Leiste#12#Firma#2097152#21#Schichtplan#1#9
+DATA>#Firma:Zolltabelle#Zolltabelle (Firma)#12:22#1#Selektions-Leiste#12#Firma#4194304#22#Zolltabelle#1#9
+DATA>#Firma:Selektionsrohling#Selektionsrohling (Firma)#12:24#1#Selektions-Leiste#12#Firma#16777216#24#Selektionsrohling#1#9
+DATA>#Firma:Vartab#Vartab (Firma)#12:26#1#Selektions-Leiste#12#Firma#67108864#26#Vartab#1#9
+DATA>#Firma:Verweis-Darstellung#Verweis-Darstellung (Firma)#12:27#1#Selektions-Leiste#12#Firma#134217728#27#Verweis-Darstellung#1#9
+DATA>#Firma:Schlüsseltabelle#Schlüsseltabelle (Firma)#12:31#1#Selektions-Leiste#12#Firma#2147483648#31#Schlüsseltabelle#1#9
+DATA>#Firma:Konfiguration#Konfiguration (Firma)#12:18#1#Selektions-Leiste#12#Firma#262144#18#Konfiguration#0#9
+DATA>#Firma:Betriebsdaten#Betriebsdaten (Firma)#12:10#1#Selektions-Leiste#12#Firma#1024#10#Betriebsdaten#1#9
+DATA>#Firma:Paßwort#Paßwort (Firma)#12:11#1#Selektions-Leiste#12#Firma#2048#11#Paßwort#1#9
+DATA>#Firma:Termine#Termine (Firma)#12:12#1#Selektions-Leiste#12#Firma#4096#12#Termine#1#9
+DATA>#Firma:Lohngruppen#Lohngruppen (Firma)#12:13#1#Selektions-Leiste#12#Firma#8192#13#Lohngruppen#1#9
+DATA>#Firma:Lohnarten#Lohnarten (Firma)#12:14#1#Selektions-Leiste#12#Firma#16384#14#Lohnarten#0#9
+DATA>#Firma:Materialbewertungen#Materialbewertungen (Firma)#12:15#1#Selektions-Leiste#12#Firma#32768#15#Materialbewertungen#1#9
+DATA>#Firma:Kurstabelle#Kurstabelle (Firma)#12:16#1#Selektions-Leiste#12#Firma#65536#16#Kurstabelle#1#9
+DATA>#Firma:Kontenrahmen#Kontenrahmen (Firma)#12:7#1#Selektions-Leiste#12#Firma#128#7#Kontenrahmen#1#9
+DATA>#Firma:Steuerumstellungen#Steuerumstellungen (Firma)#12:0#1#Selektions-Leiste#12#Firma#1#0#Steuerumstellungen#1#9
+DATA>#Firma:Warengruppe#Warengruppe (Firma)#12:28#1#Selektions-Leiste#12#Firma#268435456#28#Warengruppe#0#9
+DATA>#Firma:Produktgruppe#Produktgruppe (Firma)#12:29#1#Selektions-Leiste#12#Firma#536870912#29#Produktgruppe#0#9
+DATA>#Firma:Einheitentabelle#Einheitentabelle (Firma)#12:30#1#Selektions-Leiste#12#Firma#1073741824#30#Einheitentabelle#1#9
+DATA>#Post:Nachricht#Nachricht (Post)#16:1#1#Selektions-Leiste#16#Post#2#1#Nachricht#1#9
+DATA>#Post:Benutzer#Benutzer (Post)#16:4#1#Selektions-Leiste#16#Post#16#4#Benutzer#1#9
+DATA>#Post:Verteiler#Verteiler (Post)#16:8#1#Selektions-Leiste#16#Post#256#8#Verteiler#1#9
+DATA>#Post:Stichwort#Stichwort (Post)#16:3#1#Selektions-Leiste#16#Post#8#3#Stichwort#0#9
+DATA>#BDE:Personalzeit#Personalzeit (BDE)#17:1#1#Selektions-Leiste#17#BDE#2#1#Personalzeit#0#9
+DATA>#BDE:Auftragszeit#Auftragszeit (BDE)#17:2#1#Selektions-Leiste#17#BDE#4#2#Auftragszeit#0#9
+DATA>#BDE:Kurzläufer#Kurzläufer (BDE)#17:4#1#Selektions-Leiste#17#BDE#16#4#Kurzläufer#0#9
+DATA>#Stammdaten:Projekt#Projekt (Stammdaten)#20:1#1#Selektions-Leiste#20#Stammdaten#2#1#Projekt#1#9
+DATA>#Stammdaten:Druck#Druck (Stammdaten)#20:2#1#Selektions-Leiste#20#Stammdaten#4#2#Druck#1#9
+DATA>#Stammdaten:Textbausteine#Textbausteine (Stammdaten)#20:6#1#Selektions-Leiste#20#Stammdaten#64#6#Textbausteine#1#9
+DATA>#Vorgangsart:Vorgangsart#Vorgangsart (Vorgangsart)#21:0#1#Selektions-Leiste#21#Vorgangsart#1#0#Vorgangsart#1#9
+DATA>#Auftrags-STL:Auftrags-STL#Auftrags-STL (Auftrags-STL)#22:0#1#Selektions-Leiste#22#Auftrags-STL#1#0#Auftrags-STL#1#9
+DATA>#Leistungsart:Leistungsart#Leistungsart (Leistungsart)#24:0#1#Selektions-Leiste#24#Leistungsart#1#0#Leistungsart#1#9
+DATA>#Leistungsart:Verrechnungssatz#Verrechnungssatz (Leistungsart)#24:1#1#Selektions-Leiste#24#Leistungsart#2#1#Verrechnungssatz#1#9
+DATA>#Leistung:Leistung#Leistung (Leistung)#26:0#1#Selektions-Leiste#26#Leistung#1#0#Leistung#1#9
+DATA>#Anlage:Anlage#Anlage (Anlage)#27:1#1#Selektions-Leiste#27#Anlage#2#1#Anlage#1#9
+DATA>#Anlage:Anlagekategorie#Anlagekategorie (Anlage)#27:2#1#Selektions-Leiste#27#Anlage#4#2#Anlagekategorie#1#9
+DATA>#Anlage:Verkehrszahlen#Verkehrszahlen (Anlage)#27:3#1#Selektions-Leiste#27#Anlage#8#3#Verkehrszahlen#1#9
+DATA>#Anlage:Abschreibungsart#Abschreibungsart (Anlage)#27:4#1#Selektions-Leiste#27#Anlage#16#4#Abschreibungsart#1#9
+DATA>#Anlage:Abschreibungsvorschlag#Abschreibungsvorschlag (Anlage)#27:5#1#Selektions-Leiste#27#Anlage#32#5#Abschreibungsvorschlag#1#9
+DATA>#Anlage:Anlage (kalkulatorisch)#Anlage (kalkulatorisch) (Anlage)#27:6#1#Selektions-Leiste#27#Anlage#64#6#Anlage (kalkulatorisch)#1#9
+DATA>#Anlage:Indexreihe#Indexreihe (Anlage)#27:7#1#Selektions-Leiste#27#Anlage#128#7#Indexreihe#1#9
+DATA>#Anlage:Anlagenvorgang#Anlagenvorgang (Anlage)#27:9#1#Selektions-Leiste#27#Anlage#512#9#Anlagenvorgang#0#9
+DATA>#Anlage:AnBu-Konfiguration#AnBu-Konfiguration (Anlage)#27:8#1#Selektions-Leiste#27#Anlage#256#8#AnBu-Konfiguration#0#9
+DATA>#Anlage:Abschreibungsmodell#Abschreibungsmodell (Anlage)#27:10#1#Selektions-Leiste#27#Anlage#1024#10#Abschreibungsmodell#1#9
+DATA>#Anlage:Anlagen zusammenführen#Anlagen zusammenführen (Anlage)#27:11#1#Selektions-Leiste#27#Anlage#2048#11#Anlagen zusammenführen#1#9
+DATA>#Mzuordnung:Mzuordnung#Mzuordnung (Mzuordnung)#28:0#1#Selektions-Leiste#28#Mzuordnung#1#0#Mzuordnung#0#9
+DATA>#SN-Formular:SN-Formular#SN-Formular (SN-Formular)#29:0#1#Selektions-Leiste#29#SN-Formular#1#0#SN-Formular#1#9
+DATA>#Seriennummer:Seriennummer#Seriennummer (Seriennummer)#30:0#1#Selektions-Leiste#30#Seriennummer#1#0#Seriennummer#1#9
+DATA>#Lplatz:Lagerplatzkopf#Lagerplatzkopf (Lplatz)#38:1#1#Selektions-Leiste#38#Lplatz#2#1#Lagerplatzkopf#0#9
+DATA>#Lager:Lager#Lager (Lager)#39:1#1#Selektions-Leiste#39#Lager#2#1#Lager#0#9
+DATA>#Lager:Lagergruppe#Lagergruppe (Lager)#39:2#1#Selektions-Leiste#39#Lager#4#2#Lagergruppe#0#9
+DATA>#Lager:Lagergruppeneigenschaft#Lagergruppeneigenschaft (Lager)#39:3#1#Selektions-Leiste#39#Lager#8#3#Lagergruppeneigenschaft#0#9
+DATA>#Lager:Umlagerungseigenschaft#Umlagerungseigenschaft (Lager)#39:5#1#Selektions-Leiste#39#Lager#32#5#Umlagerungseigenschaft#0#9
+DATA>#Lmenge:Lagermenge#Lagermenge (Lmenge)#40:0#1#Selektions-Leiste#40#Lmenge#1#0#Lagermenge#1#9
+DATA>#Edi:EDI#EDI (Edi)#53:0#1#Selektions-Leiste#53#Edi#1#0#EDI#1#9
+DATA>#Auswertung:Positionsnummer#Positionsnummer (Auswertung)#54:1#1#Selektions-Leiste#54#Auswertung#2#1#Positionsnummer#1#9
+DATA>#Auswertung:Sonderposition#Sonderposition (Auswertung)#54:2#1#Selektions-Leiste#54#Auswertung#4#2#Sonderposition#1#9
+DATA>#Auswertung:Bewegungsdaten#Bewegungsdaten (Auswertung)#54:3#1#Selektions-Leiste#54#Auswertung#8#3#Bewegungsdaten#0#9
+DATA>#Auswertung:Umsatzsteuervoranmeldung#Umsatzsteuervoranmeldung (Auswertung)#54:4#1#Selektions-Leiste#54#Auswertung#16#4#Umsatzsteuervoranmeldung#1#9
+DATA>#Auswertung:Umsatzsteuerzuordnung#Umsatzsteuerzuordnung (Auswertung)#54:7#1#Selektions-Leiste#54#Auswertung#128#7#Umsatzsteuerzuordnung#1#9
+DATA>#Sped-Auftrag:Speditionsauftrag#Speditionsauftrag (Sped-Auftrag)#55:1#1#Selektions-Leiste#55#Sped-Auftrag#2#1#Speditionsauftrag#0#9
+DATA>#Inventur:Inventur#Inventur (Inventur)#56:1#1#Selektions-Leiste#56#Inventur#2#1#Inventur#0#9
+DATA>#Inventur:Zähllistenkopf#Zähllistenkopf (Inventur)#56:2#1#Selektions-Leiste#56#Inventur#4#2#Zähllistenkopf#0#9
+DATA>#KBlatt:KBlatt#KBlatt (KBlatt)#57:1#1#Selektions-Leiste#57#KBlatt#2#1#KBlatt#1#9
+DATA>#KBlatt:Kostensammler#Kostensammler (KBlatt)#57:2#1#Selektions-Leiste#57#KBlatt#4#2#Kostensammler#1#9
+DATA>#KBlatt:Bewertungssammler#Bewertungssammler (KBlatt)#57:3#1#Selektions-Leiste#57#KBlatt#8#3#Bewertungssammler#1#9
+DATA>#StSchlüssel:Steuerschlüssel#Steuerschlüssel (StSchlüssel)#58:1#1#Selektions-Leiste#58#StSchlüssel#2#1#Steuerschlüssel#1#9
+DATA>#Chargen:Chargen#Chargen (Chargen)#59:0#1#Selektions-Leiste#59#Chargen#1#0#Chargen#1#9
+DATA>#KOArt:Kostenart#Kostenart (KOArt)#60:1#1#Selektions-Leiste#60#KOArt#2#1#Kostenart#0#9
+DATA>#KOArt:Rechenregel#Rechenregel (KOArt)#60:2#1#Selektions-Leiste#60#KOArt#4#2#Rechenregel#1#9
+DATA>#KOArt:Verkehrszahlen#Verkehrszahlen (KOArt)#60:3#1#Selektions-Leiste#60#KOArt#8#3#Verkehrszahlen#0#9
+DATA>#KOArt:Kostenarten-BAB-Feld#Kostenarten-BAB-Feld (KOArt)#60:4#1#Selektions-Leiste#60#KOArt#16#4#Kostenarten-BAB-Feld#0#9
+DATA>#KOArt:KoRe-Konfiguration#KoRe-Konfiguration (KOArt)#60:5#1#Selektions-Leiste#60#KOArt#32#5#KoRe-Konfiguration#0#9
+DATA>#KOArt:Einzelkostenbasis#Einzelkostenbasis (KOArt)#60:6#1#Selektions-Leiste#60#KOArt#64#6#Einzelkostenbasis#1#9
+DATA>#KOArt:Rechenregelhülse#Rechenregelhülse (KOArt)#60:7#1#Selektions-Leiste#60#KOArt#128#7#Rechenregelhülse#1#9
+DATA>#BGröße:Bezugsgröße#Bezugsgröße (BGröße)#61:1#1#Selektions-Leiste#61#BGröße#2#1#Bezugsgröße#0#9
+DATA>#BGröße:Verkehrszahlen#Verkehrszahlen (BGröße)#61:3#1#Selektions-Leiste#61#BGröße#8#3#Verkehrszahlen#0#9
+DATA>#KOEinheit:Kore-Einheit#Kore-Einheit (KOEinheit)#62:1#1#Selektions-Leiste#62#KOEinheit#2#1#Kore-Einheit#0#9
+DATA>#Bab:BAB-Formular#BAB-Formular (Bab)#63:1#1#Selektions-Leiste#63#Bab#2#1#BAB-Formular#1#9
+DATA>#Bab:Verkehrszahlen#Verkehrszahlen (Bab)#63:3#1#Selektions-Leiste#63#Bab#8#3#Verkehrszahlen#0#9
+DATA>#DynWarteschlange:DynWarteschlange#DynWarteschlange (DynWarteschlange)#64:1#1#Selektions-Leiste#64#DynWarteschlange#2#1#DynWarteschlange#0#9
+DATA>#DynWarteschlange:Bearbeitungsauftrag#Bearbeitungsauftrag (DynWarteschlange)#64:2#1#Selektions-Leiste#64#DynWarteschlange#4#2#Bearbeitungsauftrag#0#9
+DATA>#Infosystem:Infosystem#Infosystem (Infosystem)#65:1#1#Selektions-Leiste#65#Infosystem#2#1#Infosystem#1#9
+DATA>#ZVStamm:Mahnbedingung#Mahnbedingung (ZVStamm)#66:2#1#Selektions-Leiste#66#ZVStamm#4#2#Mahnbedingung#1#9
+DATA>#ZVStamm:Zahlungsbedingungsschlüssel#Zahlungsbedingungsschlüssel (ZVStamm)#66:4#1#Selektions-Leiste#66#ZVStamm#16#4#Zahlungsbedingungsschlüssel#1#9
+DATA>#ZVStamm:Zuordnungsmerkmale#Zuordnungsmerkmale (ZVStamm)#66:5#1#Selektions-Leiste#66#ZVStamm#32#5#Zuordnungsmerkmale#0#9
+DATA>#ZVStamm:Zahlungsverteiler#Zahlungsverteiler (ZVStamm)#66:6#1#Selektions-Leiste#66#ZVStamm#64#6#Zahlungsverteiler#1#9
+DATA>#ZVStamm:SEPA-Lastschriftmandat - Verkauf#SEPA-Lastschriftmandat - Verkauf (ZVStamm)#66:3#1#Selektions-Leiste#66#ZVStamm#8#3#SEPA-Lastschriftmandat - Verkauf#0#9
+DATA>#ZVStamm:SEPA-Lastschriftmandat - Einkauf#SEPA-Lastschriftmandat - Einkauf (ZVStamm)#66:7#1#Selektions-Leiste#66#ZVStamm#128#7#SEPA-Lastschriftmandat - Einkauf#0#9
+DATA>#ZVStamm:ZVkonfig#ZVkonfig (ZVStamm)#66:1#1#Selektions-Leiste#66#ZVStamm#2#1#ZVkonfig#0#9
+DATA>#Umlage:Umlageobjekt#Umlageobjekt (Umlage)#67:1#1#Selektions-Leiste#67#Umlage#2#1#Umlageobjekt#0#9
+DATA>#Umlage:Kostenstellenumlageelement#Kostenstellenumlageelement (Umlage)#67:2#1#Selektions-Leiste#67#Umlage#4#2#Kostenstellenumlageelement#0#9
+DATA>#Umlage:Verkehrszahlen#Verkehrszahlen (Umlage)#67:3#1#Selektions-Leiste#67#Umlage#8#3#Verkehrszahlen#0#9
+DATA>#Umlage:ILV#ILV (Umlage)#67:5#1#Selektions-Leiste#67#Umlage#32#5#ILV#0#9
+DATA>#Umlage:Kostenträgermonatsumlage#Kostenträgermonatsumlage (Umlage)#67:6#1#Selektions-Leiste#67#Umlage#64#6#Kostenträgermonatsumlage#1#9
+DATA>#Umlage:Kostenträgerjahresumlage#Kostenträgerjahresumlage (Umlage)#67:7#1#Selektions-Leiste#67#Umlage#128#7#Kostenträgerjahresumlage#1#9
+DATA>#KOBereich:Kontenbereich#Kontenbereich (KOBereich)#68:1#1#Selektions-Leiste#68#KOBereich#2#1#Kontenbereich#1#9
+DATA>#KOBereich:Personenkontenbereich#Personenkontenbereich (KOBereich)#68:3#1#Selektions-Leiste#68#KOBereich#8#3#Personenkontenbereich#1#9
+DATA>#KOBereich:Kontenbereich-Formular#Kontenbereich-Formular (KOBereich)#68:2#1#Selektions-Leiste#68#KOBereich#4#2#Kontenbereich-Formular#1#9
+DATA>#KOBereich:KB-Formular Freie Perioden#KB-Formular Freie Perioden (KOBereich)#68:8#1#Selektions-Leiste#68#KOBereich#256#8#KB-Formular Freie Perioden#1#9
+DATA>#KOBereich:Corridor Controlling - GuV#Corridor Controlling - GuV (KOBereich)#68:4#1#Selektions-Leiste#68#KOBereich#16#4#Corridor Controlling - GuV#1#9
+DATA>#KOBereich:Corridor Controlling - Bilanz#Corridor Controlling - Bilanz (KOBereich)#68:5#1#Selektions-Leiste#68#KOBereich#32#5#Corridor Controlling - Bilanz#1#9
+DATA>#KOBereich:Einflußgrößen#Einflußgrößen (KOBereich)#68:6#1#Selektions-Leiste#68#KOBereich#64#6#Einflußgrößen#1#9
+DATA>#KOBereich:Kostenartenbereich#Kostenartenbereich (KOBereich)#68:9#1#Selektions-Leiste#68#KOBereich#512#9#Kostenartenbereich#1#9
+DATA>#KOBereich:Kostenobjektbereich#Kostenobjektbereich (KOBereich)#68:10#1#Selektions-Leiste#68#KOBereich#1024#10#Kostenobjektbereich#1#9
+DATA>#KOBereich:V-Kontenbereich#V-Kontenbereich (KOBereich)#68:17#1#Selektions-Leiste#68#KOBereich#131072#17#V-Kontenbereich#1#9
+DATA>#KOBereich:V-Personenkontenbereich#V-Personenkontenbereich (KOBereich)#68:19#1#Selektions-Leiste#68#KOBereich#524288#19#V-Personenkontenbereich#1#9
+DATA>#KOBereich:V-Kostenartenbereich#V-Kostenartenbereich (KOBereich)#68:25#1#Selektions-Leiste#68#KOBereich#33554432#25#V-Kostenartenbereich#1#9
+DATA>#FKOauswert:Fibu-Kontenauswertungen#Fibu-Kontenauswertungen (FKOauswert)#69:1#1#Selektions-Leiste#69#FKOauswert#2#1#Fibu-Kontenauswertungen#1#9
+DATA>#FKOauswert:Fibu-Kontenauswertungen Freie Perioden#Fibu-Kontenauswertungen Freie Perioden (FKOauswert)#69:2#1#Selektions-Leiste#69#FKOauswert#4#2#Fibu-Kontenauswertungen Freie Perioden#1#9
+DATA>#FKOauswert:Teilplandaten#Teilplandaten (FKOauswert)#69:3#1#Selektions-Leiste#69#FKOauswert#8#3#Teilplandaten#1#9
+DATA>#Dokument:Internes Dokument#Internes Dokument (Dokument)#70:1#1#Selektions-Leiste#70#Dokument#2#1#Internes Dokument#1#9
+DATA>#Dokument:Externes Dokument#Externes Dokument (Dokument)#70:2#1#Selektions-Leiste#70#Dokument#4#2#Externes Dokument#1#9
+DATA>#Dokument:Rückläuferdokument#Rückläuferdokument (Dokument)#70:3#1#Selektions-Leiste#70#Dokument#8#3#Rückläuferdokument#1#9
+DATA>#Dokument:Dokumentenliste#Dokumentenliste (Dokument)#70:4#1#Selektions-Leiste#70#Dokument#16#4#Dokumentenliste#1#9
+DATA>#REWEStamm:Freier Geschäftsjahres-Verlauf#Freier Geschäftsjahres-Verlauf (REWEStamm)#81:1#1#Selektions-Leiste#81#REWEStamm#2#1#Freier Geschäftsjahres-Verlauf#1#9
+DATA>#REWEStamm:Freies Geschäftsjahr#Freies Geschäftsjahr (REWEStamm)#81:2#1#Selektions-Leiste#81#REWEStamm#4#2#Freies Geschäftsjahr#1#9
+DATA>#REWEStamm:Geschäftsvorgangsart#Geschäftsvorgangsart (REWEStamm)#81:3#1#Selektions-Leiste#81#REWEStamm#8#3#Geschäftsvorgangsart#0#9
+DATA>#REWEStamm:Buchungskreiskonfiguration#Buchungskreiskonfiguration (REWEStamm)#81:4#1#Selektions-Leiste#81#REWEStamm#16#4#Buchungskreiskonfiguration#1#9
+DATA>#REWEStamm:DATEV-Konfiguration#DATEV-Konfiguration (REWEStamm)#81:6#1#Selektions-Leiste#81#REWEStamm#64#6#DATEV-Konfiguration#0#9
+DATA>#Preise:Preise#Preise (Preise)#82:1#1#Selektions-Leiste#82#Preise#2#1#Preise#1#9
+DATA>#Preise:Materialzuschlag#Materialzuschlag (Preise)#82:3#1#Selektions-Leiste#82#Preise#8#3#Materialzuschlag#0#9
+DATA>#Preise:Gutschein#Gutschein (Preise)#82:4#1#Selektions-Leiste#82#Preise#16#4#Gutschein#0#9
+DATA>#Provision:Provision#Provision (Provision)#83:1#1#Selektions-Leiste#83#Provision#2#1#Provision#0#9
+DATA>#ArtBereich:Artikelbereich#Artikelbereich (ArtBereich)#84:1#1#Selektions-Leiste#84#ArtBereich#2#1#Artikelbereich#1#9
+DATA>#Erlaubnis:Erlaubnis#Erlaubnis (Erlaubnis)#85:1#1#Selektions-Leiste#85#Erlaubnis#2#1#Erlaubnis#1#9
+DATA>#Erlaubnis:Arbeitsbereich#Arbeitsbereich (Erlaubnis)#85:2#1#Selektions-Leiste#85#Erlaubnis#4#2#Arbeitsbereich#1#9
+DATA>#Vorgang:Projektkopf#Projektkopf (Vorgang)#86:1#1#Selektions-Leiste#86#Vorgang#2#1#Projektkopf#0#9
+DATA>#Vorgang:Aufgabenkopf#Aufgabenkopf (Vorgang)#86:2#1#Selektions-Leiste#86#Vorgang#4#2#Aufgabenkopf#0#9
+DATA>#Vorgang:Protokoll#Protokoll (Vorgang)#86:4#1#Selektions-Leiste#86#Vorgang#16#4#Protokoll#0#9
+DATA>#Vorgang:Projekt#Projekt (Vorgang)#86:5#1#Selektions-Leiste#86#Vorgang#32#5#Projekt#1#9
+DATA>#Vorgang:Aufgabe#Aufgabe (Vorgang)#86:6#1#Selektions-Leiste#86#Vorgang#64#6#Aufgabe#1#9
+DATA>#Datenexport:Datenmodell#Datenmodell (Datenexport)#87:1#1#Selektions-Leiste#87#Datenexport#2#1#Datenmodell#1#9
+DATA>#Datenexport:Datensicht#Datensicht (Datenexport)#87:2#1#Selektions-Leiste#87#Datenexport#4#2#Datensicht#1#9
+DATA>#Datenexport:Datenfelder#Datenfelder (Datenexport)#87:3#1#Selektions-Leiste#87#Datenexport#8#3#Datenfelder#1#9
+DATA>#Datenexport:Export#Export (Datenexport)#87:4#1#Selektions-Leiste#87#Datenexport#16#4#Export#0#9
+DATA>#Datenexport:Aufrufparameter#Aufrufparameter (Datenexport)#87:9#1#Selektions-Leiste#87#Datenexport#512#9#Aufrufparameter#1#9
+DATA>#Datenexport:Paket#Paket (Datenexport)#87:10#1#Selektions-Leiste#87#Datenexport#1024#10#Paket#1#9
+DATA>#Druckparameter:Einstellungen#Einstellungen (Druckparameter)#88:1#1#Selektions-Leiste#88#Druckparameter#2#1#Einstellungen#0#9
+DATA>#Druckparameter:Sammellayout#Sammellayout (Druckparameter)#88:2#1#Selektions-Leiste#88#Druckparameter#4#2#Sammellayout#1#9
+DATA>#Druckparameter:Layout#Layout (Druckparameter)#88:3#1#Selektions-Leiste#88#Druckparameter#8#3#Layout#0#9
+DATA>#Druckparameter:Papierformat#Papierformat (Druckparameter)#88:4#1#Selektions-Leiste#88#Druckparameter#16#4#Papierformat#0#9
+DATA>#Druckparameter:Spooler#Spooler (Druckparameter)#88:5#1#Selektions-Leiste#88#Druckparameter#32#5#Spooler#1#9
+DATA>#Druckparameter:Ausgabekanal#Ausgabekanal (Druckparameter)#88:6#1#Selektions-Leiste#88#Druckparameter#64#6#Ausgabekanal#0#9
+DATA>#Druckparameter:Kommunikations-Parameter#Kommunikations-Parameter (Druckparameter)#88:7#1#Selektions-Leiste#88#Druckparameter#128#7#Kommunikations-Parameter#1#9
+DATA>#Druckparameter:Parameterlayout#Parameterlayout (Druckparameter)#88:8#1#Selektions-Leiste#88#Druckparameter#256#8#Parameterlayout#0#9
+DATA>#Konsolidierung:Konsolidierungskreis#Konsolidierungskreis (Konsolidierung)#89:4#1#Selektions-Leiste#89#Konsolidierung#16#4#Konsolidierungskreis#1#9
+DATA>#Konsolidierung:Konzernunternehmen#Konzernunternehmen (Konsolidierung)#89:5#1#Selektions-Leiste#89#Konsolidierung#32#5#Konzernunternehmen#0#9
+DATA>#Konsolidierung:Gliederungsabbildung#Gliederungsabbildung (Konsolidierung)#89:6#1#Selektions-Leiste#89#Konsolidierung#64#6#Gliederungsabbildung#1#9
+DATA>#Konsolidierung:Konzerndatenhistorie#Konzerndatenhistorie (Konsolidierung)#89:7#1#Selektions-Leiste#89#Konsolidierung#128#7#Konzerndatenhistorie#1#9
+DATA>#Konsolidierung:Konzerndatenaustausch#Konzerndatenaustausch (Konsolidierung)#89:1#1#Selektions-Leiste#89#Konsolidierung#2#1#Konzerndatenaustausch#1#9
+DATA>#Konsolidierung:Konsolidierungskonfiguration#Konsolidierungskonfiguration (Konsolidierung)#89:2#1#Selektions-Leiste#89#Konsolidierung#4#2#Konsolidierungskonfiguration#1#9
+DATA>#Bankimport:Bankimportdatei#Bankimportdatei (Bankimport)#90:5#1#Selektions-Leiste#90#Bankimport#32#5#Bankimportdatei#1#9
+DATA>#Bankimport:Bankkontoauszug#Bankkontoauszug (Bankimport)#90:1#1#Selektions-Leiste#90#Bankimport#2#1#Bankkontoauszug#1#9
+DATA>#Bankimport:Zahlungsträger#Zahlungsträger (Bankimport)#90:6#1#Selektions-Leiste#90#Bankimport#64#6#Zahlungsträger#1#9
+DATA>#Bankimport:Manuelle Zuordnung#Manuelle Zuordnung (Bankimport)#90:7#1#Selektions-Leiste#90#Bankimport#128#7#Manuelle Zuordnung#1#9
+DATA>#Infrastruktur:Drucker#Drucker (Infrastruktur)#91:1#1#Selektions-Leiste#91#Infrastruktur#2#1#Drucker#0#9
+DATA>#Infrastruktur:Druckverteiler#Druckverteiler (Infrastruktur)#91:2#1#Selektions-Leiste#91#Infrastruktur#4#2#Druckverteiler#1#9
+DATA>#Infrastruktur:Standort#Standort (Infrastruktur)#91:3#1#Selektions-Leiste#91#Infrastruktur#8#3#Standort#0#9
+DATA>#Infrastruktur:Rechner#Rechner (Infrastruktur)#91:4#1#Selektions-Leiste#91#Infrastruktur#16#4#Rechner#0#9
+DATA>#Infrastruktur:Bildschirm#Bildschirm (Infrastruktur)#91:5#1#Selektions-Leiste#91#Infrastruktur#32#5#Bildschirm#0#9
+DATA>#Infrastruktur:Mandant#Mandant (Infrastruktur)#91:6#1#Selektions-Leiste#91#Infrastruktur#64#6#Mandant#0#9
+DATA>#Infrastruktur:Dateityp#Dateityp (Infrastruktur)#91:7#1#Selektions-Leiste#91#Infrastruktur#128#7#Dateityp#0#9
+DATA>#Infrastruktur:JFOP-Server#JFOP-Server (Infrastruktur)#91:8#1#Selektions-Leiste#91#Infrastruktur#256#8#JFOP-Server#0#9
+DATA>#EDI-Konfiguration:Abbildungsmodell#Abbildungsmodell (EDI-Konfiguration)#92:1#1#Selektions-Leiste#92#EDI-Konfiguration#2#1#Abbildungsmodell#1#9
+DATA>#EDI-Konfiguration:Objektzuordnung#Objektzuordnung (EDI-Konfiguration)#92:2#1#Selektions-Leiste#92#EDI-Konfiguration#4#2#Objektzuordnung#1#9
+DATA>#EDI-Konfiguration:Message2Event#Message2Event (EDI-Konfiguration)#92:3#1#Selektions-Leiste#92#EDI-Konfiguration#8#3#Message2Event#1#9
+DATA>#EDI-Konfiguration:Eventtype#Eventtype (EDI-Konfiguration)#92:4#1#Selektions-Leiste#92#EDI-Konfiguration#16#4#Eventtype#1#9
+DATA>#EDI-Konfiguration:Feldzuordnung#Feldzuordnung (EDI-Konfiguration)#92:5#1#Selektions-Leiste#92#EDI-Konfiguration#32#5#Feldzuordnung#1#9
+DATA>#EDI-Konfiguration:Event2Setup#Event2Setup (EDI-Konfiguration)#92:6#1#Selektions-Leiste#92#EDI-Konfiguration#64#6#Event2Setup#1#9
+DATA>#EDI-Konfiguration:Reihenfolge#Reihenfolge (EDI-Konfiguration)#92:7#1#Selektions-Leiste#92#EDI-Konfiguration#128#7#Reihenfolge#0#9
+DATA>#EDI-Konfiguration:Handling#Handling (EDI-Konfiguration)#92:8#1#Selektions-Leiste#92#EDI-Konfiguration#256#8#Handling#0#9
+DATA>#EDI-Konfiguration:Parameter#Parameter (EDI-Konfiguration)#92:9#1#Selektions-Leiste#92#EDI-Konfiguration#512#9#Parameter#0#9
+DATA>#WEB-Anwender:WEB-Nutzer#WEB-Nutzer (WEB-Anwender)#93:1#1#Selektions-Leiste#93#WEB-Anwender#2#1#WEB-Nutzer#1#9
+DATA>#WEB-Anwender:WEB-Rolle#WEB-Rolle (WEB-Anwender)#93:2#1#Selektions-Leiste#93#WEB-Anwender#4#2#WEB-Rolle#1#9
+DATA>#WEB-Anwender:WEB-Profil#WEB-Profil (WEB-Anwender)#93:3#1#Selektions-Leiste#93#WEB-Anwender#8#3#WEB-Profil#1#9
+DATA>#WEB-Anwender:WEB-Rollenliste#WEB-Rollenliste (WEB-Anwender)#93:4#1#Selektions-Leiste#93#WEB-Anwender#16#4#WEB-Rollenliste#1#9
+DATA>#Währung:Währung#Währung (Währung)#94:1#1#Selektions-Leiste#94#Währung#2#1#Währung#0#9
+DATA>#Währungskurs:Währungskurs#Währungskurs (Währungskurs)#95:1#1#Selektions-Leiste#95#Währungskurs#2#1#Währungskurs#0#9
+DATA>#Bankdaten:Bank#Bank (Bankdaten)#96:1#1#Selektions-Leiste#96#Bankdaten#2#1#Bank#0#9
+DATA>#Bankdaten:Bankverbindung#Bankverbindung (Bankdaten)#96:2#1#Selektions-Leiste#96#Bankdaten#4#2#Bankverbindung#1#9
+DATA>#Regionen:Region/Land/Wirtschaftsraum#Region/Land/Wirtschaftsraum (Regionen)#97:1#1#Selektions-Leiste#97#Regionen#2#1#Region/Land/Wirtschaftsraum#0#9
+DATA>#Regionen:Adressformate#Adressformate (Regionen)#97:2#1#Selektions-Leiste#97#Regionen#4#2#Adressformate#1#9
+DATA>#Kassenbuch:Kassenbuch#Kassenbuch (Kassenbuch)#98:1#1#Selektions-Leiste#98#Kassenbuch#2#1#Kassenbuch#1#9
+DATA>#Schemata:Schema#Schema (Schemata)#99:1#1#Selektions-Leiste#99#Schemata#2#1#Schema#0#9
+DATA>#Schemata:Struktur#Struktur (Schemata)#99:2#1#Selektions-Leiste#99#Schemata#4#2#Struktur#1#9
+DATA>#Schemata:Feld#Feld (Schemata)#99:3#1#Selektions-Leiste#99#Schemata#8#3#Feld#0#9
+DATA>#Schemata:Schlüssel#Schlüssel (Schemata)#99:4#1#Selektions-Leiste#99#Schemata#16#4#Schlüssel#1#9
+DATA>#Schemata:Feldbeziehung#Feldbeziehung (Schemata)#99:5#1#Selektions-Leiste#99#Schemata#32#5#Feldbeziehung#1#9
+DATA>#OffenePosten:OP-Verlauf#OP-Verlauf (OffenePosten)#100:21#1#Selektions-Leiste#100#OffenePosten#2097152#21#OP-Verlauf#1#9
+DATA>#OffenePosten:Offener Posten#Offener Posten (OffenePosten)#100:1#1#Selektions-Leiste#100#OffenePosten#2#1#Offener Posten#0#9
+DATA>#OffenePosten:OP-Bewegung#OP-Bewegung (OffenePosten)#100:2#1#Selektions-Leiste#100#OffenePosten#4#2#OP-Bewegung#0#9
+DATA>#Zahlungsvorschläge:Zahlungsvorschlag - Eingänge#Zahlungsvorschlag - Eingänge (Zahlungsvorschläge)#101:1#1#Selektions-Leiste#101#Zahlungsvorschläge#2#1#Zahlungsvorschlag - Eingänge#1#9
+DATA>#Zahlungsvorschläge:Zahlungsvorschlag - Ausgänge#Zahlungsvorschlag - Ausgänge (Zahlungsvorschläge)#101:2#1#Selektions-Leiste#101#Zahlungsvorschläge#4#2#Zahlungsvorschlag - Ausgänge#1#9
+DATA>#Zahlungsträger:Überweisung#Überweisung (Zahlungsträger)#103:1#1#Selektions-Leiste#103#Zahlungsträger#2#1#Überweisung#1#9
+DATA>#Zahlungsträger:Lastschrift#Lastschrift (Zahlungsträger)#103:6#1#Selektions-Leiste#103#Zahlungsträger#64#6#Lastschrift#1#9
+DATA>#Zahlungsträger:Bankdatei#Bankdatei (Zahlungsträger)#103:2#1#Selektions-Leiste#103#Zahlungsträger#4#2#Bankdatei#1#9
+DATA>#Zahlungsträger:Eingangsscheck#Eingangsscheck (Zahlungsträger)#103:3#1#Selektions-Leiste#103#Zahlungsträger#8#3#Eingangsscheck#1#9
+DATA>#Zahlungsträger:Scheckeinreichung#Scheckeinreichung (Zahlungsträger)#103:10#1#Selektions-Leiste#103#Zahlungsträger#1024#10#Scheckeinreichung#1#9
+DATA>#Zahlungsträger:Ausgangsscheck#Ausgangsscheck (Zahlungsträger)#103:4#1#Selektions-Leiste#103#Zahlungsträger#16#4#Ausgangsscheck#1#9
+DATA>#Zahlungsträger:Scheckbuch#Scheckbuch (Zahlungsträger)#103:5#1#Selektions-Leiste#103#Zahlungsträger#32#5#Scheckbuch#1#9
+DATA>#Zahlungsträger:Kundenwechsel#Kundenwechsel (Zahlungsträger)#103:7#1#Selektions-Leiste#103#Zahlungsträger#128#7#Kundenwechsel#1#9
+DATA>#Zahlungsträger:Wechselbuch#Wechselbuch (Zahlungsträger)#103:9#1#Selektions-Leiste#103#Zahlungsträger#512#9#Wechselbuch#1#9
+DATA>#Zahlungsträger:Lieferantenwechsel#Lieferantenwechsel (Zahlungsträger)#103:8#1#Selektions-Leiste#103#Zahlungsträger#256#8#Lieferantenwechsel#1#9
+DATA>#Zahlungsträger:Wechseleinreichung#Wechseleinreichung (Zahlungsträger)#103:11#1#Selektions-Leiste#103#Zahlungsträger#2048#11#Wechseleinreichung#1#9
+DATA>#Zahlungsträger:Zahlungsträger#Zahlungsträger (Zahlungsträger)#103:12#1#Selektions-Leiste#103#Zahlungsträger#4096#12#Zahlungsträger#1#9
+DATA>#Zahlungsträger:Zahlungsträgersammler#Zahlungsträgersammler (Zahlungsträger)#103:13#1#Selektions-Leiste#103#Zahlungsträger#8192#13#Zahlungsträgersammler#1#9
+DATA>#Mahnungen:Mahnvorgang#Mahnvorgang (Mahnungen)#104:2#1#Selektions-Leiste#104#Mahnungen#4#2#Mahnvorgang#1#9
+DATA>#Mahnungen:Mahnung#Mahnung (Mahnungen)#104:1#1#Selektions-Leiste#104#Mahnungen#2#1#Mahnung#1#9
+DATA>#Packanweisung:Packanweisung#Packanweisung (Packanweisung)#106:1#1#Selektions-Leiste#106#Packanweisung#2#1#Packanweisung#1#9
+DATA>#Aufzählung:Aufzählung#Aufzählung (Aufzählung)#107:1#1#Selektions-Leiste#107#Aufzählung#2#1#Aufzählung#1#9
+DATA>#WEB-Konfiguration:Anwendung#Anwendung (WEB-Konfiguration)#108:1#1#Selektions-Leiste#108#WEB-Konfiguration#2#1#Anwendung#1#9
+DATA>#WEB-Konfiguration:Instanz#Instanz (WEB-Konfiguration)#108:2#1#Selektions-Leiste#108#WEB-Konfiguration#4#2#Instanz#1#9
+DATA>#Wertemengen:Wertemengenbezeichner#Wertemengenbezeichner (Wertemengen)#109:1#1#Selektions-Leiste#109#Wertemengen#2#1#Wertemengenbezeichner#0#9
+DATA>#Wertemengen:Bezeichner#Bezeichner (Wertemengen)#109:2#1#Selektions-Leiste#109#Wertemengen#4#2#Bezeichner#0#9
+DATA>#Wertemengen:Wert#Wert (Wertemengen)#109:3#1#Selektions-Leiste#109#Wertemengen#8#3#Wert#0#9
+DATA>#Dauerbuchung:Finanzbuchungsvorlage#Finanzbuchungsvorlage (Dauerbuchung)#110:0#1#Selektions-Leiste#110#Dauerbuchung#1#0#Finanzbuchungsvorlage#1#9
+DATA>#Dauerbuchung:Statistische Buchungsvorlage#Statistische Buchungsvorlage (Dauerbuchung)#110:1#1#Selektions-Leiste#110#Dauerbuchung#2#1#Statistische Buchungsvorlage#1#9
+DATA>#Dauerbuchung:Kalenderturnus#Kalenderturnus (Dauerbuchung)#110:2#1#Selektions-Leiste#110#Dauerbuchung#4#2#Kalenderturnus#1#9
+DATA>#Dauerbuchung:Dauerbuchungsregel#Dauerbuchungsregel (Dauerbuchung)#110:3#1#Selektions-Leiste#110#Dauerbuchung#8#3#Dauerbuchungsregel#1#9
+DATA>#Dauerbuchung:Dauerbuchungsvorschlag#Dauerbuchungsvorschlag (Dauerbuchung)#110:4#1#Selektions-Leiste#110#Dauerbuchung#16#4#Dauerbuchungsvorschlag#1#9
+DATA>#Sperrlisten:Listenbeschreibung#Listenbeschreibung (Sperrlisten)#111:1#1#Selektions-Leiste#111#Sperrlisten#2#1#Listenbeschreibung#0#9
+DATA>#Sperrlisten:Liste#Liste (Sperrlisten)#111:2#1#Selektions-Leiste#111#Sperrlisten#4#2#Liste#0#9
+DATA>#Sperrlisten:Listeneintrag#Listeneintrag (Sperrlisten)#111:3#1#Selektions-Leiste#111#Sperrlisten#8#3#Listeneintrag#1#9
+DATA>#Sperrprüfungen:Protokoll#Protokoll (Sperrprüfungen)#112:1#1#Selektions-Leiste#112#Sperrprüfungen#2#1#Protokoll#0#9
+DATA>#Adressen:Adressen#Adressen (Adressen)#113:1#1#Selektions-Leiste#113#Adressen#2#1#Adressen#0#9
+DATA>#Qualifikationen:Qualifikationen#Qualifikationen (Qualifikationen)#114:1#1#Selektions-Leiste#114#Qualifikationen#2#1#Qualifikationen#0#9
+DATA>#Qualifikationen:Qualifikationsgrad#Qualifikationsgrad (Qualifikationen)#114:2#1#Selektions-Leiste#114#Qualifikationen#4#2#Qualifikationsgrad#1#9
+DATA>#Serviceeinsatz:Einsatzart#Einsatzart (Serviceeinsatz)#115:1#1#Selektions-Leiste#115#Serviceeinsatz#2#1#Einsatzart#0#9
+DATA>#Serviceeinsatz:Einsatzmittel#Einsatzmittel (Serviceeinsatz)#115:2#1#Selektions-Leiste#115#Serviceeinsatz#4#2#Einsatzmittel#1#9
+DATA>#Serviceprodukt:Serviceprodukt#Serviceprodukt (Serviceprodukt)#116:1#1#Selektions-Leiste#116#Serviceprodukt#2#1#Serviceprodukt#0#9
+DATA>#Serviceprodukt:Wartung/Dienstleistung#Wartung/Dienstleistung (Serviceprodukt)#116:2#1#Selektions-Leiste#116#Serviceprodukt#4#2#Wartung/Dienstleistung#0#9
+DATA>#Serviceprodukt:Serviceproduktstückliste#Serviceproduktstückliste (Serviceprodukt)#116:3#1#Selektions-Leiste#116#Serviceprodukt#8#3#Serviceproduktstückliste#1#9
+DATA>#Serviceprodukt:Dienstleistungsstückliste#Dienstleistungsstückliste (Serviceprodukt)#116:5#1#Selektions-Leiste#116#Serviceprodukt#32#5#Dienstleistungsstückliste#1#9
+DATA>#Servicemitarbeiter:Techniker#Techniker (Servicemitarbeiter)#117:1#1#Selektions-Leiste#117#Servicemitarbeiter#2#1#Techniker#1#9
+DATA>#Servicemitarbeiter:Team#Team (Servicemitarbeiter)#117:2#1#Selektions-Leiste#117#Servicemitarbeiter#4#2#Team#1#9
+DATA>#Servicereservierung:Servicereservierung#Servicereservierung (Servicereservierung)#118:1#1#Selektions-Leiste#118#Servicereservierung#2#1#Servicereservierung#0#9
+DATA>#Versandplanung:Versandplanung#Versandplanung (Versandplanung)#119:1#1#Selektions-Leiste#119#Versandplanung#2#1#Versandplanung#1#9
+DATA>#Versandplanung:Packstücknummern#Packstücknummern (Versandplanung)#119:11#1#Selektions-Leiste#119#Versandplanung#2048#11#Packstücknummern#1#9
+DATA>#Warteschlange:Warteschlange#Warteschlange (Warteschlange)#120:1#1#Selektions-Leiste#120#Warteschlange#2#1#Warteschlange#0#9
+DATA>#Wertereihe:Wertereihe#Wertereihe (Wertereihe)#121:1#1#Selektions-Leiste#121#Wertereihe#2#1#Wertereihe#1#9
+DATA>#Wertereihe:Rollierender Plan#Rollierender Plan (Wertereihe)#121:2#1#Selektions-Leiste#121#Wertereihe#4#2#Rollierender Plan#1#9
+DATA>#Serviceanfrage:Serviceanfrage#Serviceanfrage (Serviceanfrage)#122:1#1#Selektions-Leiste#122#Serviceanfrage#2#1#Serviceanfrage#1#9
+DATA>#Serviceanfrage:Serviceanfrage Ursache#Serviceanfrage Ursache (Serviceanfrage)#122:2#1#Selektions-Leiste#122#Serviceanfrage#4#2#Serviceanfrage Ursache#0#9
+DATA>#Serviceanfrage:Serviceanfrage Priorität#Serviceanfrage Priorität (Serviceanfrage)#122:3#1#Selektions-Leiste#122#Serviceanfrage#8#3#Serviceanfrage Priorität#0#9
+DATA>#Serviceanfrage:Serviceanfrage Dringlichkeit#Serviceanfrage Dringlichkeit (Serviceanfrage)#122:4#1#Selektions-Leiste#122#Serviceanfrage#16#4#Serviceanfrage Dringlichkeit#0#9
+DATA>#Serviceanfrage:Serviceanfrage Verteiler#Serviceanfrage Verteiler (Serviceanfrage)#122:5#1#Selektions-Leiste#122#Serviceanfrage#32#5#Serviceanfrage Verteiler#1#9
+DATA>#Kostenbuchungsvorsch:Kostenbuchungsvorschlag#Kostenbuchungsvorschlag (Kostenbuchungsvorschlag)#123:1#1#Selektions-Leiste#123#Kostenbuchungsvorschlag#2#1#Kostenbuchungsvorschlag#1#9
+DATA>#Geschäftsjahresverwa:Abschlüsse#Abschlüsse (Geschäftsjahresverwaltung)#124:3#1#Selektions-Leiste#124#Geschäftsjahresverwaltung#8#3#Abschlüsse#1#9
+DATA>#Geschäftsjahresverwa:Abschlussprotokoll#Abschlussprotokoll (Geschäftsjahresverwaltung)#124:2#1#Selektions-Leiste#124#Geschäftsjahresverwaltung#4#2#Abschlussprotokoll#1#9
+DATA>#Geschäftsjahresverwa:Geschäftsjahresverwaltung#Geschäftsjahresverwaltung (Geschäftsjahresverwaltung)#124:1#1#Selektions-Leiste#124#Geschäftsjahresverwaltung#2#1#Geschäftsjahresverwaltung#1#9
+DATA>#Planungszeitraum:Zeitraster#Zeitraster (Planungszeitraum)#125:1#1#Selektions-Leiste#125#Planungszeitraum#2#1#Zeitraster#1#9
+DATA>#Planungszeitraum:Planungszeitraum#Planungszeitraum (Planungszeitraum)#125:2#1#Selektions-Leiste#125#Planungszeitraum#4#2#Planungszeitraum#1#9
+DATA>#Absatzplanung:Planungseinheit#Planungseinheit (Absatzplanung)#126:1#1#Selektions-Leiste#126#Absatzplanung#2#1#Planungseinheit#1#9
+DATA>#Absatzplanung:Planung#Planung (Absatzplanung)#126:2#1#Selektions-Leiste#126#Absatzplanung#4#2#Planung#0#9
+DATA>#Absatzplanung:Prognoseparameter#Prognoseparameter (Absatzplanung)#126:3#1#Selektions-Leiste#126#Absatzplanung#8#3#Prognoseparameter#0#9
+DATA>#Absatzplanung:Bedarfsplanungseinheit#Bedarfsplanungseinheit (Absatzplanung)#126:4#1#Selektions-Leiste#126#Absatzplanung#16#4#Bedarfsplanungseinheit#0#9
+DATA>#Absatzplanung:Rollierende Planung#Rollierende Planung (Absatzplanung)#126:5#1#Selektions-Leiste#126#Absatzplanung#32#5#Rollierende Planung#0#9
+DATA>#Fertigungsliste:Fertigungsliste#Fertigungsliste (Fertigungsliste)#128:1#1#Selektions-Leiste#128#Fertigungsliste#2#1#Fertigungsliste#1#9
+DATA>#Bewertung:Bewertung#Bewertung (Bewertung)#130:1#1#Selektions-Leiste#130#Bewertung#2#1#Bewertung#1#9
+DATA>#Buchungsjournal:Buchungszeile Finanzbuchung#Buchungszeile Finanzbuchung (Buchungsjournal)#131:0#1#Selektions-Leiste#131#Buchungsjournal#1#0#Buchungszeile Finanzbuchung#1#9
+DATA>#Buchungsjournal:Buchungszeile statistische Buchung#Buchungszeile statistische Buchung (Buchungsjournal)#131:1#1#Selektions-Leiste#131#Buchungsjournal#2#1#Buchungszeile statistische Buchung#1#9
+DATA>#Arten:Real#Real (Arten)#132:1#1#Selektions-Leiste#132#Arten#2#1#Real#0#9
+DATA>#Ablaufbeschreibung:Ablaufbeschreibung#Ablaufbeschreibung (Ablaufbeschreibung)#133:1#1#Selektions-Leiste#133#Ablaufbeschreibung#2#1#Ablaufbeschreibung#1#9
+DATA>#Ablaufbeschreibung:Ablaufzustand#Ablaufzustand (Ablaufbeschreibung)#133:2#1#Selektions-Leiste#133#Ablaufbeschreibung#4#2#Ablaufzustand#0#9
+DATA>#Notizen:Notiz#Notiz (Notizen)#134:1#1#Selektions-Leiste#134#Notizen#2#1#Notiz#0#9
+DATA>#Kostenumlage:Kostenumlage#Kostenumlage (Kostenumlage)#135:1#1#Selektions-Leiste#135#Kostenumlage#2#1#Kostenumlage#1#9
+DATA>#WEB-Container:HTML-Container#HTML-Container (WEB-Container)#136:1#1#Selektions-Leiste#136#WEB-Container#2#1#HTML-Container#1#9
+DATA>#WEB-Container:Dokument-Container#Dokument-Container (WEB-Container)#136:2#1#Selektions-Leiste#136#WEB-Container#4#2#Dokument-Container#0#9
+DATA>#WEB-Container:Medientyp#Medientyp (WEB-Container)#136:3#1#Selektions-Leiste#136#WEB-Container#8#3#Medientyp#0#9
+DATA>#WEB-Container:MIME-Typ#MIME-Typ (WEB-Container)#136:4#1#Selektions-Leiste#136#WEB-Container#16#4#MIME-Typ#1#9
+DATA>#Kalender:Dispokalender#Dispokalender (Kalender)#137:1#1#Selektions-Leiste#137#Kalender#2#1#Dispokalender#1#9
+DATA>#Kalender:Kapazitätsangebot#Kapazitätsangebot (Kalender)#137:2#1#Selektions-Leiste#137#Kalender#4#2#Kapazitätsangebot#1#9
+DATA>#SEL-TEILE#Stammdatenpflege Artikel / Parameter#148#1#Selektions-Leiste#2#Teil#2#1#Artikel#0#9
+DATA>#SE-VK-KOPF#Verkauf Lieferscheine Kopf#3391#1#Selektions-Leiste#3#Verkauf#8388608#23#Lieferschein#0#9
+DATA>#SKI-AR-RE#Ausgangsrechnung#2245#1#Selektions-Leiste#3#Verkauf#16777216#24#Rechnung#0#3
+DATA>#SEL-VK-KOP#Verkauf aufträge Kopf#3390#1#Selektions-Leiste#3#Verkauf#2#1#Verkauf#0#9
+DATA>#SE-VK-PO-A#Verkauf Artikel Position Angebote#2255#1#Selektions-Leiste#3#Verkauf#4#2#Position#0#9
+DATA>#SE-VK-PO-R#Verkauf Artikel Position Rechnung#4789#1#Selektions-Leiste#3#Verkauf#4#2#Position#0#2
+DATA>#SEL-VK-WIE#Angebots mit Wiedervorlage Datum#2300#1#Selektions-Leiste#3#Verkauf#2097152#21#Angebot#0#9
+DATA>#SE-VK-LS-P#Verkauf Lieferscheine Position#3392#1#Selektions-Leiste#3#Verkauf#4#2#Position#0#9
+DATA>#SE-EK.RECH#eingangsrechnung einkauf#217#1#Selektions-Leiste#4#Einkauf#2#1#Einkauf#0#1
+DATA>#SE-EK.BEST#Einkauf Bestellung Kopf#2306#1#Selektions-Leiste#4#Einkauf#4194304#22#Bestellung#0#1
+DATA>#S-EINKAUF#Einkauf hauptselektion#2243#1#Selektions-Leiste#4#Einkauf#2#1#Einkauf#0#1
+DATA>#SEL-EINKAU#Einkauf Position bestellung,lieferschein,rechnung#2273#1#Selektions-Leiste#4#Einkauf#4#2#Position#0#9
+DATA>#SEL-ER-ALL#eingangsrechnung auch Ablage#2327#1#Selektions-Leiste#4#Einkauf#2#1#Einkauf#0#3
+DATA>#SEL-HANDY#Einkauf Position rechnung handy vodafon#4661#1#Selektions-Leiste#4#Einkauf#4#2#Position#0#3
+DATA>#S-EK-PO-RE#Einkauf Position Rechnung 33,33#4790#1#Selektions-Leiste#4#Einkauf#4#2#Position#0#2
+DATA>#SEL-EKP-LZ#lieferzeit im Einkauf#4811#1#Selektions-Leiste#4#Einkauf#4#2#Position#0#2
+DATA>#SEL-EINK-W#Einkauf Position rechnung Warengruppe#3360#1#Selektions-Leiste#4#Einkauf#4#2#Position#0#9
+DATA>#SEL-KTR#SEL-Kostenträger#236#1#Selektions-Leiste#5#Konto#16#4#Kostenträger#0#9
+DATA>#SEL-RUECKM#Rückmeldung,(Betriebsaufträge mehr Felder#3318#1#Selektions-Leiste#9#Betr-Auftrag#4#2#Rückmeldungen#1#9
+DATA>#SEL-TEXTE#Firma-kurztexte intrastat Tabelle 12:3#3310#1#Selektions-Leiste#12#Firma#8#3#Kurztext#0#9
+DATA>#SEL-NIDEK#Selektion nach Lagergruppeneigenschaften#251#1#Selektions-Leiste#39#Lager#8#3#Lagergruppeneigenschaft#0#9
+DATA>#SEL-INVENT#Zähllistenpositionen in Inventur#241#1#Selektions-Leiste#56#Inventur#2#1#Inventur#0#9
+DATA>#SEL-CHARGE#chargen#3219#1#Selektions-Leiste#59#Chargen#1#0#Chargen#0#9
+DATA>#KURSE#zas kurse usd jpy euro#2297#1#Selektions-Leiste#95#Währungskurs#2#1#Währungskurs#0#9
+LOG>rec size:362
+LOG>data size:5000
+LOG>field count:12
+LOG>disconnected
+bye

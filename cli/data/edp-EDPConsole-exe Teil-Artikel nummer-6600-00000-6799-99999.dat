@@ -1,0 +1,35 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>Teil:Artikel
+AnsiToUTF8>Teil:Artikel
+UTF8ToAnsi>Teil:Artikel
+orig>nummer=6600-00000!6799-99999
+AnsiToUTF8>nummer=6600-00000!6799-99999
+UTF8ToAnsi>nummer=6600-00000!6799-99999
+searching in Teil:Artikel
+searching for nummer=6600-00000!6799-99999
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request data of Teil:Artikel
+field list count 373
+LOG>data size: 100000
+LOG>max result: 100000
+LOG>query execute:ok
+LOG>fieldcount from EDP:55
+LOG>rec size:3
+DATA>nummer,name,such,sucherw,erfass,stand,zeichen,ebez,bsart,ynlief,zuplatz,abplatz,ypdf1,ydxf,yxls,ytpdf,ytlink,bild,bbesch,foto,fotoz,catpics,catpicsz,catpicl,catpiclz,caturl,zn,tabnr,anzahl,elanzahl,elart,elarta,elem,elex,bestand,lgbestand,zbestand,dbestand,lgdbestand,ve,fve,versionn,yzeissnr,zeichn,yersteller,lief,lief2,zoll,wstoff,bem,kenn,bstnr,ftext,vbezbspr,vkbezbspr
+LOG>line size: 686
+DATA>#6600-38866#item 0.0.388.66 abdeckkappe befestigungselement schwarz 8 pa-gf @@,30044,ITEMNOSS,0.0.388.66,6600-38866,SCHILLHAHN:strauch#ABDECKKAPPE-8-SW#item 0.0.388.66 abdeckkappe befestigungselement schwarz 8 pa-gf @@,30044,ITEMNOSS,0.0.388.66,6600-38866,SCHILLHAHN:strauch#06.01.2014#06.01.2014#strauch#Automatic-Fastening Set 8 Cap,[-10-]black similar to RAL 9005#Fremdbeschaffung##R40Z1#R40Z1#W:\PDF\#W:\DXF\#W:\doku\###W:\Bilder\item\6600-38866.jpg#W:\Datenblaetter\#W:\Bilder\item\6600-38866.jpg#W:\Bilder\item\6600-38866.jpg#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####41#41#0#41#41#Stück#1#2014010612463200000005##0.0.388.66#schillhahn#30044######0.0.388.66###
+LOG>line size: 782
+DATA>#6684-00012#item 0.0.406.32 transportplatte fussplatte8 80x40 m12 schwarz gz-zn @@,ITEM 0.0.406.32-M12,30044,ITEMNOSS,6684-00012,SCHILLHAHN:strauch#FUSSPLATTE8-80X40-M12#item 0.0.406.32 transportplatte fussplatte8 80x40 m12 schwarz gz-zn @@,ITEM 0.0.406.32-M12,30044,ITEMNOSS,6684-00012,SCHILLHAHN:strauch#12.08.2008#06.01.2014#strauch#Transportplatte Fussplatte 8[-10-]80x40 M12 schwarz#Fremdbeschaffung#ITEMNOSS#R40Z1#R40Z1#W:\PDF\#W:\DXF\####W:\Bilder\6684-00012.jpg#W:\Datenblaetter\6684-00012.pdf#W:\Bilder\6684-00012.jpg#W:\Bilder\6684-00012.jpg#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####3#3#0#3#3#Stück#1#2014010612453600000001##ITEM 0.0.406.32-M12#schillhahn#30044######0.0.406.32-M12##item 0.0.406.32 transportplatte fussplatte8[-10-]80x40 m12 schwarz gz-zn#
+LOG>line size: 797
+DATA>#6684-00016#item 0.0.406.33 transportplatte fussplatte8 80x40 m16 schwarz gz-zn @@,30044,ITEMNOSS,0.0.406.33-M16,6684-00016,SCHILLHAHN-kleiskleis:schubert#FUSSPLATTE8-80X40-M16#item 0.0.406.33 transportplatte fussplatte8 80x40 m16 schwarz gz-zn @@,30044,ITEMNOSS,0.0.406.33-M16,6684-00016,SCHILLHAHN-kleiskleis:schubert#12.08.2008#19.11.2010#schubert#Transportplatte Fussplatte 8[-10-]80x40 M16 schwarz#Fremdbeschaffung#ITEMNOSS#R40Z0#R40Z0#W:\PDF\#W:\DXF\####W:\Bilder\6684-00016.jpg#W:\Datenblaetter\6684-00016.pdf#W:\Bilder\6684-00016.jpg#W:\Bilder\6684-00016.jpg#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####0#0#0#0#0#Stück#1#2011081912374900000229##ITEM 0.0.406.33-M16#schillhahn#30044######0.0.406.33-M16##item 0.0.406.33 transportplatte fussplatte8[-10-]80x40 m16 schwarz gz-zn#
+LOG>rec size:3
+LOG>data size:100000
+LOG>field count:55
+LOG>disconnected
+bye

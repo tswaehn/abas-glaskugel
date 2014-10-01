@@ -1,0 +1,31 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>Teil:Artikel
+AnsiToUTF8>Teil:Artikel
+UTF8ToAnsi>Teil:Artikel
+orig>nummer=8400-00000!8599-99999
+AnsiToUTF8>nummer=8400-00000!8599-99999
+UTF8ToAnsi>nummer=8400-00000!8599-99999
+searching in Teil:Artikel
+searching for nummer=8400-00000!8599-99999
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request data of Teil:Artikel
+field list count 373
+LOG>data size: 100000
+LOG>max result: 100000
+LOG>query execute:ok
+LOG>fieldcount from EDP:55
+LOG>rec size:1
+DATA>nummer,name,such,sucherw,erfass,stand,zeichen,ebez,bsart,ynlief,zuplatz,abplatz,ypdf1,ydxf,yxls,ytpdf,ytlink,bild,bbesch,foto,fotoz,catpics,catpicsz,catpicl,catpiclz,caturl,zn,tabnr,anzahl,elanzahl,elart,elarta,elem,elex,bestand,lgbestand,zbestand,dbestand,lgdbestand,ve,fve,versionn,yzeissnr,zeichn,yersteller,lief,lief2,zoll,wstoff,bem,kenn,bstnr,ftext,vbezbspr,vkbezbspr
+LOG>line size: 557
+DATA>#8401-70890#iso4017 DIN 933-m8x90-a2 - sechskantschraube @@,ISO4017DIN93 -M8X90-A2,30335,WEWO,30122,GROSS,1108 0967,8401-70890,HSEB-kleis:schubert#SHR-6KT#iso4017 DIN 933-m8x90-a2 - sechskantschraube @@,ISO4017DIN93 -M8X90-A2,30335,WEWO,30122,GROSS,1108 0967,8401-70890,HSEB-kleis:schubert#15.12.2005#26.11.2010#schubert#iso4017-m8x90-a2 - sechskantschraube#Fremdbeschaffung#GROSS#R65X#R65X###############0#0#0.0000#0#0####0#0#0#0#0#Stück#1#2011081912375600000244##ISO4017DIN93 -M8X90-A2#HSEB#30122#30335#####1108 0967##iso4017-M8x90-A2 - sechskantschraube#
+LOG>rec size:1
+LOG>data size:100000
+LOG>field count:55
+LOG>disconnected
+bye

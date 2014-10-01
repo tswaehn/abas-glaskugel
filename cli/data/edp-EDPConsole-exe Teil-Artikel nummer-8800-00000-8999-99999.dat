@@ -1,0 +1,47 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>Teil:Artikel
+AnsiToUTF8>Teil:Artikel
+UTF8ToAnsi>Teil:Artikel
+orig>nummer=8800-00000!8999-99999
+AnsiToUTF8>nummer=8800-00000!8999-99999
+UTF8ToAnsi>nummer=8800-00000!8999-99999
+searching in Teil:Artikel
+searching for nummer=8800-00000!8999-99999
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request data of Teil:Artikel
+field list count 373
+LOG>data size: 100000
+LOG>max result: 100000
+LOG>query execute:ok
+LOG>fieldcount from EDP:55
+LOG>rec size:9
+DATA>nummer,name,such,sucherw,erfass,stand,zeichen,ebez,bsart,ynlief,zuplatz,abplatz,ypdf1,ydxf,yxls,ytpdf,ytlink,bild,bbesch,foto,fotoz,catpics,catpicsz,catpicl,catpiclz,caturl,zn,tabnr,anzahl,elanzahl,elart,elarta,elem,elex,bestand,lgbestand,zbestand,dbestand,lgdbestand,ve,fve,versionn,yzeissnr,zeichn,yersteller,lief,lief2,zoll,wstoff,bem,kenn,bstnr,ftext,vbezbspr,vkbezbspr
+LOG>line size: 544
+DATA>#8902-10270#din9021-a2.7-a2 - scheibe @@,DIN9021-A2.7-A2,30122,GROSS,1118 0045,30335,WEWO,DIN9021 A2.7 A2,8902-10270,HSEB:schubert#SHB-A2.7-A2-DIN9021#din9021-a2.7-a2 - scheibe @@,DIN9021-A2.7-A2,30122,GROSS,1118 0045,30335,WEWO,DIN9021 A2.7 A2,8902-10270,HSEB:schubert#15.12.2005#06.02.2013#schubert#Scheibe[-10-]DIN9021 A2.7 A2#Fremdbeschaffung#GROSS#R65X#R65X#######W:\Datenblaetter\din_9021.pdf########0#0#0.0000#0#0####644#644#20#644#644#Stück#1#2013020613272200000001##DIN9021-A2.7-A2#HSEB#30122#30335#####1118 0045##din9021-A2,7-A2 - scheibe#
+LOG>line size: 510
+DATA>#8902-10320#din9021-a3.2-a2 - scheibe @@,30122,GROSS,1118 0061,30335,WEWO,DIN9021 A3,2 A2,8902-10320,HSEB:kleisz#SHB-A3.2-A2-DIN9021#din9021-a3.2-a2 - scheibe @@,30122,GROSS,1118 0061,30335,WEWO,DIN9021 A3,2 A2,8902-10320,HSEB:kleisz#15.12.2005#17.01.2013#kleisz#DIN9021 A3,2 A2[-10-]Scheibe#Fremdbeschaffung#GROSS#R65X#R65X#######W:\Datenblaetter\din_9021.pdf########0#0#0.0000#0#0####1573#1573#22#1573#1573#Stück#1#2013011713134600000002##DIN9021-A3.2-A2#HSEB#30122#30335#####1118 0061##din9021-A3,2-A2 - scheibe#
+LOG>line size: 549
+DATA>#8902-10430#din9021-a4.3-a2 - scheibe @@,DIN9021-A4.3-A2,30122,GROSS,1118 0087,30335,WEWO,DIN9021 A4,3 A2,8902-10430,HSEB:schubert#SHB-A4.3-A2-DIN9021#din9021-a4.3-a2 - scheibe @@,DIN9021-A4.3-A2,30122,GROSS,1118 0087,30335,WEWO,DIN9021 A4,3 A2,8902-10430,HSEB:schubert#15.12.2005#26.11.2012#schubert#DIN9021 A4,3 A2[-10-]Scheibe#Fremdbeschaffung#GROSS#R65X#R65X#######W:\Datenblaetter\din_9021.pdf########0#0#0.0000#0#0####1305#1305#265#1305#1305#Stück#1#2012112610522300000001##DIN9021-A4.3-A2#HSEB#30122#30335#####1118 0087##din9021-A4,3-A2 - scheibe#
+LOG>line size: 558
+DATA>#8902-10435#din9021-a4.3-a2-zos - scheibe schwarz @@,DIN9021-A4.3-A2-ZOS,30533,BERRANG,DIN9021 A4,3 A2 ZOS,8902-10435,HSEB:schubert#SHB-A4.3-A2-ZOS-DIN9021#din9021-a4.3-a2-zos - scheibe schwarz @@,DIN9021-A4.3-A2-ZOS,30533,BERRANG,DIN9021 A4,3 A2 ZOS,8902-10435,HSEB:schubert#15.12.2005#23.01.2012#schubert#Scheibe schwarz#Fremdbeschaffung#BERRANG#R65H4#R65H4#######W:\Datenblaetter\din_9021.pdf########0#0#0.0000#0#0####180#180#0#180#180#Stück#1#2012012309095800000003##DIN9021-A4.3-A2-ZOS#HSEB#30533######DIN9021 A4,3 A2 ZOS##din9021-A4,3-A2-ZOS - scheibe#
+LOG>line size: 636
+DATA>#8902-10530#din9021-a5.3-a2 - scheibe @@,DIN9021-A5.3-A2,30122,GROSS,1118 0090,30335,WEWO,DIN9021 A5,3 A2,8902-10530,Mindestabnahmemenge 1000 St.,HSEB:schubert#SHB-A5.3-A2-DIN9021#din9021-a5.3-a2 - scheibe @@,DIN9021-A5.3-A2,30122,GROSS,1118 0090,30335,WEWO,DIN9021 A5,3 A2,8902-10530,Mindestabnahmemenge 1000 St.,HSEB:schubert#15.12.2005#26.11.2012#schubert#DIN9021 A5,3 A2[-10-]Scheibe#Fremdbeschaffung#GROSS#R65X#R65X#######W:\Datenblaetter\din_9021.pdf########0#0#0.0000#0#0####1716#1716#223#1716#1716#VE1000#1#2012112610374900000001##DIN9021-A5.3-A2#HSEB#30122#30335###Mindestabnahmemenge 1000 St.##1118 0090##din9021-A5,3-A2 - scheibe#
+LOG>line size: 454
+DATA>#8902-10640#din9021-a6.4-a2 - scheibe @@,30122,GROSS,DIN9021 A6.4 A2,8902-10640,HSEB:kleisz#SHB-A6.4-A2-DIN9021#din9021-a6.4-a2 - scheibe @@,30122,GROSS,DIN9021 A6.4 A2,8902-10640,HSEB:kleisz#15.12.2005#14.01.2014#kleisz#Scheibe#Fremdbeschaffung#GROSS#R65X#R65X#######W:\Datenblaetter\din_9021.pdf########0#0#0.0000#0#0####1860#1860#102#1860#1860#Stück#1#2014011413122700000001##DIN9021-A6.4-A2#HSEB#30122######DIN9021 A6.4 A2##din9021-A6,4-A2 - scheibe#
+LOG>line size: 591
+DATA>#8902-10641#din9021-a6.4-stahl- scheibe (magnetisch) @@,DIN9021-A6.4,30122,GROSS,0808 0077,8902-10641,HEBENSTREIT:kleisz#SHB-A6.4-STAHL-DIN9021#din9021-a6.4-stahl- scheibe (magnetisch) @@,DIN9021-A6.4,30122,GROSS,0808 0077,8902-10641,HEBENSTREIT:kleisz#31.01.2011#02.10.2012#kleisz#DIN9021 A6.4[-10-]Scheibe, Stahl#Fremdbeschaffung#GROSS#R65X#R65X#W:\PDF\#W:\DXF\#W:\doku\###W:\Bilder\#W:\Doku\#W:\#W:\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####119#119#0#119#119#Stück#1#2012100207493000000001##DIN9021-A6.4#hebenstreit#30122######0808 0077##din9021-A6,4-stahl - scheibe#
+LOG>line size: 537
+DATA>#8902-10840#din9021-a8.4-a2 - scheibe d1=8.4mm, d2=24mm, h=2.0mm @@,DIN9021-A8.4-A2,30122,GROSS,1118 0126,8902-10840,HSEB:kleisz#SHB-A8.4-A2-DIN9021#din9021-a8.4-a2 - scheibe d1=8.4mm, d2=24mm, h=2.0mm @@,DIN9021-A8.4-A2,30122,GROSS,1118 0126,8902-10840,HSEB:kleisz#15.12.2005#18.06.2013#kleisz#DIN9021 A8.4 A2[-10-]Scheibe#Fremdbeschaffung#GROSS#R65X#R65X#######W:\Datenblaetter\din_9021.pdf########0#0#0.0000#0#0####6868#6868#20#6868#6868#Stück#1#2013061806330500000005##DIN9021-A8.4-A2#HSEB#30122######1118 0126##din9021-A8,4-A2 - scheibe#
+LOG>line size: 576
+DATA>#8902-11050#din9021-a10.5-a2 - 3d scheibe @@,DIN9021-A10.5-A2,30122,GROSS,1118 0139,8902-11050,HEBENSTREIT:kleisz#SHB-A10.5-A2-DIN9021-3D#din9021-a10.5-a2 - 3d scheibe @@,DIN9021-A10.5-A2,30122,GROSS,1118 0139,8902-11050,HEBENSTREIT:kleisz#22.03.2011#02.10.2012#kleisz#DIN9021 A10.5 A2[-10-]Scheibe#Fremdbeschaffung#GROSS#R65X#R65X#W:\PDF\#W:\DXF\#W:\doku\###W:\Bilder\#W:\Doku\#W:\#W:\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####201#201#0#201#201#Stück#1#2012100207514400000003##DIN9021-A10.5-A2#hebenstreit#30122######1118 0139##din9021-A8,4-A2 - scheibe#
+LOG>rec size:9
+LOG>data size:100000
+LOG>field count:55
+LOG>disconnected
+bye

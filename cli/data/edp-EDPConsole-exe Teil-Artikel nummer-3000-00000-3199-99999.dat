@@ -1,0 +1,39 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>Teil:Artikel
+AnsiToUTF8>Teil:Artikel
+UTF8ToAnsi>Teil:Artikel
+orig>nummer=3000-00000!3199-99999
+AnsiToUTF8>nummer=3000-00000!3199-99999
+UTF8ToAnsi>nummer=3000-00000!3199-99999
+searching in Teil:Artikel
+searching for nummer=3000-00000!3199-99999
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request data of Teil:Artikel
+field list count 373
+LOG>data size: 100000
+LOG>max result: 100000
+LOG>query execute:ok
+LOG>fieldcount from EDP:55
+LOG>rec size:5
+DATA>nummer,name,such,sucherw,erfass,stand,zeichen,ebez,bsart,ynlief,zuplatz,abplatz,ypdf1,ydxf,yxls,ytpdf,ytlink,bild,bbesch,foto,fotoz,catpics,catpicsz,catpicl,catpiclz,caturl,zn,tabnr,anzahl,elanzahl,elart,elarta,elem,elex,bestand,lgbestand,zbestand,dbestand,lgdbestand,ve,fve,versionn,yzeissnr,zeichn,yersteller,lief,lief2,zoll,wstoff,bem,kenn,bstnr,ftext,vbezbspr,vkbezbspr
+LOG>line size: 934
+DATA>#3000-00001#microscope stage (300 mm, 4 mm spindles, märzhäuser p/n 90-24-012-0000) scan         !!!  mit ersatzteilliste   !!! @@,.KOPIE,30059,MAERZHAE,90-24-012-0000,3000-00001,90119090,S/N 01112660 09.08.2005 Angebot Märzhäuser Nr. 382,HEBENSTREIT-heben:zaspel#MICROSCOP#microscope stage (300 mm, 4 mm spindles, märzhäuser p/n 90-24-012-0000) scan         !!!  mit ersatzteilliste   !!! @@,.KOPIE,30059,MAERZHAE,90-24-012-0000,3000-00001,90119090,S/N 01112660 09.08.2005 Angebot Märzhäuser Nr. 382,HEBENSTREIT-heben:zaspel#04.04.2008#11.02.2009#zaspel#SCAN 300x300 - 4mm für Axiotron 300#Eigenfertigung#MAERZHAE#R40Z0#R40Z0######W:\Bilder\#W:\Doku\#W:\#W:\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\##1#1#1.0000#1#1#Artikel#9004-26256#LSTEP#0#0#0#0#0#Stück#1#2013070310325900000234##.KOPIE#hebenstreit#30059##90119090##S/N 01112660 09.08.2005 Angebot Märzhäuser Nr. 38253 *MHL*##90-24-012-0000##Mikroskoptisch (300 mm, motorisch)#
+LOG>line size: 901
+DATA>#3000-00002#objektive solution e23/e84 controller 2 ports     (e23/e84 controller 2 for axiospect 300 objective solutions) !!!mit ersatzteilliste !!! @@,Colli,30062,OBJECTIV,3000-00002,85437090,9000,27.01.2005 Objective Solutions Ordner AXIO 5x *MHL,HEBENSTREIT:zaspe#E84-CONTROLLER-2P#objektive solution e23/e84 controller 2 ports     (e23/e84 controller 2 for axiospect 300 objective solutions) !!!mit ersatzteilliste !!! @@,Colli,30062,OBJECTIV,3000-00002,85437090,9000,27.01.2005 Objective Solutions Ordner AXIO 5x *MHL,HEBENSTREIT:zaspe#07.04.2008#27.02.2012#zaspel#E23/E84 Controller 2#Eigenfertigung##R24C#R24C######W:\Bilder\#W:\Doku\#W:\#W:\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\##1#1#1.0000#1#1#Artikel#9004-43856#E84-NETZTEIL#0#0#0#0#0#Stück#1#2013070310325900000236###hebenstreit#30062##85437090##27.01.2005 Objective Solutions Ordner AXIO 5x *MHL*####E23/E84 Controller (Version 2)#
+LOG>line size: 804
+DATA>#3000-00003#objektive solution e23/e84 controller 4 ports (e23/e84 controller 4 for axiospect 300)  !!! mit ersatzteilliste @@,3000-00003,21.09.2005 Objective Solutions Herr Kleisz, USD/EU,HEBENSTREIT:zaspel#E84-CONTROLLER-4P-ERSATZTEILL#objektive solution e23/e84 controller 4 ports (e23/e84 controller 4 for axiospect 300)  !!! mit ersatzteilliste @@,3000-00003,21.09.2005 Objective Solutions Herr Kleisz, USD/EU,HEBENSTREIT:zaspel#07.04.2008#27.02.2012#zaspel#e23/e84 controller 4 for axiospect 300#Eigenfertigung##PROD#PROD######W:\Bilder\#W:\Doku\#W:\#W:\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\##1#1#1.0000#1#1#Artikel#9004-43857#HOKOYO#0#0#0#0#0#Stück#1#2013070310325900000238###hebenstreit#####21.09.2005 Objective Solutions Herr Kleisz, USD/EUR: 1,20 *MHL*####E23/E84 Controller (Version 4)#
+LOG>line size: 522
+DATA>#3000-00090#sub d 9pin/4 bnc rgb cable, mod. ccxc-9dbkabelsatz aims @@,30031,MAXXVISI,CCMC-9DS,3000-00090,9000,HSEB-marsc:schubert#KABELSA-9SD-AIMS#sub d 9pin/4 bnc rgb cable, mod. ccxc-9dbkabelsatz aims @@,30031,MAXXVISI,CCMC-9DS,3000-00090,9000,HSEB-marsc:schubert#15.12.2005#24.11.2010#schubert#Sub D 9pin/4 BNC RGB and[-10-]Y/C Mini DIN Cable[-10-]#Fremdbeschaffung#MAXXVISI#R22D#R22D###############0#0#0.0000#0#0####0#0#0#0#0#Stück#1#2012083110470700000002###HSEB#30031######CCMC-9DS##Sub D 9pin/5 BNC RGB Cable, Mod.[-10-]CCXC-9DB#
+LOG>line size: 490
+DATA>#3000-01340#home sensorkit without sensor (laser) @@017.00-XXXX.000,3000-01340,9900,HSEB-alltrkaspr:kasprick#HOMESENSOR#home sensorkit without sensor (laser) @@017.00-XXXX.000,3000-01340,9900,HSEB-alltrkaspr:kasprick#15.12.2005#08.03.2011#kasprick#Home Sensor (Laser)#Fremdbeschaffung##R99Z#R99Z###############0#0#0.0000#0#0####3#0#0#3#0#Stück#1#2012083110222400000008#017.00-XXXX.000#017.00-XXXX.000????#HSEB#########Home Sensor Mechanikkit (ohne Sensor) für[-10-]Axiospect 300 S/N 41302010xxx#
+LOG>rec size:5
+LOG>data size:100000
+LOG>field count:55
+LOG>disconnected
+bye

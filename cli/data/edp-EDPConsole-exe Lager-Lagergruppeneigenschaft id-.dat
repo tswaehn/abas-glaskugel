@@ -1,0 +1,3185 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>Lager:Lagergruppeneigenschaft
+AnsiToUTF8>Lager:Lagergruppeneigenschaft
+UTF8ToAnsi>Lager:Lagergruppeneigenschaft
+orig>id=
+AnsiToUTF8>id=
+UTF8ToAnsi>id=
+searching in Lager:Lagergruppeneigenschaft
+searching for id=
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request data of Lager:Lagergruppeneigenschaft
+field list count 44
+LOG>data size: 100000
+LOG>max result: 100000
+LOG>query execute:ok
+LOG>fieldcount from EDP:7
+LOG>rec size:1578
+DATA>id, artikel, art, grust, gruppe, grbez, dbez
+LOG>line size: 56
+DATA>#(1403,39,0)#1000#1000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(161,39,0)#7513-08503#7513-08503#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(162,39,0)#2000-70001#2000-70001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1421,39,0)#2045-00000#2045-00000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(163,39,0)#2100-02000#2100-02000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(164,39,0)#2152-40240#2152-40240#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(165,39,0)#3000-01340#3000-01340#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(166,39,0)#4000-00050#4000-00050#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(167,39,0)#4000-00051#4000-00051#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1434,39,0)#4000-00160#4000-00160#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1494,39,0)#4000-00490#4000-00490#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(168,39,0)#4000-01390#4000-01390#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(169,39,0)#4000-01650#4000-01650#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(170,39,0)#4000-01750#4000-01750#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(171,39,0)#4000-01760#4000-01760#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(172,39,0)#4000-01770#4000-01770#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(173,39,0)#4000-01780#4000-01780#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(174,39,0)#4000-01790#4000-01790#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(175,39,0)#4000-01800#4000-01800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(176,39,0)#4000-01810#4000-01810#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(177,39,0)#4000-01820#4000-01820#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(178,39,0)#4000-01830#4000-01830#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(179,39,0)#4000-01860#4000-01860#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(180,39,0)#4000-01870#4000-01870#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(181,39,0)#4000-01900#4000-01900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(182,39,0)#4000-01910#4000-01910#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(183,39,0)#4000-02080#4000-02080#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1433,39,0)#4000-02190#4000-02190#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(184,39,0)#4070-10133#4070-10133#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(185,39,0)#4100-02030#4100-02030#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(186,39,0)#4100-02040#4100-02040#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(187,39,0)#4100-02050#4100-02050#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(188,39,0)#7000-00020#7000-00020#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(189,39,0)#7075-37114#7075-37114#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(190,39,0)#7100-01400#7100-01400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1468,39,0)#7100-01680#7100-01680#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1469,39,0)#7100-01690#7100-01690#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1458,39,0)#7264-20107#7264-20107#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(191,39,0)#7306-01150#7306-01150#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(192,39,0)#7306-02300#7306-02300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(193,39,0)#7350-25701#7350-25701#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(194,39,0)#7500-01550#7500-01550#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(195,39,0)#7500-01740#7500-01740#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(196,39,0)#7500-01840#7500-01840#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(197,39,0)#7500-01850#7500-01850#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(198,39,0)#7500-15240#7500-15240#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(199,39,0)#7610-53905#7610-53905#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(200,39,0)#7656-52513#7656-52513#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(201,39,0)#9000-01800#9000-01800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(202,39,0)#9000-03714#9000-03714#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(203,39,0)#9000-07735#9000-07735#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(204,39,0)#9000-15310#9000-15310#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(205,39,0)#9000-18152#9000-18152#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(206,39,0)#9000-27401#9000-27401#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(207,39,0)#9000-52759#9000-52759#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(208,39,0)#9000-64670#9000-64670#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(209,39,0)#9000-65093#9000-65093#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(210,39,0)#9000-66227#9000-66227#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(211,39,0)#9000-69265#9000-69265#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(212,39,0)#9000-69854#9000-69854#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(213,39,0)#9000-74118#9000-74118#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(214,39,0)#9000-82392#9000-82392#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(215,39,0)#9000-83310#9000-83310#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(216,39,0)#9000-86237#9000-86237#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(217,39,0)#9000-92637#9000-92637#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(218,39,0)#9000-94811#9000-94811#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(219,39,0)#9000-96218#9000-96218#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(220,39,0)#9001-03409#9001-03409#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(221,39,0)#9001-05392#9001-05392#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(222,39,0)#9001-15605#9001-15605#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(223,39,0)#9001-15709#9001-15709#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(224,39,0)#9001-15721#9001-15721#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(225,39,0)#9001-15723#9001-15723#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(226,39,0)#9001-15821#9001-15821#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(227,39,0)#9001-15822#9001-15822#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(228,39,0)#9001-15824#9001-15824#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(229,39,0)#9001-15826#9001-15826#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(230,39,0)#9001-15827#9001-15827#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(231,39,0)#9001-15828#9001-15828#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(232,39,0)#9001-15829#9001-15829#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(233,39,0)#9001-15830#9001-15830#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(234,39,0)#9001-15847#9001-15847#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(235,39,0)#9001-15855#9001-15855#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(236,39,0)#9001-15856#9001-15856#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(237,39,0)#9001-15861#9001-15861#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(238,39,0)#9001-15863#9001-15863#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(239,39,0)#9001-15864#9001-15864#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(240,39,0)#9001-15865#9001-15865#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(241,39,0)#9001-17271#9001-17271#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(242,39,0)#9001-17273#9001-17273#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(243,39,0)#9001-17278#9001-17278#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(244,39,0)#9001-17279#9001-17279#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(245,39,0)#9001-17281#9001-17281#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(246,39,0)#9001-17282#9001-17282#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(247,39,0)#9001-17286#9001-17286#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(248,39,0)#9001-17287#9001-17287#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(249,39,0)#9001-17294#9001-17294#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(250,39,0)#9001-17295#9001-17295#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(251,39,0)#9001-17302#9001-17302#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(252,39,0)#9001-17303#9001-17303#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(253,39,0)#9001-17304#9001-17304#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(254,39,0)#9001-17305#9001-17305#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(255,39,0)#9001-17846#9001-17846#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(256,39,0)#9001-21726#9001-21726#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(257,39,0)#9001-27262#9001-27262#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(258,39,0)#9001-28802#9001-28802#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(259,39,0)#9001-38572#9001-38572#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(260,39,0)#9001-39034#9001-39034#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(261,39,0)#9001-39121#9001-39121#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(262,39,0)#9001-40814#9001-40814#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(263,39,0)#9001-42608#9001-42608#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(264,39,0)#9001-43418#9001-43418#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(265,39,0)#9001-43641#9001-43641#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(266,39,0)#9001-44147#9001-44147#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(267,39,0)#9001-46029#9001-46029#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(268,39,0)#9001-47196#9001-47196#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(269,39,0)#9001-47924#9001-47924#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(270,39,0)#9001-49691#9001-49691#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(271,39,0)#9001-55823#9001-55823#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(272,39,0)#9001-77087#9001-77087#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(273,39,0)#9001-77088#9001-77088#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(274,39,0)#9001-77089#9001-77089#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(275,39,0)#9001-77105#9001-77105#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(276,39,0)#9001-77114#9001-77114#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(277,39,0)#9001-77115#9001-77115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(278,39,0)#9001-77116#9001-77116#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(279,39,0)#9001-77117#9001-77117#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(280,39,0)#9001-77118#9001-77118#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(281,39,0)#9001-77120#9001-77120#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(282,39,0)#9001-77121#9001-77121#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(283,39,0)#9001-77126#9001-77126#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(284,39,0)#9001-77127#9001-77127#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(285,39,0)#9001-77128#9001-77128#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(286,39,0)#9001-77129#9001-77129#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(287,39,0)#9001-77130#9001-77130#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(288,39,0)#9001-77131#9001-77131#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(289,39,0)#9001-77132#9001-77132#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(290,39,0)#9001-77133#9001-77133#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(291,39,0)#9001-77159#9001-77159#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(292,39,0)#9001-77161#9001-77161#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(293,39,0)#9001-77162#9001-77162#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(294,39,0)#9001-77164#9001-77164#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(295,39,0)#9001-77166#9001-77166#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(296,39,0)#9001-77167#9001-77167#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(297,39,0)#9001-77168#9001-77168#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(298,39,0)#9001-77169#9001-77169#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(299,39,0)#9001-77185#9001-77185#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(300,39,0)#9001-77186#9001-77186#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(301,39,0)#9001-77188#9001-77188#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(302,39,0)#9001-77189#9001-77189#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(303,39,0)#9001-77190#9001-77190#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(304,39,0)#9001-77191#9001-77191#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(305,39,0)#9001-77193#9001-77193#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(306,39,0)#9001-77236#9001-77236#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(307,39,0)#9001-77237#9001-77237#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(308,39,0)#9001-77239#9001-77239#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(309,39,0)#9001-77240#9001-77240#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(310,39,0)#9001-77241#9001-77241#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(311,39,0)#9001-77242#9001-77242#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(312,39,0)#9001-77243#9001-77243#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(313,39,0)#9001-77294#9001-77294#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(314,39,0)#9001-77295#9001-77295#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(315,39,0)#9001-77300#9001-77300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(316,39,0)#9001-77363#9001-77363#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(317,39,0)#9001-77365#9001-77365#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(318,39,0)#9001-77366#9001-77366#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(319,39,0)#9001-77367#9001-77367#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(320,39,0)#9001-77368#9001-77368#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(321,39,0)#9001-77369#9001-77369#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(322,39,0)#9001-77370#9001-77370#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(323,39,0)#9001-77371#9001-77371#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(324,39,0)#9001-77372#9001-77372#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(325,39,0)#9001-77373#9001-77373#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(326,39,0)#9001-77374#9001-77374#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(327,39,0)#9001-77375#9001-77375#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(328,39,0)#9001-77376#9001-77376#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(329,39,0)#9001-77378#9001-77378#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(330,39,0)#9001-77379#9001-77379#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(331,39,0)#9001-77380#9001-77380#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(332,39,0)#9001-77381#9001-77381#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(333,39,0)#9001-77383#9001-77383#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(334,39,0)#9001-77385#9001-77385#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(335,39,0)#9001-77386#9001-77386#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(336,39,0)#9001-77387#9001-77387#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(337,39,0)#9001-77388#9001-77388#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(338,39,0)#9001-77389#9001-77389#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(339,39,0)#9001-77411#9001-77411#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(340,39,0)#9001-77434#9001-77434#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(341,39,0)#9001-77435#9001-77435#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(342,39,0)#9001-77436#9001-77436#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(343,39,0)#9001-77437#9001-77437#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(344,39,0)#9001-77438#9001-77438#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(345,39,0)#9001-77439#9001-77439#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(346,39,0)#9001-77443#9001-77443#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(347,39,0)#9001-77447#9001-77447#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(348,39,0)#9001-77448#9001-77448#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(349,39,0)#9001-77452#9001-77452#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(350,39,0)#9001-77453#9001-77453#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(351,39,0)#9001-77454#9001-77454#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(352,39,0)#9001-77455#9001-77455#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(353,39,0)#9001-77458#9001-77458#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(354,39,0)#9001-77460#9001-77460#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(355,39,0)#9001-77474#9001-77474#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(356,39,0)#9001-77530#9001-77530#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(357,39,0)#9001-77532#9001-77532#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(358,39,0)#9001-77536#9001-77536#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(359,39,0)#9001-77538#9001-77538#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(360,39,0)#9001-77540#9001-77540#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(361,39,0)#9001-77541#9001-77541#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(362,39,0)#9001-77556#9001-77556#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(363,39,0)#9002-18531#9002-18531#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(364,39,0)#9002-25165#9002-25165#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(365,39,0)#9002-25998#9002-25998#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(366,39,0)#9002-29246#9002-29246#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(367,39,0)#9002-31441#9002-31441#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(368,39,0)#9002-32571#9002-32571#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(369,39,0)#9002-32962#9002-32962#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(370,39,0)#9002-33238#9002-33238#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(371,39,0)#9002-35130#9002-35130#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(372,39,0)#9002-35750#9002-35750#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(373,39,0)#9002-35751#9002-35751#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(374,39,0)#9002-35782#9002-35782#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(375,39,0)#9002-35862#9002-35862#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(376,39,0)#9002-36302#9002-36302#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(377,39,0)#9002-39500#9002-39500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(378,39,0)#9003-00271#9003-00271#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(379,39,0)#9003-00409#9003-00409#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(380,39,0)#9003-00419#9003-00419#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(381,39,0)#9004-01008#9004-01008#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(382,39,0)#9004-01473#9004-01473#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(383,39,0)#9004-02071#9004-02071#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(384,39,0)#9004-02075#9004-02075#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(385,39,0)#9004-02076#9004-02076#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(386,39,0)#9004-02077#9004-02077#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(387,39,0)#9004-02078#9004-02078#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(388,39,0)#9004-02080#9004-02080#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(389,39,0)#9004-02082#9004-02082#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(390,39,0)#9004-02083#9004-02083#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(391,39,0)#9004-02084#9004-02084#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(392,39,0)#9004-02085#9004-02085#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(393,39,0)#9004-02086#9004-02086#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(394,39,0)#9004-02088#9004-02088#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(395,39,0)#9004-02092#9004-02092#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(396,39,0)#9004-02093#9004-02093#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(397,39,0)#9004-02094#9004-02094#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(398,39,0)#9004-02095#9004-02095#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(399,39,0)#9004-02096#9004-02096#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(400,39,0)#9004-02097#9004-02097#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(401,39,0)#9004-02098#9004-02098#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(402,39,0)#9004-02099#9004-02099#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(403,39,0)#9004-02100#9004-02100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(404,39,0)#9004-02102#9004-02102#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(405,39,0)#9004-02103#9004-02103#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(406,39,0)#9004-02104#9004-02104#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(407,39,0)#9004-02105#9004-02105#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(408,39,0)#9004-02106#9004-02106#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(409,39,0)#9004-02107#9004-02107#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(410,39,0)#9004-02108#9004-02108#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(411,39,0)#9004-02109#9004-02109#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(412,39,0)#9004-02110#9004-02110#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(413,39,0)#9004-02111#9004-02111#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(414,39,0)#9004-02112#9004-02112#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(415,39,0)#9004-02113#9004-02113#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(416,39,0)#9004-02114#9004-02114#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(417,39,0)#9004-02115#9004-02115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(418,39,0)#9004-02116#9004-02116#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(419,39,0)#9004-02119#9004-02119#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(420,39,0)#9004-02120#9004-02120#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(421,39,0)#9004-02121#9004-02121#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(422,39,0)#9004-02122#9004-02122#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(423,39,0)#9004-02123#9004-02123#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(424,39,0)#9004-02124#9004-02124#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(425,39,0)#9004-02125#9004-02125#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(426,39,0)#9004-02126#9004-02126#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(427,39,0)#9004-02128#9004-02128#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(428,39,0)#9004-02129#9004-02129#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(429,39,0)#9004-02130#9004-02130#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(430,39,0)#9004-02131#9004-02131#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(431,39,0)#9004-02132#9004-02132#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(432,39,0)#9004-02133#9004-02133#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(433,39,0)#9004-02134#9004-02134#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(434,39,0)#9004-02135#9004-02135#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(435,39,0)#9004-02136#9004-02136#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(436,39,0)#9004-02137#9004-02137#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(437,39,0)#9004-02138#9004-02138#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(438,39,0)#9004-02139#9004-02139#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(439,39,0)#9004-02140#9004-02140#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(440,39,0)#9004-02141#9004-02141#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(441,39,0)#9004-02142#9004-02142#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(442,39,0)#9004-02143#9004-02143#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(443,39,0)#9004-02144#9004-02144#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(444,39,0)#9004-02145#9004-02145#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(445,39,0)#9004-02146#9004-02146#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(446,39,0)#9004-02147#9004-02147#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(447,39,0)#9004-02148#9004-02148#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(448,39,0)#9004-02149#9004-02149#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(449,39,0)#9004-02150#9004-02150#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(450,39,0)#9004-02151#9004-02151#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(451,39,0)#9004-02152#9004-02152#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(452,39,0)#9004-02153#9004-02153#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(453,39,0)#9004-02154#9004-02154#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(454,39,0)#9004-02155#9004-02155#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(455,39,0)#9004-02156#9004-02156#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(456,39,0)#9004-02157#9004-02157#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(457,39,0)#9004-02158#9004-02158#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(458,39,0)#9004-02159#9004-02159#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(459,39,0)#9004-02160#9004-02160#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(460,39,0)#9004-02161#9004-02161#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(461,39,0)#9004-02193#9004-02193#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(462,39,0)#9004-02194#9004-02194#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(463,39,0)#9004-02195#9004-02195#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(464,39,0)#9004-02196#9004-02196#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(465,39,0)#9004-02197#9004-02197#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(466,39,0)#9004-02302#9004-02302#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(467,39,0)#9004-02303#9004-02303#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(468,39,0)#9004-02305#9004-02305#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(469,39,0)#9004-02433#9004-02433#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(470,39,0)#9004-02824#9004-02824#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(471,39,0)#9004-02825#9004-02825#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(472,39,0)#9004-02871#9004-02871#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(473,39,0)#9004-02872#9004-02872#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(474,39,0)#9004-02873#9004-02873#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(475,39,0)#9004-02874#9004-02874#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(476,39,0)#9004-02875#9004-02875#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(477,39,0)#9004-02876#9004-02876#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(478,39,0)#9004-02877#9004-02877#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(479,39,0)#9004-02914#9004-02914#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(480,39,0)#9004-03081#9004-03081#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(481,39,0)#9004-03136#9004-03136#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(482,39,0)#9004-03180#9004-03180#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(483,39,0)#9004-03256#9004-03256#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(484,39,0)#9004-04753#9004-04753#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(485,39,0)#9004-05023#9004-05023#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(486,39,0)#9004-05060#9004-05060#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(487,39,0)#9004-05061#9004-05061#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(488,39,0)#9004-05062#9004-05062#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(489,39,0)#9004-05064#9004-05064#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(490,39,0)#9004-05067#9004-05067#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(491,39,0)#9004-05158#9004-05158#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(492,39,0)#9004-05159#9004-05159#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(493,39,0)#9004-05160#9004-05160#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(494,39,0)#9004-05183#9004-05183#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(495,39,0)#9004-05184#9004-05184#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(496,39,0)#9004-05185#9004-05185#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(497,39,0)#9004-05186#9004-05186#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(498,39,0)#9004-05187#9004-05187#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(499,39,0)#9004-05198#9004-05198#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(500,39,0)#9004-05396#9004-05396#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(501,39,0)#9004-05405#9004-05405#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(502,39,0)#9004-05406#9004-05406#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(503,39,0)#9004-05407#9004-05407#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(504,39,0)#9004-05408#9004-05408#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(505,39,0)#9004-05409#9004-05409#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(506,39,0)#9004-05410#9004-05410#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(507,39,0)#9004-05411#9004-05411#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(508,39,0)#9004-05412#9004-05412#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(509,39,0)#9004-05413#9004-05413#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(510,39,0)#9004-05823#9004-05823#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(511,39,0)#9004-05900#9004-05900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(512,39,0)#9004-05901#9004-05901#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(513,39,0)#9004-07065#9004-07065#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(514,39,0)#9004-07279#9004-07279#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(515,39,0)#9004-07280#9004-07280#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(516,39,0)#9004-07493#9004-07493#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(517,39,0)#9004-07641#9004-07641#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(518,39,0)#9004-07642#9004-07642#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(519,39,0)#9004-07726#9004-07726#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(520,39,0)#9004-07727#9004-07727#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(521,39,0)#9004-07728#9004-07728#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(522,39,0)#9004-07729#9004-07729#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(523,39,0)#9004-07740#9004-07740#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(524,39,0)#9004-07741#9004-07741#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(525,39,0)#9004-07742#9004-07742#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(526,39,0)#9004-07743#9004-07743#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(527,39,0)#9004-07744#9004-07744#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(528,39,0)#9004-07745#9004-07745#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(529,39,0)#9004-07746#9004-07746#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(530,39,0)#9004-07747#9004-07747#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(531,39,0)#9004-07748#9004-07748#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(532,39,0)#9004-07749#9004-07749#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(533,39,0)#9004-07750#9004-07750#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(534,39,0)#9004-07751#9004-07751#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(535,39,0)#9004-07752#9004-07752#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(536,39,0)#9004-07753#9004-07753#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(537,39,0)#9004-07754#9004-07754#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(538,39,0)#9004-07755#9004-07755#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(539,39,0)#9004-07756#9004-07756#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(540,39,0)#9004-07757#9004-07757#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(541,39,0)#9004-07758#9004-07758#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(542,39,0)#9004-07759#9004-07759#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(543,39,0)#9004-07760#9004-07760#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(544,39,0)#9004-07761#9004-07761#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(545,39,0)#9004-07762#9004-07762#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(546,39,0)#9004-07763#9004-07763#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(547,39,0)#9004-07764#9004-07764#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(548,39,0)#9004-07765#9004-07765#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(549,39,0)#9004-07766#9004-07766#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(550,39,0)#9004-07767#9004-07767#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(551,39,0)#9004-07854#9004-07854#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(552,39,0)#9004-08167#9004-08167#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(553,39,0)#9004-08168#9004-08168#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(554,39,0)#9004-08264#9004-08264#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(555,39,0)#9004-10343#9004-10343#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(556,39,0)#9004-10346#9004-10346#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(557,39,0)#9004-10349#9004-10349#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(558,39,0)#9004-10353#9004-10353#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(559,39,0)#9004-10355#9004-10355#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(560,39,0)#9004-10356#9004-10356#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(561,39,0)#9004-10357#9004-10357#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(562,39,0)#9004-10368#9004-10368#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(563,39,0)#9004-10380#9004-10380#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(564,39,0)#9004-10519#9004-10519#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(565,39,0)#9004-10748#9004-10748#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(566,39,0)#9004-11563#9004-11563#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(567,39,0)#9004-11564#9004-11564#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(568,39,0)#9004-11565#9004-11565#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(569,39,0)#9004-11566#9004-11566#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(570,39,0)#9004-11628#9004-11628#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(571,39,0)#9004-11629#9004-11629#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(572,39,0)#9004-11630#9004-11630#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(573,39,0)#9004-11631#9004-11631#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(574,39,0)#9004-11632#9004-11632#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(575,39,0)#9004-11633#9004-11633#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(576,39,0)#9004-11642#9004-11642#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(577,39,0)#9004-11643#9004-11643#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(578,39,0)#9004-11747#9004-11747#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(579,39,0)#9004-11748#9004-11748#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(580,39,0)#9004-11928#9004-11928#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(581,39,0)#9004-11929#9004-11929#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(582,39,0)#9004-13745#9004-13745#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(583,39,0)#9004-13746#9004-13746#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(584,39,0)#9004-13747#9004-13747#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(585,39,0)#9004-13748#9004-13748#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(586,39,0)#9004-13749#9004-13749#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(587,39,0)#9004-13750#9004-13750#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(588,39,0)#9004-13751#9004-13751#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(589,39,0)#9004-13752#9004-13752#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(590,39,0)#9004-13753#9004-13753#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(591,39,0)#9004-14531#9004-14531#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(592,39,0)#9004-14532#9004-14532#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(593,39,0)#9004-14857#9004-14857#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(594,39,0)#9004-15853#9004-15853#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(595,39,0)#9004-15854#9004-15854#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(596,39,0)#9004-16403#9004-16403#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(597,39,0)#9004-16404#9004-16404#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(598,39,0)#9004-16406#9004-16406#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(599,39,0)#9004-16407#9004-16407#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(600,39,0)#9004-16408#9004-16408#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(601,39,0)#9004-16426#9004-16426#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(602,39,0)#9004-16769#9004-16769#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(603,39,0)#9004-16770#9004-16770#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(604,39,0)#9004-16889#9004-16889#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(605,39,0)#9004-17363#9004-17363#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(606,39,0)#9004-17657#9004-17657#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(607,39,0)#9004-19470#9004-19470#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(608,39,0)#9004-19471#9004-19471#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(609,39,0)#9004-19472#9004-19472#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(610,39,0)#9004-19473#9004-19473#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(611,39,0)#9004-20679#9004-20679#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(612,39,0)#9004-20741#9004-20741#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(613,39,0)#9004-20921#9004-20921#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(614,39,0)#9004-20922#9004-20922#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(615,39,0)#9004-20925#9004-20925#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(616,39,0)#9004-20926#9004-20926#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(617,39,0)#9004-20927#9004-20927#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(618,39,0)#9004-20928#9004-20928#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(619,39,0)#9004-20930#9004-20930#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(620,39,0)#9004-20932#9004-20932#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(621,39,0)#9004-20933#9004-20933#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(622,39,0)#9004-20934#9004-20934#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(623,39,0)#9004-21052#9004-21052#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(624,39,0)#9004-21523#9004-21523#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(625,39,0)#9004-21524#9004-21524#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(626,39,0)#9004-22752#9004-22752#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(627,39,0)#9004-23052#9004-23052#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(628,39,0)#9004-23053#9004-23053#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(629,39,0)#9004-23054#9004-23054#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(630,39,0)#9004-23055#9004-23055#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(631,39,0)#9004-23056#9004-23056#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(632,39,0)#9004-23057#9004-23057#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(633,39,0)#9004-23058#9004-23058#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(634,39,0)#9004-23059#9004-23059#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(635,39,0)#9004-23060#9004-23060#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(636,39,0)#9004-23061#9004-23061#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(637,39,0)#9004-23062#9004-23062#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(638,39,0)#9004-23063#9004-23063#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(639,39,0)#9004-23067#9004-23067#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(640,39,0)#9004-23070#9004-23070#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(641,39,0)#9004-23071#9004-23071#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(642,39,0)#9004-23072#9004-23072#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(643,39,0)#9004-23073#9004-23073#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(644,39,0)#9004-23074#9004-23074#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(645,39,0)#9004-23077#9004-23077#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(646,39,0)#9004-23080#9004-23080#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(647,39,0)#9004-23081#9004-23081#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(648,39,0)#9004-23082#9004-23082#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(649,39,0)#9004-23088#9004-23088#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(650,39,0)#9004-23092#9004-23092#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(651,39,0)#9004-23100#9004-23100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(652,39,0)#9004-23101#9004-23101#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(653,39,0)#9004-23103#9004-23103#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(654,39,0)#9004-23104#9004-23104#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(655,39,0)#9004-23105#9004-23105#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(656,39,0)#9004-23107#9004-23107#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(657,39,0)#9004-23108#9004-23108#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(658,39,0)#9004-23114#9004-23114#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(659,39,0)#9004-23115#9004-23115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(660,39,0)#9004-23116#9004-23116#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(661,39,0)#9004-23117#9004-23117#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(662,39,0)#9004-23118#9004-23118#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(663,39,0)#9004-23119#9004-23119#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(664,39,0)#9004-23120#9004-23120#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(665,39,0)#9004-23121#9004-23121#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(666,39,0)#9004-23122#9004-23122#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(667,39,0)#9004-23123#9004-23123#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(668,39,0)#9004-23124#9004-23124#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(669,39,0)#9004-23126#9004-23126#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(670,39,0)#9004-23127#9004-23127#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(671,39,0)#9004-23128#9004-23128#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(672,39,0)#9004-23130#9004-23130#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(673,39,0)#9004-23131#9004-23131#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(674,39,0)#9004-23132#9004-23132#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(675,39,0)#9004-23133#9004-23133#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(676,39,0)#9004-23134#9004-23134#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(677,39,0)#9004-23135#9004-23135#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(678,39,0)#9004-23136#9004-23136#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(679,39,0)#9004-23137#9004-23137#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(680,39,0)#9004-23138#9004-23138#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(681,39,0)#9004-23139#9004-23139#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(682,39,0)#9004-23140#9004-23140#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(683,39,0)#9004-23141#9004-23141#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(684,39,0)#9004-23142#9004-23142#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(685,39,0)#9004-23143#9004-23143#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(686,39,0)#9004-23144#9004-23144#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(687,39,0)#9004-23145#9004-23145#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(688,39,0)#9004-23147#9004-23147#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(689,39,0)#9004-23148#9004-23148#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(690,39,0)#9004-23150#9004-23150#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(691,39,0)#9004-23151#9004-23151#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(692,39,0)#9004-23152#9004-23152#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(693,39,0)#9004-23153#9004-23153#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(694,39,0)#9004-23155#9004-23155#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(695,39,0)#9004-23158#9004-23158#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(696,39,0)#9004-23161#9004-23161#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(697,39,0)#9004-23162#9004-23162#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(698,39,0)#9004-23163#9004-23163#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(699,39,0)#9004-23164#9004-23164#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(700,39,0)#9004-23165#9004-23165#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(701,39,0)#9004-23166#9004-23166#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(702,39,0)#9004-23167#9004-23167#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(703,39,0)#9004-23168#9004-23168#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(704,39,0)#9004-23169#9004-23169#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(705,39,0)#9004-23170#9004-23170#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(706,39,0)#9004-23171#9004-23171#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(707,39,0)#9004-23172#9004-23172#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(708,39,0)#9004-23174#9004-23174#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(709,39,0)#9004-23201#9004-23201#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(710,39,0)#9004-23663#9004-23663#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(711,39,0)#9004-23795#9004-23795#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(712,39,0)#9004-23914#9004-23914#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(713,39,0)#9004-23915#9004-23915#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(714,39,0)#9004-23916#9004-23916#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(715,39,0)#9004-23976#9004-23976#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(716,39,0)#9004-24096#9004-24096#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(717,39,0)#9004-24655#9004-24655#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(718,39,0)#9004-25761#9004-25761#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(719,39,0)#9004-25762#9004-25762#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(720,39,0)#9004-25975#9004-25975#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(721,39,0)#9004-26152#9004-26152#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(722,39,0)#9004-26256#9004-26256#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(723,39,0)#9004-26503#9004-26503#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(724,39,0)#9004-26517#9004-26517#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(725,39,0)#9004-26725#9004-26725#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(726,39,0)#9004-26998#9004-26998#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(727,39,0)#9004-26999#9004-26999#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(728,39,0)#9004-27107#9004-27107#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(729,39,0)#9004-27114#9004-27114#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(730,39,0)#9004-27115#9004-27115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(731,39,0)#9004-27211#9004-27211#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(732,39,0)#9004-27212#9004-27212#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(733,39,0)#9004-27214#9004-27214#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(734,39,0)#9004-27215#9004-27215#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(735,39,0)#9004-27216#9004-27216#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(736,39,0)#9004-27279#9004-27279#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(737,39,0)#9004-27300#9004-27300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(738,39,0)#9004-27386#9004-27386#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(739,39,0)#9004-27387#9004-27387#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(740,39,0)#9004-27665#9004-27665#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(741,39,0)#9004-28346#9004-28346#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(742,39,0)#9004-29071#9004-29071#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(743,39,0)#9004-29181#9004-29181#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(744,39,0)#9004-29217#9004-29217#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(745,39,0)#9004-29885#9004-29885#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(746,39,0)#9004-30263#9004-30263#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(747,39,0)#9004-30324#9004-30324#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(748,39,0)#9004-30406#9004-30406#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(749,39,0)#9004-30407#9004-30407#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(750,39,0)#9004-30408#9004-30408#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(751,39,0)#9004-31157#9004-31157#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(752,39,0)#9004-31162#9004-31162#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(753,39,0)#9004-31164#9004-31164#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(754,39,0)#9004-31166#9004-31166#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(755,39,0)#9004-31167#9004-31167#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(756,39,0)#9004-32079#9004-32079#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(757,39,0)#9004-32080#9004-32080#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(758,39,0)#9004-32081#9004-32081#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(759,39,0)#9004-32082#9004-32082#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(760,39,0)#9004-32367#9004-32367#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(761,39,0)#9004-32439#9004-32439#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(762,39,0)#9004-32440#9004-32440#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(763,39,0)#9004-32442#9004-32442#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(764,39,0)#9004-32443#9004-32443#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(765,39,0)#9004-32444#9004-32444#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(766,39,0)#9004-33092#9004-33092#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(767,39,0)#9004-33109#9004-33109#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(768,39,0)#9004-33234#9004-33234#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(769,39,0)#9004-34130#9004-34130#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(770,39,0)#9004-34184#9004-34184#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(771,39,0)#9004-34185#9004-34185#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1429,39,0)#9004-34187#9004-34187#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(772,39,0)#9004-34188#9004-34188#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(773,39,0)#9004-34189#9004-34189#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(774,39,0)#9004-34435#9004-34435#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(775,39,0)#9004-35005#9004-35005#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(776,39,0)#9004-35006#9004-35006#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(777,39,0)#9004-35007#9004-35007#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(778,39,0)#9004-35271#9004-35271#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(779,39,0)#9004-35320#9004-35320#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(780,39,0)#9004-35321#9004-35321#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(781,39,0)#9004-35354#9004-35354#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(782,39,0)#9004-35369#9004-35369#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(783,39,0)#9004-35460#9004-35460#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(784,39,0)#9004-35462#9004-35462#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(785,39,0)#9004-35713#9004-35713#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(786,39,0)#9004-36538#9004-36538#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(787,39,0)#9004-36540#9004-36540#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(788,39,0)#9004-36541#9004-36541#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(789,39,0)#9004-36542#9004-36542#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(790,39,0)#9004-36544#9004-36544#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(791,39,0)#9004-36545#9004-36545#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(792,39,0)#9004-36548#9004-36548#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(793,39,0)#9004-36550#9004-36550#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(794,39,0)#9004-36553#9004-36553#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(795,39,0)#9004-36554#9004-36554#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(796,39,0)#9004-36555#9004-36555#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(797,39,0)#9004-36557#9004-36557#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(798,39,0)#9004-36558#9004-36558#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(799,39,0)#9004-36599#9004-36599#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(800,39,0)#9004-37344#9004-37344#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(801,39,0)#9004-37667#9004-37667#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(802,39,0)#9004-37668#9004-37668#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(803,39,0)#9004-38142#9004-38142#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(804,39,0)#9004-38292#9004-38292#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(805,39,0)#9004-38357#9004-38357#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(806,39,0)#9004-38603#9004-38603#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(807,39,0)#9004-39336#9004-39336#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(808,39,0)#9004-39619#9004-39619#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(809,39,0)#9004-39829#9004-39829#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(810,39,0)#9004-39905#9004-39905#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(811,39,0)#9004-40001#9004-40001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(812,39,0)#9004-41445#9004-41445#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(813,39,0)#9004-41637#9004-41637#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1509,39,0)#9004-42249#9004-42249#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(814,39,0)#9004-42563#9004-42563#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(815,39,0)#9004-42673#9004-42673#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(816,39,0)#9004-42954#9004-42954#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(817,39,0)#9004-42957#9004-42957#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(818,39,0)#9004-43223#9004-43223#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(819,39,0)#9004-43226#9004-43226#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(820,39,0)#9004-43227#9004-43227#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(821,39,0)#9004-43228#9004-43228#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(822,39,0)#9004-43229#9004-43229#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(823,39,0)#9004-43230#9004-43230#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(824,39,0)#9004-43235#9004-43235#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(825,39,0)#9004-43236#9004-43236#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(826,39,0)#9004-43258#9004-43258#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(827,39,0)#9004-43259#9004-43259#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(828,39,0)#9004-43260#9004-43260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(829,39,0)#9004-43271#9004-43271#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1514,39,0)#9004-43272#9004-43272#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(830,39,0)#9004-43273#9004-43273#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(831,39,0)#9004-43274#9004-43274#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(832,39,0)#9004-43275#9004-43275#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(833,39,0)#9004-43277#9004-43277#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(834,39,0)#9004-43278#9004-43278#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(835,39,0)#9004-43279#9004-43279#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(836,39,0)#9004-43280#9004-43280#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(837,39,0)#9004-43282#9004-43282#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(838,39,0)#9004-43283#9004-43283#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(839,39,0)#9004-43284#9004-43284#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(840,39,0)#9004-43285#9004-43285#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(841,39,0)#9004-43286#9004-43286#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(842,39,0)#9004-43287#9004-43287#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(843,39,0)#9004-43288#9004-43288#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(844,39,0)#9004-43289#9004-43289#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(845,39,0)#9004-43290#9004-43290#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(846,39,0)#9004-43291#9004-43291#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(847,39,0)#9004-43292#9004-43292#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(848,39,0)#9004-43293#9004-43293#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(849,39,0)#9004-43294#9004-43294#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(850,39,0)#9004-43295#9004-43295#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(851,39,0)#9004-43296#9004-43296#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(852,39,0)#9004-43444#9004-43444#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(853,39,0)#9004-43445#9004-43445#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(854,39,0)#9004-43449#9004-43449#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(855,39,0)#9004-43455#9004-43455#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(856,39,0)#9004-43457#9004-43457#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(857,39,0)#9004-43462#9004-43462#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(858,39,0)#9004-43477#9004-43477#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(859,39,0)#9004-43819#9004-43819#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(860,39,0)#9004-43844#9004-43844#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1709,39,0)#9004-43855#9004-43855#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1529,39,0)#9004-43865#9004-43865#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(861,39,0)#9004-43894#9004-43894#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(862,39,0)#9004-43895#9004-43895#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(863,39,0)#9004-43896#9004-43896#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(864,39,0)#9004-43897#9004-43897#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(865,39,0)#9004-43898#9004-43898#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(866,39,0)#9004-43899#9004-43899#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(867,39,0)#9004-43900#9004-43900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(868,39,0)#9004-43901#9004-43901#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(869,39,0)#9004-43902#9004-43902#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(870,39,0)#9004-43933#9004-43933#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(871,39,0)#9004-43949#9004-43949#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1422,39,0)#9004-43950#9004-43950#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(872,39,0)#9004-43964#9004-43964#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(873,39,0)#9004-44005#9004-44005#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(874,39,0)#9004-44006#9004-44006#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(875,39,0)#9004-44447#9004-44447#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(876,39,0)#9004-45498#9004-45498#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(877,39,0)#9004-45610#9004-45610#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(878,39,0)#9004-45611#9004-45611#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(879,39,0)#9004-45612#9004-45612#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(880,39,0)#9004-45613#9004-45613#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(881,39,0)#9004-45615#9004-45615#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(882,39,0)#9004-45616#9004-45616#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(883,39,0)#9004-45618#9004-45618#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(884,39,0)#9004-45619#9004-45619#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(885,39,0)#9004-45620#9004-45620#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(886,39,0)#9004-45622#9004-45622#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(887,39,0)#9004-45623#9004-45623#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(888,39,0)#9004-45624#9004-45624#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(889,39,0)#9004-45640#9004-45640#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(890,39,0)#9004-45641#9004-45641#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(891,39,0)#9004-45642#9004-45642#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(892,39,0)#9004-45661#9004-45661#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(893,39,0)#9004-45723#9004-45723#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(894,39,0)#9004-45724#9004-45724#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(895,39,0)#9004-50782#9004-50782#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(896,39,0)#9004-51239#9004-51239#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(897,39,0)#9004-51413#9004-51413#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(898,39,0)#9004-52699#9004-52699#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(899,39,0)#9004-52700#9004-52700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(900,39,0)#9004-52701#9004-52701#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(901,39,0)#9004-52702#9004-52702#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(902,39,0)#9004-53078#9004-53078#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(903,39,0)#9004-53725#9004-53725#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(904,39,0)#9004-55453#9004-55453#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(905,39,0)#9004-55739#9004-55739#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(906,39,0)#9004-55741#9004-55741#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(907,39,0)#9004-56566#9004-56566#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(908,39,0)#9004-57062#9004-57062#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(909,39,0)#9004-57063#9004-57063#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(910,39,0)#9004-57064#9004-57064#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(911,39,0)#9004-62768#9004-62768#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(912,39,0)#9004-62769#9004-62769#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(913,39,0)#9010-03196#9010-03196#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(914,39,0)#9010-03924#9010-03924#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(915,39,0)#9010-03928#9010-03928#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(916,39,0)#9010-04997#9010-04997#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(917,39,0)#9010-05000#9010-05000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(918,39,0)#9010-05005#9010-05005#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(919,39,0)#9010-05913#9010-05913#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(920,39,0)#9010-06362#9010-06362#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(921,39,0)#9010-07179#9010-07179#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(922,39,0)#9010-07181#9010-07181#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(923,39,0)#9010-07976#9010-07976#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(924,39,0)#9010-07977#9010-07977#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(925,39,0)#9010-07980#9010-07980#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(926,39,0)#9010-07981#9010-07981#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(927,39,0)#9010-10599#9010-10599#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(928,39,0)#9010-10920#9010-10920#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(929,39,0)#9010-10921#9010-10921#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(930,39,0)#9010-10922#9010-10922#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(931,39,0)#9010-14431#9010-14431#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(932,39,0)#9010-17544#9010-17544#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(933,39,0)#9010-17613#9010-17613#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(934,39,0)#9010-23569#9010-23569#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(935,39,0)#9010-26366#9010-26366#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1430,39,0)#9010-26367#9010-26367#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1711,39,0)#9010-26368#9010-26368#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(936,39,0)#9010-27329#9010-27329#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(937,39,0)#9010-29066#9010-29066#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1486,39,0)#9010-33895#9010-33895#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(938,39,0)#9010-33896#9010-33896#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1495,39,0)#9010-35181#9010-35181#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(939,39,0)#9010-35305#9010-35305#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(940,39,0)#9010-38347#9010-38347#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(941,39,0)#9010-39095#9010-39095#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(942,39,0)#9010-39096#9010-39096#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(943,39,0)#9010-39097#9010-39097#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(944,39,0)#9010-41445#9010-41445#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(945,39,0)#9010-44472#9010-44472#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(946,39,0)#9010-46116#9010-46116#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(947,39,0)#9010-51368#9010-51368#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(948,39,0)#9010-52901#9010-52901#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(949,39,0)#9010-52903#9010-52903#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(950,39,0)#9010-53081#9010-53081#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(951,39,0)#9010-53083#9010-53083#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1503,39,0)#9010-61702#9010-61702#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1416,39,0)#9010-63181#9010-63181#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(952,39,0)#9010-63303#9010-63303#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1419,39,0)#9010-63304#9010-63304#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(953,39,0)#9010-66977#9010-66977#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1638,39,0)#9010-69414#9010-69414#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(954,39,0)#9010-71706#9010-71706#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(955,39,0)#9010-71707#9010-71707#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1756,39,0)#9010-71708#9010-71708#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(956,39,0)#9010-71709#9010-71709#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(957,39,0)#9010-71710#9010-71710#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(958,39,0)#9010-72457#9010-72457#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(959,39,0)#9010-72458#9010-72458#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(960,39,0)#9010-72460#9010-72460#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(961,39,0)#9010-72464#9010-72464#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(962,39,0)#9010-77554#9010-77554#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(963,39,0)#9010-78038#9010-78038#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(964,39,0)#9010-82351#9010-82351#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(965,39,0)#9010-82352#9010-82352#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(966,39,0)#9010-86964#9010-86964#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(967,39,0)#9010-86969#9010-86969#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(968,39,0)#9010-86979#9010-86979#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(969,39,0)#9010-88964#9010-88964#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(970,39,0)#9010-88965#9010-88965#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(971,39,0)#9010-88970#9010-88970#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1573,39,0)#9010-91832#9010-91832#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(972,39,0)#9010-94093#9010-94093#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(973,39,0)#9010-94202#9010-94202#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(974,39,0)#9010-95168#9010-95168#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1662,39,0)#9010-95212#9010-95212#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(975,39,0)#9010-97592#9010-97592#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(976,39,0)#9010-97596#9010-97596#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(977,39,0)#9011-00689#9011-00689#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(978,39,0)#9011-00691#9011-00691#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(979,39,0)#9011-08667#9011-08667#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(980,39,0)#9011-08737#9011-08737#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(981,39,0)#9011-11554#9011-11554#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(982,39,0)#9011-11556#9011-11556#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(983,39,0)#9011-11560#9011-11560#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(984,39,0)#9011-11562#9011-11562#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(985,39,0)#9011-11565#9011-11565#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(986,39,0)#9011-11570#9011-11570#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(987,39,0)#9011-11571#9011-11571#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(988,39,0)#9011-11576#9011-11576#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(989,39,0)#9011-11578#9011-11578#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(990,39,0)#9011-11583#9011-11583#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(991,39,0)#9011-11586#9011-11586#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(992,39,0)#9011-11589#9011-11589#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(993,39,0)#9011-11591#9011-11591#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(994,39,0)#9011-11593#9011-11593#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(995,39,0)#9011-11594#9011-11594#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(996,39,0)#9011-11595#9011-11595#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(997,39,0)#9011-11600#9011-11600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(998,39,0)#9011-11601#9011-11601#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 67
+DATA>#(999,39,0)#9011-11602#9011-11602#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1000,39,0)#9011-11603#9011-11603#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1001,39,0)#9011-11650#9011-11650#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1002,39,0)#9011-13341#9011-13341#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1658,39,0)#9011-13342#9011-13342#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1003,39,0)#9011-18882#9011-18882#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1004,39,0)#9011-18883#9011-18883#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1005,39,0)#9011-19097#9011-19097#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1006,39,0)#9011-19098#9011-19098#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1007,39,0)#9011-23679#9011-23679#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1008,39,0)#9011-23937#9011-23937#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1009,39,0)#9011-24500#9011-24500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1010,39,0)#9011-28574#9011-28574#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1011,39,0)#9011-29304#9011-29304#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1408,39,0)#9011-31674#9011-31674#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1012,39,0)#9011-32328#9011-32328#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1455,39,0)#9011-33808#9011-33808#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1013,39,0)#9011-54089#9011-54089#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1014,39,0)#9011-56511#9011-56511#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1015,39,0)#9011-56514#9011-56514#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1016,39,0)#9011-56521#9011-56521#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1017,39,0)#9011-56524#9011-56524#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1018,39,0)#9011-56527#9011-56527#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1019,39,0)#9011-56528#9011-56528#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1020,39,0)#9011-56538#9011-56538#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1405,39,0)#9011-57123#9011-57123#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1021,39,0)#9011-57125#9011-57125#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1022,39,0)#9011-57694#9011-57694#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1023,39,0)#9011-59551#9011-59551#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1024,39,0)#9011-63734#9011-63734#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1025,39,0)#9011-70899#9011-70899#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1026,39,0)#9011-70901#9011-70901#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1027,39,0)#9011-70902#9011-70902#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1028,39,0)#9011-78606#9011-78606#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1029,39,0)#9011-85501#9011-85501#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1030,39,0)#9012-10957#9012-10957#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1657,39,0)#9012-12421#9012-12421#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1031,39,0)#9012-18082#9012-18082#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1032,39,0)#9012-20231#9012-20231#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1033,39,0)#9012-36930#9012-36930#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1034,39,0)#9012-40197#9012-40197#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1035,39,0)#9380-01860#9380-01860#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1036,39,0)#9380-05370#9380-05370#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1037,39,0)#9380-07940#9380-07940#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1038,39,0)#9380-07990#9380-07990#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1039,39,0)#9380-07994#9380-07994#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1040,39,0)#9380-07995#9380-07995#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1041,39,0)#9380-12898#9380-12898#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1042,39,0)#9380-30150#9380-30150#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1043,39,0)#9392-58505#9392-58505#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1044,39,0)#9412-40460#9412-40460#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1045,39,0)#9412-70001#9412-70001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1046,39,0)#9412-70003#9412-70003#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1047,39,0)#9412-70521#9412-70521#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1048,39,0)#9412-70522#9412-70522#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1049,39,0)#9412-70523#9412-70523#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1050,39,0)#9412-70524#9412-70524#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1051,39,0)#9412-70526#9412-70526#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1052,39,0)#9412-70530#9412-70530#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1053,39,0)#9412-70531#9412-70531#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1054,39,0)#9412-70532#9412-70532#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1055,39,0)#9412-72506#9412-72506#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1056,39,0)#9412-72591#9412-72591#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1057,39,0)#9412-73600#9412-73600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1058,39,0)#9412-79205#9412-79205#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1508,39,0)#9413-41000#9413-41000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1639,39,0)#9413-41101#9413-41101#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1641,39,0)#9413-41102#9413-41102#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1640,39,0)#9413-41103#9413-41103#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1059,39,0)#9413-47500#9413-47500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1060,39,0)#9413-47700#9413-47700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1061,39,0)#9413-47800#9413-47800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1062,39,0)#9417-00800#9417-00800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1063,39,0)#9417-00900#9417-00900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1064,39,0)#9417-05300#9417-05300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1065,39,0)#9417-05400#9417-05400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1066,39,0)#9417-05991#9417-05991#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1067,39,0)#9417-07503#9417-07503#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1068,39,0)#9417-07504#9417-07504#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1069,39,0)#9417-07506#9417-07506#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1070,39,0)#9417-07507#9417-07507#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1071,39,0)#9417-07508#9417-07508#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1072,39,0)#9417-07510#9417-07510#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1073,39,0)#9417-07513#9417-07513#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1074,39,0)#9417-07514#9417-07514#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1075,39,0)#9417-07530#9417-07530#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1076,39,0)#9417-07535#9417-07535#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1077,39,0)#9417-07591#9417-07591#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1078,39,0)#9417-07597#9417-07597#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1079,39,0)#9417-08505#9417-08505#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1080,39,0)#9417-72542#9417-72542#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1081,39,0)#9417-72564#9417-72564#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1082,39,0)#9417-72569#9417-72569#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1083,39,0)#9417-72578#9417-72578#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1084,39,0)#9417-72579#9417-72579#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1085,39,0)#9417-72580#9417-72580#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1086,39,0)#9417-72581#9417-72581#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1087,39,0)#9417-72583#9417-72583#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1755,39,0)#9419-16526#9419-16526#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1088,39,0)#9422-31000#9422-31000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1089,39,0)#9422-32200#9422-32200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1090,39,0)#9422-32260#9422-32260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1091,39,0)#9422-34200#9422-34200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1092,39,0)#9422-34260#9422-34260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1093,39,0)#9422-39200#9422-39200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1094,39,0)#9422-39260#9422-39260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1095,39,0)#9422-45260#9422-45260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1096,39,0)#9422-47200#9422-47200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1097,39,0)#9422-47260#9422-47260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1098,39,0)#9422-64260#9422-64260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1099,39,0)#9422-65260#9422-65260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1100,39,0)#9422-67260#9422-67260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1101,39,0)#9422-69260#9422-69260#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1102,39,0)#9423-00000#9423-00000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1103,39,0)#9423-01000#9423-01000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1104,39,0)#9423-02000#9423-02000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1105,39,0)#9426-12600#9426-12600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1106,39,0)#9432-60400#9432-60400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1107,39,0)#9440-01000#9440-01000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1108,39,0)#9440-01100#9440-01100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1109,39,0)#9440-01300#9440-01300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1110,39,0)#9442-30000#9442-30000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1111,39,0)#9442-31000#9442-31000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1112,39,0)#9442-31400#9442-31400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1113,39,0)#9442-32000#9442-32000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1114,39,0)#9442-32400#9442-32400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1115,39,0)#9442-32500#9442-32500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1116,39,0)#9442-33000#9442-33000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1117,39,0)#9442-33400#9442-33400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1118,39,0)#9442-33500#9442-33500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1119,39,0)#9442-34400#9442-34400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1120,39,0)#9442-34500#9442-34500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1121,39,0)#9442-35000#9442-35000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1122,39,0)#9442-35400#9442-35400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1123,39,0)#9442-35592#9442-35592#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1124,39,0)#9442-38000#9442-38000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1125,39,0)#9442-38400#9442-38400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1126,39,0)#9442-38592#9442-38592#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1127,39,0)#9442-49200#9442-49200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1128,39,0)#9442-65500#9442-65500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1129,39,0)#9442-68500#9442-68500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1130,39,0)#9442-69000#9442-69000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1131,39,0)#9442-83200#9442-83200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1132,39,0)#9442-83500#9442-83500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1133,39,0)#9442-84000#9442-84000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1134,39,0)#9442-84500#9442-84500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1135,39,0)#9442-85000#9442-85000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1136,39,0)#9442-85100#9442-85100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1137,39,0)#9442-85500#9442-85500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1578,39,0)#9444-03104#9444-03104#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1138,39,0)#9444-03300#9444-03300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1139,39,0)#9444-03400#9444-03400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1140,39,0)#9444-03500#9444-03500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1141,39,0)#9444-03530#9444-03530#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1142,39,0)#9444-23400#9444-23400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1143,39,0)#9444-42200#9444-42200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1144,39,0)#9444-42400#9444-42400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1145,39,0)#9444-43200#9444-43200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1146,39,0)#9444-43400#9444-43400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1147,39,0)#9444-43500#9444-43500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1148,39,0)#9444-44200#9444-44200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1149,39,0)#9444-44300#9444-44300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1150,39,0)#9444-45900#9444-45900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1151,39,0)#9444-46200#9444-46200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1152,39,0)#9444-46400#9444-46400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1153,39,0)#9444-47200#9444-47200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1154,39,0)#9444-48000#9444-48000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1155,39,0)#9444-48600#9444-48600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1156,39,0)#9444-48900#9444-48900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1157,39,0)#9444-80100#9444-80100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1158,39,0)#9444-83000#9444-83000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1159,39,0)#9444-92100#9444-92100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1160,39,0)#9444-92200#9444-92200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1161,39,0)#9446-31004#9446-31004#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1162,39,0)#9446-47500#9446-47500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1163,39,0)#9447-21625#9447-21625#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1164,39,0)#9447-21700#9447-21700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1165,39,0)#9447-21750#9447-21750#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1166,39,0)#9447-21752#9447-21752#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1167,39,0)#9447-21800#9447-21800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1168,39,0)#9447-21900#9447-21900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1169,39,0)#9447-23000#9447-23000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1170,39,0)#9447-23091#9447-23091#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1171,39,0)#9447-23200#9447-23200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1172,39,0)#9447-23400#9447-23400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1173,39,0)#9447-23500#9447-23500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1174,39,0)#9447-26000#9447-26000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1175,39,0)#9447-27200#9447-27200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1176,39,0)#9447-71002#9447-71002#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1177,39,0)#9447-71202#9447-71202#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1178,39,0)#9448-01293#9448-01293#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1179,39,0)#9448-01612#9448-01612#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1180,39,0)#9448-02000#9448-02000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1181,39,0)#9451-33185#9451-33185#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1182,39,0)#9451-41034#9451-41034#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1183,39,0)#9451-41036#9451-41036#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1184,39,0)#9451-45102#9451-45102#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1185,39,0)#9451-81015#9451-81015#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1186,39,0)#9451-90300#9451-90300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1187,39,0)#9452-17400#9452-17400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1188,39,0)#9452-18900#9452-18900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1189,39,0)#9452-23770#9452-23770#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1190,39,0)#9452-25000#9452-25000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1191,39,0)#9452-25001#9452-25001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1192,39,0)#9452-25006#9452-25006#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1193,39,0)#9452-25009#9452-25009#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1194,39,0)#9452-25015#9452-25015#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1195,39,0)#9452-25017#9452-25017#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1196,39,0)#9452-25100#9452-25100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1197,39,0)#9452-25200#9452-25200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1198,39,0)#9452-46800#9452-46800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1199,39,0)#9452-60101#9452-60101#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1200,39,0)#9452-60103#9452-60103#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1201,39,0)#9452-60104#9452-60104#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1202,39,0)#9452-60105#9452-60105#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1203,39,0)#9452-60106#9452-60106#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1204,39,0)#9452-60107#9452-60107#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1205,39,0)#9452-60109#9452-60109#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1206,39,0)#9452-60110#9452-60110#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1207,39,0)#9452-60111#9452-60111#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1208,39,0)#9452-60112#9452-60112#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1209,39,0)#9452-60113#9452-60113#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1210,39,0)#9452-60114#9452-60114#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1211,39,0)#9452-60115#9452-60115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1212,39,0)#9452-60116#9452-60116#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1213,39,0)#9452-60117#9452-60117#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1214,39,0)#9452-60118#9452-60118#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1215,39,0)#9452-60119#9452-60119#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1216,39,0)#9452-60120#9452-60120#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1217,39,0)#9452-60121#9452-60121#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1218,39,0)#9452-60122#9452-60122#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1219,39,0)#9452-60123#9452-60123#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1220,39,0)#9452-60125#9452-60125#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1221,39,0)#9452-60126#9452-60126#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1222,39,0)#9452-60127#9452-60127#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1223,39,0)#9452-60128#9452-60128#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1224,39,0)#9452-60129#9452-60129#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1225,39,0)#9452-60130#9452-60130#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1226,39,0)#9452-60131#9452-60131#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1227,39,0)#9452-60132#9452-60132#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1228,39,0)#9452-60133#9452-60133#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1229,39,0)#9452-60134#9452-60134#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1230,39,0)#9452-60135#9452-60135#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1231,39,0)#9452-60136#9452-60136#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1232,39,0)#9452-60137#9452-60137#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1233,39,0)#9452-60138#9452-60138#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1234,39,0)#9452-60139#9452-60139#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1235,39,0)#9452-60140#9452-60140#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1236,39,0)#9452-60141#9452-60141#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1237,39,0)#9452-60142#9452-60142#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1238,39,0)#9452-60143#9452-60143#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1239,39,0)#9452-60144#9452-60144#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1240,39,0)#9452-60145#9452-60145#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1241,39,0)#9452-60146#9452-60146#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1242,39,0)#9452-60147#9452-60147#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1243,39,0)#9452-60148#9452-60148#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1244,39,0)#9452-60149#9452-60149#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1245,39,0)#9452-60150#9452-60150#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1246,39,0)#9452-60151#9452-60151#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1247,39,0)#9452-60152#9452-60152#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1248,39,0)#9452-60153#9452-60153#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1249,39,0)#9452-60154#9452-60154#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1250,39,0)#9452-60155#9452-60155#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1402,39,0)#9452-60156#9452-60156#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1251,39,0)#9452-60157#9452-60157#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1252,39,0)#9452-62012#9452-62012#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1253,39,0)#9452-62040#9452-62040#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1254,39,0)#9452-68600#9452-68600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1255,39,0)#9452-68700#9452-68700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1256,39,0)#9452-72193#9452-72193#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1257,39,0)#9452-72500#9452-72500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1258,39,0)#9452-73100#9452-73100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1259,39,0)#9452-73500#9452-73500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1260,39,0)#9452-73900#9452-73900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1261,39,0)#9452-75202#9452-75202#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1262,39,0)#9452-78910#9452-78910#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1263,39,0)#9452-79202#9452-79202#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1264,39,0)#9452-79300#9452-79300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1265,39,0)#9452-79754#9452-79754#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1266,39,0)#9452-79756#9452-79756#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1267,39,0)#9452-79757#9452-79757#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1268,39,0)#9452-79760#9452-79760#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1269,39,0)#9452-79762#9452-79762#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1270,39,0)#9452-80022#9452-80022#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1271,39,0)#9452-80023#9452-80023#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1272,39,0)#9452-80101#9452-80101#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1273,39,0)#9452-80102#9452-80102#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1274,39,0)#9452-80103#9452-80103#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1275,39,0)#9452-80104#9452-80104#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1276,39,0)#9452-80105#9452-80105#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1277,39,0)#9452-80106#9452-80106#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1278,39,0)#9452-80107#9452-80107#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1279,39,0)#9452-80108#9452-80108#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1280,39,0)#9452-80109#9452-80109#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1281,39,0)#9452-80110#9452-80110#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1282,39,0)#9452-80111#9452-80111#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1283,39,0)#9452-80112#9452-80112#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1284,39,0)#9452-80403#9452-80403#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1285,39,0)#9452-80404#9452-80404#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1286,39,0)#9452-80436#9452-80436#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1287,39,0)#9452-80678#9452-80678#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1288,39,0)#9452-80901#9452-80901#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1289,39,0)#9452-80902#9452-80902#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1290,39,0)#9452-80903#9452-80903#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1291,39,0)#9452-80904#9452-80904#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1292,39,0)#9452-80905#9452-80905#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1293,39,0)#9452-80906#9452-80906#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1294,39,0)#9452-80907#9452-80907#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1295,39,0)#9452-80908#9452-80908#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1296,39,0)#9452-80909#9452-80909#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1297,39,0)#9452-81600#9452-81600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1298,39,0)#9452-82103#9452-82103#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1299,39,0)#9452-82111#9452-82111#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1300,39,0)#9452-82112#9452-82112#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1301,39,0)#9452-82231#9452-82231#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1302,39,0)#9452-82400#9452-82400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1303,39,0)#9452-82702#9452-82702#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1304,39,0)#9452-82800#9452-82800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1305,39,0)#9452-82900#9452-82900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1306,39,0)#9452-83100#9452-83100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1307,39,0)#9452-83300#9452-83300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1308,39,0)#9452-83400#9452-83400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1309,39,0)#9452-84500#9452-84500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1310,39,0)#9452-84900#9452-84900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1311,39,0)#9452-85400#9452-85400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1312,39,0)#9452-85501#9452-85501#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1313,39,0)#9452-85600#9452-85600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1314,39,0)#9452-85601#9452-85601#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1315,39,0)#9452-86500#9452-86500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1316,39,0)#9452-86700#9452-86700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1317,39,0)#9452-86703#9452-86703#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1318,39,0)#9452-86900#9452-86900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1319,39,0)#9452-88500#9452-88500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1320,39,0)#9452-88600#9452-88600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1321,39,0)#9452-88700#9452-88700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1322,39,0)#9452-89800#9452-89800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1323,39,0)#9452-93000#9452-93000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1324,39,0)#9452-93002#9452-93002#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1325,39,0)#9452-93032#9452-93032#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1326,39,0)#9452-93191#9452-93191#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1327,39,0)#9452-93200#9452-93200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1328,39,0)#9452-93297#9452-93297#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1329,39,0)#9452-95600#9452-95600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1330,39,0)#9452-98500#9452-98500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1331,39,0)#9452-99500#9452-99500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1332,39,0)#9452-99700#9452-99700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1333,39,0)#9452-99800#9452-99800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1334,39,0)#9453-06793#9453-06793#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1335,39,0)#9453-14201#9453-14201#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1336,39,0)#9453-14202#9453-14202#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1337,39,0)#9453-14205#9453-14205#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1338,39,0)#9453-14206#9453-14206#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1339,39,0)#9453-47400#9453-47400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1340,39,0)#9453-48000#9453-48000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1693,39,0)#9453-59510#9453-59510#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1341,39,0)#9453-59535#9453-59535#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1342,39,0)#9453-66401#9453-66401#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1343,39,0)#9453-66491#9453-66491#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1344,39,0)#9454-06000#9454-06000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1345,39,0)#9456-00400#9456-00400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1346,39,0)#9456-00600#9456-00600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1637,39,0)#9456-10500#9456-10500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1347,39,0)#9456-11100#9456-11100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1348,39,0)#9456-14000#9456-14000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1349,39,0)#9457-36000#9457-36000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1350,39,0)#9457-41111#9457-41111#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1436,39,0)#9457-41115#9457-41115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1351,39,0)#9457-41118#9457-41118#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1352,39,0)#9457-41119#9457-41119#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1401,39,0)#9457-41150#9457-41150#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1353,39,0)#9457-41412#9457-41412#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1354,39,0)#9457-42800#9457-42800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1355,39,0)#9457-43100#9457-43100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1356,39,0)#9457-43200#9457-43200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1357,39,0)#9457-43206#9457-43206#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1358,39,0)#9457-43210#9457-43210#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1359,39,0)#9457-43300#9457-43300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1360,39,0)#9457-43306#9457-43306#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1361,39,0)#9457-43381#9457-43381#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1362,39,0)#9457-49200#9457-49200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1363,39,0)#9457-49210#9457-49210#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1364,39,0)#9457-49300#9457-49300#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1365,39,0)#9457-49305#9457-49305#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1366,39,0)#9457-49350#9457-49350#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1367,39,0)#9457-49400#9457-49400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1368,39,0)#9458-25000#9458-25000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1369,39,0)#9458-41700#9458-41700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1370,39,0)#9458-42500#9458-42500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1371,39,0)#9458-46000#9458-46000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1372,39,0)#9459-33600#9459-33600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1373,39,0)#9459-99200#9459-99200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1374,39,0)#9467-25292#9467-25292#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1375,39,0)#9467-27500#9467-27500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1376,39,0)#9467-27600#9467-27600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1377,39,0)#9467-82800#9467-82800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1378,39,0)#9467-83000#9467-83000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1379,39,0)#9467-85400#9467-85400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1380,39,0)#9468-03001#9468-03001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1381,39,0)#9468-03103#9468-03103#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1382,39,0)#9468-03106#9468-03106#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1383,39,0)#9468-03151#9468-03151#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1384,39,0)#9468-03216#9468-03216#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1385,39,0)#9470-63002#9470-63002#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1386,39,0)#9470-63004#9470-63004#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1387,39,0)#9470-63005#9470-63005#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1388,39,0)#9470-71101#9470-71101#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1389,39,0)#9470-81004#9470-81004#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1390,39,0)#9470-81075#9470-81075#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1391,39,0)#9470-81076#9470-81076#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1392,39,0)#9470-81150#9470-81150#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1393,39,0)#9473-01100#9473-01100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1394,39,0)#9474-02700#9474-02700#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1395,39,0)#9474-06400#9474-06400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1396,39,0)#9475-61958#9475-61958#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1397,39,0)#9475-69901#9475-69901#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1398,39,0)#9477-38005#9477-38005#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1736,39,0)#9479-19949#9479-19949#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1399,39,0)#9772-93191#9772-93191#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1400,39,0)#9807-00200#9807-00200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1404,39,0)#7600-19140#7600-19140#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 66
+DATA>#(1406,39,0)#300000004#300000004#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1610,39,0)#9004-36551#9004-36551#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1583,39,0)#7511-00202#7511-00202#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1603,39,0)#7511-00102#7511-00102#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1409,39,0)#7600-13087#7600-13087#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1410,39,0)#7602-15547#7602-15547#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1538,39,0)#7500-85100#7500-85100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1411,39,0)#7654-65387#7654-65387#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1412,39,0)#7654-65303#7654-65303#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1539,39,0)#7500-85020#7500-85020#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1683,39,0)#7500-85030#7500-85030#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1413,39,0)#4000-00076#4000-00076#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1414,39,0)#7057-82014#7057-82014#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1415,39,0)#9004-24797#9004-24797#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 66
+DATA>#(1417,39,0)#300000013#300000013#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1418,39,0)#9417-07594#9417-07594#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1420,39,0)#9453-59500#9453-59500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1423,39,0)#9452-82115#9452-82115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1424,39,0)#9452-85514#9452-85514#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1425,39,0)#9452-85518#9452-85518#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1426,39,0)#9452-85517#9452-85517#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1427,39,0)#9452-80985#9452-80985#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1428,39,0)#9457-49382#9457-49382#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1431,39,0)#9452-89887#9452-89887#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1540,39,0)#7400-13201#7400-13201#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1541,39,0)#4000-00037#4000-00037#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1542,39,0)#4000-00038#4000-00038#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1543,39,0)#4000-00039#4000-00039#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1432,39,0)#9446-46012#9446-46012#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1643,39,0)#7300-35000#7300-35000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1507,39,0)#0132-01090#0132-01090#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1644,39,0)#7100-00010#7100-00010#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1501,39,0)#7100-00013#7100-00013#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1660,39,0)#4010-63363#4010-63363#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1661,39,0)#4010-63364#4010-63364#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1437,39,0)#4914-23133#4914-23133#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1513,39,0)#2132-00033#2132-00033#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1512,39,0)#2132-00043#2132-00043#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1684,39,0)#2132-00061#2132-00061#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1580,39,0)#2132-00152#2132-00152#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1492,39,0)#2132-00162#2132-00162#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1491,39,0)#2132-00202#2132-00202#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1586,39,0)#2132-00250#2132-00250#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1440,39,0)#7400-00001#7400-00001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1438,39,0)#9004-43937#9004-43937#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1439,39,0)#9004-43943#9004-43943#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1441,39,0)#9004-43941#9004-43941#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1442,39,0)#9004-43944#9004-43944#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1443,39,0)#9004-43946#9004-43946#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1444,39,0)#9004-43947#9004-43947#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1445,39,0)#9004-43951#9004-43951#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1446,39,0)#9004-43952#9004-43952#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1447,39,0)#9004-43938#9004-43938#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1448,39,0)#9004-43939#9004-43939#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1449,39,0)#9004-43940#9004-43940#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1450,39,0)#7200-33871#7200-33871#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1451,39,0)#9412-72521#9412-72521#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1452,39,0)#7656-52474#7656-52474#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1453,39,0)#4013-22525#4013-22525#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1459,39,0)#7460-93019#7460-93019#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1454,39,0)#7156-57801#7156-57801#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1489,39,0)#9004-43261#9004-43261#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1490,39,0)#9004-43262#9004-43262#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1551,39,0)#9004-36552#9004-36552#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1530,39,0)#9004-43466#9004-43466#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1598,39,0)#9004-32625#9004-32625#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1456,39,0)#7300-01058#7300-01058#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1457,39,0)#7300-02423#7300-02423#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1552,39,0)#0005-00070#0005-00070#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1460,39,0)#7374-22801#7374-22801#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1461,39,0)#7420-01500#7420-01500#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1488,39,0)#7410-23001#7410-23001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1462,39,0)#9454-08900#9454-08900#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1463,39,0)#4931-15002#4931-15002#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 66
+DATA>#(1464,39,0)#408046528#408046528#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1465,39,0)#4080-46528#4080-46528#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1466,39,0)#4080-46572#4080-46572#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1467,39,0)#4080-46529#4080-46529#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 66
+DATA>#(1470,39,0)#7565-2572#7565-2572#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1471,39,0)#7656-52572#7656-52572#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1472,39,0)#7656-52235#7656-52235#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1473,39,0)#7613-64128#7613-64128#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1474,39,0)#7697-49442#7697-49442#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1655,39,0)#2133-00110#2133-00110#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1475,39,0)#7600-05832#7600-05832#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1476,39,0)#4013-67114#4013-67114#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1477,39,0)#4013-67214#4013-67214#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1478,39,0)#4013-65028#4013-65028#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1479,39,0)#4013-61528#4013-61528#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1480,39,0)#4013-59743#4013-59743#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1481,39,0)#4013-60290#4013-60290#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1682,39,0)#9003-00812#9003-00812#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1482,39,0)#7440-25673#7440-25673#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1483,39,0)#7400-21800#7400-21800#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1749,39,0)#7200-73200#7200-73200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1484,39,0)#9412-72505#9412-72505#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1485,39,0)#0032-00140#0032-00140#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1487,39,0)#4050-54328#4050-54328#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1505,39,0)#9013-40108#9013-40108#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1493,39,0)#7100-68015#7100-68015#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1496,39,0)#0130-00040#0130-00040#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1497,39,0)#9004-23109#9004-23109#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1498,39,0)#9004-23111#9004-23111#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1499,39,0)#7156-57607#7156-57607#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1500,39,0)#7156-56733#7156-56733#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1502,39,0)#7933-74021#7933-74021#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1680,39,0)#7500-35010#7500-35010#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1504,39,0)#9432-60691#9432-60691#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1506,39,0)#4000-56519#4000-56519#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1510,39,0)#7635-40015#7635-40015#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1511,39,0)#4914-52797#4914-52797#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1515,39,0)#0130-00440#0130-00440#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1517,39,0)#7400-82214#7400-82214#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1516,39,0)#7400-81514#7400-81514#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1646,39,0)#2132-00034#2132-00034#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1654,39,0)#2132-00044#2132-00044#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1634,39,0)#2132-00251#2132-00251#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1518,39,0)#9004-23159#9004-23159#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1519,39,0)#7480-71600#7480-71600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1585,39,0)#2132-05030#2132-05030#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1584,39,0)#2132-05010#2132-05010#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1520,39,0)#9471-70121#9471-70121#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1575,39,0)#7400-40010#7400-40010#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1554,39,0)#7400-40020#7400-40020#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1521,39,0)#9452-81257#9452-81257#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1522,39,0)#7211-38831#7211-38831#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1523,39,0)#9417-07200#9417-07200#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1696,39,0)#9104-23052#9104-23052#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1524,39,0)#7400-06925#7400-06925#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1678,39,0)#7440-01680#7440-01680#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1525,39,0)#7400-14325#7400-14325#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1526,39,0)#7400-60514#7400-60514#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1527,39,0)#7656-51303#7656-51303#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1528,39,0)#9458-40600#9458-40600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1531,39,0)#9135-22526#9135-22526#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1532,39,0)#7600-50845#7600-50845#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1533,39,0)#9001-44836#9001-44836#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1534,39,0)#9001-44698#9001-44698#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1535,39,0)#9001-28808#9001-28808#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1536,39,0)#9452-80433#9452-80433#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1537,39,0)#4200-82461#4200-82461#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1622,39,0)#2132-00361#2132-00361#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1633,39,0)#2132-00420#2132-00420#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1544,39,0)#7656-57015#7656-57015#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1545,39,0)#7656-57021#7656-57021#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1546,39,0)#7646-11117#7646-11117#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1547,39,0)#7652-11034#7652-11034#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1548,39,0)#7400-18627#7400-18627#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1549,39,0)#7020-27074#7020-27074#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1550,39,0)#4000-51020#4000-51020#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1574,39,0)#7440-01681#7440-01681#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1679,39,0)#7440-01682#7440-01682#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1553,39,0)#7400-40021#7400-40021#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1577,39,0)#7600-06017#7600-06017#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1555,39,0)#7440-22927#7440-22927#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1556,39,0)#7420-22857#7420-22857#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1557,39,0)#7480-20352#7480-20352#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1558,39,0)#7440-17680#7440-17680#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1559,39,0)#7490-22953#7490-22953#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1560,39,0)#7420-22858#7420-22858#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1561,39,0)#7300-22434#7300-22434#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1562,39,0)#7440-22601#7440-22601#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1563,39,0)#7440-22511#7440-22511#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1564,39,0)#7490-22451#7490-22451#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1565,39,0)#7450-22602#7450-22602#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1566,39,0)#7440-22872#7440-22872#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1567,39,0)#7440-10396#7440-10396#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1568,39,0)#7480-18283#7480-18283#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1569,39,0)#7480-22694#7480-22694#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1570,39,0)#7490-18285#7490-18285#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1571,39,0)#7480-20303#7480-20303#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1572,39,0)#4311-18705#4311-18705#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1576,39,0)#4311-17343#4311-17343#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1579,39,0)#4056-57346#4056-57346#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1588,39,0)#4124-15272#4124-15272#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1667,39,0)#7611-11595#7611-11595#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1581,39,0)#4050-15112#4050-15112#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1582,39,0)#9452-76612#9452-76612#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1587,39,0)#7400-16727#7400-16727#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1589,39,0)#7420-02190#7420-02190#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1590,39,0)#7565-76134#7565-76134#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1591,39,0)#4082-11115#4082-11115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1592,39,0)#4056-51106#4056-51106#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1593,39,0)#9413-41171#9413-41171#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1594,39,0)#7600-04600#7600-04600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1595,39,0)#4000-50908#4000-50908#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1596,39,0)#4002-98408#4002-98408#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1597,39,0)#7440-02567#7440-02567#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1600,39,0)#7111-00691#7111-00691#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1707,39,0)#7300-00002#7300-00002#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1599,39,0)#9452-82101#9452-82101#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1601,39,0)#7820-01038#7820-01038#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1602,39,0)#4005-73051#4005-73051#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1604,39,0)#4082-12407#4082-12407#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1605,39,0)#9452-80984#9452-80984#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1606,39,0)#9452-79747#9452-79747#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1607,39,0)#9457-49381#9457-49381#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1753,39,0)#2048-10091#2048-10091#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1608,39,0)#4056-57452#4056-57452#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1609,39,0)#7156-57980#7156-57980#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1751,39,0)#4500-00023#4500-00023#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1757,39,0)#4500-00024#4500-00024#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1611,39,0)#7540-05123#7540-05123#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1623,39,0)#2132-00440#2132-00440#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1612,39,0)#4905-83000#4905-83000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1613,39,0)#4090-82035#4090-82035#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1614,39,0)#4090-82123#4090-82123#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1615,39,0)#4015-73027#4015-73027#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1616,39,0)#4015-73129#4015-73129#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1617,39,0)#4015-73167#4015-73167#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1618,39,0)#7305-12230#7305-12230#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1619,39,0)#7305-12115#7305-12115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1620,39,0)#4015-73073#4015-73073#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1621,39,0)#4015-77341#4015-77341#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1624,39,0)#4184-04021#4184-04021#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1701,39,0)#7600-00021#7600-00021#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1625,39,0)#4005-65790#4005-65790#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1626,39,0)#4005-65195#4005-65195#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1627,39,0)#7565-70004#7565-70004#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1628,39,0)#7565-13004#7565-13004#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1629,39,0)#7683-53512#7683-53512#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1630,39,0)#7101-40417#7101-40417#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1631,39,0)#7656-57322#7656-57322#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1632,39,0)#4000-06472#4000-06472#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1635,39,0)#4000-01853#4000-01853#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1636,39,0)#4000-01866#4000-01866#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1642,39,0)#4000-21544#4000-21544#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1645,39,0)#9380-05916#9380-05916#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1649,39,0)#9447-21731#9447-21731#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1647,39,0)#4056-51401#4056-51401#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1648,39,0)#9467-87601#9467-87601#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1650,39,0)#9447-21711#9447-21711#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1651,39,0)#7600-00100#7600-00100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 66
+DATA>#(1652,39,0)#4002-4802#4002-4802#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1653,39,0)#4002-40802#4002-40802#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1656,39,0)#7601-51712#7601-51712#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1665,39,0)#4020-40938#4020-40938#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1659,39,0)#4000-04650#4000-04650#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1663,39,0)#9004-23146#9004-23146#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1740,39,0)#7401-40241#7401-40241#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1664,39,0)#9004-02162#9004-02162#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1666,39,0)#9467-84000#9467-84000#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1702,39,0)#7400-12925#7400-12925#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1726,39,0)#4500-00062#4500-00062#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1722,39,0)#9004-02087#9004-02087#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1668,39,0)#7601-05490#7601-05490#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1669,39,0)#4090-26561#4090-26561#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1672,39,0)#0132-00010#0132-00010#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1670,39,0)#9135-21526#9135-21526#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1748,39,0)#7500-42400#7500-42400#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1671,39,0)#9453-14281#9453-14281#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1673,39,0)#9452-85602#9452-85602#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1674,39,0)#9004-21115#9004-21115#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1675,39,0)#9004-19474#9004-19474#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1676,39,0)#7500-01740#7500-01740#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1750,39,0)#2063-20360#2063-20360#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1677,39,0)#7211-38832#7211-38832#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1681,39,0)#9010-26369#9010-26369#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1752,39,0)#9010-61338#9010-61338#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1688,39,0)#7600-00390#7600-00390#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1686,39,0)#9011-46615#9011-46615#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1685,39,0)#9423-09901#9423-09901#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1687,39,0)#7610-54131#7610-54131#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1689,39,0)#9004-26997#9004-26997#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1690,39,0)#9004-02089#9004-02089#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1691,39,0)#9002-36387#9002-36387#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1692,39,0)#9002-36388#9002-36388#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1694,39,0)#9457-42600#9457-42600#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1695,39,0)#7300-42100#7300-42100#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1754,39,0)#2050-00360#2050-00360#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1739,39,0)#2050-00380#2050-00380#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1697,39,0)#9004-23110#9004-23110#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1698,39,0)#4056-52556#4056-52556#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1699,39,0)#4056-56558#4056-56558#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1700,39,0)#9001-41912#9001-41912#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1747,39,0)#7600-00001#7600-00001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1703,39,0)#9004-02090#9004-02090#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1704,39,0)#7460-05533#7460-05533#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1705,39,0)#4050-22252#4050-22252#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1706,39,0)#4082-11407#4082-11407#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1708,39,0)#7684-22109#7684-22109#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1710,39,0)#7257-87612#7257-87612#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1712,39,0)#7156-51001#7156-51001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1759,39,0)#2059-11050#2059-11050#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1713,39,0)#4000-80310#4000-80310#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1725,39,0)#0040-00654#0040-00654#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1727,39,0)#7200-17056#7200-17056#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1728,39,0)#7120-73666#7120-73666#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1729,39,0)#7120-73667#7120-73667#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1758,39,0)#2072-00021#2072-00021#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1741,39,0)#7565-13007#7565-13007#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1742,39,0)#7565-13105#7565-13105#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1743,39,0)#7565-19001#7565-19001#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1744,39,0)#7565-19002#7565-19002#3#3#Lagergruppeneigenschaft#Lager
+LOG>line size: 68
+DATA>#(1745,39,0)#4500-01613#4500-01613#3#3#Lagergruppeneigenschaft#Lager
+LOG>rec size:1578
+LOG>data size:100000
+LOG>field count:7
+LOG>disconnected
+bye

@@ -1,0 +1,224 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>fieldnames
+AnsiToUTF8>fieldnames
+UTF8ToAnsi>fieldnames
+orig>Einkauf:Reservierungen
+AnsiToUTF8>Einkauf:Reservierungen
+UTF8ToAnsi>Einkauf:Reservierungen
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request fieldnames of Einkauf:Reservierungen
+LOG>rec size:202
+DATA>name,edptype,length,desc,type,tableflag,isskip,englname,scrprot,priodisp,prioedit,iscustom,isalias,origname,meaning,meaningdic,meaningmsgnr,prompt,promptdic,promptmsgnr,headtext,headtextdic,headtextmsgnr
+DATA>#grust#N#9#Gruppe#I9#0#0##1#A#A#0#0#grust#Gruppe#vt#1###0###0
+DATA>#gruppe#A#2#Gruppennummer#GRN4#0#0#grpNo#1#A#A#0#1#gruppe#Gruppennummer#vt#2###0###0
+DATA>#grbez#A#80#Gruppenbezeichnung#GRB4#0#0#grpDescr#1#A#A#0#1#grbez#Gruppenbezeichnung#vt#3###0###0
+DATA>#dnr#A#3#Dateinummer#GRDN4#0#1#DBNo#1#A#A#0#0#dnr#Dateinummer#vt#4###0###0
+DATA>#dbez#A#20#Dateibezeichnung#GRDB4#0#1#DBDescr#1#A#A#0#1#dbez#Dateibezeichnung#vt#5###0###0
+DATA>#zn#N#5#Laufende Zeilennummer#I5#0#1#rowNo#1#A#A#0#0#zn#Laufende Zeilennummer#vt#397###0###0
+DATA>#ozeilen#N#5#Anzahl Zeilen im Tabellenteil#I5#0#0#rowCount#1#A#A#0#0#ozeilen#Anzahl Zeilen im Tabellenteil#vt#6###0###0
+DATA>#sn#A#8#Satznummer#P4#0#1#recordNo#1#A#A#0#0#sn#Satznummer#vt#7###0###0
+DATA>#id#A#30#Datensatz-ID#ID4#0#1#id#1#A#A#0#1#id#Datensatz-ID#vt#8###0###0
+DATA>#versionn#A#22#Versionsnummer#ZAE1#0#0#version#1#A#A#0#0#versionn#Versionsnummer#vt#12###0###0
+DATA>#ablagen#A#22#Zeitstempel der Datensatzablage#ZAE1#0#0#recordFilingVersion#1#A#A#0#0#ablagen#Zeitstempel der Datensatzablage#vt#13###0###0
+DATA>#ablagef#A#4#Datensatz abgelegt?#ZAE0#0#0#recordFiled#1#A#A#0#1#ablagef#Datensatz abgelegt?#vt#14###0###0
+DATA>#vor#A#11#Reservierender Vorgang#VPK8#0#0#reservingProcess#1#A#A#0#0#vor#Reservierender Vorgang#vt#5948###0###0
+DATA>#num4#A#8#Identnummer#N4#0#1##1#A#A#0#0#num4#Identnummer#vt#16###0###0
+DATA>#nummer#A#8#Identnummer#NK4#0#1#idno#1#A#A#0#1#nummer#Identnummer#vt#16###0###0
+DATA>#nummerb#A#8#Identnummer#NL4#0#1#idnoPadded#1#A#A#0#1#nummerb#Identnummer#vt#16###0###0
+DATA>#such4#A#9#Suchwort#SW4#0#1##1#A#A#0#0#such4#Suchwort#vt#17###0###0
+DATA>#such#A#9#Suchwort#SWK4#0#1#swd#1#A#A#0#1#such#Suchwort#vt#17###0###0
+DATA>#suchb#A#9#Suchwort#SWL4#0#1#swdPadded#1#A#A#0#1#suchb#Suchwort#vt#17###0###0
+DATA>#verw#A#15#Verwendung#GL15#0#0#usage#1#A#A#0#0#verw#Verwendung#vt#488###0###0
+DATA>#sucherw#A#15#Sucherweiterung#GL15#0#1#searchExt#1#A#A#0#0#sucherw#Sucherweiterung#vt#51###0###0
+DATA>#stand#D#10#Änderungsdatum#GD#0#1#modificationDate#1#A#A#0#0#stand#Änderungsdatum#vt#55###0###0
+DATA>#erfass#D#10#Erfassungsdatum#GD#0#1#creationDate#1#A#A#0#0#erfass#Erfassungsdatum#vt#56###0###0
+DATA>#zeich#A#15#Letzter Bearbeiter#GL15#0#1#responsOperator#1#A#A#0#0#zeich#Letzter Bearbeiter#vt#57###0###0
+DATA>#zeichen#A#15#Letzter Bearbeiter#GL15#0#1#lastProcessor#1#A#A#0#1#zeichen#Letzter Bearbeiter#vt#57###0###0
+DATA>#index#A#2#Versionskennung#GLU2#0#1#userDefinedVersion#1#A#A#0#0#index#Versionskennung#vt#58###0###0
+DATA>#urmand#A#15#Ursprungsmandant des Datensatzes#GLA15#0#0#sourceClient#1#A#A#0#0#urmand#Ursprungsmandant des Datensatzes#vt#59###0###0
+DATA>#mandkenn#A#15#Mandantenkennung des Datensatzes#GLA15#0#1#recordClient#1#A#A#0#0#mandkenn#Mandantenkennung des Datensatzes#vt#60###0###0
+DATA>#guid#A#38#GUID des Datensatzes#GLA38#0#0#GUID#5#A#A#0#0#guid#GUID des Datensatzes#vt#61###0###0
+DATA>#paket#A#8#Paketzugehörigkeit#P87:10#0#0#package#8#A#A#0#0#paket#Paketzugehörigkeit#vt#62###0###0
+DATA>#ppos#A#8#Vorherige Reservierung derselben Fertigungslistenstufe#P4:4#0#0#prevResSameLev#1#A#A#0#0#ppos#Vorherige Reservierung derselben Fertigungslistenstufe#vt#5949###0###0
+DATA>#status#A#1#Statuszeichen#NT1#0#0#status#1#A#A#0#0#status#Statuszeichen#vt#4199###0###0
+DATA>#einplan#A#4#Einplanung in die Disposition?#B#0#0#schedule#2#A#A#0#0#einplan#Einplanung in die Disposition?#vt#5353###0###0
+DATA>#typ#A#28#Datensatztyp#A4#0#0#type#1#A#A#0#0#typ#Datensatztyp#vt#15###0###0
+DATA>#typa#A#28#Datensatztyp#A4#0#0#recordType#1#A#A#0#1#typa#Datensatztyp#vt#15###0###0
+DATA>#term#D#5#Endtermin (Woche)#GW2#0#0#dateDueDate#2#A#A#0#0#term#Endtermin (Woche)#vt#5950###0###0
+DATA>#tterm#D#8#Endtermin (Tag)#GD2#0#0#dueDateDay#2#A#A#0#1#tterm#Endtermin (Tag)#vt#5410###0###0
+DATA>#pterm#D#19#Endtermin (Zeitpunkt)#GD19#0#0#dueDateTime#2#A#A#0#1#pterm#Endtermin (Zeitpunkt)#vt#5951###0###0
+DATA>#fprio#N#4#Feinplanungspriorität#I4#0#0#detailedPlanningPrio#3#A#A#0#0#fprio#Feinplanungspriorität#vt#5952###0###0
+DATA>#pos#A#8#Nächste Reservierung derselben Fertigungslistenstufe#P4:4#0#0#item#1#A#A#0#0#pos#Nächste Reservierung derselben Fertigungslistenstufe#vt#5953###0###0
+DATA>#mgr#A#8#Maschinengruppe#P8:2#0#0#workCenter#2#A#A#0#0#mgr#Maschinengruppe#vt#4546###0###0
+DATA>#elart#A#3#Elementart#AN133#0#0#elemType#1#A#A#0#0#elart#Elementart#vt#4535###0###0
+DATA>#elarta#A#16#Elementart#A133#0#0#elemTypeText#1#A#A#0#1#elarta#Elementart#vt#4535###0###0
+DATA>#dispo#A#31#Dispositionsart#A134#0#0##1#A#A#0#0#dispo#Dispositionsart#vt#4378###0###0
+DATA>#dispoa#A#31#Dispositionsart#A134#0#0#schedulingMode#1#A#A#0#1#dispoa#Dispositionsart#vt#4378###0###0
+DATA>#wterm#D#5#Wunschtermin (Solltermin) als Woche angegeben#GW2#0#0#desiredDate#1#A#A#0#0#wterm#Wunschtermin (Solltermin) als Woche angegeben#vt#5804###0###0
+DATA>#twterm#D#8#Wunschtermin (Solltermin) Tagesdatum#GD2#0#0#prefDateDay#1#A#A#0#1#twterm#Wunschtermin (Solltermin) Tagesdatum#vt#5805###0###0
+DATA>#pwterm#D#19#Wunschtermin (Solltermin) Zeitpunkt#GD19#0#0#desiredDateTime#1#A#A#0#1#pwterm#Wunschtermin (Solltermin) Zeitpunkt#vt#5806###0###0
+DATA>#sterm#D#5#Anfangstermin (Woche)#GW2#0#0#startDueDateWeek#2#A#A#0#0#sterm#Anfangstermin (Woche)#vt#5954###0###0
+DATA>#tsterm#D#8#Anfangstermin (Tag)#GD2#0#0#startDueDateDay#2#A#A#0#1#tsterm#Anfangstermin (Tag)#vt#5955###0###0
+DATA>#psterm#D#19#Anfangstermin (Zeitpunkt)#GD19#0#0#startDueDateTime#2#A#A#0#1#psterm#Anfangstermin (Zeitpunkt)#vt#5956###0###0
+DATA>#fterm#D#5#Frühester Endtermin#GW2#0#0#earliestDate#1#A#A#0#0#fterm#Frühester Endtermin#vt#5411###0###0
+DATA>#tfterm#D#8#Frühester Endtermin (Tag)#GD2#0#0#earliestDateDay#1#A#A#0#1#tfterm#Frühester Endtermin (Tag)#vt#5957###0###0
+DATA>#pfterm#D#19#Frühester Endtermin (Zeitpunkt)#GD19#0#0#earliestDateTime#1#A#A#0#1#pfterm#Frühester Endtermin (Zeitpunkt)#vt#5958###0###0
+DATA>#krit#A#1#Kennzeichnung kritischer Vorgänge#GLU1#0#1#crit#1#A#A#0#0#krit#Kennzeichnung kritischer Vorgänge#vt#5590###0###0
+DATA>#vorgfix#A#4#Vorgänger fixiert#B#0#0#fixedPred#1#A#A#0#0#vorgfix#Vorgänger fixiert#vt#5959###0###0
+DATA>#fix#A#4#Vorgang fixiert#B#0#0#fixed#2#A#A#0#0#fix#Vorgang fixiert#vt#5810###0###0
+DATA>#elex#A#18#Fertigungslistenelement#VPK1#0#0#prodListElem#2#A#A#0#0#elex#Fertigungslistenelement#vt#3901###0###0
+DATA>#elem#A#33#Fertigungslistenelement#VPKS1#0#0#productListElem#2#A#A#0#1#elem#Fertigungslistenelement#vt#3901###0###0
+DATA>#stlvgen#A#4#Fertigungsliste variantenbezogen neu erzeugen?#B#0#1#regenProdListVariantRel#2#A#A#0#0#stlvgen#Fertigungsliste variantenbezogen neu erzeugen?#vt#5594###0###0
+DATA>#flistestd#A#30#Fertigungsliste, die beim Absteigen erzeugt werden soll#PS128:1#0#0#stdProdList#2#A#A#0#0#flistestd#Fertigungsliste, die beim Absteigen erzeugt werden soll#vt#5960###0###0
+DATA>#aterm#D#8#Aktueller Anfangstermin (Tag)#GD2#0#1#actStartDate#1#A#A#0#0#aterm#Aktueller Anfangstermin (Tag)#vt#5961###0###0
+DATA>#paterm#D#19#Aktueller Anfangstermin (Zeitpunkt)#GD19#0#1#actStartDateTime#1#A#A#0#1#paterm#Aktueller Anfangstermin (Zeitpunkt)#vt#5962###0###0
+DATA>#rsres#A#1#Beschaffung oder Reservierung#AK89#0#0#procureOrRes#1#A#A#0#0#rsres#Beschaffung oder Reservierung#vt#527###0###0
+DATA>#bsres#A#1#Beschaffung oder Reservierung#AK89#0#0#procureOrResAlias#1#A#A#0#1#bsres#Beschaffung oder Reservierung#vt#527###0###0
+DATA>#bsresa#A#12#Beschaffung oder Reservierung#A89#0#0#procureOrResText#1#A#A#0#1#bsresa#Beschaffung oder Reservierung#vt#527###0###0
+DATA>#br#A#8#Zugehörige Beschaffung#P4:2.5#0#0#related#1#A#A#0#0#br#Zugehörige Beschaffung#vt#5963###0###0
+DATA>#artex#A#15#Artikel#P2:1.2.5#0#0##1#A#A#0#0#artex#Artikel#vt#452###0###0
+DATA>#artikel#A#15#Artikel#P2:1.2.5#0#0#product#1#A#A#0#1#artikel#Artikel#vt#452###0###0
+DATA>#art#A#30#Artikel#PS2:1.2.5#0#0##1#A#A#0#1#art#Artikel#vt#452###0###0
+DATA>#mge#N#10#Reservierte Gesamtmenge (brutto) in Lagereinheit#M6.3#0#0#unitQty#1#A#A#0#0#mge#Reservierte Gesamtmenge (brutto) in Lagereinheit#vt#5964###0###0
+DATA>#menge#N#9#Mengenfaktor pro Fertigteil#M4.4#0#1#factorQty#1#A#A#0#0#menge#Mengenfaktor pro Fertigteil#vt#4544###0###0
+DATA>#bu#A#22#Bereitstellung/Übergang#A14#0#0##2#A#A#0#0#bu#Bereitstellung/Übergang#vt#4550###0###0
+DATA>#bua#A#22#Bereitstellung/Übergang#A14#0#0#provMatTransition#1#A#A#0#1#bua#Bereitstellung/Übergang#vt#4550###0###0
+DATA>#lfbeist#A#4#Beistellteil für Lohnfertigung?#B#0#0#matProvSubcont#2#A#A#0#0#lfbeist#Beistellteil für Lohnfertigung?#vt#4551###0###0
+DATA>#ze#A#6#Einzelzeiteinheit#TAZ1#0#0#timeUnit#2#A#A#0#0#ze#Einzelzeiteinheit#vt#4537###0###0
+DATA>#bme#A#6#Breitenmaßeinheit#TAZ1#0#0#WMU#2#A#A#0#1#bme#Breitenmaßeinheit#vt#1245###0###0
+DATA>#zesek#N#10#Sekunden pro Einzelzeiteinheit#MPN5.4#0#0#unitTimeSec#2#A#A#0#0#zesek#Sekunden pro Einzelzeiteinheit#vt#4538###0###0
+DATA>#fbme#N#10#Faktor Breitenmaßeinheit#MPN5.4#0#0#WMUFactor#2#A#A#0#1#fbme#Faktor Breitenmaßeinheit#vt#1246###0###0
+DATA>#zr#A#6#Rüstzeiteinheit#TAZ1#0#0#setupTimeU#2#A#A#0#0#zr#Rüstzeiteinheit#vt#4541###0###0
+DATA>#lme#A#6#Längenmaßeinheit (LME)#TAZ1#0#0#LMU#2#A#A#0#1#lme#Längenmaßeinheit (LME)#vt#1248###0###0
+DATA>#zrsek#N#10#Sekunden pro Rüstzeiteinheit#MPN5.4#0#0#setupTimeUSec#1#A#A#0#0#zrsek#Sekunden pro Rüstzeiteinheit#vt#4542###0###0
+DATA>#flme#N#10#Faktor Längenmaßeinheit#MPN5.4#0#0#LMUFactor#1#A#A#0#1#flme#Faktor Längenmaßeinheit#vt#1249###0###0
+DATA>#fle#N#10#Umrechnung Längenmaßeinheit/Breitenmaßeinheit zur Lagereinheit#MPN5.4#0#0#SUFactor#1#A#A#0#0#fle#Umrechnung Längenmaßeinheit/Breitenmaßeinheit zur Lagereinheit#vt#4212###0###0
+DATA>#tr#N#8#Rüstzeit in Rüstzeiteinheiten#MPN5.2#0#0#setupTime#2#A#A#0#0#tr#Rüstzeit in Rüstzeiteinheiten#vt#4539###0###0
+DATA>#lge#N#8#Länge in LME#MPN5.2#0#0#length#2#A#A#0#1#lge#Länge in LME#vt#4540###0###0
+DATA>#te#N#8#Einzelzeit in Einzelzeiteinheiten#MPN5.2#0#0#timeLimUnit#2#A#A#0#0#te#Einzelzeit in Einzelzeiteinheiten#vt#4536###0###0
+DATA>#breite#N#8#Breite in Breitenmaßeinheit#MPN5.2#0#0#width#2#A#A#0#1#breite#Breite in Breitenmaßeinheit#vt#1244###0###0
+DATA>#lgr#N#3#Lohngruppe#IP3#0#0#wageGrp#2#A#A#0#0#lgr#Lohngruppe#vt#1058###0###0
+DATA>#manz#N#7#Maschinenanzahl#MPN4.2#0#0#machineCount#2#A#A#0#0#manz#Maschinenanzahl#vt#4545###0###0
+DATA>#limge#N#10#Offene Liefermenge#M6.3#0#0#outstDelQtyU#1#A#A#0#0#limge#Offene Liefermenge#vt#1339###0###0
+DATA>#nwpflicht#A#4#Nachweispflicht?#B#0#0#docObligation#2#A#A#0#0#nwpflicht#Nachweispflicht?#vt#4521###0###0
+DATA>#ersatzt#A#4#Ersatzteil?#B#0#0#sparePart#2#A#A#0#0#ersatzt#Ersatzteil?#vt#1258###0###0
+DATA>#verschlt#A#4#Verschleißteil?#B#0#0#wearPart#2#A#A#0#0#verschlt#Verschleißteil?#vt#1259###0###0
+DATA>#serarchiv#A#4#Wird ausführlich archiviert?#B#0#0#serviceArchiv#2#A#A#0#0#serarchiv#Wird ausführlich archiviert?#vt#4522###0###0
+DATA>#elbsart#A#16#Beschaffungsart des Elements#A79#0#1#elemProcureType#1#A#A#0#0#elbsart#Beschaffungsart des Elements#vt#5965###0###0
+DATA>#as#A#9#Arbeitsschein zu diesem Arbeitsgang#P9#0#0#workSlip#1#A#A#0#0#as#Arbeitsschein zu diesem Arbeitsgang#vt#5966###0###0
+DATA>#aschein#A#4#Soll bei Freigabe ein Arbeitsschein erstellt werden?#B#0#0#createWSlip#1#A#A#0#0#aschein#Soll bei Freigabe ein Arbeitsschein erstellt werden?#vt#5967###0###0
+DATA>#platz#A#15#Lagerplatz#PS38#0#0#location#2#A#A#0#0#platz#Lagerplatz#vt#454###0###0
+DATA>#lgruppe#A#10#Lagergruppe#PS39:2#0#0#warehGrp#1#A#A#0#0#lgruppe#Lagergruppe#vt#455###0###0
+DATA>#nutzen#N#9#Nutzen#MP4.4#0#0#use#2#A#A#0#0#nutzen#Nutzen#vt#4563###0###0
+DATA>#anzahl#N#9#Ausführungsanzahl / Menge#M4.4#0#0##2#A#A#0#0#anzahl#Ausführungsanzahl / Menge#vt#4543###0###0
+DATA>#elanzahl#N#9#Ausführungsanzahl / Menge#M4.4#0#0#elemQty#2#A#A#0#1#elanzahl#Ausführungsanzahl / Menge#vt#4543###0###0
+DATA>#vpos#A#6#Positionsnummer#GL6#0#0#itemNo#2#A#A#0#0#vpos#Positionsnummer#vt#1242###0###0
+DATA>#ptext#A#38#Positionstext#T38#0#0#itemText#2#A#A#0#0#ptext#Positionstext#vt#1196###0###0
+DATA>#lock#A#4#Reservierung ist gesperrt#B#0#1#recLocked#1#A#A#0#0#lock#Reservierung ist gesperrt#vt#5968###0###0
+DATA>#elrab#A#23#Rabattgruppe für Lohnfertigung#NT23#0#0#subcontDiscountGrp#2#A#A#0#0#elrab#Rabattgruppe für Lohnfertigung#vt#4552###0###0
+DATA>#elprg#A#23#Preisgruppe für Lohnfertigung#NT23#0#0#subcontPricingGrp#2#A#A#0#0#elprg#Preisgruppe für Lohnfertigung#vt#4553###0###0
+DATA>#tename#A#32#Artikelbezeichnung#GL32#0#1#productDescr#1#A#A#0#0#tename#Artikelbezeichnung#vt#528###0###0
+DATA>#mle#A#6#Einheit von evelanzahl#TAZ1#0#1#unitOfEvanzahl#1#A#A#0#0#mle#Einheit von evelanzahl#vt#5969###0###0
+DATA>#mze#A#6#Einzelzeiteinheit#TAZ1#0#1#timeLimU#2#A#A#0#0#mze#Einzelzeiteinheit#vt#4537###0###0
+DATA>#mzesek#N#10#Sekunden pro Einzelzeiteinheit#MPN5.4#0#1#timeLimUnitSec#2#A#A#0#0#mzesek#Sekunden pro Einzelzeiteinheit#vt#4538###0###0
+DATA>#mzr#A#6#Rüstzeiteinheit#TAZ1#0#1#setupTimeUnit#2#A#A#0#0#mzr#Rüstzeiteinheit#vt#4541###0###0
+DATA>#mzrsek#N#10#Sekunden pro Rüstzeiteinheit#MPN5.4#0#1#setupTimeUnitSec#2#A#A#0#0#mzrsek#Sekunden pro Rüstzeiteinheit#vt#4542###0###0
+DATA>#mbme#A#6#Breitenmaßeinheit#TAZ1#0#1#scrWMU#1#A#A#0#0#mbme#Breitenmaßeinheit#vt#1245###0###0
+DATA>#mfbme#N#10#Faktor Breitenmaßeinheit#MPN5.4#0#1#scrWMUFactor#1#A#A#0#0#mfbme#Faktor Breitenmaßeinheit#vt#1246###0###0
+DATA>#mlme#A#6#Längenmaßeinheit (LME)#TAZ1#0#1#scrLMU#1#A#A#0#0#mlme#Längenmaßeinheit (LME)#vt#1248###0###0
+DATA>#mflme#N#10#Faktor LME#MPN5.4#0#1#scrLMUFactor#1#A#A#0#0#mflme#Faktor LME#vt#5970###0###0
+DATA>#pverlust#N#5#Ausschuss in %#MP2.2#0#0#scrapPercSched#2#A#A#0#0#pverlust#Ausschuss in %#vt#5826###0###0
+DATA>#amge#N#10#Anfahrmenge in Lagereinheit#M6.3#0#0#startUpQty#2#A#A#0#0#amge#Anfahrmenge in Lagereinheit#vt#4562###0###0
+DATA>#flbasis#N#11#Fertigungslistenbasis#MP6.4#0#1#prodListBase#1#A#A#0#0#flbasis#Fertigungslistenbasis#vt#3465###0###0
+DATA>#amgebuchen#A#4#Anfahrmenge buchen?#B#0#1#entStartUpQty#3#A#A#0#0#amgebuchen#Anfahrmenge buchen?#vt#5971###0###0
+DATA>#aumge#N#10#Bedarfsmenge für Kundenaufträge in Lagereinheit#MP6.3#0#0#requiredQtySalesOrder#1#A#A#0#0#aumge#Bedarfsmenge für Kundenaufträge in Lagereinheit#vt#5829###0###0
+DATA>#planmge#N#10#Bedarfsmenge für Planaufträge in Lagereinheit#MP6.3#0#0#requiredQtyPlanning#1#A#A#0#0#planmge#Bedarfsmenge für Planaufträge in Lagereinheit#vt#5830###0###0
+DATA>#rundung#N#7#Rundungsfaktor#MP4.2#0#0#roundOffFactor#2#A#A#0#0#rundung#Rundungsfaktor#vt#3124###0###0
+DATA>#pzeit#N#4#Pufferzeit in Pufferzeiteinheit#IP4#0#0#bufferTime#2#A#A#0#0#pzeit#Pufferzeit in Pufferzeiteinheit#vt#4554###0###0
+DATA>#pzeiteinh#A#14#Pufferzeiteinheit#A80#0#0#bufferTimeUnit#2#A#A#0#0#pzeiteinh#Pufferzeiteinheit#vt#4555###0###0
+DATA>#tlzeit#N#4#Transport- und Liegezeit in Übergangszeiteinheit#IP4#0#0#transpWaitTime#2#A#A#0#0#tlzeit#Transport- und Liegezeit in Übergangszeiteinheit#vt#4556###0###0
+DATA>#uz#N#4#Übergangszeit in Übergangszeiteinheit#IP4#0#0##2#A#A#0#1#uz#Übergangszeit in Übergangszeiteinheit#vt#4557###0###0
+DATA>#tlzeiteinh#A#14#Übergangszeiteinheit#A80#0#0#transpWaitTimeU#2#A#A#0#0#tlzeiteinh#Übergangszeiteinheit#vt#4558###0###0
+DATA>#uzeinh#A#14#Übergangszeiteinheit#A80#0#0##2#A#A#0#1#uzeinh#Übergangszeiteinheit#vt#4558###0###0
+DATA>#charge#A#15#Charge#P59#0#0#lot#2#A#A#0#0#charge#Charge#vt#1203###0###0
+DATA>#tcharge#A#30#Chargennummer#T30#0#1#lotNo#2#A#A#0#0#tcharge#Chargennummer#vt#1204###0###0
+DATA>#bsart#A#16#Beschaffungsart#A79#0#0#procureMode#1#A#A#0#0#bsart#Beschaffungsart#vt#4476###0###0
+DATA>#vzeit#N#8#Vorgabezeit in Stunden#MP5.2#0#1#stdTimeHrs#1#A#A#0#0#vzeit#Vorgabezeit in Stunden#vt#5972###0###0
+DATA>#tmpverw#A#22#Materialzuordnung (temporär)#ZAE1#0#1#tempRef#1#A#A#0#0#tmpverw#Materialzuordnung (temporär)#vt#5638###0###0
+DATA>#zuoda#A#1#Menge zugeordnet#NT1#0#1#allocQty#1#A#A#0#0#zuoda#Menge zugeordnet#vt#5335###0###0
+DATA>#mzmge#N#10#Neue Menge laut Materialzuordnung#M6.3#0#1#matAllocQty#1#A#A#0#0#mzmge#Neue Menge laut Materialzuordnung#vt#5645###0###0
+DATA>#mzeinh#A#6#Neue Einheit laut Materialzuordnung#TAZ1#0#1#matAllocNewU#1#A#A#0#0#mzeinh#Neue Einheit laut Materialzuordnung#vt#5646###0###0
+DATA>#mzfaktor#N#10#Neuer Faktor laut Materialzuordnung#MP5.4#0#1#matAllocFactor#1#A#A#0#0#mzfaktor#Neuer Faktor laut Materialzuordnung#vt#5647###0###0
+DATA>#mzerl#A#4#Materialzuordnungen erlaubt?#B#0#1#matAllocAllowed#1#A#A#0#0#mzerl#Materialzuordnungen erlaubt?#vt#5648###0###0
+DATA>#frgmge#N#10#Gesamte freigegebene Menge in Lagereinheit#MP6.3#0#0#releasedTotalQtySU#1#A#A#0#0#frgmge#Gesamte freigegebene Menge in Lagereinheit#vt#5973###0###0
+DATA>#fbsterm#D#8#Frühester Beschaffungstermin#GD2#0#0#procureDateEarliest#1#A#A#0#0#fbsterm#Frühester Beschaffungstermin#vt#5974###0###0
+DATA>#kstelle#A#8#Kostenstelle, Kostenträger, Kostenverteiler#P5:2.4.8#0#0#costCenter#1#A#A#0#0#kstelle#Kostenstelle, Kostenträger, Kostenverteiler#vt#462###0###0
+DATA>#asaktual#A#4#Arbeitsscheine aktualisieren?#B#0#1#updateWorkSlips#2#A#A#0#0#asaktual#Arbeitsscheine aktualisieren?#vt#5975###0###0
+DATA>#druck#A#4#Drucken?#B#0#1#prnt#2#A#A#0#0#druck#Drucken?#vt#5976###0###0
+DATA>#artext#A#15#Fertigartikel#P2:1.5#0#1#finishedProd#1#A#A#0#0#artext#Fertigartikel#vt#5977###0###0
+DATA>#artname#A#32#Kurzname Artikel#GL32#0#1#productBriefDescr#1#A#A#0#0#artname#Kurzname Artikel#vt#1266###0###0
+DATA>#ag#A#15#Arbeitsgang#P7#0#1#seriesOfOperations#1#A#A#0#0#ag#Arbeitsgang#vt#5978###0###0
+DATA>#agname#A#32#Kurzname Arbeitsgang#GL32#0#1#operationBriefDescr#1#A#A#0#0#agname#Kurzname Arbeitsgang#vt#5979###0###0
+DATA>#fixterm#A#4#Termine fixiert?#B#0#1#datesFixed#1#A#A#0#0#fixterm#Termine fixiert?#vt#5828###0###0
+DATA>#elname#A#64#Bezeichnung des Elementes#GL64#0#1#elemDescr#1#A#A#0#0#elname#Bezeichnung des Elementes#vt#1243###0###0
+DATA>#lfname#A#32#Fertigteilbezeichnung#GL32#0#1#finishPartDescr#1#A#A#0#0#lfname#Fertigteilbezeichnung#vt#529###0###0
+DATA>#le#A#6#Lagereinheit#TAZ1#0#1#SU#1#A#A#0#0#le#Lagereinheit#vt#469###0###0
+DATA>#gmge#N#10#Gesamtmenge/Vorgabezeit#M6.3#0#1#totalQty#1#A#A#0#0#gmge#Gesamtmenge/Vorgabezeit#vt#5980###0###0
+DATA>#stled#A#4#Fertigungsliste editieren?#B#0#1#editBOM#1#A#A#0#0#stled#Fertigungsliste editieren?#vt#5593###0###0
+DATA>#neu#A#4#Neue Zeile?#B#0#1#newLine#1#A#A#0#0#neu#Neue Zeile?#vt#5981###0###0
+DATA>#oldmge#N#10#Ursprüngliche evmge#M6.3#0#1#oldPurchSalesQty#1#A#A#0#0#oldmge#Ursprüngliche evmge#vt#5982###0###0
+DATA>#oldlimge#N#10#Ursprüngliche evlimge#M6.3#0#1#oldOutstDelQtyU#1#A#A#0#0#oldlimge#Ursprüngliche evlimge#vt#5983###0###0
+DATA>#oldfrgmge#N#10#Ursprünglich freigegebene Menge in Lagereinheit#MP6.3#0#1#origReleasedTotalQtySU#1#A#A#0#0#oldfrgmge#Ursprünglich freigegebene Menge in Lagereinheit#vt#5984###0###0
+DATA>#oldmenge#N#9#Ursprüngliche evmenge#M4.4#0#1#factorQtyOrig#1#A#A#0#0#oldmenge#Ursprüngliche evmenge#vt#5985###0###0
+DATA>#asmge#N#10#Menge auf dem Arbeitsschein in Lagereinheit#MP6.3#0#1#wSlipQty#1#A#A#0#0#asmge#Menge auf dem Arbeitsschein in Lagereinheit#vt#5987###0###0
+DATA>#bueinh#A#6#Buchungseinheit#TAZ1#0#1#entUnit#2#A#A#0#0#bueinh#Buchungseinheit#vt#5988###0###0
+DATA>#zele#N#12#Umrechnungsfaktor Buchungseinheit zu Lagereinheit#RP7.4#0#1#convFactorEntUnitInSU#2#A#A#0#0#zele#Umrechnungsfaktor Buchungseinheit zu Lagereinheit#vt#5989###0###0
+DATA>#bumge#N#10#Buchungsmenge#M6.3#0#1#entQty#2#A#A#0#0#bumge#Buchungsmenge#vt#5990###0###0
+DATA>#blimge#N#10#Neue offene Liefermenge in Lagereinheit#M6.3#0#1##2#A#A#0#0#blimge#Neue offene Liefermenge in Lagereinheit#vt#5991###0###0
+DATA>#nlimge#N#10#Neue offene Liefermenge in Lagereinheit#M6.3#0#1#outstDelQtySU#2#A#A#0#1#nlimge#Neue offene Liefermenge in Lagereinheit#vt#5991###0###0
+DATA>#ligeaend#A#4#Offene Menge geändert?#B#0#1#outstQtyChanged#1#A#A#0#0#ligeaend#Offene Menge geändert?#vt#5992###0###0
+DATA>#asmat#A#9#Arbeitsschein zu dieser Materialreservierung#P9:1#0#1#workSlipForMatRes#1#A#A#0#0#asmat#Arbeitsschein zu dieser Materialreservierung#vt#5993###0###0
+DATA>#ktename#A#32#Serviceproduktstückliste Artikelbezeichnung#GL32#0#1#productDescrHead#1#A#A#0#0#ktename#Serviceproduktstückliste Artikelbezeichnung#vt#5369###0###0
+DATA>#ztename#A#32#Serviceproduktstücklistenzeile Artikelbezeichnung#GL32#0#1#productDescrRow#1#A#A#0#0#ztename#Serviceproduktstücklistenzeile Artikelbezeichnung#vt#5370###0###0
+DATA>#serprod#A#20#Serviceprodukt#PS116:1#0#1#serviceProduct#2#A#A#0#0#serprod#Serviceprodukt#vt#1223###0###0
+DATA>#gdatum#D#8#Garantie bis#GD2#0#1#warrantyTil#3#A#A#0#0#gdatum#Garantie bis#vt#1240###0###0
+DATA>#serstl#A#15#Zu aktualisierende Serviceproduktstückliste#P116:3#0#1#serviceProductBOM#1#A#A#0#0#serstl#Zu aktualisierende Serviceproduktstückliste#vt#5367###0###0
+DATA>#serstlzn#N#9#Zu aktualisierende Serviceproduktstücklistenzeile#IP9#0#1#updateServiceProductBOMLine#1#A#A#0#0#serstlzn#Zu aktualisierende Serviceproduktstücklistenzeile#vt#5368###0###0
+DATA>#serstlsts#A#23#Aktualisierungsstatus der Produktstückliste#A207#0#1#productBOMUpdateStatus#2#A#A#0#0#serstlsts#Aktualisierungsstatus der Produktstückliste#vt#5371###0###0
+DATA>#lffert#A#15#Fertigteil Lohnfertigung#P2:1#0#0#finPartSubcont#2#A#A#0#0#lffert#Fertigteil Lohnfertigung#vt#9144###0###0
+DATA>#ruteil#A#15#Artikel der repariert/umgebaut wird#P2:1#0#0#productRepairedReconstructed#2#A#A#0#1#ruteil#Artikel der repariert/umgebaut wird#vt#5847###0###0
+DATA>#ljtext1#A#32#Text wird ins Lagerbewegungsjournal übernommen#T32#0#1#textStockJournal1#2#A#A#0#0#ljtext1#Text wird ins Lagerbewegungsjournal übernommen#vt#5339###0###0
+DATA>#gebpfl#A#4#Einheit gebindepflichtig#B#0#1#obligBundleManaged#1#A#A#0#0#gebpfl#Einheit gebindepflichtig#vt#5995###0###0
+DATA>#rescharge#A#15#Chargennummer#P59#0#1#lotNoWithdrPart#2#A#A#0#0#rescharge#Chargennummer#vt#1204###0###0
+DATA>#trescharge#A#30#Externe Chargennummer Abgang#T30#0#1##2#A#A#0#0#trescharge#Externe Chargennummer Abgang#vt#545###0###0
+DATA>#tvcharge#A#30#Externe Chargennummer Abgang#T30#0#1#extLotNoIssue#2#A#A#0#1#tvcharge#Externe Chargennummer Abgang#vt#545###0###0
+DATA>#buplatz#A#15#Lagerplatz#PS38:1#0#1#stockAdjustmentLoc#2#A#A#0#0#buplatz#Lagerplatz#vt#454###0###0
+DATA>#bulgruppe#A#10#Lagergruppe#PS39:2#0#1#stockAdjustmentWarehGrp#2#A#A#0#0#bulgruppe#Lagergruppe#vt#455###0###0
+DATA>#yelexid#A#12#Teil ID#NT12#0#0#yelexid#3#A#A#1#0#yelexid#Teil ID##0###0###0
+DATA>#ylbestand#N#11#Lagerbestand zum StüliTeil#MDT7.3#0#1#ylbestand#3#A#A#1#0#ylbestand#Lagerbestand zum StüliTeil##0###0###0
+DATA>#ydbestand#N#11#DispoBestand zum Stüliteil#MDT7.3#0#1#ydbestand#3#A#A#1#0#ydbestand#DispoBestand zum Stüliteil##0###0###0
+DATA>#ybnullen#A#4#temporäre Kennung zum Nullen der Menge#B#0#0#ybnullen#3#A#A#1#0#ybnullen#temporäre Kennung zum Nullen der Menge##0###0###0
+DATA>#ytkenn#A#30#Kennzeichen aus Stamm#NT30#0#1#ytkenn#3#A#A#1#0#ytkenn#Kennzeichen aus Stamm##0###0###0
+DATA>#ytbsart#A#16#Beschaffungsart aus Stamm#A79#0#1#ytbsart#3#A#A#1#0#ytbsart#Beschaffungsart aus Stamm##0###0###0
+DATA>#ytlief#A#8#Lieferant 1 aus Stamm#PS1#0#1#ytlief#3#A#A#1#0#ytlief#Lieferant 1 aus Stamm##0###0###0
+DATA>#ytpruefk#A#4#Konstruktion Prüf OK#B#0#1#ytpruefk#3#A#A#1#0#ytpruefk#Konstruktion Prüf OK##0###0###0
+DATA>#yterfass#A#15#Erfasser der Pos#GL15#0#0#yterfass#3#A#A#1#0#yterfass#Erfasser der Pos##0###0###0
+DATA>#yterfassdat#D#10#Erfassdatum der Pos#GD#0#0#yterfassdat#3#A#A#1#0#yterfassdat#Erfassdatum der Pos##0###0###0
+DATA>#ytzeich#A#64#letzter änderung#GL64#0#0#ytzeich#3#A#A#1#0#ytzeich#letzter änderung##0###0###0
+DATA>#ytzeichdat#D#10#letzte änderung datum#GD#0#0#ytzeichdat#3#A#A#1#0#ytzeichdat#letzte änderung datum##0###0###0
+DATA>#ytplatzbest#A#64#PlatzBestand des Artikels#GL64#0#1#ytplatzbest#3#A#A#1#0#ytplatzbest#PlatzBestand des Artikels##0###0###0
+DATA>#ytdispoa#A#1#Dispoart Auftrag#NT1#0#1#ytdispoa#3#A#A#1#0#ytdispoa#Dispoart Auftrag##0###0###0
+DATA>#ytdispos#A#31#Dispoart Stamm!!#A134#0#1#ytdispos#3#A#A#1#0#ytdispos#Dispoart Stamm!!##0###0###0
+DATA>#ybestvor#N#11#BestandVorgänger,VorVorgänger,etc.#MDT7.3#0#1#ybestvor#3#A#A#1#0#ybestvor#BestandVorgänger,VorVorgänger,etc.##0###0###0
+DATA>#ytlinks#A#255#Link aus TeileStammFertigungsliste#DV0#0#1#ytlinks#3#A#A#1#0#ytlinks#Link aus TeileStammFertigungsliste##0###0###0
+LOG>rec size:202
+LOG>data size:5000
+LOG>field count:23
+LOG>disconnected
+bye

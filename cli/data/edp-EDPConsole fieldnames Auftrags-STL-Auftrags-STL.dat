@@ -1,0 +1,156 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>fieldnames
+AnsiToUTF8>fieldnames
+UTF8ToAnsi>fieldnames
+orig>Auftrags-STL:Auftrags-STL
+AnsiToUTF8>Auftrags-STL:Auftrags-STL
+UTF8ToAnsi>Auftrags-STL:Auftrags-STL
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request fieldnames of Auftrags-STL:Auftrags-STL
+LOG>rec size:134
+DATA>name,edptype,length,desc,type,tableflag,isskip,englname,scrprot,priodisp,prioedit,iscustom,isalias,origname,meaning,meaningdic,meaningmsgnr,prompt,promptdic,promptmsgnr,headtext,headtextdic,headtextmsgnr
+DATA>#grust#N#9#Gruppe#I9#0#0##1#A#A#0#0#grust#Gruppe#vt#1###0###0
+DATA>#gruppe#A#2#Gruppennummer#GRN22#0#0#grpNo#1#A#A#0#1#gruppe#Gruppennummer#vt#2###0###0
+DATA>#grbez#A#80#Gruppenbezeichnung#GRB22#0#0#grpDescr#1#A#A#0#1#grbez#Gruppenbezeichnung#vt#3###0###0
+DATA>#dnr#A#3#Dateinummer#GRDN22#0#1#DBNo#1#A#A#0#0#dnr#Dateinummer#vt#4###0###0
+DATA>#dbez#A#20#Dateibezeichnung#GRDB22#0#1#DBDescr#1#A#A#0#1#dbez#Dateibezeichnung#vt#5###0###0
+DATA>#ozeilen#N#5#Anzahl Zeilen im Tabellenteil#I5#0#0#rowCount#1#A#A#0#0#ozeilen#Anzahl Zeilen im Tabellenteil#vt#6###0###0
+DATA>#sn#A#15#Satznummer#P22#0#1#recordNo#1#A#A#0#0#sn#Satznummer#vt#7###0###0
+DATA>#id#A#30#Datensatz-ID#ID22#0#1#id#1#A#A#0#1#id#Datensatz-ID#vt#8###0###0
+DATA>#versionn#A#22#Versionsnummer#ZAE1#0#0#version#1#A#A#0#0#versionn#Versionsnummer#vt#12###0###0
+DATA>#ablagen#A#22#Zeitstempel der Datensatzablage#ZAE1#0#0#recordFilingVersion#1#A#A#0#0#ablagen#Zeitstempel der Datensatzablage#vt#13###0###0
+DATA>#ablagef#A#4#Datensatz abgelegt?#ZAE0#0#0#recordFiled#1#A#A#0#1#ablagef#Datensatz abgelegt?#vt#14###0###0
+DATA>#typ#N#2#Datensatztyp#K2#0#0#type#1#A#A#0#0#typ#Datensatztyp#vt#15###0###0
+DATA>#num22#A#15#Identnummer#N22#0#0##3#A#A#0#0#num22#Identnummer#vt#16###0###0
+DATA>#nummer#A#15#Identnummer#NK22#0#0#idno#3#A#A#0#1#nummer#Identnummer#vt#16###0###0
+DATA>#nummerb#A#15#Identnummer#NL22#0#0#idnoPadded#3#A#A#0#1#nummerb#Identnummer#vt#16###0###0
+DATA>#such22#A#15#Suchwort#SW22#0#0##3#A#A#0#0#such22#Suchwort#vt#17###0###0
+DATA>#such#A#15#Suchwort#SWK22#0#0#swd#3#A#A#0#1#such#Suchwort#vt#17###0###0
+DATA>#suchb#A#15#Suchwort#SWL22#0#0#swdPadded#3#A#A#0#1#suchb#Suchwort#vt#17###0###0
+DATA>#name#A#34#Bezeichnung#T34#0#0#descr#3#A#A#0#0#name#Bezeichnung#vt#18###0###0
+DATA>#name1#A#34#Text in Deutsch#T34#0#0#descr1#3#A#A#0#1#name1#Text in Deutsch#vt#19###0###0
+DATA>#name2#A#34#Text in Englisch#T34#0#0#descr2#3#A#A#0#0#name2#Text in Englisch#vt#20###0###0
+DATA>#name3#A#34#Text in Französisch#T34#0#0#descr3#3#A#A#0#0#name3#Text in Französisch#vt#21###0###0
+DATA>#name4#A#34#Text in Spanisch#T34#0#0#descr4#3#A#A#0#0#name4#Text in Spanisch#vt#22###0###0
+DATA>#name5#A#34#Text in Italienisch#T34#0#0#descr5#3#A#A#0#0#name5#Text in Italienisch#vt#23###0###0
+DATA>#name6#A#34#Text in Polnisch#T34#0#0#descr6#3#A#A#0#0#name6#Text in Polnisch#vt#24###0###0
+DATA>#name7#A#34#Text in Russisch#T34#0#0#descr7#3#A#A#0#0#name7#Text in Russisch#vt#25###0###0
+DATA>#name8#A#34#Text in Ungarisch#T34#0#0#descr8#3#A#A#0#0#name8#Text in Ungarisch#vt#26###0###0
+DATA>#name9#A#34#Text in Tschechisch#T34#0#0#descr9#3#A#A#0#0#name9#Text in Tschechisch#vt#27###0###0
+DATA>#name10#A#34#Text in Türkisch#T34#0#0#descr10#3#A#A#0#0#name10#Text in Türkisch#vt#28###0###0
+DATA>#name11#A#34#Text in Sprache 1#T34#0#0#descr11#3#A#A#0#0#name11#Text in Sprache 1#vt#29###0###0
+DATA>#name12#A#34#Text in Sprache 2#T34#0#0#descr12#3#A#A#0#0#name12#Text in Sprache 2#vt#30###0###0
+DATA>#name13#A#34#Text in Sprache 3#T34#0#0#descr13#3#A#A#0#0#name13#Text in Sprache 3#vt#31###0###0
+DATA>#name14#A#34#Text in amerikanischem Englisch#T34#0#0#descr14#3#A#A#0#0#name14#Text in amerikanischem Englisch#vt#32###0###0
+DATA>#name15#A#34#Text in Rumänisch#T34#0#0#descr15#3#A#A#0#0#name15#Text in Rumänisch#vt#33###0###0
+DATA>#name16#A#34#Text in Indonesisch#T34#0#0#descr16#3#A#A#0#0#name16#Text in Indonesisch#vt#34###0###0
+DATA>#name17#A#34#Text in Niederländisch#T34#0#0#descr17#3#A#A#0#0#name17#Text in Niederländisch#vt#35###0###0
+DATA>#name18#A#34#Text in Mazedonisch#T34#0#0#descr18#3#A#A#0#0#name18#Text in Mazedonisch#vt#36###0###0
+DATA>#name19#A#34#Text in Bulgarisch#T34#0#0#descr19#3#A#A#0#0#name19#Text in Bulgarisch#vt#37###0###0
+DATA>#name20#A#34#Text in Serbisch#T34#0#0#descr20#3#A#A#0#0#name20#Text in Serbisch#vt#38###0###0
+DATA>#name21#A#34#Text in Slowenisch#T34#0#0#descr21#3#A#A#0#0#name21#Text in Slowenisch#vt#39###0###0
+DATA>#name22#A#34#Text in Slowakisch#T34#0#0#descr22#3#A#A#0#0#name22#Text in Slowakisch#vt#40###0###0
+DATA>#name23#A#34#Text in Portugiesisch#T34#0#0#descr23#3#A#A#0#0#name23#Text in Portugiesisch#vt#41###0###0
+DATA>#name24#A#34#Text in vereinfachtem Chinesisch#T34#0#0#descr24#3#A#A#0#0#name24#Text in vereinfachtem Chinesisch#vt#42###0###0
+DATA>#name25#A#34#Text in traditionellem Chinesisch#T34#0#0#descr25#3#A#A#0#0#name25#Text in traditionellem Chinesisch#vt#43###0###0
+DATA>#name26#A#34#Text in Griechisch#T34#0#0#descr26#3#A#A#0#0#name26#Text in Griechisch#vt#44###0###0
+DATA>#name27#A#34#Text in Thailändisch#T34#0#0#descr27#3#A#A#0#0#name27#Text in Thailändisch#vt#45###0###0
+DATA>#name28#A#34#Text in Arabisch#T34#0#0#descr28#3#A#A#0#0#name28#Text in Arabisch#vt#46###0###0
+DATA>#name29#A#34#Text in Persisch#T34#0#0#descr29#3#A#A#0#0#name29#Text in Persisch#vt#47###0###0
+DATA>#name30#A#34#Text in Vietnamesisch#T34#0#0#descr30#3#A#A#0#0#name30#Text in Vietnamesisch#vt#48###0###0
+DATA>#name31#A#34#Text in Urdu#T34#0#0#descr31#3#A#A#0#0#name31#Text in Urdu#vt#49###0###0
+DATA>#namebspr#A#34#Bezeichnung in Bediensprache#T34#0#1#descrOperLang#3#A#A#0#0#namebspr#Bezeichnung in Bediensprache#vt#50###0###0
+DATA>#sucherw#A#34#Sucherweiterung#T34#0#1#searchExt#3#A#A#0#1#sucherw#Sucherweiterung#vt#51###0###0
+DATA>#namekspr#A#34#Bezeichnung in Korrespondenzsprache#T34#0#1#descrCorrLang#3#A#A#0#0#namekspr#Bezeichnung in Korrespondenzsprache#vt#52###0###0
+DATA>#nameaspr#A#34#Bezeichnung in Ausgabesprache#T34#0#1#descrOutLang#3#A#A#0#0#nameaspr#Bezeichnung in Ausgabesprache#vt#53###0###0
+DATA>#stand#D#10#Änderungsdatum#GD#0#0#modificationDate#1#A#A#0#0#stand#Änderungsdatum#vt#55###0###0
+DATA>#erfass#D#10#Erfassungsdatum#GD#0#0#creationDate#1#A#A#0#0#erfass#Erfassungsdatum#vt#56###0###0
+DATA>#zeich#A#15#Letzter Bearbeiter#GL15#0#0#responsOperator#3#A#A#0#0#zeich#Letzter Bearbeiter#vt#57###0###0
+DATA>#zeichen#A#15#Letzter Bearbeiter#GL15#0#0#lastProcessor#1#A#A#0#1#zeichen#Letzter Bearbeiter#vt#57###0###0
+DATA>#index#A#2#Versionskennung#GLU2#0#0#userDefinedVersion#3#A#A#0#0#index#Versionskennung#vt#58###0###0
+DATA>#urmand#A#15#Ursprungsmandant des Datensatzes#GLA15#0#0#sourceClient#1#A#A#0#0#urmand#Ursprungsmandant des Datensatzes#vt#59###0###0
+DATA>#mandkenn#A#15#Mandantenkennung des Datensatzes#GLA15#0#1#recordClient#1#A#A#0#0#mandkenn#Mandantenkennung des Datensatzes#vt#60###0###0
+DATA>#guid#A#38#GUID des Datensatzes#GLA38#0#0#GUID#5#A#A#0#0#guid#GUID des Datensatzes#vt#61###0###0
+DATA>#paket#A#8#Paketzugehörigkeit#P87:10#0#0#package#8#A#A#0#0#paket#Paketzugehörigkeit#vt#62###0###0
+DATA>#stname#A#12#Maskenüberschrift#GL12#0#1#scrHead#3#A#A#0#0#stname#Maskenüberschrift#vt#4134###0###0
+DATA>#term#D#8#Wiedervorlagetermin#GD2#0#0#dateDueDate#3#A#A#0#0#term#Wiedervorlagetermin#vt#4135###0###0
+DATA>#subeg#A#30#Suchbegriff#NT30#0#0#searchStr#3#A#A#0#0#subeg#Suchbegriff#vt#4136###0###0
+DATA>#erfdat#D#8#Erfassungsdatum#GD2#0#0#recordDate#3#A#A#0#0#erfdat#Erfassungsdatum#vt#56###0###0
+DATA>#ftext#A#1#Freitext 1#TN#0#0#freeText#3#A#A#0#0#ftext#Freitext 1#vt#184###0###0
+DATA>#ftext2#A#1#Freitext 2#TN#0#0#freeText2#3#A#A#0#0#ftext2#Freitext 2#vt#185###0###0
+DATA>#yauftrag#A#10#Auftrag#GL10#0#0#yauftrag#3#A#A#1#0#yauftrag#Auftrag##0###0###0
+DATA>#yvom#D#8#Auftragsdatum#GD2#0#0#yvom#3#A#A#1#0#yvom#Auftragsdatum##0###0###0
+DATA>#ykunde#A#8#Kunde#P0#0#0#ykunde#3#A#A#1#0#ykunde#Kunde##0###0###0
+DATA>#yfopzeich#A#15#Bearbeiter (Aktualisierung per FOP)#GL15#0#0#yfopzeich#3#A#A#1#0#yfopzeich#Bearbeiter (Aktualisierung per FOP)##0###0###0
+DATA>#yfopzeit#A#20#Zeit (Aktualisierung per FOP)#GL20#0#0#yfopzeit#3#A#A#1#0#yfopzeit#Zeit (Aktualisierung per FOP)##0###0###0
+DATA>#yfopzeith#A#20#DatumZeit lesbar per Programm#GL20#0#1#yfopzeith#3#A#A#1#0#yfopzeith#DatumZeit lesbar per Programm##0###0###0
+DATA>#yversionh#A#20#DatumZeit lesbar manuell#GL20#0#1#yversionh#3#A#A#1#0#yversionh#DatumZeit lesbar manuell##0###0###0
+DATA>#yaganz#A#4#Arbeitsgänge anzeigen nein/ [ja]#B#0#1#yaganz#6#A#A#1#0#yaganz#Arbeitsgänge anzeigen nein/ [ja]##0###0###0
+DATA>#yauabl#A#4#Daten aus abgeschlossenem Auftrag gespeichert#B#0#0#yauabl#3#A#A#1#0#yauabl#Daten aus abgeschlossenem Auftrag gespeichert##0###0###0
+DATA>#tabnr#N#5#Zeilen-ID#TZN#1#0##1#A#A#0#0#tabnr#Zeilen-ID#vt#398###0###0
+DATA>#zn#N#5#Laufende Zeilennummer#I5#1#1#rowNo#1#A#A#0#0#zn#Laufende Zeilennummer#vt#397###0###0
+DATA>#zid#A#30#Zeilen-ID#IDZ22:0#1#1#rowId#1#A#A#0#0#zid#Zeilen-ID#vt#398###0###0
+DATA>#tftext#A#1#Freitext 1#TN#1#0#freeTextTab#3#A#A#0#0#tftext#Freitext 1#vt#184###0###0
+DATA>#tftext2#A#1#Freitext 2#TN#1#0#freeTextTab2#3#A#A#0#0#tftext2#Freitext 2#vt#185###0###0
+DATA>#ystufe#N#3#Stufe#IP3#1#0#ystufe#3#A#A#1#0#ystufe#Stufe##0###0###0
+DATA>#ypos#A#6#Position#GL6#1#0#ypos#3#A#A#1#0#ypos#Position##0###0###0
+DATA>#yelem#A#18#Element#VPK1#1#0#yelem#3#A#A#1#0#yelem#Element##0###0###0
+DATA>#yelems#A#33#Element Alias#VPKS1#1#0#yelems#3#A#A#1#1#yelems#Element Alias##0###0###0
+DATA>#yelemsw#A#33#Element Suchwort Skip kann weg!#VPKS1#1#1#yelemsw#3#A#A#1#0#yelemsw#Element Suchwort Skip kann weg!##0###0###0
+DATA>#yxxxxx#A#33#Element Suchwort Skip kann weg!#VPKS1#1#1#yxxxxx#3#A#A#1#0#yxxxxx#Element Suchwort Skip kann weg!##0###0###0
+DATA>#ysuch#A#30#Suchwort#GL30#1#0#ysuch#3#A#A#1#0#ysuch#Suchwort##0###0###0
+DATA>#ybez#A#255#Bezeichnung#GL255#1#0#ybez#3#A#A#1#0#ybez#Bezeichnung##0###0###0
+DATA>#ylge#N#8#Länge#MPN5.2#1#0#ylge#3#A#A#1#0#ylge#Länge##0###0###0
+DATA>#yelge#A#6#Längenmaßeinheit#TAZ1#1#0#yelge#3#A#A#1#0#yelge#Längenmaßeinheit##0###0###0
+DATA>#ybreite#N#8#Breite#MPN5.2#1#0#ybreite#3#A#A#1#0#ybreite#Breite##0###0###0
+DATA>#yebreite#A#6#Breitenmaßeinheit#TAZ1#1#0#yebreite#3#A#A#1#0#yebreite#Breitenmaßeinheit##0###0###0
+DATA>#yanzahl#N#15#Anzahl (pro FL-Basis übergeordneter Artikel)#MND10.4#1#0#yanzahl#3#A#A#1#0#yanzahl#Anzahl (pro FL-Basis übergeordneter Artikel)##0###0###0
+DATA>#ygesamt#N#16#Gesamtmenge (bezogen auf verkaufte Menge)#MND11.4#1#0#ygesamt#3#A#A#1#0#ygesamt#Gesamtmenge (bezogen auf verkaufte Menge)##0###0###0
+DATA>#yeinh#A#6#Einheit#TAZ1#1#0#yeinh#3#A#A#1#0#yeinh#Einheit##0###0###0
+DATA>#ybsart#A#16#Beschaffungsart#A79#1#0#ybsart#3#A#A#1#0#ybsart#Beschaffungsart##0###0###0
+DATA>#ydispo#A#22#Dispoart#A131#1#0#ydispo#3#A#A#1#0#ydispo#Dispoart##0###0###0
+DATA>#yersatz#A#4#Ersatzteil?#B#1#0#yersatz#3#A#A#1#0#yersatz#Ersatzteil?##0###0###0
+DATA>#yid#A#30#  Objekt-ID der Auftrags-Position#GL30#1#0#yid#3#A#A#1#0#yid#  Objekt-ID der Auftrags-Position##0###0###0
+DATA>#ylief1#A#8#Lieferant1 aus Artikelstamm#PS1#1#1#ylief1#3#A#A#1#0#ylief1#Lieferant1 aus Artikelstamm##0###0###0
+DATA>#ynutzen#N#9#Nutzen#MP4.4#1#0#ynutzen#3#A#A#1#0#ynutzen#Nutzen##0###0###0
+DATA>#yverschleiss#A#4#Verschleißteil?#B#1#0#yverschleiss#3#A#A#1#0#yverschleiss#Verschleißteil?##0###0###0
+DATA>#ynwpflicht#A#4#Nachweispflicht?#B#1#0#ynwpflicht#3#A#A#1#0#ynwpflicht#Nachweispflicht?##0###0###0
+DATA>#yserarchiv#A#4#ausführliche Archivierung?#B#1#0#yserarchiv#3#A#A#1#0#yserarchiv#ausführliche Archivierung?##0###0###0
+DATA>#ylfbeist#A#4#Beistellung für Lohnfertigung?#B#1#0#ylfbeist#3#A#A#1#0#ylfbeist#Beistellung für Lohnfertigung?##0###0###0
+DATA>#ycharge#A#15#Charge#P59#1#0#ycharge#3#A#A#1#0#ycharge#Charge##0###0###0
+DATA>#ymgr#A#8#Maschinengruppe#P8:2#1#0#ymgr#3#A#A#1#0#ymgr#Maschinengruppe##0###0###0
+DATA>#ymanz#N#7#Maschinenanzahl#MPN4.2#1#0#ymanz#3#A#A#1#0#ymanz#Maschinenanzahl##0###0###0
+DATA>#ylgr#N#3#Lohngruppe#IP3#1#0#ylgr#3#A#A#1#0#ylgr#Lohngruppe##0###0###0
+DATA>#yptext#A#38#Positionstext#T38#1#0#yptext#3#A#A#1#0#yptext#Positionstext##0###0###0
+DATA>#ybu#A#22#Beistellung/ Übergang#A14#1#0#ybu#3#A#A#1#0#ybu#Beistellung/ Übergang##0###0###0
+DATA>#ypzeit#N#4#Pufferzeit#IP4#1#0#ypzeit#3#A#A#1#0#ypzeit#Pufferzeit##0###0###0
+DATA>#ypzeiteinh#A#14#Pufferzeiteinheit#A80#1#0#ypzeiteinh#3#A#A#1#0#ypzeiteinh#Pufferzeiteinheit##0###0###0
+DATA>#ytlzeit#N#4#Transport-/ Liegezeit#IP4#1#0#ytlzeit#3#A#A#1#0#ytlzeit#Transport-/ Liegezeit##0###0###0
+DATA>#ytlzeiteinh#A#14#Transport-/ Liegezeiteinheit#A80#1#0#ytlzeiteinh#3#A#A#1#0#ytlzeiteinh#Transport-/ Liegezeiteinheit##0###0###0
+DATA>#ypverlust#N#5#Ausschuss %#MP2.2#1#0#ypverlust#3#A#A#1#0#ypverlust#Ausschuss %##0###0###0
+DATA>#yamge#N#10#Anfahrmenge#M6.3#1#0#yamge#3#A#A#1#0#yamge#Anfahrmenge##0###0###0
+DATA>#yedit#A#4#editierte Auftrags-FL?#B#1#0#yedit#3#A#A#1#0#yedit#editierte Auftrags-FL?##0###0###0
+DATA>#ykenn#A#30#Kennzeichen aus Stamm#NT30#1#1#ykenn#3#A#A#1#0#ykenn#Kennzeichen aus Stamm##0###0###0
+DATA>#yurland#A#25##PS97#1#1#yurland#3#A#A#1#0#yurland###0###0###0
+DATA>#ytpraef#A#4#präferenz aus Stamm#B#1#1#ytpraef#3#A#A#1#0#ytpraef#präferenz aus Stamm##0###0###0
+DATA>#ytmpr#N#12#Mischpreis aus Stamm#RPDT7.4#1#1#ytmpr#3#A#A#1#0#ytmpr#Mischpreis aus Stamm##0###0###0
+DATA>#ytepr#N#10#Einkaufspreis1 ausStamm#RPDT7.2#1#1#ytepr#3#A#A#1#0#ytepr#Einkaufspreis1 ausStamm##0###0###0
+DATA>#ytepe#A#6#Preiseiheit aus Stamm#TAZ1#1#1#ytepe#3#A#A#1#0#ytepe#Preiseiheit aus Stamm##0###0###0
+DATA>#yteland#A#4#Währung#PS94:1#1#1#yteland#3#A#A#1#0#yteland#Währung##0###0###0
+DATA>#yshek#N#12#Herstellkosten Stamm#RDT7.4#1#1#yshek#3#A#A#1#0#yshek#Herstellkosten Stamm##0###0###0
+DATA>#yskblatt#A#9#KalkulationsBlatt Stamm#GL9#1#1#yskblatt#3#A#A#1#0#yskblatt#KalkulationsBlatt Stamm##0###0###0
+DATA>#ysstand#D#10#Datum KBlatt vom aus Stamm#GD#1#1#ysstand#3#A#A#1#0#ysstand#Datum KBlatt vom aus Stamm##0###0###0
+DATA>#ythek#N#12#Herstellkosten aus Auftrag#RDT7.4#1#0#ythek#3#A#A#1#0#ythek#Herstellkosten aus Auftrag##0###0###0
+DATA>#ytkblatt#A#9#KBlatt aus Auftrag#GL9#1#0#ytkblatt#3#A#A#1#0#ytkblatt#KBlatt aus Auftrag##0###0###0
+DATA>#ytstand#D#10#Datum KBlatt aus Auftrag#GD#1#0#ytstand#3#A#A#1#0#ytstand#Datum KBlatt aus Auftrag##0###0###0
+LOG>rec size:134
+LOG>data size:5000
+LOG>field count:23
+LOG>disconnected
+bye

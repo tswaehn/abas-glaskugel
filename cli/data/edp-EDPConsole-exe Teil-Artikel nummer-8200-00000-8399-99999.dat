@@ -1,0 +1,35 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>Teil:Artikel
+AnsiToUTF8>Teil:Artikel
+UTF8ToAnsi>Teil:Artikel
+orig>nummer=8200-00000!8399-99999
+AnsiToUTF8>nummer=8200-00000!8399-99999
+UTF8ToAnsi>nummer=8200-00000!8399-99999
+searching in Teil:Artikel
+searching for nummer=8200-00000!8399-99999
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request data of Teil:Artikel
+field list count 373
+LOG>data size: 100000
+LOG>max result: 100000
+LOG>query execute:ok
+LOG>fieldcount from EDP:55
+LOG>rec size:3
+DATA>nummer,name,such,sucherw,erfass,stand,zeichen,ebez,bsart,ynlief,zuplatz,abplatz,ypdf1,ydxf,yxls,ytpdf,ytlink,bild,bbesch,foto,fotoz,catpics,catpicsz,catpicl,catpiclz,caturl,zn,tabnr,anzahl,elanzahl,elart,elarta,elem,elex,bestand,lgbestand,zbestand,dbestand,lgdbestand,ve,fve,versionn,yzeissnr,zeichn,yersteller,lief,lief2,zoll,wstoff,bem,kenn,bstnr,ftext,vbezbspr,vkbezbspr
+LOG>line size: 627
+DATA>#8209-82519#0,4x2,5x19,5 din2098 x 12 crni17 7 k druckfeder @@000000-0084-286,30024,CZPROD,30041,GUTEKUNS,000000-0084-286,8209-82519,FLON:zimmer#DRUCKFEDER#0,4x2,5x19,5 din2098 x 12 crni17 7 k druckfeder @@000000-0084-286,30024,CZPROD,30041,GUTEKUNS,000000-0084-286,8209-82519,FLON:zimmer#08.07.2009#27.01.2014#zimmer#Druckfeder 0,4x2,5x19,5 DIN2098[-10-] X12CrNi 177 K#Fremdbeschaffung#GUTEKUNS#R74C#R74C#W:\PDF\#W:\DXF\####W:\Bilder\#W:\Doku\#W:\#W:\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####9#9#2#9#9#Stück#1#2014012711101600000003#000000-0084-286#000000-0084-286#flon#30024#30041#####000000-0084-286###
+LOG>line size: 522
+DATA>#8209-82561#0,5 x 2,5 x 6,1 din2098 druckfeder @@000000-0093-615,30041,GUTEKUNS,8209-82561,FLON:kleisz#DRUCKFEDER-0.5X2.5X6.1DIN2098#0,5 x 2,5 x 6,1 din2098 druckfeder @@000000-0093-615,30041,GUTEKUNS,8209-82561,FLON:kleisz#08.07.2009#28.03.2013#kleisz#0,5 X 2,5 X 6,1 DIN2098 Druckfeder#Fremdbeschaffung##R74C#R74C#W:\PDF\#W:\DXF\####W:\Bilder\#W:\Doku\#W:\#W:\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####0#0#0#0#0#Stück#1#2013032812354800000004#000000-0093-615#-08.07.09-14:43#flon#30041#########
+LOG>line size: 511
+DATA>#8209-83232#0,32 x 3,2 x20,1 din2098 druckfeder @@,30041,GUTEKUNS,8209-83232,SINKWITZ:strauch#DRUCKFED-0.32X3.2X20.1DIN2098#0,32 x 3,2 x20,1 din2098 druckfeder @@,30041,GUTEKUNS,8209-83232,SINKWITZ:strauch#04.06.2013#26.06.2013#strauch#Druckfeder[-10-]0,32 x 3,2 x20,1 DIN2098#Fremdbeschaffung##R64G#R64G#W:\PDF\#W:\DXF\#W:\doku\###W:\Bilder\#W:\Datenblaetter\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####1#1#0#1#1#Stück#1#2013062612301500000002###sinkwitz#30041#########
+LOG>rec size:3
+LOG>data size:100000
+LOG>field count:55
+LOG>disconnected
+bye

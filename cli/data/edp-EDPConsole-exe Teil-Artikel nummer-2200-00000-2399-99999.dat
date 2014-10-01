@@ -1,0 +1,37 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>Teil:Artikel
+AnsiToUTF8>Teil:Artikel
+UTF8ToAnsi>Teil:Artikel
+orig>nummer=2200-00000!2399-99999
+AnsiToUTF8>nummer=2200-00000!2399-99999
+UTF8ToAnsi>nummer=2200-00000!2399-99999
+searching in Teil:Artikel
+searching for nummer=2200-00000!2399-99999
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request data of Teil:Artikel
+field list count 373
+LOG>data size: 100000
+LOG>max result: 100000
+LOG>query execute:ok
+LOG>fieldcount from EDP:55
+LOG>rec size:4
+DATA>nummer,name,such,sucherw,erfass,stand,zeichen,ebez,bsart,ynlief,zuplatz,abplatz,ypdf1,ydxf,yxls,ytpdf,ytlink,bild,bbesch,foto,fotoz,catpics,catpicsz,catpicl,catpiclz,caturl,zn,tabnr,anzahl,elanzahl,elart,elarta,elem,elex,bestand,lgbestand,zbestand,dbestand,lgdbestand,ve,fve,versionn,yzeissnr,zeichn,yersteller,lief,lief2,zoll,wstoff,bem,kenn,bstnr,ftext,vbezbspr,vkbezbspr
+LOG>line size: 623
+DATA>#2200-00000#200.00-0000.000-00  bg-eef-ortner @@,30070,HSEB-INT,200.00-0000.000-00,2200-00000,SCHILLHAHN:schillhahn#BG-EEF-ORTNER#200.00-0000.000-00  bg-eef-ortner @@,30070,HSEB-INT,200.00-0000.000-00,2200-00000,SCHILLHAHN:schillhahn#31.07.2012#01.08.2012#schillhahn#BG-EEF-ORTNER#Eigenfertigung##PROD#PROD#W:\PDF\200_00-0000_000-00-bg-eef-ortner.PDF#W:\DXF\#W:\doku\###W:\Bilder\#W:\Datenblaetter\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#1#1#1.0000#1#1#Artikel#0200-00010#ADAPTER-SCHUNK#0#0#0#0#0#Stück#1#2013071808523700000139##200.00-0000.000-00#schillhahn#30070######200.00-0000.000-00###
+LOG>line size: 1004
+DATA>#2200-28705#leiterplatte für bedienpult control panel axiotron 2 without autofocus 9012-18082(replaces 457494-0000-000) 457493-9111-000 s6,s7,s8 nicht bestückt @@,Colli,30056,EPSA,20064172,30056,EPSA,xxx20028705,2200-28705,90119090,02.05.2005 CZJ CZJ Kunze, Ordner CZ#LP-BEDIENP-AXIOTRON2-OHNE-AF#leiterplatte für bedienpult control panel axiotron 2 without autofocus 9012-18082(replaces 457494-0000-000) 457493-9111-000 s6,s7,s8 nicht bestückt @@,Colli,30056,EPSA,20064172,30056,EPSA,xxx20028705,2200-28705,90119090,02.05.2005 CZJ CZJ Kunze, Ordner CZ#21.01.2011#02.11.2012#schubert#LP Bedienpult ohne AF[-10-]457493-9111-000[-10-]S6, S7, S8 nicht bestückt#Fremdbeschaffung#EPSA#R62C#R62C#W:\PDF\#W:\DXF\#W:\doku\###W:\Bilder\#W:\Doku\#W:\#W:\#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####0#0#0#0#0#Stück#1#2013040806464700000030###naumann#30056#30056#90119090##02.05.2005 CZJ CZJ Kunze, Ordner CZM *MHL*[-10-]mit Tastenkappen geliefert##20064172#*#Leiterplatte Mikroskop - Bedienpult Axiotron 2#
+LOG>line size: 1037
+DATA>#2200-28715#457493-9111-000  leiterplatte für bedienpult control panel axiotron 2 with autofocus mit autofokus 9012-18082(replaces 457494-0000-000) s6,s7,s8 bestückt @@457493-9111-000,30056,EPSA,20071274,30056,EPSA,457493-9111-000-M-AF,2200-28715,mit Tastenkappen gel#LP-BEDIENP-AXIOTRON2-MIT-AF#457493-9111-000  leiterplatte für bedienpult control panel axiotron 2 with autofocus mit autofokus 9012-18082(replaces 457494-0000-000) s6,s7,s8 bestückt @@457493-9111-000,30056,EPSA,20071274,30056,EPSA,457493-9111-000-M-AF,2200-28715,mit Tastenkappen gel#04.08.2011#02.11.2012#schubert#LP-BEDIENP-AXIOTRON2-MIT-AF[-10-]457493-9111-000[-10-]s6,s7,s8 bestückt#Fremdbeschaffung#EPSA#R62C#R62C#W:\Bilder\457493-9111-000_01-001.tif#W:\DXF\#W:\doku\###W:\Bilder\#W:\Doku\#W:\Bilder\457493-9111-000_01-001.tif#W:\Bilder\457493-9111-000_01-001.tif#W:\Bilder\#W:\Bilder\#W:\Bilder\#W:\Bilder\#WWW.#0#0#0.0000#0#0####0#0#0#0#0#Stück#1#2012110210280900000003#457493-9111-000#457493-9111-000-M-AF#schillhahn#30056#30056###mit Tastenkappen geliefert##20071274#*##
+LOG>line size: 280
+DATA>#2300-00000#axiospect 300 @@,2300-00000#AXIOSPECT300#axiospect 300 @@,2300-00000#19.05.2006#19.01.2009#zaspel##Eigenfertigung##PROD#PROD###############1#1#1.0000#1#1#Artikel#9012-34743#AXIOSPECT300FRAME#0#0#0#0#0#Stück#1#2009011913165200000002###HSEB#########Axiospect 300 System#
+LOG>rec size:4
+LOG>data size:100000
+LOG>field count:55
+LOG>disconnected
+bye

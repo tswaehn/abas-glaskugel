@@ -1,0 +1,592 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>fieldnames
+AnsiToUTF8>fieldnames
+UTF8ToAnsi>fieldnames
+orig>Einkauf:Bestellung
+AnsiToUTF8>Einkauf:Bestellung
+UTF8ToAnsi>Einkauf:Bestellung
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request fieldnames of Einkauf:Bestellung
+LOG>rec size:570
+DATA>name,edptype,length,desc,type,tableflag,isskip,englname,scrprot,priodisp,prioedit,iscustom,isalias,origname,meaning,meaningdic,meaningmsgnr,prompt,promptdic,promptmsgnr,headtext,headtextdic,headtextmsgnr
+DATA>#grust#N#9#Gruppe#I9#0#0##1#A#A#0#0#grust#Gruppe#vt#1###0###0
+DATA>#gruppe#A#2#Gruppennummer#GRN4#0#0#grpNo#1#A#A#0#1#gruppe#Gruppennummer#vt#2###0###0
+DATA>#grbez#A#80#Gruppenbezeichnung#GRB4#0#0#grpDescr#1#A#A#0#1#grbez#Gruppenbezeichnung#vt#3###0###0
+DATA>#dnr#A#3#Dateinummer#GRDN4#0#1#DBNo#1#A#A#0#0#dnr#Dateinummer#vt#4###0###0
+DATA>#dbez#A#20#Dateibezeichnung#GRDB4#0#1#DBDescr#1#A#A#0#1#dbez#Dateibezeichnung#vt#5###0###0
+DATA>#ozeilen#N#5#Anzahl Zeilen im Tabellenteil#I5#0#0#rowCount#1#A#A#0#0#ozeilen#Anzahl Zeilen im Tabellenteil#vt#6###0###0
+DATA>#sn#A#8#Satznummer#P4#0#1#recordNo#1#A#A#0#0#sn#Satznummer#vt#7###0###0
+DATA>#id#A#30#Datensatz-ID#ID4#0#1#id#1#A#A#0#1#id#Datensatz-ID#vt#8###0###0
+DATA>#versionn#A#22#Versionsnummer#ZAE1#0#0#version#1#A#A#0#0#versionn#Versionsnummer#vt#12###0###0
+DATA>#ablagen#A#22#Zeitstempel der Datensatzablage#ZAE1#0#0#recordFilingVersion#1#A#A#0#0#ablagen#Zeitstempel der Datensatzablage#vt#13###0###0
+DATA>#ablagef#A#4#Datensatz abgelegt?#ZAE0#0#0#recordFiled#1#A#A#0#1#ablagef#Datensatz abgelegt?#vt#14###0###0
+DATA>#num4#A#8#Identnummer#N4#0#0##2#A#A#0#0#num4#Identnummer#vt#16###0###0
+DATA>#num#A#8#Nummer (nicht eindeutig)#GLU8#0#0##2#A#A#0#1#num#Nummer (nicht eindeutig)#vt#5772###0###0
+DATA>#nummer#A#8#Identnummer#NK4#0#0#idno#2#A#A#0#1#nummer#Identnummer#vt#16###0###0
+DATA>#nummerb#A#8#Identnummer#NL4#0#0#idnoPadded#2#A#A#0#1#nummerb#Identnummer#vt#16###0###0
+DATA>#such4#A#9#Suchwort#SW4#0#0#swd4#2#A#A#0#0#such4#Suchwort#vt#17###0###0
+DATA>#such#A#9#Suchwort#SWK4#0#0#swd#2#A#A#0#1#such#Suchwort#vt#17###0###0
+DATA>#suchb#A#9#Suchwort#SWL4#0#0#swdPadded#2#A#A#0#1#suchb#Suchwort#vt#17###0###0
+DATA>#betreff#A#64#Betreff#T64#0#0#subject#2#A#A#0#0#betreff#Betreff#vt#4137###0###0
+DATA>#sucherw#A#64#Sucherweiterung#T64#0#1#searchExt#1#A#A#0#0#sucherw#Sucherweiterung#vt#51###0###0
+DATA>#stand#D#10#Änderungsdatum#GD#0#0#modificationDate#1#A#A#0#0#stand#Änderungsdatum#vt#55###0###0
+DATA>#erfass#D#10#Erfassungsdatum#GD#0#0#creationDate#1#A#A#0#0#erfass#Erfassungsdatum#vt#56###0###0
+DATA>#aezeich#A#15#Letzter Bearbeiter#GL15#0#0#lastOperator#1#A#A#0#0#aezeich#Letzter Bearbeiter#vt#57###0###0
+DATA>#zeichen#A#15#Letzter Bearbeiter#GL15#0#0#lastProcessor#1#A#A#0#1#zeichen#Letzter Bearbeiter#vt#57###0###0
+DATA>#index#A#2#Versionskennung#GLU2#0#1#userDefinedVersion#1#A#A#0#0#index#Versionskennung#vt#58###0###0
+DATA>#urmand#A#15#Ursprungsmandant des Datensatzes#GLA15#0#0#sourceClient#1#A#A#0#0#urmand#Ursprungsmandant des Datensatzes#vt#59###0###0
+DATA>#mandkenn#A#15#Mandantenkennung des Datensatzes#GLA15#0#1#recordClient#1#A#A#0#0#mandkenn#Mandantenkennung des Datensatzes#vt#60###0###0
+DATA>#guid#A#38#GUID des Datensatzes#GLA38#0#0#GUID#5#A#A#0#0#guid#GUID des Datensatzes#vt#61###0###0
+DATA>#paket#A#8#Paketzugehörigkeit#P87:10#0#0#package#8#A#A#0#0#paket#Paketzugehörigkeit#vt#62###0###0
+DATA>#abldat#D#8#Ablagedatum#GD2#0#0#filingDate#1#A#A#0#0#abldat#Ablagedatum#vt#5333###0###0
+DATA>#noablage#A#4#Ablageschutz#B#0#0#filingProtection#2#A#A#0#0#noablage#Ablageschutz#vt#5424###0###0
+DATA>#ktyp#A#3#Datensatztyp#AN4#0#0#typeOfRecord#1#A#A#0#0#ktyp#Datensatztyp#vt#15###0###0
+DATA>#typ#A#28#Datensatztyp#A4#0#0#type#1#A#A#0#1#typ#Datensatztyp#vt#15###0###0
+DATA>#typa#A#28#Datensatztyp#A4#0#0#recordType#1#A#A#0#1#typa#Datensatztyp#vt#15###0###0
+DATA>#kterm#D#5#Kopftermin (Woche)#GW2#0#0#dateWeek#2#A#A#0#0#kterm#Kopftermin (Woche)#vt#5425###0###0
+DATA>#term#D#5#Wiedervorlage/Zahltermin (Woche)#GW2#0#0#dateDueDate#2#A#A#0#1#term#Wiedervorlage/Zahltermin (Woche)#vt#5426###0###0
+DATA>#tterm#D#8#Wiedervorlage/Zahltermin (Tag)#GD2#0#0#dueDateDay#2#A#A#0#1#tterm#Wiedervorlage/Zahltermin (Tag)#vt#5427###0###0
+DATA>#pos#A#8#Erste Position#P4:2#0#0#item#1#A#A#0#0#pos#Erste Position#vt#5428###0###0
+DATA>#lief#A#8#Lieferant#P1:1.2#0#0#vendor#2#A#A#0#0#lief#Lieferant#vt#440###0###0
+DATA>#ylief#A#8#Lieferant#PS1:1.2#0#0#ylief#2#A#A#1#1#ylief#Lieferant#vt#440###0###0
+DATA>#kl#A#8#Lieferant#P1:1.2#0#0#custVendor#2#A#A#0#1#kl#Lieferant#vt#440###0###0
+DATA>#steuerfrei#A#4#Steuerfrei#B#0#1#withoutVAT#2#A#A#0#0#steuerfrei#Steuerfrei#vt#5429###0###0
+DATA>#land#A#4#Erfassungswährung#PS94:1#0#0##2#A#A#0#0#land#Erfassungswährung#vt#1138###0###0
+DATA>#erfwaehr#A#4#Erfassungswährung#PS94:1#0#0#entCurr#2#A#A#0#1#erfwaehr#Erfassungswährung#vt#1138###0###0
+DATA>#eweinh#N#7#Anzahl Einheit(en) der Erfassungswährung#IP7#0#1#factorEntCurr#1#A#A#0#0#eweinh#Anzahl Einheit(en) der Erfassungswährung#vt#3874###0###0
+DATA>#ewewu#A#4#Erfassungswährung gehört zum Raum der Europäischen Währungsunion#B#0#1#entCurrEMU#1#A#A#0#0#ewewu#Erfassungswährung gehört zum Raum der Europäischen Währungsunion#vt#3880###0###0
+DATA>#ewkurs#N#14#Kurs der Erfassungswährung zur Umrechnungswährung#RP7.6#0#0#entCurrConv#1#A#A#0#0#ewkurs#Kurs der Erfassungswährung zur Umrechnungswährung#vt#628###0###0
+DATA>#ewekurs#N#14#Einheiten Umrechnungswährung je Einheit(en) der Erfassungswährung#RP7.6#0#1#entCurrRate#2#A#A#0#0#ewekurs#Einheiten Umrechnungswährung je Einheit(en) der Erfassungswährung#vt#1136###0###0
+DATA>#uw#A#4#Umrechnungswährung#PS94:1#0#0#convCurr#1#A#A#0#0#uw#Umrechnungswährung#vt#627###0###0
+DATA>#ieinh#N#7#Faktor für die Umrechnungswährung#IP7#0#1#currUnit#1#A#A#0#0#ieinh#Faktor für die Umrechnungswährung#vt#5433###0###0
+DATA>#iwkurs#N#14#Kurs der Umrechnungswährung zur Buchungswährung#RP7.6#0#1#exchRate#1#A#A#0#0#iwkurs#Kurs der Umrechnungswährung zur Buchungswährung#vt#3876###0###0
+DATA>#iwekurs#N#14#Einheiten Buchungswährung je Einheit(en) der Umrechnungswährung#RP7.6#0#1#exchRateConv#1#A#A#0#0#iwekurs#Einheiten Buchungswährung je Einheit(en) der Umrechnungswährung#vt#3877###0###0
+DATA>#iwbu#A#4#Buchungswährung#PS94:1#0#0#postCurr#1#A#A#0#0#iwbu#Buchungswährung#vt#473###0###0
+DATA>#kurs#N#14#Umrechnungskurs zwischen Buchungswährung und Erfassungswährung#RP7.6#0#0#exchRateEntRec#1#A#A#0#0#kurs#Umrechnungskurs zwischen Buchungswährung und Erfassungswährung#vt#1367###0###0
+DATA>#budat#D#8#Buchungsdatum#GD2#0#0#entDate#2#A#A#0#0#budat#Buchungsdatum#vt#451###0###0
+DATA>#vom#D#8#Erstellungsdatum#GD2#0#0#dateFrom#2#A#A#0#0#vom#Erstellungsdatum#vt#844###0###0
+DATA>#leidat#D#8#Leistungsdatum (Kostenrechnung)#GD2#0#0#performanceDate#2#A#A#0#0#leidat#Leistungsdatum (Kostenrechnung)#vt#449###0###0
+DATA>#kursumr#A#4#Bei Kursänderung die Preise umrechnen?#B#0#0#currTranslated#3#A#A#0#0#kursumr#Bei Kursänderung die Preise umrechnen?#vt#5436###0###0
+DATA>#vdat#D#8#Valutadatum#GD2#0#0#valDate#2#A#A#0#0#vdat#Valutadatum#vt#609###0###0
+DATA>#rechnung#A#10#Rechnungsstellung#PS12:2#0#0#invVar#2#A#A#0#0#rechnung#Rechnungsstellung#vt#163###0###0
+DATA>#gewaehr#A#10#Gewährleistung#PS12:3#0#0#warranty#2#A#A#0#0#gewaehr#Gewährleistung#vt#164###0###0
+DATA>#lbed#A#10#Lieferbedingung#PS12:3#0#0#delivTerms#2#A#A#0#0#lbed#Lieferbedingung#vt#165###0###0
+DATA>#pbed#A#10#Preisstellung#PS12:3#0#0#pricing#2#A#A#0#0#pbed#Preisstellung#vt#166###0###0
+DATA>#zbed#A#10#Zahlungsbedingung#PS12:8#0#0#payTerm#2#A#A#0#0#zbed#Zahlungsbedingung#vt#167###0###0
+DATA>#zbedschl#A#8#Zahlungsbedingungsschlüssel#P66:4#0#0#payTermKey#2#A#A#0#0#zbedschl#Zahlungsbedingungsschlüssel#vt#168###0###0
+DATA>#lief2#A#8#Rechnungslieferant#P1:1#0#0#vendor2#2#A#A#0#0#lief2#Rechnungslieferant#vt#5773###0###0
+DATA>#ylief2#A#8#RechnungslieferantSW#PS1:1#0#0#ylief2#2#A#A#1#1#ylief2#RechnungslieferantSW##0###0###0
+DATA>#kl2#A#8#Rechnungslieferant#P1:1#0#0#custVendor2#2#A#A#0#1#kl2#Rechnungslieferant#vt#5773###0###0
+DATA>#betreuer#A#8#Betreuer#PS11:1#0#0#inhouseContact#2#A#A#0#0#betreuer#Betreuer#vt#174###0###0
+DATA>#kopien#N#1#Anzahl gewünschter Druckkopien#IP1#0#0#copies#2#A#A#0#0#kopien#Anzahl gewünschter Druckkopien#vt#5439###0###0
+DATA>#nkopien#N#4#Anzahl gedruckter Druckkopien#IP4#0#0#countCopiesPrinted#3#A#A#0#0#nkopien#Anzahl gedruckter Druckkopien#vt#5440###0###0
+DATA>#buart#N#2#Buchungsart#K2#0#0#entType#1#A#A#0#0#buart#Buchungsart#vt#458###0###0
+DATA>#op#A#8#Offener Posten#P100:1#0#0#openItems#2#A#A#0#0#op#Offener Posten#vt#554###0###0
+DATA>#ophist#A#20#OP-Verlauf#PS100:21#0#0#OIHistory#2#A#A#0#1#ophist#OP-Verlauf#vt#555###0###0
+DATA>#zahl#A#8#Offener Posten#P100:1#0#0#payReminder#1#A#A#0#1#zahl#Offener Posten#vt#554###0###0
+DATA>#vorgang#A#10#Vorgangsart#A11#0#0##2#A#A#0#0#vorgang#Vorgangsart#vt#5292###0###0
+DATA>#vorganga#A#10#Vorgangsart#A11#0#0#processMode#2#A#A#0#1#vorganga#Vorgangsart#vt#5292###0###0
+DATA>#fakt#A#4#Lieferschein fakturieren/Rechnung mit Warenbewegung#B#0#0#invoice#2#A#A#0#0#fakt#Lieferschein fakturieren/Rechnung mit Warenbewegung#vt#5443###0###0
+DATA>#ftext#A#1#Freitext#TN3#0#0#freeText#2#A#A#0#0#ftext#Freitext#vt#1019###0###0
+DATA>#rahmen#A#8#Rahmenauftrag#P4:1#0#0#blanketOrder#2#A#A#0#0#rahmen#Rahmenauftrag#vt#1324###0###0
+DATA>#seranf#A#8#Serviceanfrage#P122:1#0#1#serviceReq#2#A#A#0#0#seranf#Serviceanfrage#vt#5445###0###0
+DATA>#naktiv#N#4#Anzahl aktiver Positionen#IP4#0#0#activeItemNo#1#A#A#0#0#naktiv#Anzahl aktiver Positionen#vt#5446###0###0
+DATA>#nfakt#N#4#Anzahl zu fakturierender Positionen#IP4#0#0#invoiceItemNo#1#A#A#0#0#nfakt#Anzahl zu fakturierender Positionen#vt#5447###0###0
+DATA>#lterm#D#8#Liefertermin des gesamten Vorgangs#GD2#0#0#delivDateWholeProcess#2#A#A#0#0#lterm#Liefertermin des gesamten Vorgangs#vt#5448###0###0
+DATA>#rebetr#N#10#Rechnungsbetrag in Erfassungswährung#RDT7.2#0#0#invoiceAmt#1#A#A#0#0#rebetr#Rechnungsbetrag in Erfassungswährung#vt#5449###0###0
+DATA>#navom#A#8#Lieferantennachricht vom (Datum)#GL8#0#0#messageFrom#2#A#A#0#0#navom#Lieferantennachricht vom (Datum)#vt#5774###0###0
+DATA>#frzeich#A#35#Lieferantenzeichen#GL35#0#0#custCode#2#A#A#0#0#frzeich#Lieferantenzeichen#vt#5775###0###0
+DATA>#zeich#A#15#Zuständiger Bearbeiter#GL15#0#0#responsOperator#2#A#A#0#0#zeich#Zuständiger Bearbeiter#vt#5405###0###0
+DATA>#skbbetr#N#10#Skontofähiger Betrag in Erfassungswährung#RDT7.2#0#0#deductDiscountAmt#1#A#A#0#0#skbbetr#Skontofähiger Betrag in Erfassungswährung#vt#5776###0###0
+DATA>#istrahmen#A#4#Vorgang ist ein Rahmenauftrag#B#0#0#processBlanketOrder#1#A#A#0#0#istrahmen#Vorgang ist ein Rahmenauftrag#vt#5454###0###0
+DATA>#dfuesenden#A#4#Soll gesendet werden (EDI)#B#0#0#sent#2#A#A#0#0#dfuesenden#Soll gesendet werden (EDI)#vt#5455###0###0
+DATA>#ablstelle#A#25#EDI-Abladestelle#GL25#0#0#EDIUnloadPt#2#A#A#0#0#ablstelle#EDI-Abladestelle#vt#254###0###0
+DATA>#ablstellea#A#11#EDI-Abladestelle#GL11#0#0#EDIUnloadPtA#2#A#A#0#1#ablstellea#EDI-Abladestelle#vt#254###0###0
+DATA>#werk#A#25#Werk#GL25#0#0#plant#2#A#A#0#0#werk#Werk#vt#256###0###0
+DATA>#werka#A#12#Werk#GL12#0#0#plantAlias#2#A#A#0#1#werka#Werk#vt#256###0###0
+DATA>#spediteur#A#8#Spediteur#P1:1.2#0#0#forwarder#2#A#A#0#0#spediteur#Spediteur#vt#258###0###0
+DATA>#edl#A#8#Externer Dienstleister (EDL)#P1:1.2#0#0#extServiceProv#2#A#A#0#0#edl#Externer Dienstleister (EDL)#vt#5456###0###0
+DATA>#edllsnr#A#25#Lieferscheinnummer (Externer Dienstleister)#GL25#0#0##2#A#A#0#0#edllsnr#Lieferscheinnummer (Externer Dienstleister)#vt#5457###0###0
+DATA>#lsnredl#A#25#Lieferscheinnummer (Externer Dienstleister)#GL25#0#0#packSlipNoESP#2#A#A#0#1#lsnredl#Lieferscheinnummer (Externer Dienstleister)#vt#5457###0###0
+DATA>#edllsdat#D#8#Lieferscheindatum (Externer Dienstleister)#GD2#0#0##2#A#A#0#0#edllsdat#Lieferscheindatum (Externer Dienstleister)#vt#5458###0###0
+DATA>#lsdatedl#D#8#Lieferscheindatum (Externer Dienstleister)#GD2#0#0#packSlipDateESP#2#A#A#0#1#lsdatedl#Lieferscheindatum (Externer Dienstleister)#vt#5458###0###0
+DATA>#kuartnr#A#35#Kundenartikelnummer#BGL35#0#0#custProductNo#2#A#A#0#0#kuartnr#Kundenartikelnummer#vt#1330###0###0
+DATA>#kuartnra#A#15#Kundenartikelnummer#BGL15#0#0#custProductNoAlias#2#A#A#0#1#kuartnra#Kundenartikelnummer#vt#1330###0###0
+DATA>#gtin#A#35#GTIN (Global Trade Item Number / Globale Artikelidentnummer)#GL35#0#0#globalTradeItemNo#2#A#A#0#0#gtin#GTIN (Global Trade Item Number / Globale Artikelidentnummer)#vt#4367###0###0
+DATA>#ean#A#35#EAN-Code (Europäische Artikelnummer)#GL35#0#0##2#A#A#0#1#ean#EAN-Code (Europäische Artikelnummer)#vt#4368###0###0
+DATA>#gtina#A#15#GTIN (Global Trade Item Number / Globale Artikelidentnummer)#GL15#0#0#globalTradeItemNoAlias#2#A#A#0#1#gtina#GTIN (Global Trade Item Number / Globale Artikelidentnummer)#vt#4367###0###0
+DATA>#eana#A#15#EAN-Code (Europäische Artikelnummer)#GL15#0#0##2#A#A#0#1#eana#EAN-Code (Europäische Artikelnummer)#vt#4368###0###0
+DATA>#verwschl#A#1#Verwendungsschlüssel#NT1#0#0#refCode#2#A#A#0#0#verwschl#Verwendungsschlüssel#vt#1369###0###0
+DATA>#ident#A#10#Identnummer der Inhouse-Schnittstelle#GL10#0#0#identity#2#A#A#0#0#ident#Identnummer der Inhouse-Schnittstelle#vt#5459###0###0
+DATA>#lztabruf#A#10#Nummer des letzten Abrufs#GL10#0#0#lastDelivSchedNo#2#A#A#0#0#lztabruf#Nummer des letzten Abrufs#vt#5460###0###0
+DATA>#versand#A#8#Versandart#P12:3#0#0#shipType#2#A#A#0#0#versand#Versandart#vt#246###0###0
+DATA>#preisab#A#12#Preisabschlussnummer#GL12#0#0#priceAgreeNo#1#A#A#0#0#preisab#Preisabschlussnummer#vt#5461###0###0
+DATA>#dfuedat#D#8#EDI-Übertragungsdatum#GD2#0#0#transDateEDI#2#A#A#0#0#dfuedat#EDI-Übertragungsdatum#vt#5462###0###0
+DATA>#abschlnr#A#35#Abschluss-/Bestellnummer#GL35#0#0#closingPONo#2#A#A#0#0#abschlnr#Abschluss-/Bestellnummer#vt#5463###0###0
+DATA>#edigewnet#N#10#Nettogewicht (Lieferschein)#MP6.3#0#0#netWeight#2#A#A#0#0#edigewnet#Nettogewicht (Lieferschein)#vt#5464###0###0
+DATA>#nettogew#N#10#Nettogewicht der Lieferung#MP6.3#0#0#netWeigth#2#A#A#0#1#nettogew#Nettogewicht der Lieferung#vt#5465###0###0
+DATA>#edigewbrut#N#10#Bruttogewicht (Lieferschein)#MP6.3#0#0#grossWeigthEDI#2#A#A#0#0#edigewbrut#Bruttogewicht (Lieferschein)#vt#5466###0###0
+DATA>#bruttogew#N#10#Bruttogewicht der Lieferung#MP6.3#0#0#grossWeigth#2#A#A#0#1#bruttogew#Bruttogewicht der Lieferung#vt#5467###0###0
+DATA>#ebeleg#A#35#Externe Belegnummer#GL35#0#0#extDocNo#2#A#A#0#0#ebeleg#Externe Belegnummer#vt#447###0###0
+DATA>#faktura#A#4#Vorgang fakturieren?#ZAE0#0#0#invoiceProcess#1#A#A#0#0#faktura#Vorgang fakturieren?#vt#5475###0###0
+DATA>#uebertr#A#4#Vorgang buchen?#ZAE0#0#0#postProcess#1#A#A#0#0#uebertr#Vorgang buchen?#vt#5476###0###0
+DATA>#ohneueb#A#4#Ohne Übertrag bei Seitenwechsel?#B#0#0#noCarryOver#2#A#A#0#0#ohneueb#Ohne Übertrag bei Seitenwechsel?#vt#5477###0###0
+DATA>#brutto#A#4#Sind die angegebenen Preise Bruttopreise?#B#0#0#calcGrossAmt#2#A#A#0#0#brutto#Sind die angegebenen Preise Bruttopreise?#vt#5478###0###0
+DATA>#abnr#A#35#Auftragsbestätigungsnummer des Lieferanten#GL35#0#1#orderNo#2#A#A#0#0#abnr#Auftragsbestätigungsnummer des Lieferanten#vt#5777###0###0
+DATA>#bsart#A#16#Beschaffungsart#A79#0#0#procureMode#2#A#A#0#0#bsart#Beschaffungsart#vt#4476###0###0
+DATA>#konsi#A#15#Konsignationslagerplatz#PS38:1#0#1#consigLoc#1#A#A#0#0#konsi#Konsignationslagerplatz#vt#270###0###0
+DATA>#oterm#D#8#Unser ursprünglicher Wunschtermin#GD2#0#1#custPrefDate#2#A#A#0#0#oterm#Unser ursprünglicher Wunschtermin#vt#5778###0###0
+DATA>#auftrart#A#10#Auftragsart#PS12:3#0#0#sOrderType#2#A#A#0#0#auftrart#Auftragsart#vt#5482###0###0
+DATA>#llschein#A#8#Letzter Lieferschein#P4:23#0#0#lastPackSlip#2#A#A#0#0#llschein#Letzter Lieferschein#vt#5483###0###0
+DATA>#wvorlage#A#4#Zur Wiedervorlage#B#0#0#review#1#A#A#0#0#wvorlage#Zur Wiedervorlage#vt#5486###0###0
+DATA>#druck#A#4#Drucken#ZAE0#0#0#prnt#2#A#A#0#0#druck#Drucken#vt#9###0###0
+DATA>#steunr#A#20#Eigene Steuernummer#GL20#0#0#taxNo#1#A#A#0#0#steunr#Eigene Steuernummer#vt#2100###0###0
+DATA>#doku#A#8#Dokument#P70#0#0#doc#2#A#A#0#0#doku#Dokument#vt#576###0###0
+DATA>#klsteunr#A#20#Debitoren-/Kreditoren-Steuernummer#GL20#0#0#ARAPTaxNo#2#A#A#0#0#klsteunr#Debitoren-/Kreditoren-Steuernummer#vt#5487###0###0
+DATA>#batext#A#20#Anfangstext (Textbaustein)#NT20#0#0#startTextFile#2#A#A#0#0#batext#Anfangstext (Textbaustein)#vt#5488###0###0
+DATA>#atext#A#64#Anfangstext#T64#0#0#startText#2#A#A#0#0#atext#Anfangstext#vt#5489###0###0
+DATA>#bstext#A#20#Schlusstext (Textbaustein)#NT20#0#0#closingTextFile#2#A#A#0#0#bstext#Schlusstext (Textbaustein)#vt#5490###0###0
+DATA>#stext#A#64#Schlusstext#T64#0#0#closingText#2#A#A#0#0#stext#Schlusstext#vt#5491###0###0
+DATA>#kenn#A#250#Kennzeichen#NT250#0#0#code#2#A#A#0#0#kenn#Kennzeichen#vt#186###0###0
+DATA>#bem#A#64#Bemerkungen#T64#0#0#comments#2#A#A#0#0#bem#Bemerkungen#vt#187###0###0
+DATA>#ans2#A#34#Name (Versand)#T34#0#0#addr2#2#A#A#0#0#ans2#Name (Versand)#vt#5492###0###0
+DATA>#str2#A#34#Straße (Versand)#T34#0#0#street2#2#A#A#0#0#str2#Straße (Versand)#vt#5493###0###0
+DATA>#aort2#A#34#PLZ + Ort (Versand)#T34#0#0##2#A#A#0#0#aort2#PLZ + Ort (Versand)#vt#5494###0###0
+DATA>#lakenn2#A#3#Länderkennzeichen (Versand)#NT3#0#1#ctryCode2#2#A#A#0#0#lakenn2#Länderkennzeichen (Versand)#vt#5495###0###0
+DATA>#staat2#A#25#Land (Versand)#PS97:1#0#0#stateOfTaxOffice2#2#A#A#0#0#staat2#Land (Versand)#vt#5496###0###0
+DATA>#lareg2#A#25#Region (Versand)#PS97:1#0#0##2#A#A#0#0#lareg2#Region (Versand)#vt#5497###0###0
+DATA>#region2#A#25#Region (Versand)#PS97:1#0#0#region2#2#A#A#0#1#region2#Region (Versand)#vt#5497###0###0
+DATA>#plz2#A#10#Postleitzahl (Versand)#GL10#0#0#zipCode2#2#A#A#0#0#plz2#Postleitzahl (Versand)#vt#5498###0###0
+DATA>#nort2#A#34#Ort (Versand)#T34#0#0#town2#2#A#A#0#0#nort2#Ort (Versand)#vt#5499###0###0
+DATA>#tele2#A#70#Telefonnummer (Versand)#GL70#0#0#phoneNo2#2#A#A#0#0#tele2#Telefonnummer (Versand)#vt#5500###0###0
+DATA>#mtele2#A#70#Mobil-Telefonnummer (Versand)#GL70#0#0#cellPhoneNo2#2#A#A#0#0#mtele2#Mobil-Telefonnummer (Versand)#vt#5502###0###0
+DATA>#email2#A#70#E-Mail-Adresse (Versand)#GL70#0#0#emailAddr2#2#A#A#0#0#email2#E-Mail-Adresse (Versand)#vt#5504###0###0
+DATA>#fax2#A#30#Telefaxnummer (Versand)#GL30#0#0#faxNo2#2#A#A#0#0#fax2#Telefaxnummer (Versand)#vt#5506###0###0
+DATA>#ustid#A#16#Umsatzsteueridentifikationsnummer#NT16#0#0#VATIdno#2#A#A#0#0#ustid#Umsatzsteueridentifikationsnummer#vt#242###0###0
+DATA>#lareg#A#25#Region (Lieferant)#PS97:1#0#0##2#A#A#0#0#lareg#Region (Lieferant)#vt#5779###0###0
+DATA>#region#A#25#Region (Lieferant)#PS97:1#0#0#region#2#A#A#0#1#region#Region (Lieferant)#vt#5779###0###0
+DATA>#laart#A#8#Landart#A8#0#0#ctryType#1#A#A#0#0#laart#Landart#vt#240###0###0
+DATA>#laarta#A#8#Landart#A8#0#0#ctryTypeEnum#1#A#A#0#1#laarta#Landart#vt#240###0###0
+DATA>#klbem#A#64#Bemerkungen aus dem Lieferantenstammblatt#T64#0#1#masterDataComment#1#A#A#0#0#klbem#Bemerkungen aus dem Lieferantenstammblatt#vt#5780###0###0
+DATA>#anlagen#A#64#Anlagen#GL64#0#0#fxdAssets#2#A#A#0#0#anlagen#Anlagen#vt#5781###0###0
+DATA>#vorschr#A#64#Vorschrift#GL64#0#0#regulation#2#A#A#0#0#vorschr#Vorschrift#vt#4586###0###0
+DATA>#zaform#A#11#Zahlungsart#A175#0#0#methodOfPaymt#2#A#A#0#0#zaform#Zahlungsart#vt#243###0###0
+DATA>#intra#N#6#Laufende Nummer der Intrastat-Meldung#I6#0#0#INTRASTAT#1#A#A#0#0#intra#Laufende Nummer der Intrastat-Meldung#vt#5509###0###0
+DATA>#gart#A#8#Art des Geschäfts (Intrastat)#P12:3#0#0#natureOfBusiness#2#A#A#0#0#gart#Art des Geschäfts (Intrastat)#vt#169###0###0
+DATA>#vzweig#A#32#Verkehrszweig (ATLAS, Intrastat)#AZL20007#0#0#transpMode#3#A#A#0#0#vzweig#Verkehrszweig (ATLAS, Intrastat)#vt#171###0###0
+DATA>#vzweigc#A#2#Verkehrszweig (ATLAS, Intrastat)#AZMK20007#0#0#transpModeCode#3#A#A#0#1#vzweigc#Verkehrszweig (ATLAS, Intrastat)#vt#171###0###0
+DATA>#stverf#A#8#Statistisches Verfahren (Intrastat)#P12:3#0#0#statMethod#2#A#A#0#0#stverf#Statistisches Verfahren (Intrastat)#vt#170###0###0
+DATA>#grkenn#A#35#Grenzübergang/Einladehafen (ATLAS/Intrastat)#NT35#0#0#borderPort#2#A#A#0#0#grkenn#Grenzübergang/Einladehafen (ATLAS/Intrastat)#vt#245###0###0
+DATA>#grentf#N#5#Entfernung zur Grenze bzw. Hafen (Intrastat)#I5#0#0#borderDistance#2#A#A#0#0#grentf#Entfernung zur Grenze bzw. Hafen (Intrastat)#vt#172###0###0
+DATA>#vstaat#A#25#Versendungsland#PS97:1#0#0#destDispatchCtry#2#A#A#0#0#vstaat#Versendungsland#vt#5782###0###0
+DATA>#kvnum#A#8#Kontenvorgang#GL8#0#0#acctTrans#1#A#A#0#0#kvnum#Kontenvorgang#vt#3825###0###0
+DATA>#butext#A#40#Buchungstext#T40#0#0#entText#2#A#A#0#0#butext#Buchungstext#vt#1139###0###0
+DATA>#firma#A#8#Hauptlieferant#P1:1#0#1#companyARAP#1#A#A#0#0#firma#Hauptlieferant#vt#5783###0###0
+DATA>#ueb#A#4#Buchen#B#0#1#postPackSlipInvoice#2#A#A#0#0#ueb#Buchen#vt#5513###0###0
+DATA>#ans#A#34#Name (Lieferant)#T34#0#0#addr#2#A#A#0#0#ans#Name (Lieferant)#vt#5784###0###0
+DATA>#str#A#34#Straße (Lieferant)#T34#0#0#street#2#A#A#0#0#str#Straße (Lieferant)#vt#5785###0###0
+DATA>#aort#A#34#PLZ + Ort (Lieferant)#T34#0#0##2#A#A#0#0#aort#PLZ + Ort (Lieferant)#vt#5786###0###0
+DATA>#lakenn#A#3#Länderkennzeichen (Lieferant)#NT3#0#1#ctryCode#2#A#A#0#0#lakenn#Länderkennzeichen (Lieferant)#vt#5787###0###0
+DATA>#staat#A#25#Land (Lieferant)#PS97:1#0#0#stateOfTaxOffice#2#A#A#0#0#staat#Land (Lieferant)#vt#5788###0###0
+DATA>#hkst#N#1#Anzahl Nachkommastellen#IP1#0#1#countDecPlaces#1#A#A#0#0#hkst#Anzahl Nachkommastellen#vt#2427###0###0
+DATA>#plz#A#10#Postleitzahl (Lieferant)#GL10#0#0#zipCode#2#A#A#0#0#plz#Postleitzahl (Lieferant)#vt#5789###0###0
+DATA>#nort#A#34#Ort (Lieferant)#T34#0#0#town#2#A#A#0#0#nort#Ort (Lieferant)#vt#5790###0###0
+DATA>#tele#A#70#Telefonnummer (Lieferant)#GL70#0#0#phoneNo#2#A#A#0#0#tele#Telefonnummer (Lieferant)#vt#5791###0###0
+DATA>#mtele#A#70#Mobil-Telefonnummer (Lieferant)#GL70#0#0#cellPhoneNo#2#A#A#0#0#mtele#Mobil-Telefonnummer (Lieferant)#vt#5793###0###0
+DATA>#email#A#70#E-Mail-Adresse (Lieferant)#GL70#0#0#emailAddr#2#A#A#0#0#email#E-Mail-Adresse (Lieferant)#vt#5795###0###0
+DATA>#fax#A#30#Telefaxnummer (Lieferant)#GL30#0#0#faxNo#2#A#A#0#0#fax#Telefaxnummer (Lieferant)#vt#5797###0###0
+DATA>#umplatz#A#15#Quellagerplatz, von dem aus umgelagert wird#PS38#0#0#relocLoc#2#A#A#0#0#umplatz#Quellagerplatz, von dem aus umgelagert wird#vt#5799###0###0
+DATA>#umlgruppe#A#10#Neue Lagergruppe nach Umlagern#PS39:2#0#0#newWhGrpReloc#2#A#A#0#0#umlgruppe#Neue Lagergruppe nach Umlagern#vt#5351###0###0
+DATA>#vlgruppe#A#10#Vorschlagslagergruppe#PS39:2#0#1#suggWarehGrp#2#A#A#0#0#vlgruppe#Vorschlagslagergruppe#vt#5533###0###0
+DATA>#datevbel#A#12#Belegnummer für DATEV-Schnittstelle#GL12#0#0#DATEVDoc#2#A#A#0#0#datevbel#Belegnummer für DATEV-Schnittstelle#vt#5536###0###0
+DATA>#datev#N#6#Laufende Nummer für DATEV-Schnittstelle#I6#0#0#DATEVConsecutiveNo#2#A#A#0#0#datev#Laufende Nummer für DATEV-Schnittstelle#vt#5537###0###0
+DATA>#datevexp#D#19#Zeitstempel des DATEV-Exports#GD19#0#0#DATEVTimeStamp#2#A#A#0#0#datevexp#Zeitstempel des DATEV-Exports#vt#5538###0###0
+DATA>#beleg#A#8#Weiteren Beleg anfügen#P4:1.2#0#1#docNo#2#A#A#0#0#beleg#Weiteren Beleg anfügen#vt#5539###0###0
+DATA>#schlag#A#30#Schlagwort#NT30#0#0#keyWord#3#A#A#0#0#schlag#Schlagwort#vt#5540###0###0
+DATA>#rab#A#8#Lieferanten-Rabattgruppe#NT8#0#0#discountGrp#2#A#A#0#0#rab#Lieferanten-Rabattgruppe#vt#5800###0###0
+DATA>#prg#A#8#Lieferanten-Preisgruppe#NT8#0#0#pricingGrp#2#A#A#0#0#prg#Lieferanten-Preisgruppe#vt#5801###0###0
+DATA>#inkkreis#A#4#Konzernintern?#B#0#1#corpGrp#1#A#A#0#0#inkkreis#Konzernintern?#vt#3843###0###0
+DATA>#konsol#A#4#Verbucht als konzernintern?#B#0#0#postedGroupInt#1#A#A#0#0#konsol#Verbucht als konzernintern?#vt#3844###0###0
+DATA>#konzfa#A#8#Konzernunternehmen#P89:5#0#0#affilCompany#1#A#A#0#0#konzfa#Konzernunternehmen#vt#289###0###0
+DATA>#ustart#A#17#Art der Umsatzsteuerbuchung#A138#0#0#VATEntType#3#A#A#0#0#ustart#Art der Umsatzsteuerbuchung#vt#642###0###0
+DATA>#gvorg#A#10#Geschäftsvorgang#PS81:3#0#0#businessTrans#2#A#A#0#0#gvorg#Geschäftsvorgang#vt#336###0###0
+DATA>#vsperre#A#4#Vorgang nicht freigeben/beliefern/berechnen?#B#0#0#transLock#2#A#A#0#0#vsperre#Vorgang nicht freigeben/beliefern/berechnen?#vt#5545###0###0
+DATA>#kasskto#A#8#Kassenkonto (Barzahlung)#P5:1#0#0#cashAcct#2#A#A#0#0#kasskto#Kassenkonto (Barzahlung)#vt#5546###0###0
+DATA>#bukenn#A#4#Journalkennzeichen#NT4#0#0#journalCodeEnt#2#A#A#0#0#bukenn#Journalkennzeichen#vt#3002###0###0
+DATA>#zasperre#A#4#Zahlungssperre#B#0#0#payLock#2#A#A#0#0#zasperre#Zahlungssperre#vt#299###0###0
+DATA>#zbedvert#A#8#Zahlungsverteiler#P66:6#0#0#payDistrib#2#A#A#0#0#zbedvert#Zahlungsverteiler#vt#5547###0###0
+DATA>#mterm#A#4#Fälligkeit manuell pflegen?#B#0#0#maintDueDateManual#2#A#A#0#0#mterm#Fälligkeit manuell pflegen?#vt#610###0###0
+DATA>#kobverb#A#8#Erste Bankverbindung des Kontos#P96:2#0#1#firstBankDet#1#A#A#0#0#kobverb#Erste Bankverbindung des Kontos#vt#761###0###0
+DATA>#bverb#A#8#Gewünschte Bankverbindung#P96:2#0#0#bankDet#2#A#A#0#0#bverb#Gewünschte Bankverbindung#vt#672###0###0
+DATA>#zareferenz#A#35#Referenz aus Zahlungsschein#GL35#0#0#payFormRef#2#A#A#0#0#zareferenz#Referenz aus Zahlungsschein#vt#5548###0###0
+DATA>#zatlnr#A#35#Teilnehmernummer aus Zahlschein#GL35#0#0#participNoPayForm#2#A#A#0#0#zatlnr#Teilnehmernummer aus Zahlschein#vt#806###0###0
+DATA>#zarefpruef#A#35#Prüfziffer aus Zahlungsschein#GL35#0#0#payFormCheckDigit#2#A#A#0#0#zarefpruef#Prüfziffer aus Zahlungsschein#vt#640###0###0
+DATA>#zakodzeile#A#55#Kodierzeile aus Zahlschein#GL55#0#0#codingRowPayForm#2#A#A#0#0#zakodzeile#Kodierzeile aus Zahlschein#vt#641###0###0
+DATA>#vzweck#A#70#Gewünschter Verwendungszweck bei der Zahlung#GL70#0#0#purposeUse#2#A#A#0#0#vzweck#Gewünschter Verwendungszweck bei der Zahlung#vt#673###0###0
+DATA>#zatext#A#64#Zusatztext für den Zahlungsvorgang#T64#0#0#addText#2#A#A#0#0#zatext#Zusatztext für den Zahlungsvorgang#vt#695###0###0
+DATA>#kursfix#A#4#Erfassungswährungskurs fixiert?#B#0#0#exRateFixed#2#A#A#0#0#kursfix#Erfassungswährungskurs fixiert?#vt#3878###0###0
+DATA>#stbefr#A#4#steuerbefreit?#B#0#0#taxExempt#1#A#A#0#0#stbefr#steuerbefreit?#vt#251###0###0
+DATA>#betkonst#A#49#Beteiligten-Konstellation für ATLAS#AZL20006#0#0#ATLASParticipConst#3#A#A#0#0#betkonst#Beteiligten-Konstellation für ATLAS#vt#2279###0###0
+DATA>#betkonstc#A#4#Beteiligten-Konstellation für ATLAS#AZMK20006#0#0#ATLASParticipConstAlias#3#A#A#0#1#betkonstc#Beteiligten-Konstellation für ATLAS#vt#2279###0###0
+DATA>#abfahrtdat#D#19#Zeitpunkt der Abfahrt bzw. des Abflugs (ATLAS)#GD19#0#0#ATLASDepartureTime#3#A#A#0#0#abfahrtdat#Zeitpunkt der Abfahrt bzw. des Abflugs (ATLAS)#vt#5549###0###0
+DATA>#pmmge#N#6#Anzahl gelieferter Packstücke (auf Palette)#IP6#0#0#packMatDelivQty#1#A#A#0#0#pmmge#Anzahl gelieferter Packstücke (auf Palette)#vt#5802###0###0
+DATA>#atvermerk#A#70#Vermerk zu ATLAS#GL70#0#0#ATLASNote#3#A#A#0#0#atvermerk#Vermerk zu ATLAS#vt#5552###0###0
+DATA>#atvermerk2#A#70#2. Vermerk zu ATLAS#GL70#0#0#ATLASNote2#3#A#A#0#0#atvermerk2#2. Vermerk zu ATLAS#vt#5553###0###0
+DATA>#atvermerk3#A#70#3. Vermerk zu ATLAS#GL70#0#0#ATLASNote3#3#A#A#0#0#atvermerk3#3. Vermerk zu ATLAS#vt#5554###0###0
+DATA>#atvermerk4#A#70#4. Vermerk zu ATLAS#GL70#0#0#ATLASNote4#3#A#A#0#0#atvermerk4#4. Vermerk zu ATLAS#vt#5555###0###0
+DATA>#atvermerk5#A#70#5. Vermerk zu ATLAS#GL70#0#0#ATLASNote5#3#A#A#0#0#atvermerk5#5. Vermerk zu ATLAS#vt#5556###0###0
+DATA>#regnummer#A#70#Registriernummer Fremdsystem#GL70#0#0#ATLASRegistNo#3#A#A#0#0#regnummer#Registriernummer Fremdsystem#vt#5557###0###0
+DATA>#befmstaat#A#25#Staatszugehöigkeit des Beförderungsmittels an der Grenze#PS97:1#0#0#transpMeansNational#3#A#A#0#0#befmstaat#Staatszugehöigkeit des Beförderungsmittels an der Grenze#vt#5558###0###0
+DATA>#grvzweig#A#32#Verkehrszweig an der Grenze (ATLAS)#AZL20007#0#0#transpModeBord#3#A#A#0#0#grvzweig#Verkehrszweig an der Grenze (ATLAS)#vt#5559###0###0
+DATA>#grvzweigc#A#2#Verkehrszweig an der Grenze (ATLAS)#AZMK20007#0#0#transpModeBordCode#3#A#A#0#1#grvzweigc#Verkehrszweig an der Grenze (ATLAS)#vt#5559###0###0
+DATA>#incoort#A#35#Ort zu Incoterm#GL35#0#0#townIncoterm#3#A#A#0#0#incoort#Ort zu Incoterm#vt#335###0###0
+DATA>#atverfan#A#50#Verfahren für ATLAS (angemeldet)#AZL20010#0#0#ATLASProcDeclared#3#A#A#0#0#atverfan#Verfahren für ATLAS (angemeldet)#vt#331###0###0
+DATA>#atverfanc#A#2#Verfahren für ATLAS (angemeldet)#AZMK20010#0#0#ATLASProcDeclaredCode#3#A#A#0#1#atverfanc#Verfahren für ATLAS (angemeldet)#vt#331###0###0
+DATA>#atverfvor#A#50#Verfahren für ATLAS (vorangegangenes)#AZL20011#0#0#ATLASProcPrev#3#A#A#0#0#atverfvor#Verfahren für ATLAS (vorangegangenes)#vt#332###0###0
+DATA>#atverfvorc#A#2#Verfahren für ATLAS (vorangegangenes)#AZMK20011#0#0#ATLASProcPrevCode#3#A#A#0#1#atverfvorc#Verfahren für ATLAS (vorangegangenes)#vt#332###0###0
+DATA>#atverfwei#A#50#Verfahren für ATLAS (weiteres)#AZL20012#0#0#ATLASProcNext#3#A#A#0#0#atverfwei#Verfahren für ATLAS (weiteres)#vt#333###0###0
+DATA>#atverfweic#A#3#Verfahren für ATLAS (weiteres)#AZMK20012#0#0#ATLASProcNextCode#3#A#A#0#1#atverfweic#Verfahren für ATLAS (weiteres)#vt#333###0###0
+DATA>#befmart#A#25#Art des Beförderungsmittels an der Grenze#AZL20008#0#0#transpMeansBord#3#A#A#0#0#befmart#Art des Beförderungsmittels an der Grenze#vt#334###0###0
+DATA>#befmartc#A#2#Art des Beförderungsmittels an der Grenze#AZMK20008#0#0#transpMeansBordCodeType#3#A#A#0#1#befmartc#Art des Beförderungsmittels an der Grenze#vt#334###0###0
+DATA>#befmkz#A#27#Kennzeichen des Beförderungsmittels an der Grenze#GL27#0#0#transpMeansBordCode#3#A#A#0#0#befmkz#Kennzeichen des Beförderungsmittels an der Grenze#vt#5560###0###0
+DATA>#atmitls#A#4#ATLAS Anmeldung mit Lieferschein#B#0#0#ATLASWithPackSlip#2#A#A#0#0#atmitls#ATLAS Anmeldung mit Lieferschein#vt#1366###0###0
+DATA>#barcode#A#8#Zugeordneter DMS Barcode#GL8#0#1#barCode#7#A#A#0#0#barcode#Zugeordneter DMS Barcode#vt#5561###0###0
+DATA>#emgeautobew#A#4#Einzelmengen aus Lieferschein automatisch beim Buchen bewerten#B#0#0#evalPostIndivQtyFromPackSlip#2#A#A#0#0#emgeautobew#Einzelmengen aus Lieferschein automatisch beim Buchen bewerten#vt#5803###0###0
+DATA>#pastnr#A#8#Packstücknummern#P119:11#0#0#packNoRef#1#A#A#0#0#pastnr#Packstücknummern#vt#5565###0###0
+DATA>#kzmart#A#16#Art in der Zusammenfassenden Meldung#A234#0#0#businessTransECSLType#2#A#A#0#0#kzmart#Art in der Zusammenfassenden Meldung#vt#3824###0###0
+DATA>#sepamand#A#8#SEPA-Lastschriftmandat#P66:7#0#0#sepaMandate#2#A#A#0#0#sepamand#SEPA-Lastschriftmandat#vt#305###0###0
+DATA>#limahnsperre#A#4#Lieferanten-Mahnsperre?#B#0#0#vendorReminderLock#2#A#A#0#0#limahnsperre#Lieferanten-Mahnsperre?#vt#439###0###0
+DATA>#posnsammel#A#4#Positionen in Buchungen nicht sammeln#B#0#0#sumPosInEnt#3#A#A#0#0#posnsammel#Positionen in Buchungen nicht sammeln#vt#5572###0###0
+DATA>#zuspmmge#N#6#Zusätzliche Anzahl zu liefernder Packstücke (auf Palette)#IP6#0#0#addPackMatDelivQty#1#A#A#0#0#zuspmmge#Zusätzliche Anzahl zu liefernder Packstücke (auf Palette)#vt#5573###0###0
+DATA>#zusnettogew#N#10#Zusätzliches Nettogewicht der Lieferung#MP6.3#0#0#addNetWeight#1#A#A#0#0#zusnettogew#Zusätzliches Nettogewicht der Lieferung#vt#5574###0###0
+DATA>#zusbruttogew#N#10#Zusätzliches Bruttogewicht der Lieferung#MP6.3#0#0#addGrossWeight#1#A#A#0#0#zusbruttogew#Zusätzliches Bruttogewicht der Lieferung#vt#5575###0###0
+DATA>#opz#A#8#OP-Bewegung#P100:2#0#0#IOState#2#A#A#0#0#opz#OP-Bewegung#vt#608###0###0
+DATA>#rebu#A#8#Rechnungsbuchung#P6:0#0#0#invPost#1#A#A#0#0#rebu#Rechnungsbuchung#vt#579###0###0
+DATA>#ustidfa#A#16#Betriebseigene Umsatzsteueridentifikationsnummer#NT16#0#0#ownVATIdno#1#A#A#0#0#ustidfa#Betriebseigene Umsatzsteueridentifikationsnummer#vt#643###0###0
+DATA>#yvorgart#A#15#Vorgangsart#PS21#0#0#yvorgart#3#A#A#1#0#yvorgart#Vorgangsart##0###0###0
+DATA>#yktr#A#16#Kostenträger/Projekt#PS5:2.4.8#0#0#yktr#3#A#A#1#0#yktr#Kostenträger/Projekt##0###0###0
+DATA>#yprojekt#A#15##PS20:1#0#0#yprojekt#3#A#A#1#0#yprojekt###0###0###0
+DATA>#yaoschrift#N#8#Schriftart allout-Ausgabe: Nummer#IP8#0#0#yaoschrift#3#A#A#1#0#yaoschrift#Schriftart allout-Ausgabe: Nummer##0###0###0
+DATA>#yaoschrbez#A#255#Schriftart allout-Ausgabe: Bezeichnung#GL255#0#1#yaoschrbez#3#A#A#1#0#yaoschrbez#Schriftart allout-Ausgabe: Bezeichnung##0###0###0
+DATA>#ytba#A#15##PS20:6#0#0#ytba#3#A#A#1#0#ytba###0###0###0
+DATA>#ytbs#A#15##PS20:6#0#0#ytbs#3#A#A#1#0#ytbs###0###0###0
+DATA>#ybdruck#A#4##B#0#0#ybdruck#3#A#A#1#0#ybdruck###0###0###0
+DATA>#ybkw#A#4##B#0#0#ybkw#3#A#A#1#0#ybkw###0###0###0
+DATA>#yres1#A#64##T64#0#0#yres1#3#A#A#1#0#yres1###0###0###0
+DATA>#yres2#A#64##T64#0#0#yres2#3#A#A#1#0#yres2###0###0###0
+DATA>#yres3#N#8##I8#0#0#yres3#3#A#A#1#0#yres3###0###0###0
+DATA>#yres4#N#8##I8#0#0#yres4#3#A#A#1#0#yres4###0###0###0
+DATA>#yres5#N#10##R7.2#0#0#yres5#3#A#A#1#0#yres5###0###0###0
+DATA>#yres6#N#10##R7.2#0#0#yres6#3#A#A#1#0#yres6###0###0###0
+DATA>#yres7#A#4##B#0#0#yres7#3#A#A#1#0#yres7###0###0###0
+DATA>#yres8#D#8#zentraler Liefertermin#GD2#0#0#yres8#3#A#A#1#0#yres8#zentraler Liefertermin##0###0###0
+DATA>#yztterm#D#8#zentraler Liefertermin#GD2#0#0#yztterm#3#A#A#1#0#yztterm#zentraler Liefertermin##0###0###0
+DATA>#yabnr#A#70#Auftragsbestätigungsnummer im Kopf#GL70#0#0#yabnr#3#A#A#1#0#yabnr#Auftragsbestätigungsnummer im Kopf##0###0###0
+DATA>#ypdf#A#255#Dokument anhängen#DV0#0#0#ypdf#3#A#A#1#0#ypdf#Dokument anhängen##0###0###0
+DATA>#yprufdat#D#8#Datum der Preisprüfung#GD2#0#0#yprufdat#3#A#A#1#0#yprufdat#Datum der Preisprüfung##0###0###0
+DATA>#yprufusr#A#10#User der Prüfung#GL10#0#0#yprufusr#3#A#A#1#0#yprufusr#User der Prüfung##0###0###0
+DATA>#ypdfr#A#255#elektronisches Rechnungsdokument#DV0#0#0#ypdfr#3#A#A#1#0#ypdfr#elektronisches Rechnungsdokument##0###0###0
+DATA>#yerech#A#4#elektronische Rechnung erlaubt#B#0#1#yerech#3#A#A#1#0#yerech#elektronische Rechnung erlaubt##0###0###0
+DATA>#ydvkto#A#9#DatevNr aus Stamm#GLU9#0#1#ydvkto#3#A#A#1#0#ydvkto#DatevNr aus Stamm##0###0###0
+DATA>#yerstbe#A#30#Ersteller der Bestellung u.letzter Bearbeiter#GL30#0#1#yerstbe#3#A#A#1#0#yerstbe#Ersteller der Bestellung u.letzter Bearbeiter##0###0###0
+DATA>#yerfassdat#D#8#Erfassungsdatum desLS (bei neu)#GD2#0#1#yerfassdat#3#A#A#1#0#yerfassdat#Erfassungsdatum desLS (bei neu)##0###0###0
+DATA>#yemailinfo#A#8#zu benachrichtigen wenn Lieferung erfolgt ist#PS11:1#0#0#yemailinfo#3#A#A#1#0#yemailinfo#zu benachrichtigen wenn Lieferung erfolgt ist##0###0###0
+DATA>#yfreidat#D#19#Freigabe Bestellung Datum#GD19#0#0#yfreidat#3#A#A#1#0#yfreidat#Freigabe Bestellung Datum##0###0###0
+DATA>#yfreiusr#A#10#Freigabe Bestellung user#GL10#0#0#yfreiusr#3#A#A#1#0#yfreiusr#Freigabe Bestellung user##0###0###0
+DATA>#yfreib#A#4#Freigabe Bestellung#B#0#0#yfreib#3#A#A#1#0#yfreib#Freigabe Bestellung##0###0###0
+DATA>#ysenddat#D#19#gesendet Datum#GD19#0#0#ysenddat#3#A#A#1#0#ysenddat#gesendet Datum##0###0###0
+DATA>#ysendusr#A#10#gesendet wer user#GL10#0#0#ysendusr#3#A#A#1#0#ysendusr#gesendet wer user##0###0###0
+DATA>#ysendt#A#1#gesendet wie Fax,Mail,Telefon,Internet,Brief,Post#NT1#0#0#ysendt#3#A#A#1#0#ysendt#gesendet wie Fax,Mail,Telefon,Internet,Brief,Post##0###0###0
+DATA>#ygeneb#A#4#Bestellung genehmigt ja/nein#B#0#0#ygeneb#3#A#A#1#0#ygeneb#Bestellung genehmigt ja/nein##0###0###0
+DATA>#yfrei1#A#4#Bestellung genehmigt ja/nein#B#0#0#yfrei1#3#A#A#1#0#yfrei1#Bestellung genehmigt ja/nein##0###0###0
+DATA>#ygeneusr#A#10#Freigabe angefordert bei#GL10#0#0#ygeneusr#3#A#A#1#0#ygeneusr#Freigabe angefordert bei##0###0###0
+DATA>#ygenedat#D#19#Freigabe angefordert am#GD19#0#0#ygenedat#3#A#A#1#0#ygenedat#Freigabe angefordert am##0###0###0
+DATA>#ynettosum#N#13#Nettosumme der Bestellung#RDT10.2#0#0#ynettosum#3#A#A#1#0#ynettosum#Nettosumme der Bestellung##0###0###0
+DATA>#ynettovor#N#13#Nettosumme vorher original bei MaskenEintritt#RDT10.2#0#1#ynettovor#3#A#A#1#0#ynettovor#Nettosumme vorher original bei MaskenEintritt##0###0###0
+DATA>#yauftrbest#A#255#Datei für AB Auftragsbestätigung#DV0#0#0#yauftrbest#3#A#A#1#0#yauftrbest#Datei für AB Auftragsbestätigung##0###0###0
+DATA>#yersteller#A#30#Ersteller der Bestellung,Lieferschein,Rechnung,BE:LS:RE:#GL30#0#0#yersteller#3#A#A#1#0#yersteller#Ersteller der Bestellung,Lieferschein,Rechnung,BE:LS:RE:##0###0###0
+DATA>#grust#N#9#Gruppe#I9#1#0##1#A#A#0#0#grust#Gruppe#vt#1###0###0
+DATA>#gruppe#A#2#Gruppennummer#GRN4#1#0#grpNo#1#A#A#0#1#gruppe#Gruppennummer#vt#2###0###0
+DATA>#grbez#A#80#Gruppenbezeichnung#GRB4#1#0#grpDescr#1#A#A#0#1#grbez#Gruppenbezeichnung#vt#3###0###0
+DATA>#dnr#A#3#Dateinummer#GRDN4#1#1#DBNo#1#A#A#0#0#dnr#Dateinummer#vt#4###0###0
+DATA>#dbez#A#20#Dateibezeichnung#GRDB4#1#1#DBDescr#1#A#A#0#1#dbez#Dateibezeichnung#vt#5###0###0
+DATA>#zn#N#5#Laufende Zeilennummer#I5#1#1#rowNo#1#A#A#0#0#zn#Laufende Zeilennummer#vt#397###0###0
+DATA>#ozeilen#N#5#Anzahl Zeilen im Tabellenteil#I5#1#0#rowCount#1#A#A#0#0#ozeilen#Anzahl Zeilen im Tabellenteil#vt#6###0###0
+DATA>#sn#A#8#Satznummer#P4#1#1#recordNo#1#A#A#0#0#sn#Satznummer#vt#7###0###0
+DATA>#id#A#30#Datensatz-ID#ID4#1#1#id#1#A#A#0#1#id#Datensatz-ID#vt#8###0###0
+DATA>#versionn#A#22#Versionsnummer#ZAE1#1#0#version#1#A#A#0#0#versionn#Versionsnummer#vt#12###0###0
+DATA>#ablagen#A#22#Zeitstempel der Datensatzablage#ZAE1#1#0#recordFilingVersion#1#A#A#0#0#ablagen#Zeitstempel der Datensatzablage#vt#13###0###0
+DATA>#ablagef#A#4#Datensatz abgelegt?#ZAE0#1#0#recordFiled#1#A#A#0#1#ablagef#Datensatz abgelegt?#vt#14###0###0
+DATA>#kopf#A#8#Kopf#P4:1#1#0#head#1#A#A#0#0#kopf#Kopf#vt#5578###0###0
+DATA>#num4#A#8#Identnummer#N4#1#1##1#A#A#0#0#num4#Identnummer#vt#16###0###0
+DATA>#nummer#A#8#Identnummer#NK4#1#1#idno#1#A#A#0#1#nummer#Identnummer#vt#16###0###0
+DATA>#nummerb#A#8#Identnummer#NL4#1#1#idnoPadded#1#A#A#0#1#nummerb#Identnummer#vt#16###0###0
+DATA>#such4#A#9#Suchwort#SW4#1#1##1#A#A#0#0#such4#Suchwort#vt#17###0###0
+DATA>#such#A#9#Suchwort#SWK4#1#1#swd#1#A#A#0#1#such#Suchwort#vt#17###0###0
+DATA>#suchb#A#9#Suchwort#SWL4#1#1#swdPadded#1#A#A#0#1#suchb#Suchwort#vt#17###0###0
+DATA>#verw#A#15#Verwendung#GL15#1#0#usage#2#A#A#0#0#verw#Verwendung#vt#488###0###0
+DATA>#sucherw#A#15#Sucherweiterung#GL15#1#1#searchExt#1#A#A#0#0#sucherw#Sucherweiterung#vt#51###0###0
+DATA>#stand#D#10#Änderungsdatum#GD#1#1#modificationDate#1#A#A#0#0#stand#Änderungsdatum#vt#55###0###0
+DATA>#erfass#D#10#Erfassungsdatum#GD#1#1#creationDate#1#A#A#0#0#erfass#Erfassungsdatum#vt#56###0###0
+DATA>#zeich#A#15#Letzter Bearbeiter#GL15#1#1#responsOperator#1#A#A#0#0#zeich#Letzter Bearbeiter#vt#57###0###0
+DATA>#zeichen#A#15#Letzter Bearbeiter#GL15#1#1#lastProcessor#1#A#A#0#1#zeichen#Letzter Bearbeiter#vt#57###0###0
+DATA>#index#A#2#Versionskennung#GLU2#1#1#userDefinedVersion#1#A#A#0#0#index#Versionskennung#vt#58###0###0
+DATA>#urmand#A#15#Ursprungsmandant des Datensatzes#GLA15#1#0#sourceClient#1#A#A#0#0#urmand#Ursprungsmandant des Datensatzes#vt#59###0###0
+DATA>#mandkenn#A#15#Mandantenkennung des Datensatzes#GLA15#1#1#recordClient#1#A#A#0#0#mandkenn#Mandantenkennung des Datensatzes#vt#60###0###0
+DATA>#guid#A#38#GUID des Datensatzes#GLA38#1#0#GUID#5#A#A#0#0#guid#GUID des Datensatzes#vt#61###0###0
+DATA>#paket#A#8#Paketzugehörigkeit#P87:10#1#0#package#8#A#A#0#0#paket#Paketzugehörigkeit#vt#62###0###0
+DATA>#status#A#1#Statuszeichen#NT1#1#0#status#2#A#A#0#0#status#Statuszeichen#vt#4199###0###0
+DATA>#einplan#A#4#Einplanung in die Disposition?#B#1#0#schedule#1#A#A#0#0#einplan#Einplanung in die Disposition?#vt#5353###0###0
+DATA>#typ#A#28#Datensatztyp#A4#1#0#type#1#A#A#0#0#typ#Datensatztyp#vt#15###0###0
+DATA>#typa#A#28#Datensatztyp#A4#1#0#recordType#1#A#A#0#1#typa#Datensatztyp#vt#15###0###0
+DATA>#term#D#5#Bestätigter Liefertermin (Woche)#GW2#1#0#dateDueDate#2#A#A#0#0#term#Bestätigter Liefertermin (Woche)#vt#5580###0###0
+DATA>#tterm#D#8#Bestätigter Liefertermin (Tag)#GD2#1#0#dueDateDay#2#A#A#0#1#tterm#Bestätigter Liefertermin (Tag)#vt#5581###0###0
+DATA>#pterm#D#19#Bestätigter Liefertermin (Zeitpunkt)#GD19#1#0#dueDateTime#2#A#A#0#1#pterm#Bestätigter Liefertermin (Zeitpunkt)#vt#5582###0###0
+DATA>#zuord#N#9#Zuordnungsnummer#IP9#1#0#allocNo#1#A#A#0#0#zuord#Zuordnungsnummer#vt#460###0###0
+DATA>#pos#A#8#Nächste Position#P4:2#1#0#item#1#A#A#0#0#pos#Nächste Position#vt#5583###0###0
+DATA>#lief#A#8#Lieferant#PS1:1.2#1#0#vendor#2#A#A#0#0#lief#Lieferant#vt#440###0###0
+DATA>#kl#A#8#Lieferant#P1:1.2#1#0#custVendor#2#A#A#0#1#kl#Lieferant#vt#440###0###0
+DATA>#steuer#A#8#Artikel-Steuerschlüssel#P58:1#1#0#taxCode#2#A#A#0#0#steuer#Artikel-Steuerschlüssel#vt#5584###0###0
+DATA>#psteuer#A#8#Artikel-Steuerschlüssel#P58:1#1#0#productTaxCode#2#A#A#0#1#psteuer#Artikel-Steuerschlüssel#vt#5584###0###0
+DATA>#kategorie#A#14#Kategorie (Ware, Dienstleistung, Anzahlung, ...)#A123#1#0#category#2#A#A#0#0#kategorie#Kategorie (Ware, Dienstleistung, Anzahlung, ...)#vt#4591###0###0
+DATA>#dispo#A#31#Dispositionsart#A134#1#0##2#A#A#0#0#dispo#Dispositionsart#vt#4378###0###0
+DATA>#dispoa#A#31#Dispositionsart#A134#1#0#schedulingMode#2#A#A#0#1#dispoa#Dispositionsart#vt#4378###0###0
+DATA>#wterm#D#5#Wunschtermin (Solltermin) als Woche angegeben#GW2#1#0#desiredDate#1#A#A#0#0#wterm#Wunschtermin (Solltermin) als Woche angegeben#vt#5804###0###0
+DATA>#twterm#D#8#Wunschtermin (Solltermin) Tagesdatum#GD2#1#0#prefDateDay#1#A#A#0#1#twterm#Wunschtermin (Solltermin) Tagesdatum#vt#5805###0###0
+DATA>#pwterm#D#19#Wunschtermin (Solltermin) Zeitpunkt#GD19#1#0#desiredDateTime#1#A#A#0#1#pwterm#Wunschtermin (Solltermin) Zeitpunkt#vt#5806###0###0
+DATA>#herkunft#A#38#Preis-/Rabattherkunft (Preisliste,Rabattliste,Artikel,Materialzuschlag)#VP99#1#0#origin#1#A#A#0#0#herkunft#Preis-/Rabattherkunft (Preisliste,Rabattliste,Artikel,Materialzuschlag)#vt#5585###0###0
+DATA>#sterm#D#5#Bestelltermin (Woche)#GW2#1#0#startDueDateWeek#2#A#A#0#0#sterm#Bestelltermin (Woche)#vt#5807###0###0
+DATA>#tsterm#D#8#Bestelltermin (Tag)#GD2#1#0#startDueDateDay#2#A#A#0#1#tsterm#Bestelltermin (Tag)#vt#5808###0###0
+DATA>#psterm#D#19#Bestelltermin (Zeitpunkt)#GD19#1#0#startDueDateTime#2#A#A#0#1#psterm#Bestelltermin (Zeitpunkt)#vt#5809###0###0
+DATA>#fterm#D#5#Frühester Liefertermin#GW2#1#0#earliestDate#1#A#A#0#0#fterm#Frühester Liefertermin#vt#5587###0###0
+DATA>#tfterm#D#8#Frühester Liefertermin (Tag)#GD2#1#0#earliestDateDay#1#A#A#0#1#tfterm#Frühester Liefertermin (Tag)#vt#5588###0###0
+DATA>#pfterm#D#19#Frühester Liefertermin (Zeitpunkt)#GD19#1#0#earliestDateTime#1#A#A#0#1#pfterm#Frühester Liefertermin (Zeitpunkt)#vt#5589###0###0
+DATA>#krit#A#1#Kennzeichnung kritischer Vorgänge#GLU1#1#1#crit#1#A#A#0#0#krit#Kennzeichnung kritischer Vorgänge#vt#5590###0###0
+DATA>#kettrab#A#4#Kettenrabatt?#B#1#0#chainDisc#2#A#A#0#0#kettrab#Kettenrabatt?#vt#5591###0###0
+DATA>#fix#A#4#Vorgang fixiert#B#1#0#fixed#2#A#A#0#0#fix#Vorgang fixiert#vt#5810###0###0
+DATA>#stled#A#4#Fertigungsliste editieren?#B#1#1#editBOM#1#A#A#0#0#stled#Fertigungsliste editieren?#vt#5593###0###0
+DATA>#stlvgen#A#4#Fertigungsliste variantenbezogen neu erzeugen?#B#1#1#regenProdListVariantRel#2#A#A#0#0#stlvgen#Fertigungsliste variantenbezogen neu erzeugen?#vt#5594###0###0
+DATA>#flistestd#A#30#Fertigungsliste#PS128:1#1#0#stdProdList#2#A#A#0#0#flistestd#Fertigungsliste#vt#5595###0###0
+DATA>#stlarch#A#4#Fertigungsliste archivieren?#B#1#0#procListArchived#2#A#A#0#0#stlarch#Fertigungsliste archivieren?#vt#5596###0###0
+DATA>#stlkopie#A#4#Fertigungsliste kopieren?#B#1#1#copyProdList#2#A#A#0#0#stlkopie#Fertigungsliste kopieren?#vt#5597###0###0
+DATA>#bsres#A#1#Beschaffung oder Reservierung#AK89#1#0#procureOrResAlias#1#A#A#0#0#bsres#Beschaffung oder Reservierung#vt#527###0###0
+DATA>#bsresa#A#12#Beschaffung oder Reservierung#A89#1#0#procureOrResText#1#A#A#0#1#bsresa#Beschaffung oder Reservierung#vt#527###0###0
+DATA>#br#A#8#Zugehörige Reservierung#P4:4#1#0#related#1#A#A#0#0#br#Zugehörige Reservierung#vt#1251###0###0
+DATA>#artex#A#15#Artikel#P2:1.4.5#1#0##2#A#A#0#0#artex#Artikel#vt#452###0###0
+DATA>#artikel#A#15#Artikel#P2:1.4.5#1#0#product#2#A#A#0#1#artikel#Artikel#vt#452###0###0
+DATA>#art#A#30#Artikel#PS2:1.4.5#1#0##2#A#A#0#1#art#Artikel#vt#452###0###0
+DATA>#mge#N#14#Menge in Handelseinheit Einkauf#MDT8.5#1#0#unitQty#2#A#A#0#0#mge#Menge in Handelseinheit Einkauf#vt#5811###0###0
+DATA>#preis#N#12#Einzelpreis pro Preiseinheit des Einkaufs in Erfassungswährung#RDT8.3#1#0#price#2#A#A#0#0#preis#Einzelpreis pro Preiseinheit des Einkaufs in Erfassungswährung#vt#5812###0###0
+DATA>#entpreis#N#10#Entnahmepreis für Beistellungen#RDT7.2#1#0#wdrwlPriceMatProv#1#A#A#0#0#entpreis#Entnahmepreis für Beistellungen#vt#5813###0###0
+DATA>#proz#N#6#Rabatt/Zuschlag in %#MD3.2#1#0#percent#2#A#A#0#0#proz#Rabatt/Zuschlag in %#vt#4592###0###0
+DATA>#pwert#N#11#Positionswert in Erfassungswährung#RDT8.2#1#0#itemValEntCurr#2#A#A#0#0#pwert#Positionswert in Erfassungswährung#vt#5601###0###0
+DATA>#nwert#N#10#Positionswert incl. Umlagen in Erfassungswährung#RDT7.2#1#0#allocValEntCurr#1#A#A#0#0#nwert#Positionswert incl. Umlagen in Erfassungswährung#vt#5602###0###0
+DATA>#eres#A#8#Erste Beistell-Reservierung#P4:4#1#0#firstRes#1#A#A#0#0#eres#Erste Beistell-Reservierung#vt#5814###0###0
+DATA>#lres#A#8#Letzte Beistell-Reservierung#P4:4#1#0#lastReservation#1#A#A#0#0#lres#Letzte Beistell-Reservierung#vt#5815###0###0
+DATA>#orig#A#8#Originalposition#P4#1#0#origItem#1#A#A#0#0#orig#Originalposition#vt#3929###0###0
+DATA>#okopf#A#8#Kopf zur Originalposition#P4#1#0#origItemHead#1#A#A#0#0#okopf#Kopf zur Originalposition#vt#5605###0###0
+DATA>#serprod#A#20#Serviceprodukt#PS116:1#1#0#serviceProduct#2#A#A#0#0#serprod#Serviceprodukt#vt#1223###0###0
+DATA>#stwert#N#10#Steuerbetrag in Erfassungswährung#R7.2#1#0#taxAmtEntCurr#1#A#A#0#0#stwert#Steuerbetrag in Erfassungswährung#vt#5606###0###0
+DATA>#betreuer#A#8#Disponent#PS11:1#1#0#inhouseContact#2#A#A#0#0#betreuer#Disponent#vt#5816###0###0
+DATA>#blehe#N#10#Umrechnung der Lagereinheit in die Handelseinheit des Einkaufs (Bestellung)#MPD5.4#1#0#convSUInTradeU#1#A#A#0#0#blehe#Umrechnung der Lagereinheit in die Handelseinheit des Einkaufs (Bestellung)#vt#5817###0###0
+DATA>#pehe#N#10#Umrechnung Preiseinheit zu Handelseinheit#MPD5.4#1#0#priceUToTradeUConv#2#A#A#0#0#pehe#Umrechnung Preiseinheit zu Handelseinheit#vt#5608###0###0
+DATA>#lehe#N#10#Umrechnung Lagereinheit/Handelseinheit#MPD5.4#1#0#SUTradeUConv#2#A#A#0#0#lehe#Umrechnung Lagereinheit/Handelseinheit#vt#1343###0###0
+DATA>#telehe#N#10#Umrechnung Lagereinheit/Handelseinheit aus Artikelstamm#MPD5.4#1#1#unitConvProduct#1#A#A#0#0#telehe#Umrechnung Lagereinheit/Handelseinheit aus Artikelstamm#vt#5609###0###0
+DATA>#oflimge#N#10#Offene Liefermenge in Lagereinheit#MD6.3#1#1#outstDelQty#1#A#A#0#0#oflimge#Offene Liefermenge in Lagereinheit#vt#5610###0###0
+DATA>#bmge#N#10#Bestellmenge in Handelseinheit des Einkaufs#MD6.3#1#0##1#A#A#0#0#bmge#Bestellmenge in Handelseinheit des Einkaufs#vt#5818###0###0
+DATA>#abmge#N#10#Bestellmenge in Handelseinheit des Einkaufs#MD6.3#1#0#salesPurchQty#1#A#A#0#1#abmge#Bestellmenge in Handelseinheit des Einkaufs#vt#5818###0###0
+DATA>#limge#N#10#Offene Liefermenge#MD6.3#1#0#outstDelQtyU#1#A#A#0#0#limge#Offene Liefermenge#vt#1339###0###0
+DATA>#remge#N#10#Offene Rechnungsmenge in Handelseinheiten des Einkaufs#MD6.3#1#0#openInvQtyTradeUnit#1#A#A#0#0#remge#Offene Rechnungsmenge in Handelseinheiten des Einkaufs#vt#5819###0###0
+DATA>#lifrg#N#10#Vorgemerkte Liefermenge#MD6.3#1#0#earmarkedDelivQty#1#A#A#0#0#lifrg#Vorgemerkte Liefermenge#vt#1340###0###0
+DATA>#rest#N#10#Lieferrestmenge#MD6.3#1#0##1#A#A#0#1#rest#Lieferrestmenge#vt#5613###0###0
+DATA>#lirestmge#N#10#Lieferrestmenge#MD6.3#1#0#remDelivQty#1#A#A#0#1#lirestmge#Lieferrestmenge#vt#5613###0###0
+DATA>#fzahl#N#13#Fortschrittszahl#MP9.3#1#0#cumQty#2#A#A#0#0#fzahl#Fortschrittszahl#vt#5614###0###0
+DATA>#refrg#N#10#Vorgemerkte Rechnungsmenge#MD6.3#1#0#earmarkedInvQty#1#A#A#0#0#refrg#Vorgemerkte Rechnungsmenge#vt#5615###0###0
+DATA>#gewicht#N#10#Gewicht in kg/Lagereinheit#MPD6.3#1#0#weight#2#A#A#0#0#gewicht#Gewicht in kg/Lagereinheit#vt#5616###0###0
+DATA>#lzeit#N#4#Lieferzeit in Arbeitstagen#IP4#1#0#workDays#2#A#A#0#0#lzeit#Lieferzeit in Arbeitstagen#vt#1354###0###0
+DATA>#vorlauf#N#4#Vorlaufzeit für Beistellteile in Arbeitstagen#IP4#1#0#leadTime#2#A#A#0#0#vorlauf#Vorlaufzeit für Beistellteile in Arbeitstagen#vt#5758###0###0
+DATA>#konto#A#8#Buchungskonto#P5:1#1#0#entAcct#2#A#A#0#0#konto#Buchungskonto#vt#5619###0###0
+DATA>#colli#A#30#Collinummern#ID14:1#1#0#serialNoRef#1#A#A#0#0#colli#Collinummern#vt#4115###0###0
+DATA>#platz#A#15#Lagerplatz#PS38#1#0#location#2#A#A#0#0#platz#Lagerplatz#vt#454###0###0
+DATA>#lgruppe#A#10#Lagergruppe#PS39:2#1#0#warehGrp#2#A#A#0#0#lgruppe#Lagergruppe#vt#455###0###0
+DATA>#skfaehig#A#4#Skontierfähig?#B#1#0#discountPossible#2#A#A#0#0#skfaehig#Skontierfähig?#vt#4223###0###0
+DATA>#pftext#A#1#Freitext#TN3#1#0#itemFreeText#2#A#A#0#0#pftext#Freitext#vt#1019###0###0
+DATA>#nkalk#A#4#Muss noch nachkalkuliert werden?#B#1#0#finalCost#1#A#A#0#0#nkalk#Muss noch nachkalkuliert werden?#vt#5820###0###0
+DATA>#pnum#A#6#Positionsnummer#NT6#1#0#itemNoProcess#2#A#A#0#0#pnum#Positionsnummer#vt#1242###0###0
+DATA>#bstnr#A#23#Bestellnummer#GL23#1#0#pOrderNo#2#A#A#0#0#bstnr#Bestellnummer#vt#5821###0###0
+DATA>#ptext#A#38#Positionstext#T38#1#0#itemText#2#A#A#0#0#ptext#Positionstext#vt#1196###0###0
+DATA>#kotyp#A#28#Datensatztyp des Kopfs#A4#1#0#recordTypeHeader#1#A#A#0#0#kotyp#Datensatztyp des Kopfs#vt#5621###0###0
+DATA>#kotypa#A#28#Datensatztyp des Kopfs#A4#1#0#recTypeHeader#1#A#A#0#1#kotypa#Datensatztyp des Kopfs#vt#5621###0###0
+DATA>#kovom#D#8#Erstellungsdatum des Kopfs#GD2#1#0#headCreationDate#1#A#A#0#0#kovom#Erstellungsdatum des Kopfs#vt#5622###0###0
+DATA>#lock#A#4#Bestellvorschlag ist gesperrt#B#1#1#recLocked#2#A#A#0#0#lock#Bestellvorschlag ist gesperrt#vt#5822###0###0
+DATA>#fixpwert#A#4#Positionswert fixiert?#B#1#0#fxdItemVal#2#A#A#0#0#fixpwert#Positionswert fixiert?#vt#5624###0###0
+DATA>#tename#A#100#Artikelbezeichnung#GL100#1#1#productDescr#1#A#A#0#0#tename#Artikelbezeichnung#vt#528###0###0
+DATA>#pland#A#4#Währung für Einzelpreis und Positionswert#PS94:1#1#0##1#A#A#0#0#pland#Währung für Einzelpreis und Positionswert#vt#5625###0###0
+DATA>#zwaehr#A#4#Währung für Einzelpreis und Positionswert#PS94:1#1#0#itemCurr#1#A#A#0#1#zwaehr#Währung für Einzelpreis und Positionswert#vt#5625###0###0
+DATA>#pistrahmen#A#4#Rahmenauftragsposition (AN) / Ist evorig eine Rahmenauftragsposition (BE)#B#1#0#blanketOrderItem#1#A#A#0#0#pistrahmen#Rahmenauftragsposition (AN) / Ist evorig eine Rahmenauftragsposition (BE)#vt#5823###0###0
+DATA>#verlust#N#10#Ausschuss in Handelseinheit des Einkaufs#MD6.3#1#0##2#A#A#0#0#verlust#Ausschuss in Handelseinheit des Einkaufs#vt#5824###0###0
+DATA>#verlustmge#N#10#Ausschuss in Handelseinheit des Einkaufs#MD6.3#1#0#scrap#2#A#A#0#1#verlustmge#Ausschuss in Handelseinheit des Einkaufs#vt#5824###0###0
+DATA>#lsnredl#A#25#Lieferscheinnummer (Externer Dienstleister)#GL25#1#0#packSlipNoESP#2#A#A#0#0#lsnredl#Lieferscheinnummer (Externer Dienstleister)#vt#5457###0###0
+DATA>#lsdatedl#D#8#Lieferscheindatum (Externer Dienstleister)#GD2#1#0#packSlipDateESP#2#A#A#0#0#lsdatedl#Lieferscheindatum (Externer Dienstleister)#vt#5458###0###0
+DATA>#savings#A#4#Savings aktiv?#B#1#0#activeSavings#2#A#A#0#0#savings#Savings aktiv?#vt#5628###0###0
+DATA>#zmart#A#16#Art in der Zusammenfassenden Meldung#A234#1#0#ECSLType#2#A#A#0#0#zmart#Art in der Zusammenfassenden Meldung#vt#3824###0###0
+DATA>#lj#A#10#Verweis auf das zugehörige Lagerbewegungsjournal#PS10#1#1#receiptJournalEnt#1#A#A#0#0#lj#Verweis auf das zugehörige Lagerbewegungsjournal#vt#5825###0###0
+DATA>#verfdat#D#19#Verbrauchsfolgedatum#GD19#1#0#consumptionSeqDate#2#A#A#0#0#verfdat#Verbrauchsfolgedatum#vt#531###0###0
+DATA>#pverlust#N#5#Ausschuss in %#MP2.2#1#0#scrapPercSched#2#A#A#0#0#pverlust#Ausschuss in %#vt#5826###0###0
+DATA>#netmge#N#10#Offene Nettomenge in Lagereinheit#MPD6.3#1#1#outstNetQtySU#1#A#A#0#0#netmge#Offene Nettomenge in Lagereinheit#vt#5827###0###0
+DATA>#fixterm#A#4#Termine fixiert?#B#1#0#datesFixed#2#A#A#0#0#fixterm#Termine fixiert?#vt#5828###0###0
+DATA>#flbasis#N#11#Fertigungslistenbasis#MP6.4#1#0#prodListBase#1#A#A#0#0#flbasis#Fertigungslistenbasis#vt#3465###0###0
+DATA>#istmprakt#A#4#Mischpreis schon aktualisiert?#B#1#0#mixPriceUpdated#1#A#A#0#0#istmprakt#Mischpreis schon aktualisiert?#vt#523###0###0
+DATA>#aumge#N#10#Bedarfsmenge für Kundenaufträge in Lagereinheit#MP6.3#1#0#requiredQtySalesOrder#1#A#A#0#0#aumge#Bedarfsmenge für Kundenaufträge in Lagereinheit#vt#5829###0###0
+DATA>#planmge#N#10#Bedarfsmenge für Planaufträge in Lagereinheit#MP6.3#1#0#requiredQtyPlanning#1#A#A#0#0#planmge#Bedarfsmenge für Planaufträge in Lagereinheit#vt#5830###0###0
+DATA>#packmitken#A#2#[abgekündigt, nicht mehr verwenden] Packmittelkennzeichen#GL2#1#0##3#A#A#0#0#packmitken#[abgekündigt, nicht mehr verwenden] Packmittelkennzeichen#vt#974###0###0
+DATA>#packnr#N#9#[abgekündigt, nicht mehr verwenden] Packstücknummer#I9#1#0##3#A#A#0#0#packnr#[abgekündigt, nicht mehr verwenden] Packstücknummer#vt#5831###0###0
+DATA>#rundung#N#7#Rundungsfaktor#MPD4.2#1#0#roundOffFactor#2#A#A#0#0#rundung#Rundungsfaktor#vt#3124###0###0
+DATA>#zrahmen#A#8#Rahmenauftrag#P4:1#1#0#blanketOrderNo#2#A#A#0#0#zrahmen#Rahmenauftrag#vt#1324###0###0
+DATA>#fmenge#N#10#Füllmenge#MPDT7.2#1#0#fillQty#2#A#A#0#0#fmenge#Füllmenge#vt#1348###0###0
+DATA>#maxfmenge#N#10#Maximale Füllmenge#MP7.2#1#0#maxFillQty#2#A#A#0#0#maxfmenge#Maximale Füllmenge#vt#1349###0###0
+DATA>#fme#A#6#Füllmengeneinheit#TAZ1#1#1#fillQtyU#1#A#A#0#0#fme#Füllmengeneinheit#vt#9125###0###0
+DATA>#abplatz#A#15#Abgangslagerplatz für Beistellungen#PS38#1#0#issueLoc#2#A#A#0#0#abplatz#Abgangslagerplatz für Beistellungen#vt#5832###0###0
+DATA>#ablgruppe#A#10#Abgangslagergruppe für Beistellungen#PS39:2#1#0#issueWarehGrp#2#A#A#0#0#ablgruppe#Abgangslagergruppe für Beistellungen#vt#5833###0###0
+DATA>#charge#A#15#Charge#P59#1#0#lot#2#A#A#0#0#charge#Charge#vt#1203###0###0
+DATA>#ycharge#A#20#Charge SW#PS59#1#0#ycharge#2#A#A#1#1#ycharge#Charge SW##0###0###0
+DATA>#tcharge#A#30#Chargennummer#T30#1#1#lotNo#2#A#A#0#0#tcharge#Chargennummer#vt#1204###0###0
+DATA>#umcharge#A#15#Abgangscharge beim Umlagern#P59#1#0#newLotNoReloc#2#A#A#0#0#umcharge#Abgangscharge beim Umlagern#vt#5834###0###0
+DATA>#tumcharge#A#30#Abgangschargennummer beim Umlagern#T30#1#1#relocLotNo#2#A#A#0#0#tumcharge#Abgangschargennummer beim Umlagern#vt#5835###0###0
+DATA>#posgewicht#N#10#Gesamtgewicht der Position in kg#MPDT6.3#1#0#itemTotalWeight#2#A#A#0#0#posgewicht#Gesamtgewicht der Position in kg#vt#3933###0###0
+DATA>#stsatz#N#6#Steuersatz in %#MPD3.2#1#0#taxRateVAT#1#A#A#0#0#stsatz#Steuersatz in %#vt#5636###0###0
+DATA>#bsart#A#16#Beschaffungsart#A79#1#0#procureMode#1#A#A#0#0#bsart#Beschaffungsart#vt#4476###0###0
+DATA>#oterm#D#8#Unser ursprünglicher Wunschtermin#GD2#1#0#custPrefDate#2#A#A#0#0#oterm#Unser ursprünglicher Wunschtermin#vt#5778###0###0
+DATA>#tmpverw#A#22#Materialzuordnung (temporär)#ZAE1#1#1#tempRef#1#A#A#0#0#tmpverw#Materialzuordnung (temporär)#vt#5638###0###0
+DATA>#zuoda#A#1#Menge zugeordnet#NT1#1#1#allocQty#1#A#A#0#0#zuoda#Menge zugeordnet#vt#5335###0###0
+DATA>#mzzuab#A#4#Materialzuordnung zu SetArtikel/Beistellung#B#1#1#matAlloc#1#A#A#0#0#mzzuab#Materialzuordnung zu SetArtikel/Beistellung#vt#5640###0###0
+DATA>#stl#A#4#Beistellteile buchen?#B#1#0#postProvPartsBOM#2#A#A#0#0#stl#Beistellteile buchen?#vt#5837###0###0
+DATA>#mzmge#N#10#Neue Menge laut Materialzuordnung#MDT6.3#1#1#matAllocQty#1#A#A#0#0#mzmge#Neue Menge laut Materialzuordnung#vt#5645###0###0
+DATA>#mzeinh#A#6#Neue Einheit laut Materialzuordnung#TAZ1#1#1#matAllocNewU#1#A#A#0#0#mzeinh#Neue Einheit laut Materialzuordnung#vt#5646###0###0
+DATA>#mzfaktor#N#10#Neuer Faktor laut Materialzuordnung#MP5.4#1#1#matAllocFactor#1#A#A#0#0#mzfaktor#Neuer Faktor laut Materialzuordnung#vt#5647###0###0
+DATA>#mzerl#A#4#Materialzuordnungen erlaubt?#B#1#1#matAllocAllowed#1#A#A#0#0#mzerl#Materialzuordnungen erlaubt?#vt#5648###0###0
+DATA>#patlasrel#A#4#ATLASrelevant?#B#1#0#ATLASRelevantPos#2#A#A#0#0#patlasrel#ATLASrelevant?#vt#4523###0###0
+DATA>#prgmge#N#10#Gesamtmenge für die Preisgruppe in Handelseinheit Einkauf#MDT6.3#1#0#totalQtyPriceGrpTradeUnit#2#A#A#0#0#prgmge#Gesamtmenge für die Preisgruppe in Handelseinheit Einkauf#vt#5838###0###0
+DATA>#rabmge#N#10#Gesamtmenge für die Rabattgruppe in Handelseinheit Einkauf#MDT6.3#1#0#totalQtyDiscGrpTradeUnit#2#A#A#0#0#rabmge#Gesamtmenge für die Rabattgruppe in Handelseinheit Einkauf#vt#5839###0###0
+DATA>#kobrutto#A#4#Ist der angegebene Preis ein Bruttopreis?#B#1#0#itemValGrossAmt#1#A#A#0#0#kobrutto#Ist der angegebene Preis ein Bruttopreis?#vt#5651###0###0
+DATA>#bshinw#A#14#Beschaffungshinweis#A28#1#0#procureNote#2#A#A#0#0#bshinw#Beschaffungshinweis#vt#5840###0###0
+DATA>#ls#N#4#Anzahl noch nicht gebuchter Lieferscheine#IP4#1#0#packSlipQtyNotPosted#1#A#A#0#0#ls#Anzahl noch nicht gebuchter Lieferscheine#vt#5652###0###0
+DATA>#re#N#4#Anzahl noch nicht gebuchter Rechnungen#IP4#1#0#invNoNotPosted#1#A#A#0#0#re#Anzahl noch nicht gebuchter Rechnungen#vt#5653###0###0
+DATA>#vmge#N#10#Liefervorschlagsmenge#MDT6.3#1#0#suggestedDelQty#2#A#A#0#0#vmge#Liefervorschlagsmenge#vt#1341###0###0
+DATA>#vstatus#A#1#Vorgeschlagener Lieferstatus#NT1#1#0#suggestedDelStatus#2#A#A#0#0#vstatus#Vorgeschlagener Lieferstatus#vt#5654###0###0
+DATA>#pstatus#A#1#Vorgemerkter Status#NT1#1#0#suggStatus#1#A#A#0#0#pstatus#Vorgemerkter Status#vt#5655###0###0
+DATA>#kstelle#A#8#Kostenstelle, Kostenträger, Kostenverteiler#P5:2.4.8#1#0#costCenter#2#A#A#0#0#kstelle#Kostenstelle, Kostenträger, Kostenverteiler#vt#462###0###0
+DATA>#le#A#6#Lagereinheit#TAZ1#1#1#SU#1#A#A#0#0#le#Lagereinheit#vt#469###0###0
+DATA>#bhe#A#6#Bestellhandelseinheit#TAZ1#1#0#pOrderU#1#A#A#0#0#bhe#Bestellhandelseinheit#vt#5656###0###0
+DATA>#pe#A#6#Einkaufspreiseinheit#TAZ1#1#0#priceUnit#2#A#A#0#0#pe#Einkaufspreiseinheit#vt#5841###0###0
+DATA>#gebpflicht#A#4#Gebindepflichtige Einheit#B#1#1#obligBundleUnit#1#A#A#0#0#gebpflicht#Gebindepflichtige Einheit#vt#5659###0###0
+DATA>#he#A#6#Handelseinheit (Einkaufshandelseinheit)#TAZ1#1#0#tradeU#2#A#A#0#0#he#Handelseinheit (Einkaufshandelseinheit)#vt#5842###0###0
+DATA>#region#A#25#Bestimmungsregion (Intrastat)#PS97:1#1#0##2#A#A#0#0#region#Bestimmungsregion (Intrastat)#vt#4338###0###0
+DATA>#iregion#A#25#Bestimmungsregion (Intrastat)#PS97:1#1#0#regIntra#2#A#A#0#1#iregion#Bestimmungsregion (Intrastat)#vt#4338###0###0
+DATA>#vol#N#11#Volumen aussen in l/Lagereinheit#MP6.4#1#0#volume#2#A#A#0#0#vol#Volumen aussen in l/Lagereinheit#vt#4369###0###0
+DATA>#inlwaehr#A#4#Inlandswährung#PS94:1#1#1#domCurr#1#A#A#0#0#inlwaehr#Inlandswährung#vt#337###0###0
+DATA>#swert#N#10#Statistischer Wert (Intrastat)#RDT7.2#1#0#statVal#2#A#A#0#0#swert#Statistischer Wert (Intrastat)#vt#5663###0###0
+DATA>#pahnum#A#8#Warennummer (Intrastat)#P12:3#1#0#goodsDescr#2#A#A#0#0#pahnum#Warennummer (Intrastat)#vt#4424###0###0
+DATA>#plakenn2#A#25#Versendungsland#PS97:1#1#0##2#A#A#0#0#plakenn2#Versendungsland#vt#5782###0###0
+DATA>#pvstaat#A#25#Versendungsland#PS97:1#1#0#destDispatchCtryPos#2#A#A#0#1#pvstaat#Versendungsland#vt#5782###0###0
+DATA>#pstaat2#A#25#Versendungsland#PS97:1#1#0##2#A#A#0#1#pstaat2#Versendungsland#vt#5782###0###0
+DATA>#purland#A#25#Ursprungsland#PS97:1#1#0#ctryOfOrigin#2#A#A#0#0#purland#Ursprungsland#vt#5664###0###0
+DATA>#pgart#A#8#Geschäftsart (Intrastat)#P12:3#1#0#natureBusiness#2#A#A#0#0#pgart#Geschäftsart (Intrastat)#vt#5665###0###0
+DATA>#pstverf#A#8#Statistisches Verfahren (Intrastat)#P12:3#1#0#statisticalMethod#2#A#A#0#0#pstverf#Statistisches Verfahren (Intrastat)#vt#170###0###0
+DATA>#pvzweig#A#32#Verkehrszweig (ATLAS, Intrastat)#AZL20007#1#0#transpModeItem#3#A#A#0#0#pvzweig#Verkehrszweig (ATLAS, Intrastat)#vt#171###0###0
+DATA>#pvzweigc#A#2#Verkehrszweig (ATLAS, Intrastat)#AZMK20007#1#0#transpModeItemCode#3#A#A#0#1#pvzweigc#Verkehrszweig (ATLAS, Intrastat)#vt#171###0###0
+DATA>#pgrkenn#A#35#Grenzübergang/Einladehafen (ATLAS/Intrastat)#NT35#1#0#unloadPortCode#2#A#A#0#0#pgrkenn#Grenzübergang/Einladehafen (ATLAS/Intrastat)#vt#245###0###0
+DATA>#intramge#N#10#Menge bzw. Anzahl in besonderer Maßeinheit (Intrastat)#MDT6.3#1#0#intraQtySU#2#A#A#0#0#intramge#Menge bzw. Anzahl in besonderer Maßeinheit (Intrastat)#vt#5666###0###0
+DATA>#intrarel#A#4#Position intrastatrelevant?#B#1#0#INTRASTATRelevant#2#A#A#0#0#intrarel#Position intrastatrelevant?#vt#5667###0###0
+DATA>#aintrarel#A#4#Artikel intrastatrelevant?#B#1#1#productINTRASTATRelevant#1#A#A#0#0#aintrarel#Artikel intrastatrelevant?#vt#5668###0###0
+DATA>#ofmge#N#10#Offene Menge#MPDT6.3#1#1#openQtyTradeUnit#1#A#A#0#0#ofmge#Offene Menge#vt#5669###0###0
+DATA>#kvalt#A#8#Alter Kostenverteiler#P5#1#1#costAllocOld#1#A#A#0#0#kvalt#Alter Kostenverteiler#vt#5670###0###0
+DATA>#ustva#A#8#Position Umsatzsteuer-Voranmeldung#P54:1#1#0#advVATReturnItem#2#A#A#0#0#ustva#Position Umsatzsteuer-Voranmeldung#vt#3834###0###0
+DATA>#lbeist#A#4#Beistellungen?#B#1#0#matProv#2#A#A#0#0#lbeist#Beistellungen?#vt#524###0###0
+DATA>#lirelev#A#4#Position lieferscheinrelevant?#B#1#0#packSlipRelevant#2#A#A#0#0#lirelev#Position lieferscheinrelevant?#vt#5682###0###0
+DATA>#rerelev#A#4#Position rechnungsrelevant?#B#1#0#invRelevant#2#A#A#0#0#rerelev#Position rechnungsrelevant?#vt#5683###0###0
+DATA>#abnrpo#A#35#Auftragsbestätigungsnummer des Lieferanten#GL35#1#0#orderNoI#2#A#A#0#0#abnrpo#Auftragsbestätigungsnummer des Lieferanten#vt#5777###0###0
+DATA>#patlasgem#A#4#Position als ATLAS Anmeldung dem Zoll gemeldet#B#1#0#itemATLASRegisteredAtCustoms#2#A#A#0#0#patlasgem#Position als ATLAS Anmeldung dem Zoll gemeldet#vt#5684###0###0
+DATA>#konddat#D#8#Konditionssdatum für Preis-/Rabattfindung/Vorkalkuation#GD2#1#0#condDate#2#A#A#0#0#konddat#Konditionssdatum für Preis-/Rabattfindung/Vorkalkuation#vt#5685###0###0
+DATA>#artrab#A#23#Artikel-Rabattgruppe#NT23#1#1#productDiscGrp#2#A#A#0#0#artrab#Artikel-Rabattgruppe#vt#5686###0###0
+DATA>#artprg#A#23#Artikel-Preisgruppe#NT23#1#1#productPricingGrp#2#A#A#0#0#artprg#Artikel-Preisgruppe#vt#5687###0###0
+DATA>#lfname#A#32#Fertigteilbezeichnung#GL32#1#1#finishPartDescr#1#A#A#0#0#lfname#Fertigteilbezeichnung#vt#529###0###0
+DATA>#npwert#N#10#Netto-Positionswert in Erfassungswährung#R7.2#1#1#itemNetValEntCurr#1#A#A#0#0#npwert#Netto-Positionswert in Erfassungswährung#vt#5688###0###0
+DATA>#rterm#D#5#Bedarfstermin (Woche)#GW2#1#0#requiredDate#2#A#A#0#0#rterm#Bedarfstermin (Woche)#vt#9114###0###0
+DATA>#trterm#D#8#Bedarfstermin (Tag)#GD2#1#0#requiredDateDay#2#A#A#0#1#trterm#Bedarfstermin (Tag)#vt#9115###0###0
+DATA>#prterm#D#19#Bedarfstermin (Zeitpunkt)#GD19#1#0#requiredDateTime#2#A#A#0#1#prterm#Bedarfstermin (Zeitpunkt)#vt#9116###0###0
+DATA>#edinr#A#20#EDI-Nummer#GL20#1#0#EDINo#2#A#A#0#0#edinr#EDI-Nummer#vt#5845###0###0
+DATA>#labnr#A#20#Lieferabrufnummer#GL20#1#0#delivSchedNo#2#A#A#0#0#labnr#Lieferabrufnummer#vt#5698###0###0
+DATA>#packanw#A#8#Packanweisung#P106:1#1#0#packInstruction#2#A#A#0#0#packanw#Packanweisung#vt#1328###0###0
+DATA>#vorpapier#A#48#Typ der Vorpapiere lt. Codeliste A0101#AZL20003#1#0#docPrevType#3#A#A#0#0#vorpapier#Typ der Vorpapiere lt. Codeliste A0101#vt#4384###0###0
+DATA>#vorpapierc#A#6#Typ der Vorpapiere lt. Codeliste A0101#AZMK20003#1#0#docPrevTypeCode#3#A#A#0#1#vorpapierc#Typ der Vorpapiere lt. Codeliste A0101#vt#4384###0###0
+DATA>#pdoku#A#8#Angaben zu den Vermerken#P70#1#0#atPrevDoc#3#A#A#0#0#pdoku#Angaben zu den Vermerken#vt#5846###0###0
+DATA>#lffert#A#15#Fertigteil Lohnfertigung#P2:1#1#0#finPartSubcont#2#A#A#0#0#lffert#Fertigteil Lohnfertigung#vt#9144###0###0
+DATA>#ruteil#A#15#Artikel der repariert/umgebaut wird#P2:1#1#0#productRepairedReconstructed#2#A#A#0#1#ruteil#Artikel der repariert/umgebaut wird#vt#5847###0###0
+DATA>#ljtext1#A#32#Text wird ins Lagerbewegungsjournal übernommen#T32#1#0#textStockJournal1#2#A#A#0#0#ljtext1#Text wird ins Lagerbewegungsjournal übernommen#vt#5339###0###0
+DATA>#apatlasrel#A#4#Artikel ATLASrelevant?#B#1#1#productATLASRelevant#3#A#A#0#0#apatlasrel#Artikel ATLASrelevant?#vt#5701###0###0
+DATA>#verw2#A#15#Abgangsverwendung beim Umlagern oder Umbuchen#GL15#1#0#usage2#2#A#A#0#0#verw2#Abgangsverwendung beim Umlagern oder Umbuchen#vt#5848###0###0
+DATA>#mfreig#A#4#Freigabe?#B#1#0#release#2#A#A#0#0#mfreig#Freigabe?#vt#5849###0###0
+DATA>#pmgewnet#N#10#Packmittelnettogewicht#MPDT6.3#1#0#packMatNetWeight#2#A#A#0#0#pmgewnet#Packmittelnettogewicht#vt#5705###0###0
+DATA>#pmgewbrut#N#10#Packmittelbruttogewicht#MPDT6.3#1#0#packMatGrossWeight#2#A#A#0#0#pmgewbrut#Packmittelbruttogewicht#vt#5706###0###0
+DATA>#patverfan#A#50#Verfahren für ATLAS (angemeldet)#AZL20010#1#0#ATLASProcPosDeclared#3#A#A#0#0#patverfan#Verfahren für ATLAS (angemeldet)#vt#331###0###0
+DATA>#patverfanc#A#2#Verfahren für ATLAS (angemeldet)#AZMK20010#1#0#ATLASProcPosDeclaredCode#3#A#A#0#1#patverfanc#Verfahren für ATLAS (angemeldet)#vt#331###0###0
+DATA>#patverfvor#A#50#Verfahren für ATLAS (vorangegangenes)#AZL20011#1#0#ATLASProcPosPrev#3#A#A#0#0#patverfvor#Verfahren für ATLAS (vorangegangenes)#vt#332###0###0
+DATA>#patverfvoc#A#2#Verfahren für ATLAS (vorangegangenes)#AZMK20011#1#0#ATLASProcPosPrevCode#3#A#A#0#1#patverfvoc#Verfahren für ATLAS (vorangegangenes)#vt#332###0###0
+DATA>#patverfwei#A#50#Verfahren für ATLAS (weiteres)#AZL20012#1#0#ATLASProcPosOther#3#A#A#0#0#patverfwei#Verfahren für ATLAS (weiteres)#vt#333###0###0
+DATA>#patverfwec#A#3#Verfahren für ATLAS (weiteres)#AZMK20012#1#0#ATLASProcPosOtherCode#3#A#A#0#1#patverfwec#Verfahren für ATLAS (weiteres)#vt#333###0###0
+DATA>#patvermerk#A#70#Vermerk zu ATLAS#GL70#1#0#ATLASNotePos#3#A#A#0#0#patvermerk#Vermerk zu ATLAS#vt#5552###0###0
+DATA>#pregnummer#A#70#Registriernummer Fremdsystem#GL70#1#0#ATLASRegistNoItem#3#A#A#0#0#pregnummer#Registriernummer Fremdsystem#vt#5557###0###0
+DATA>#pmtyp#A#15#Packmitteltyp#A215#1#0#packType#3#A#A#0#0#pmtyp#Packmitteltyp#vt#971###0###0
+DATA>#pmanz#N#6#Anzahl der Packstücke#IP6#1#0#packagesQty#3#A#A#0#0#pmanz#Anzahl der Packstücke#vt#5707###0###0
+DATA>#verpackmge#N#10#Verpackte Menge in Handelseinheit Einkauf#M6.3#1#0#packQty#2#A#A#0#0#verpackmge#Verpackte Menge in Handelseinheit Einkauf#vt#5850###0###0
+DATA>#verpackart#A#50#Verpackungsart lt. Codeliste C0017#AZL20001#1#0#atPackType#3#A#A#0#0#verpackart#Verpackungsart lt. Codeliste C0017#vt#4524###0###0
+DATA>#verpackarc#A#2#Verpackungsart lt. Codeliste C0017#AZMK20001#1#0#atPackTypeCode#3#A#A#0#1#verpackarc#Verpackungsart lt. Codeliste C0017#vt#4524###0###0
+DATA>#unterlage#A#50#Unterlage lt. Codeliste I0134#AZL20005#1#0#atDocument#3#A#A#0#0#unterlage#Unterlage lt. Codeliste I0134#vt#4526###0###0
+DATA>#unterlagec#A#8#Unterlage lt. Codeliste I0134#AZMK20005#1#0#atDocumentCode#3#A#A#0#1#unterlagec#Unterlage lt. Codeliste I0134#vt#4526###0###0
+DATA>#pmneu#A#1#Neues Packmittel einfügen#DVB1#1#1#insNewPackMat#2#A#A#0#0#pmneu#Neues Packmittel einfügen#vt#5714###0###0
+DATA>#pmgrp#N#5#Packmittelgruppe#IN5#1#0#packMatGrp#2#A#A#0#0#pmgrp#Packmittelgruppe#vt#5715###0###0
+DATA>#stufe#N#5#Stufe in der Packmittelanweisung#IP5#1#0#lev#1#A#A#0#0#stufe#Stufe in der Packmittelanweisung#vt#1376###0###0
+DATA>#kmtmp#A#22#Kostenumlage (temporär)#ZAE1#1#1#costDisttemp#1#A#A#0#0#kmtmp#Kostenumlage (temporär)#vt#5852###0###0
+DATA>#okotyp#A#28#Datensatztyp des Kopfs zur Originalposition#A5#1#1#typeOrigItemHead#1#A#A#0#0#okotyp#Datensatztyp des Kopfs zur Originalposition#vt#9132###0###0
+DATA>#okotypa#A#28#Datensatztyp des Kopfs zur Originalposition#A5#1#1#recordTypeOrigItemHead#1#A#A#0#1#okotypa#Datensatztyp des Kopfs zur Originalposition#vt#9132###0###0
+DATA>#ytprojekt#A#15#internes Projekt#PS20:1#1#0#ytprojekt#3#A#A#1#0#ytprojekt#internes Projekt##0###0###0
+DATA>#ytvorgang#A#15#VorgangsArt Tabelle#PS21#1#0#ytvorgang#3#A#A#1#0#ytvorgang#VorgangsArt Tabelle##0###0###0
+DATA>#yartsw#A#15#ArtikelSW#P2:1.4.5#1#1#yartsw#3#A#A#1#0#yartsw#ArtikelSW##0###0###0
+DATA>#yzeichn#A#22#Zeichnungs-Nr#NT22#1#1#yzeichn#3#A#A#1#0#yzeichn#Zeichnungs-Nr##0###0###0
+DATA>#yartid#A#15#Artikel-ID in Tabelle#P2:1.4.5#1#1#yartid#3#A#A#1#0#yartid#Artikel-ID in Tabelle##0###0###0
+DATA>#yliefsw#A#15#Lieferanten Suchwörter#GL15#1#1#yliefsw#3#A#A#1#0#yliefsw#Lieferanten Suchwörter##0###0###0
+DATA>#yzeissnr#A#15#Zeissnummer aus Artikel#GL15#1#1#yzeissnr#3#A#A#1#0#yzeissnr#Zeissnummer aus Artikel##0###0###0
+DATA>#ygeprueftk#A#4#Geprüft Konstr aus Art Stamm#B#1#1#ygeprueftk#3#A#A#1#0#ygeprueftk#Geprüft Konstr aus Art Stamm##0###0###0
+DATA>#yendartikel#A#50#Fertigartikel#T50#1#0#yendartikel#3#A#A#1#0#yendartikel#Fertigartikel##0###0###0
+DATA>#yvkaunr#A#50#Aufträge, Positionsnummern, Positions-IDs#T50#1#0#yvkaunr#3#A#A#1#0#yvkaunr#Aufträge, Positionsnummern, Positions-IDs##0###0###0
+DATA>#yvkmaske#A#100#Aufträge#GL100#1#0#yvkmaske#3#A#A#1#0#yvkmaske#Aufträge##0###0###0
+DATA>#yvkmaskek#A#30#Aufträge#GL30#1#0#yvkmaskek#3#A#A#1#1#yvkmaskek#Aufträge##0###0###0
+DATA>#ysmge#N#8#Bestand im Servicelager berechnet#IN8#1#1#ysmge#3#A#A#1#0#ysmge#Bestand im Servicelager berechnet##0###0###0
+DATA>#ybsart#A#16#Beschaffungsart aus Stamm#A79#1#1#ybsart#3#A#A#1#0#ybsart#Beschaffungsart aus Stamm##0###0###0
+DATA>#ykenn#A#20#Kennzeichen aus Stamm#NT20#1#1#ykenn#3#A#A#1#0#ykenn#Kennzeichen aus Stamm##0###0###0
+DATA>#yampel#A#255#Ampel#DV1#1#0#yampel#3#A#A#1#0#yampel#Ampel##0###0###0
+DATA>#yampelz#A#1#Ampel z S#DVS1#1#0#yampelz#3#A#A#1#0#yampelz#Ampel z S##0###0###0
+DATA>#ytzeissnr#A#15#Zeissnummer aus Stamm#GL15#1#1#ytzeissnr#3#A#A#1#0#ytzeissnr#Zeissnummer aus Stamm##0###0###0
+DATA>#yterfassdat#D#10#Pos erfasst am Datum#GD#1#0#yterfassdat#3#A#A#1#0#yterfassdat#Pos erfasst am Datum##0###0###0
+DATA>#yerstpos#A#15#Ersteller der Position#GL15#1#0#yerstpos#3#A#A#1#0#yerstpos#Ersteller der Position##0###0###0
+DATA>#ytstand#D#10#letzte änderung position datum#GD#1#0#ytstand#3#A#A#1#0#ytstand#letzte änderung position datum##0###0###0
+DATA>#ytzeich#A#64#letzter änderer position#GL64#1#0#ytzeich#3#A#A#1#0#ytzeich#letzter änderer position##0###0###0
+DATA>#yebez#A#38#Einkauksbezeichnung#T38#1#1#yebez#3#A#A#1#0#yebez#Einkauksbezeichnung##0###0###0
+DATA>#yposneu#A#1#Position neu erstellt Mailbenachrichtigung#NT1#1#0#yposneu#3#A#A#1#0#yposneu#Position neu erstellt Mailbenachrichtigung##0###0###0
+DATA>#yvmge#N#11#Vorgängermenge berechnet#RDT7.3#1#1#yvmge#3#A#A#1#0#yvmge#Vorgängermenge berechnet##0###0###0
+DATA>#yawareng#A#10#Warengruuppe aus ArtikelStamm#PS12:3#1#1#yawareng#3#A#A#1#0#yawareng#Warengruuppe aus ArtikelStamm##0###0###0
+DATA>#yzoll#A#15#Zolltarifnummer ausArtStamm eigentlich nur für Verkauf#GL15#1#0#yzoll#3#A#A#1#0#yzoll#Zolltarifnummer ausArtStamm eigentlich nur für Verkauf##0###0###0
+DATA>#ycolcha#A#4#Colli oder Chargenpflicht aus Stamm#B#1#1#ycolcha#3#A#A#1#0#ycolcha#Colli oder Chargenpflicht aus Stamm##0###0###0
+DATA>#ytepr#N#10#EK Preis aus Stamm#RDT7.2#1#1#ytepr#3#A#A#1#0#ytepr#EK Preis aus Stamm##0###0###0
+LOG>rec size:570
+LOG>data size:5000
+LOG>field count:23
+LOG>disconnected
+bye

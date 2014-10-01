@@ -1,0 +1,105 @@
+EDPConsole (by Sven Ginka)
+test á oder  test
+orig>fieldnames
+AnsiToUTF8>fieldnames
+UTF8ToAnsi>fieldnames
+orig>Lager:Lagergruppeneigenschaft
+AnsiToUTF8>Lager:Lagergruppeneigenschaft
+UTF8ToAnsi>Lager:Lagergruppeneigenschaft
+LOG>connected
+LOG>abas Version 2010r4n07
+LOG>lang code:D
+LOG>iso code:de
+LOG>lang var:de
+LOG>trim values:1
+LOG>request fieldnames of Lager:Lagergruppeneigenschaft
+LOG>rec size:83
+DATA>name,edptype,length,desc,type,tableflag,isskip,englname,scrprot,priodisp,prioedit,iscustom,isalias,origname,meaning,meaningdic,meaningmsgnr,prompt,promptdic,promptmsgnr,headtext,headtextdic,headtextmsgnr
+DATA>#grust#N#9#Gruppe#I9#0#0##1#A#A#0#0#grust#Gruppe#vt#1###0###0
+DATA>#gruppe#A#2#Gruppennummer#GRN39#0#0#grpNo#1#A#A#0#1#gruppe#Gruppennummer#vt#2###0###0
+DATA>#grbez#A#80#Gruppenbezeichnung#GRB39#0#0#grpDescr#1#A#A#0#1#grbez#Gruppenbezeichnung#vt#3###0###0
+DATA>#dnr#A#3#Dateinummer#GRDN39#0#1#DBNo#1#A#A#0#0#dnr#Dateinummer#vt#4###0###0
+DATA>#dbez#A#20#Dateibezeichnung#GRDB39#0#1#DBDescr#1#A#A#0#1#dbez#Dateibezeichnung#vt#5###0###0
+DATA>#zn#N#5#Laufende Zeilennummer#I5#0#1#rowNo#1#A#A#0#0#zn#Laufende Zeilennummer#vt#397###0###0
+DATA>#ozeilen#N#5#Anzahl Zeilen im Tabellenteil#I5#0#0#rowCount#1#A#A#0#0#ozeilen#Anzahl Zeilen im Tabellenteil#vt#6###0###0
+DATA>#sn#A#8#Satznummer#P39#0#1#recordNo#1#A#A#0#0#sn#Satznummer#vt#7###0###0
+DATA>#id#A#30#Datensatz-ID#ID39#0#1#id#1#A#A#0#1#id#Datensatz-ID#vt#8###0###0
+DATA>#versionn#A#22#Versionsnummer#ZAE1#0#0#version#1#A#A#0#0#versionn#Versionsnummer#vt#12###0###0
+DATA>#ablagen#A#22#Zeitstempel der Datensatzablage#ZAE1#0#0#recordFilingVersion#1#A#A#0#0#ablagen#Zeitstempel der Datensatzablage#vt#13###0###0
+DATA>#ablagef#A#4#Datensatz abgelegt?#ZAE0#0#0#recordFiled#1#A#A#0#1#ablagef#Datensatz abgelegt?#vt#14###0###0
+DATA>#num39#A#8#Identnummer#N39#0#1##1#A#A#0#0#num39#Identnummer#vt#16###0###0
+DATA>#nummer#A#8#Identnummer#NK39#0#1#idno#1#A#A#0#1#nummer#Identnummer#vt#16###0###0
+DATA>#nummerb#A#8#Identnummer#NL39#0#1#idnoPadded#1#A#A#0#1#nummerb#Identnummer#vt#16###0###0
+DATA>#such39#A#10#Suchwort#SW39#0#1##1#A#A#0#0#such39#Suchwort#vt#17###0###0
+DATA>#such#A#10#Suchwort#SWK39#0#1#swd#1#A#A#0#1#such#Suchwort#vt#17###0###0
+DATA>#suchb#A#10#Suchwort#SWL39#0#1#swdPadded#1#A#A#0#1#suchb#Suchwort#vt#17###0###0
+DATA>#sucherw#A#34#Sucherweiterung#T34#0#1#searchExt#1#A#A#0#0#sucherw#Sucherweiterung#vt#51###0###0
+DATA>#stand#D#10#Änderungsdatum#GD#0#1#modificationDate#1#A#A#0#0#stand#Änderungsdatum#vt#55###0###0
+DATA>#erfass#D#10#Erfassungsdatum#GD#0#1#creationDate#1#A#A#0#0#erfass#Erfassungsdatum#vt#56###0###0
+DATA>#zeich#A#15#Letzter Bearbeiter#GL15#0#1#responsOperator#1#A#A#0#0#zeich#Letzter Bearbeiter#vt#57###0###0
+DATA>#zeichen#A#15#Letzter Bearbeiter#GL15#0#1#lastProcessor#1#A#A#0#1#zeichen#Letzter Bearbeiter#vt#57###0###0
+DATA>#index#A#2#Versionskennung#GLU2#0#1#userDefinedVersion#1#A#A#0#0#index#Versionskennung#vt#58###0###0
+DATA>#urmand#A#15#Ursprungsmandant des Datensatzes#GLA15#0#0#sourceClient#1#A#A#0#0#urmand#Ursprungsmandant des Datensatzes#vt#59###0###0
+DATA>#mandkenn#A#15#Mandantenkennung des Datensatzes#GLA15#0#1#recordClient#1#A#A#0#0#mandkenn#Mandantenkennung des Datensatzes#vt#60###0###0
+DATA>#guid#A#38#GUID des Datensatzes#GLA38#0#0#GUID#5#A#A#0#0#guid#GUID des Datensatzes#vt#61###0###0
+DATA>#paket#A#8#Paketzugehörigkeit#P87:10#0#0#package#8#A#A#0#0#paket#Paketzugehörigkeit#vt#62###0###0
+DATA>#art#A#15#Artikel#P2:1#0#0##2#A#A#0#0#art#Artikel#vt#452###0###0
+DATA>#artikel#A#15#Artikel#P2:1#0#0#product#2#A#A#0#1#artikel#Artikel#vt#452###0###0
+DATA>#artname#A#32#Kurzname Artikel#GL32#0#1#productBriefDescr#1#A#A#0#0#artname#Kurzname Artikel#vt#1266###0###0
+DATA>#bsart#A#16#Beschaffungsart#A79#0#0#procureMode#2#A#A#0#0#bsart#Beschaffungsart#vt#4476###0###0
+DATA>#lgruppe#A#10#Lagergruppe#PS39:2#0#0#warehGrp#2#A#A#0#0#lgruppe#Lagergruppe#vt#455###0###0
+DATA>#lgname#A#32#Kurzname Lagergruppe#GL32#0#1#warehGrpName#1#A#A#0#0#lgname#Kurzname Lagergruppe#vt#5751###0###0
+DATA>#dispo#A#22#Dispositionsart#A131#0#0##3#A#A#0#0#dispo#Dispositionsart#vt#4378###0###0
+DATA>#dispoa#A#22#Dispositionsart#A131#0#0#schedulingMode#3#A#A#0#1#dispoa#Dispositionsart#vt#4378###0###0
+DATA>#eart#A#1#Entnahmeart#AK132#0#0#withdrawalType#2#A#A#0#0#eart#Entnahmeart#vt#4477###0###0
+DATA>#earta#A#15#Entnahmeart#A132#0#0#wdrwlType#2#A#A#0#1#earta#Entnahmeart#vt#4477###0###0
+DATA>#mindest#N#9#Mindestbestand in Lagereinheiten#MP6.2#0#0#minStock#2#A#A#0#0#mindest#Mindestbestand in Lagereinheiten#vt#5389###0###0
+DATA>#losgr#N#9#Losgröße in Lagereinheiten#MP6.2#0#0#batchSize#2#A#A#0#0#losgr#Losgröße in Lagereinheiten#vt#4373###0###0
+DATA>#losbild#N#3#Losbildungsfrist in Arbeitstagen#IP3#0#0#batchGrpPeriod#2#A#A#0#0#losbild#Losbildungsfrist in Arbeitstagen#vt#4375###0###0
+DATA>#minbsmge#N#9#Minimale Beschaffungsmenge in Lagereinheiten#MP6.2#0#0#minProcureQty#2#A#A#0#0#minbsmge#Minimale Beschaffungsmenge in Lagereinheiten#vt#4376###0###0
+DATA>#maxbsmge#N#9#Maximale Beschaffungsmenge in Lagereinheiten#MP6.2#0#0#maxProcureQty#2#A#A#0#0#maxbsmge#Maximale Beschaffungsmenge in Lagereinheiten#vt#4377###0###0
+DATA>#zuplatz#A#15#Zugangslagerplatz#PS38:1#0#0#receiptLoc#2#A#A#0#0#zuplatz#Zugangslagerplatz#vt#4441###0###0
+DATA>#zupname#A#32#Bezeichnung Zugangslagerplatz#GL32#0#1#receiptLocDescr#1#A#A#0#0#zupname#Bezeichnung Zugangslagerplatz#vt#5752###0###0
+DATA>#abplatz#A#15#Abgangslagerplatz#PS38:1#0#0#issueLoc#2#A#A#0#0#abplatz#Abgangslagerplatz#vt#4442###0###0
+DATA>#abpname#A#32#Kurzname vom Abgangslagerplatz#GL32#0#1#briefDescrIssueLoc#1#A#A#0#0#abpname#Kurzname vom Abgangslagerplatz#vt#5753###0###0
+DATA>#leinheit#A#6#Lagereinheit#TAZ1#0#1##1#A#A#0#0#leinheit#Lagereinheit#vt#469###0###0
+DATA>#le#A#6#Lagereinheit#TAZ1#0#1#SU#1#A#A#0#1#le#Lagereinheit#vt#469###0###0
+DATA>#umllg#A#10#Umlagerungslagergruppe#PS39:2#0#0#relocWarehGrp#3#A#A#0#0#umllg#Umlagerungslagergruppe#vt#4443###0###0
+DATA>#ulgname#A#32#Bezeichnung der Umlagerungslagergruppe#GL32#0#1#descrRelocWarehGrp#1#A#A#0#0#ulgname#Bezeichnung der Umlagerungslagergruppe#vt#5754###0###0
+DATA>#lief#A#8#Lieferant#P1:1.2#0#0#vendor#3#A#A#0#0#lief#Lieferant#vt#440###0###0
+DATA>#epr#N#10#Einkaufspreis pro Preiseinheit des Einkaufs#RDT7.2#0#0#purchPrice#3#A#A#0#0#epr#Einkaufspreis pro Preiseinheit des Einkaufs#vt#4593###0###0
+DATA>#erab#A#23#Rabattgruppe Einkauf#NT23#0#0#purchDiscGrp#3#A#A#0#0#erab#Rabattgruppe Einkauf#vt#4594###0###0
+DATA>#eprg#A#23#Preisgruppe Einkauf#NT23#0#0#purchPricingGrp#3#A#A#0#0#eprg#Preisgruppe Einkauf#vt#4595###0###0
+DATA>#eland#A#4#Währung Lieferant#PS94:1#0#0##3#A#A#0#0#eland#Währung Lieferant#vt#5755###0###0
+DATA>#ewaehr#A#4#Währung Lieferant#PS94:1#0#0#purchCurr#3#A#A#0#1#ewaehr#Währung Lieferant#vt#5755###0###0
+DATA>#eglt#D#8#Einkaufspreis gültig bis#GD2#0#0#purchPriceVUntil#3#A#A#0#0#eglt#Einkaufspreis gültig bis#vt#5756###0###0
+DATA>#efrist#N#3#Beschaffungsfrist in Arbeitstagen Lieferant#IP3#0#0#procurePeriodWorkDay#3#A#A#0#0#efrist#Beschaffungsfrist in Arbeitstagen Lieferant#vt#5757###0###0
+DATA>#vorlauf#N#4#Vorlaufzeit für Beistellteile in Arbeitstagen#IP4#0#0#leadTime#3#A#A#0#0#vorlauf#Vorlaufzeit für Beistellteile in Arbeitstagen#vt#5758###0###0
+DATA>#ebrutto#A#4#Ist der Einkaufspreis 1 Bruttopreis?#B#0#0#purchGrossPrice#3#A#A#0#0#ebrutto#Ist der Einkaufspreis 1 Bruttopreis?#vt#4267###0###0
+DATA>#epe#A#6#Preiseinheit Einkauf#TAZ1#0#1#purchPriceU#1#A#A#0#0#epe#Preiseinheit Einkauf#vt#4202###0###0
+DATA>#ehe#A#6#Handelseinheit Einkauf#TAZ1#0#1#purchTradeU#1#A#A#0#0#ehe#Handelseinheit Einkauf#vt#5759###0###0
+DATA>#bstnr#A#15#Bestellnummer beim Lieferanten#GL15#0#0#pOrderNo#3#A#A#0#0#bstnr#Bestellnummer beim Lieferanten#vt#5760###0###0
+DATA>#lgbestand#N#11#Bestand der Lagergruppe in Lagereinheit#M7.3#0#1#warehGrpStockSU#1#A#A#0#0#lgbestand#Bestand der Lagergruppe in Lagereinheit#vt#5761###0###0
+DATA>#inlwaehr#A#4#Inlandswährung#PS94:1#0#1#domCurr#1#A#A#0#0#inlwaehr#Inlandswährung#vt#337###0###0
+DATA>#lgmpr#N#12#Mischpreis der Lagergruppe (Einstandspreis) pro Lagereinheit#RPDT7.4#0#1#mixPriceWarehGrpSU#1#A#A#0#0#lgmpr#Mischpreis der Lagergruppe (Einstandspreis) pro Lagereinheit#vt#5762###0###0
+DATA>#lgmrpr#N#12#Mittlerer Rechnungspreis pro Lagereinheit#RPDT7.4#0#1#averInvPriceSU#1#A#A#0#0#lgmrpr#Mittlerer Rechnungspreis pro Lagereinheit#vt#5763###0###0
+DATA>#lglpr#N#12#Letzter Einstandspreis der Lagergruppe pro Lagereinheit#RPDT7.4#0#1#lastCostPriceSU#1#A#A#0#0#lglpr#Letzter Einstandspreis der Lagergruppe pro Lagereinheit#vt#5764###0###0
+DATA>#vfolge#A#4#Verbrauchsfolgeverfahren#A194#0#0#consumptionSeqProc#2#A#A#0#0#vfolge#Verbrauchsfolgeverfahren#vt#4515###0###0
+DATA>#serpflicht#A#4#Servicepflicht?#B#0#0#serviceObligation#3#A#A#0#0#serpflicht#Servicepflicht?#vt#4519###0###0
+DATA>#ersabplatz#A#15#Ersatzteil Abgangslagerplatz#PS38#0#0#sparePartIssueLoc#3#A#A#0#0#ersabplatz#Ersatzteil Abgangslagerplatz#vt#4520###0###0
+DATA>#nwpflicht#A#4#Nachweispflicht?#B#0#0#docObligation#3#A#A#0#0#nwpflicht#Nachweispflicht?#vt#4521###0###0
+DATA>#ersatzt#A#4#Ersatzteil?#B#0#0#sparePart#3#A#A#0#0#ersatzt#Ersatzteil?#vt#1258###0###0
+DATA>#verschlt#A#4#Verschleißteil?#B#0#0#wearPart#3#A#A#0#0#verschlt#Verschleißteil?#vt#1259###0###0
+DATA>#serarchiv#A#4#Wird ausführlich archiviert?#B#0#0#serviceArchiv#3#A#A#0#0#serarchiv#Wird ausführlich archiviert?#vt#4522###0###0
+DATA>#fbetreuer#A#8#Betreuer Fertigung#P11:1#0#0#dispatcherProd#3#A#A#0#0#fbetreuer#Betreuer Fertigung#vt#5765###0###0
+DATA>#ebetreuer#A#8#Betreuer Einkauf#P11:1#0#0#dispatcherPurch#3#A#A#0#0#ebetreuer#Betreuer Einkauf#vt#5766###0###0
+DATA>#lggew#N#13#Gewichtung bezüglich aller Lagergruppen#R9.3#0#0#warehGrpWeighting#3#A#A#0#0#lggew#Gewichtung bezüglich aller Lagergruppen#vt#4444###0###0
+DATA>#gemein#A#8#Gemeinkostenschlüssel#P12:6#0#0#overheadKey#3#A#A#0#0#gemein#Gemeinkostenschlüssel#vt#4448###0###0
+DATA>#flistestd#A#30#Fertigungsliste#PS128:1#0#1#stdProdList#1#A#A#0#0#flistestd#Fertigungsliste#vt#5595###0###0
+DATA>#ibasis#N#10#Basismenge für die nächste individuelle Vorkalkulation in Lagereinheit#MP7.2#0#1#basisPrelimCost#3#A#A#0#0#ibasis#Basismenge für die nächste individuelle Vorkalkulation in Lagereinheit#vt#3466###0###0
+DATA>#konddat#D#8#Konditionssdatum für individuelle Vorkalkulation#GD2#0#1#condDate#3#A#A#0#0#konddat#Konditionssdatum für individuelle Vorkalkulation#vt#3467###0###0
+LOG>rec size:83
+LOG>data size:5000
+LOG>field count:23
+LOG>disconnected
+bye
