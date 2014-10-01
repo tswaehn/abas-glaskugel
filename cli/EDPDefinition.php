@@ -60,7 +60,6 @@ sortasc=1
 search-and=1
 
 
-
 [Lager:Lagergruppe]
 fieldlist=id,nummer,name 
 sortby=nummer
@@ -71,7 +70,6 @@ search-and=1
 
 [Lmenge:Lagermenge]
 fieldlist=id,nummer,lager,tename,artikel,platz,lemge,lgruppe
-//,lab,lzu,lemge,platz,lager,lgruppe 
 sortby=id
 maxdatasize=1000
 byrows=1
@@ -87,7 +85,7 @@ sortasc=1
 search-and=1
 
 [Einkauf:Einkauf]
-fieldlist=nummer,such, id, erfass, kterm, term, tterm
+fieldlist=nummer,such, id, vorgang, erfass, kterm, term, tterm
 sortby=nummer
 maxdatasize=100000
 byrows=0
@@ -95,7 +93,7 @@ sortasc=1
 search-and=1
 
 [Einkauf:Fertigungsvorschlag]
-fieldlist=artikel, gruppe, nummer,id,platz, lgruppe, tename
+fieldlist=artikel, id, art, bsart, nummer, artex
 sortby=nummer
 maxdatasize=100000
 byrows=0
@@ -111,7 +109,7 @@ sortasc=1
 search-and=1
 
 [Einkauf:Reservierungen]
-fieldlist=artikel, nummer, such, id, platz, tterm, twterm
+fieldlist=artikel, artex, einplan, elart, elem, nummer, such, id, platz, tterm, twterm
 sortby=nummer
 maxdatasize=100000
 byrows=0
@@ -142,6 +140,29 @@ byrows=0
 sortasc=1
 search-and=1
 
+[Lager:Lagergruppeneigenschaft]
+fieldlist=id, artikel, art, grust, gruppe, grbez, dbez 
+sortby=nummer
+maxdatasize=100000
+byrows=0
+sortasc=1
+search-and=1
+
+[Einkauf:Offener Posten]
+fieldlist=gruppe,grust, dbez, id, nummer, term, tterm
+sortby=nummer
+maxdatasize=100000
+byrows=0
+sortasc=1
+search-and=1
+
+[Einkauf:Rehmanauftrag]
+fieldlist=id, term, plz, grust, gruppe, artikel, platz
+sortby=nummer
+maxdatasize=100000
+byrows=0
+sortasc=1
+search-and=1
 ';
   
   function createEDPini(){
@@ -325,10 +346,28 @@ search-and=1
   // -----------------------------------------------------------------
   //   
   
-   $arten_real = new EDPImport( "Arten:Real" );
-   $arten_real ->addSearch("id=");   
+   $auftrags_STL = new EDPImport( "Auftrags-STL:Auftrags-STL" );
+   $auftrags_STL ->addSearch("id=");   
    
-   
+  // -----------------------------------------------------------------
+  //   
+
+  $lager_lagergruppeneigenschaft = new EDPImport( "Lager:Lagergruppeneigenschaft" );
+  $lager_lagergruppeneigenschaft->addSearch("id=");  
+  
+  // -----------------------------------------------------------------
+  //  
+  
+  $einkauf_offener_posten = new EDPImport( "Einkauf:Offener Posten" );
+  $einkauf_offener_posten ->addSearch("id=");
+      
+  // -----------------------------------------------------------------
+  //  
+  
+  $einkauf_rehmanauftrag = new EDPImport( "Einkauf:Rehmanauftrag" );
+  $einkauf_rehmanauftrag ->addSearch("id=");
+  
+  
   function getEDPDefinition(){
     
 	global $teil_artikel;
@@ -343,25 +382,33 @@ search-and=1
 	global $einkauf_reservierungen;
         global $einkauf_zahlungen;
         global $arten_real;
+        global $auftrags_STL;
+        global $lager_lagergruppeneigenschaft;
+        global $einkauf_offener_posten;
+        global $einkauf_rehmanauftrag;
         
     $import = array(
         
-            $teil_artikel,
-            $einkauf_bestellung
+            //$teil_artikel,
+            //$einkauf_bestellung,
             //$lager,
-            //$lmenge_lagermenge
+            //$lmenge_lagermenge,
             //$lager_lagergruppe,
             //$lplatz_lagerplatzkopf,
             //$einkauf,
-            //$einkauf_fertigungsvorschlag,
+       //einkauf_fertigungsvorschlag
         //$einkauf_position,
+        //$auftrags_STL,
         //$einkauf_reservierungen,
         //$einkauf_zahlungen,
-        //$arten_real
+        //$arten_real,
+       //$lager_lagergruppeneigenschaft,
+        $einkauf_offener_posten,
+        $einkauf_rehmanauftrag
         
         );
-	  /*
-    $import = array(
+    
+    /*$import = array(
 		$einkauf_bestellung,
 
 		);

@@ -18,6 +18,8 @@
   define( "DB_DICT", "gk_dict");
   define( "DB_DICT_RANK", "gk_dict_rank" );  
   define( "DB_CLIENT_ACCESS", "gk_client_access" );
+  define( "DB_ORDERS", "gk_orders" );
+  
   
   // allowed characters for any ASCII text field formated as regex for replace
   define( "ALLOWED_ASCII", "/[^A-Za-z0-9.\-\ \@\ö\ä\ü\Ö\Ä\Ü\ß]/" );
@@ -390,9 +392,7 @@
     
     }
   }
-  
- 
-  
+   
   
   function importTable( $table, $fieldinfo, $search, $mode ){
     

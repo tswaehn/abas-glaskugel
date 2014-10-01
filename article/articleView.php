@@ -22,7 +22,7 @@
   function renderSimilar( $article ){
     div("artikel");  
     disp('<span id="caption">Ähnliche Artikel</span><br>');
-    
+          
     $result = getSimilarItems( $article );
     
     foreach ($result as $item ){
@@ -33,7 +33,21 @@
     ediv();
   }
 
-  // -------------------
+  function renderOrders( $article ){
+    div("artikel");  
+    disp('<span id="caption">Orders</span><br>');
+    disp('<span id="caption">Orders</span><br>');
+      
+    $result = getSimilarItems( $article );
+    
+    foreach ($result as $item ){
+    
+      disp( shortArticle( $item ) );
+    }
+    
+    ediv();
+  }
+    // -------------------
   
   echo '<div id="searchform">';
     
