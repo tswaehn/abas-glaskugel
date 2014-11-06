@@ -50,8 +50,8 @@
   }
 
   lg( "import done" );
-  
-   //prepareDatabase();
+ 
+   prepareDatabase();
 
   //
   unlockDb();

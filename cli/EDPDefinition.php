@@ -389,20 +389,20 @@ search-and=1
         
     $import = array(
         
-            //$teil_artikel,
-            //$einkauf_bestellung,
-            //$lager,
-            //$lmenge_lagermenge,
-            //$lager_lagergruppe,
-            //$lplatz_lagerplatzkopf,
-            //$einkauf,
+            $teil_artikel,
+            $einkauf_bestellung,
+            $lager,
+            $lmenge_lagermenge,
+            $lager_lagergruppe,
+            $lplatz_lagerplatzkopf,
+            $einkauf,
        //einkauf_fertigungsvorschlag
-        //$einkauf_position,
-        //$auftrags_STL,
-        //$einkauf_reservierungen,
-        //$einkauf_zahlungen,
-        //$arten_real,
-       //$lager_lagergruppeneigenschaft,
+        $einkauf_position,
+        $auftrags_STL,
+        $einkauf_reservierungen,
+        $einkauf_zahlungen,
+        $arten_real,
+       $lager_lagergruppeneigenschaft,
         $einkauf_offener_posten,
         $einkauf_rehmanauftrag
         
