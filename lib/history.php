@@ -9,7 +9,7 @@
 
 <?php
 
-  $text = file_get_contents( "../history.txt" );
+  $text = file_get_contents( "../README.MD" );
   //$text = preg_replace("/\n/","<br>", $text);
   echo "<pre>";
   echo $text;
