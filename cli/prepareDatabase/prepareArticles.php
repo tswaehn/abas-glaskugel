@@ -143,9 +143,13 @@
 		     
     $fieldStr = "`".implode( "`,`", $copy_fields )."`";
     
+    // put into new table
     $sql = "INSERT INTO ".q(DB_ARTICLE)." (".$fieldStr.") ";
+    
+    // copy/paste from 'Teil:Artikel'
     $sql .= "SELECT ".$fieldStr." FROM `Teil:Artikel` WHERE 1";
     
+    //
     dbExecute( $sql );
   
   }
