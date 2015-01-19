@@ -61,7 +61,7 @@ search-and=1
 
 
 [Lager:Lagergruppe]
-fieldlist=id,nummer,name 
+fieldlist=id,nummer,such,name 
 sortby=nummer
 maxdatasize=100000
 byrows=0
@@ -69,15 +69,15 @@ sortasc=1
 search-and=1
 
 [Lmenge:Lagermenge]
-fieldlist=id,nummer,lager,tename,artikel,platz,lemge,lgruppe
+fieldlist=id,artikel,tename,lager,platz,lgruppe,lemge,lab,lzu
 sortby=id
-maxdatasize=1000
-byrows=1
+maxdatasize=100000
+byrows=0
 sortasc=1
 search-and=1
 
 [Lplatz:Lagerplatzkopf]
-fieldlist=id,nummer,name,lager
+fieldlist=id,nummer,name,lager,lgruppe,dispo,stand
 sortby=nummer
 maxdatasize=100000
 byrows=0
@@ -156,7 +156,7 @@ byrows=0
 sortasc=1
 search-and=1
 
-[Einkauf:Rehmanauftrag]
+[Einkauf:Rahmanauftrag]
 fieldlist=id, term, plz, grust, gruppe, artikel, platz
 sortby=nummer
 maxdatasize=100000
@@ -254,13 +254,11 @@ search-and=1
   // -----------------------------------------------------------------
   //
   $teil_zug_abg = new EDPImport( "Teil:Zugänge/Abgänge" );
-  
   $teil_zug_abg->addSearch("nummer=");    
 
   // -----------------------------------------------------------------
   //
   $teil_fertigungsmittel = new EDPImport( "Teil:Fertigungsmittel" );
-  
   $teil_fertigungsmittel->addSearch("nummer=");    
  
   // -----------------------------------------------------------------
@@ -303,7 +301,7 @@ search-and=1
   //
   
   $lmenge_lagermenge = new EDPImport( "Lmenge:Lagermenge" );
-  $lmenge_lagermenge ->addSearch("id=");
+  $lmenge_lagermenge ->addSearch("id=;pflag=ja");
   
   // -----------------------------------------------------------------
   //
@@ -364,13 +362,14 @@ search-and=1
   // -----------------------------------------------------------------
   //  
   
-  $einkauf_rehmanauftrag = new EDPImport( "Einkauf:Rehmanauftrag" );
-  $einkauf_rehmanauftrag ->addSearch("id=");
+  $einkauf_rahmanauftrag = new EDPImport( "Einkauf:Rahmanauftrag" );
+  $einkauf_rahmanauftrag ->addSearch("id=");
   
   
   function getEDPDefinition(){
     
 	global $teil_artikel;
+        global $fertigungs_liste;
         global $lager;
         global $lmenge_lagermenge;
         global $lager_lagergruppe;
@@ -385,12 +384,12 @@ search-and=1
         global $auftrags_STL;
         global $lager_lagergruppeneigenschaft;
         global $einkauf_offener_posten;
-        global $einkauf_rehmanauftrag;
+        global $einkauf_rahmanauftrag;
         
     $import = array(
         
             $teil_artikel,
-            $einkauf_bestellung,
+            $fertigungs_liste,
             $lager,
             $lmenge_lagermenge,
             $lager_lagergruppe,
@@ -404,7 +403,8 @@ search-and=1
         $arten_real,
        $lager_lagergruppeneigenschaft,
         $einkauf_offener_posten,
-        $einkauf_rehmanauftrag
+        $einkauf_rahmanauftrag,
+        $einkauf_bestellung,
         
         );
     
