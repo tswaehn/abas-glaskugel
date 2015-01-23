@@ -19,6 +19,7 @@
 
   include('./prepareDatabase/prepareArticles.php');
   include('./prepareDatabase/prepareProductionList.php');
+  include('./prepareDatabase/prepareStoragePlaces.php');
   include('./prepareDatabase/prepareDictionary.php');
   include('./prepareDatabase/prepareOrders.php');
 
@@ -65,8 +66,9 @@
 
   function prepareDatabase(){
     
-    dbCreateTableArticle();
-    dbCreateProductionList();
+    //dbCreateTableArticle();
+    //dbCreateProductionList();
+    dbCreateTableStoragePlaces();
     //dbCreateDict();
     //dbCreateRank();
     dbCreateOrders();

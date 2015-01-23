@@ -19,6 +19,7 @@
   define( "DB_DICT_RANK", "gk_dict_rank" );  
   define( "DB_CLIENT_ACCESS", "gk_client_access" );
   define( "DB_ORDERS", "gk_orders" );
+  define( "DB_STORAGE", "gk_storage_places" );
   
   
   // allowed characters for any ASCII text field formated as regex for replace

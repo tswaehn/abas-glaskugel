@@ -77,12 +77,21 @@ sortasc=1
 search-and=1
 
 [Lplatz:Lagerplatzkopf]
-fieldlist=id,nummer,name,lager,lgruppe,dispo,stand
+fieldlist=id,nummer,such,name,lager,lgruppe,dispo,stand
 sortby=nummer
 maxdatasize=100000
 byrows=0
 sortasc=1
 search-and=1
+
+[Lager:Lager]
+fieldlist=id,nummer,such,name
+sortby=
+maxdatasize=10000
+byrows=0
+sortasc=1
+search-and=1
+
 
 [Einkauf:Einkauf]
 fieldlist=nummer,such, id, vorgang, erfass, kterm, term, tterm
@@ -388,12 +397,13 @@ search-and=1
         
     $import = array(
         
-            $teil_artikel,
-            $fertigungs_liste,
+          //  $teil_artikel,
+          //  $fertigungs_liste,
             $lager,
             $lmenge_lagermenge,
             $lager_lagergruppe,
             $lplatz_lagerplatzkopf,
+        /*
             $einkauf,
        //einkauf_fertigungsvorschlag
         $einkauf_position,
@@ -405,7 +415,7 @@ search-and=1
         $einkauf_offener_posten,
         $einkauf_rahmanauftrag,
         $einkauf_bestellung,
-        
+        */
         );
     
     /*$import = array(
