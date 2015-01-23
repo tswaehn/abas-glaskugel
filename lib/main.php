@@ -1,6 +1,6 @@
 <?php
   
-  define( "BUILD_NR", "v0.2.3");
+  define( "BUILD_NR", "v0.2.4");
   $scriptStartTime = microtime(true);
   
   include('./lib/browserCheck.php');

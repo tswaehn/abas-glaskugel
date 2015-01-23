@@ -12,14 +12,17 @@ offene Punkte
 
   - Sortieren der Fertigungsliste nach Spalte
   - Doppelte Medien sollten vermieden werden: 7500-65401 (gleichzeitig ein Pfad+ein Bildlink)
-  - Text nach @@ entfernen; sucherw bereinignen, ggf. andere felder benutzen und aus namen ausschneiden
 
   - Suchergebnisse nach Spalten sortierbar machen
-  - einfluss von "flistestd" in "Fertigungsliste:Fertigungsliste" unklar
   - "2058-17090" bg-msu hat zwei stücklisten
 
   - import von arbeitsgängen
   - import von interner fertigung aus "Betr-Auftrag:Betriebsaufträge"
+
+2015 jan.23 - v0.2.4
+  - einfluss von "flistestd" in "Fertigungsliste:Fertigungsliste" unklar => es wird immer die aktuelle stammdaten fertigungsliste angezeigt
+  - lagerdetails werden angezeigt
+  - Text nach @@ entfernen; sucherw bereinignen, ggf. andere felder benutzen und aus namen ausschneiden
 
 2014 mar.25 - v0.2.3
   - Anzeige von Statistik 

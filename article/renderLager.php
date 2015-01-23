@@ -43,7 +43,7 @@
     $sql = "SELECT lemge,such,lgruppe,lager,dispo,name FROM ".q(DB_STORAGE)." WHERE article_id=".$article_id.";";
     $result = dbExecute( $sql );
     
-    if (!empty($result)){
+    if ($result->rowCount() > 0){
       out('<table>');
       out('<tr><th>Menge</th><th>Platz</th><th>Gruppe</th><th>Type</th><th>Dispo</th><th>Name</th></tr>');
       

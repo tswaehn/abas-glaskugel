@@ -41,7 +41,11 @@
   function shortArticle( $article ){
     $link = "?action=article&article_id=".$article["article_id"];
     
-	$strings = array( $article["name"], $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
+    // remove everything after "@@"
+    $name= explode( "@@", $article["name"]);
+    $name= $name[0];
+    
+	$strings = array( $name, $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
 	
     $text = '<span id="abas_nr"><a href="'.$link.'">'.$article["nummer"].'</a></span>';
     $text .= ' <span id="such">'.$article["such"].'</span>';
