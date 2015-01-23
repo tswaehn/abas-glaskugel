@@ -78,7 +78,28 @@
     font-size:small;
   }
 
- #Orders {
+  #lager {
+    font-size:small;
+    padding:5px;
+    margin:5px;
+    
+    border: thin solid #aaaaaa;    
+  }
+  
+  #lager table {
+    font-size:small;
+    padding:5px;
+    margin:5px; 
+    text-align:center;
+  }
+  
+  #lager td {
+    font-size:small;
+    padding-left:10px;
+    padding-right:10px;
+  }
+  
+  #orders {
     padding:5px;
     margin:5px;
     
@@ -88,13 +109,13 @@
   
   }
 
-   #orders td {
+  #orders td {
     
     font-size:small;
 
   }
  
- #bestellung {
+  #bestellung {
     padding:5px;
     margin:5px;
     
@@ -104,7 +125,7 @@
 
   }
 
- #bestellung td {
+  #bestellung td {
     text-align: center;
     padding-left:5px;
     padding-right:5px;

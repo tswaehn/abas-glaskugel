@@ -46,8 +46,8 @@
     $fieldinfo["lager"]["type"]=ASCII;
     $fieldinfo["lager"]["size"]=15;
     
-    $fieldinfo["dispo"]["type"]=INT;
-    $fieldinfo["dispo"]["size"]=0;
+    $fieldinfo["dispo"]["type"]=ASCII;
+    $fieldinfo["dispo"]["size"]=5;
         
 
     createTable( $table, $new_table_fields, $fieldinfo );
@@ -86,7 +86,7 @@
                                             $item["name"], 
                                             $groups[ $item["lgruppe"] ], 
                                             $types[ $item["lager"] ], 
-                                            $item["dispo"]="ja"?1:0 );    
+                                            $item["dispo"] );    
     }
 
     // copy values from table to glaskugel

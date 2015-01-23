@@ -1,5 +1,8 @@
 <?php
-
+  function out( $text ){
+    echo $text;
+  }
+  
   function disp( $text = ""){
     
     echo $text."<br>";
