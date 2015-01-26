@@ -1,6 +1,8 @@
 <?php
 
-	$dbname="abas-shadow";
+        define( "BUILD_NR", "v0.2.4+");
+
+	$dbname="abas-shadow-test";
 	$user="root";
 	$pass="";
 	

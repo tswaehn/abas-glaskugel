@@ -1,8 +1,9 @@
 <?php
   
-  define( "BUILD_NR", "v0.2.4");
   $scriptStartTime = microtime(true);
   
+  include( 'config.txt');
+
   include('./lib/browserCheck.php');
   include('./lib/lib.php');
   include('./cli/dbConnection.php');  
