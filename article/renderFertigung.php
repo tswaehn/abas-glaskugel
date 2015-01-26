@@ -90,8 +90,10 @@
     disp( "");
     
     if (!empty($result)){
-      disp( "<table>" );
-
+      
+      echo  '<table class="sortable">';
+      echo "<tr><th>Pos</th><th>Nummer</th><th>Typ</th><th>Kurzname</th><th>Anzahl</th><th>Einheit</th><th>Bestand</th></tr>";
+      
       foreach ($result as $part ){
 
 	//disp( $item["zn"]." ".$item["tabnr"]." ".$item["anzahl"]." ".$item["elanzahl"]." ".$item["elart"]." ".$item["elarta"]." ".$item["elem"]." ".$item["elex"] );
@@ -106,7 +108,7 @@
 	echo "<td>".$part["such"]."</td>";    
 	echo "<td>".$part["cnt"]."</td>";
 	echo "<td>".$part["ve"]."</td>";
-	echo "<td>".$part["abplatz"]."</td>";	
+	//echo "<td>".$part["abplatz"]."</td>";	
 	echo "<td>".renderBestand( $part)."</td>";	
 	
 	echo "</tr>";

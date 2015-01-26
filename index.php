@@ -6,6 +6,7 @@
 
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<script src="./lib/sorttable.js"></script>
 
 
 <?php include('./lib/main.php'); ?>

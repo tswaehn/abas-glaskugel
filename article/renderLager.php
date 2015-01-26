@@ -44,14 +44,14 @@
     $result = dbExecute( $sql );
     
     if ($result->rowCount() > 0){
-      out('<table>');
-      out('<tr><th>Menge</th><th>Platz</th><th>Gruppe</th><th>Platz</th><th>Dispo</th><th>Name</th></tr>');
+      out('<table class="sortable">');
+      out('<tr><th>Menge</th><th>Platz</th><th>Lager</th><th>Dispo</th><th>Name</th></tr>');
       
       foreach($result as $item ){
         $out='<tr>';  
         $out.= '<td>'.$item["lemge"].'</td>';
         $out.= '<td>'.$item["such"].'</td>';
-        $out.= '<td>'.$item["lgruppe"].'</td>';
+        //$out.= '<td>'.$item["lgruppe"].'</td>';
         $out.= '<td>'.$item["lager"].'</td>';
         $out.= '<td>'.$item["dispo"].'</td>';
         $out.= '<td>'.$item["name"].'</td>';
