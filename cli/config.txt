@@ -7,5 +7,5 @@
 	$pass="";
 	
 	define( "_REAL_EDP_", 1 );
-        
+        define( "DO_IMPORT_FROM_EDP", 1);
 ?>

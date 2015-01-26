@@ -45,7 +45,7 @@
     
     if ($result->rowCount() > 0){
       out('<table>');
-      out('<tr><th>Menge</th><th>Platz</th><th>Gruppe</th><th>Type</th><th>Dispo</th><th>Name</th></tr>');
+      out('<tr><th>Menge</th><th>Platz</th><th>Gruppe</th><th>Platz</th><th>Dispo</th><th>Name</th></tr>');
       
       foreach($result as $item ){
         $out='<tr>';  

@@ -140,8 +140,36 @@
 		     "bem", "kenn", "bstnr", "vbezbspr", "vkbezbspr", "ftext"
 		     
 		     );
-		     
+
+    // get all entries which need to be copied
     $fieldStr = "`".implode( "`,`", $copy_fields )."`";
+    
+    $sql = "SELECT ".$fieldStr." FROM `Teil:Artikel` WHERE 1 ";
+    $result = dbExecute($sql);
+    
+    // this is mainly because we need to calculate the articleID from "nummer"
+    $dataSet= array();
+    foreach ($result as $item){
+      $output=array();
+      // set article_id
+      $articleID= str_replace( "-", "", $item["nummer"] );
+      $output[]= $articleID;
+      
+      // transfer all known fields
+      foreach ($copy_fields as $field){
+        $output[]= $item[$field];
+      }
+      
+      // add to dataSet
+      $dataSet[]= $output;
+    }
+
+    // add the article_id to the field list
+    $fields= array_merge( array("article_id"), $copy_fields );
+    
+    // finally we put the big table into our database
+    insertIntoTable( $table, $fields, $dataSet );
+/*    
     
     // put into new table
     $sql = "INSERT INTO ".q(DB_ARTICLE)." (".$fieldStr.") ";
@@ -151,7 +179,7 @@
     
     //
     dbExecute( $sql );
-  
+*/  
   }
 
 ?>

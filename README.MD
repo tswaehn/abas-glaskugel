@@ -19,6 +19,11 @@ offene Punkte
   - import von arbeitsgängen
   - import von interner fertigung aus "Betr-Auftrag:Betriebsaufträge"
 
+2015 feb.?? - v0.2.5
+  - deutliche reduzierung der EDP import zeit von 3h auf 15min!!
+  - article_IDs werden aus artikel-nummern berechnet. hyper-links auf artikel 
+    bleiben ab jetzt für immer erhalten und können auch per email verschickt werden.
+
 2015 jan.23 - v0.2.4
   - einfluss von "flistestd" in "Fertigungsliste:Fertigungsliste" unklar => es wird immer die aktuelle stammdaten fertigungsliste angezeigt
   - lagerdetails werden angezeigt
