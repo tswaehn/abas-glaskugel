@@ -106,7 +106,6 @@
       // create single data pair
       $values= array_merge( array("", $articleID, $lemge), $platz);
       
-      lg(">". implode(" ",$values));
       // add to list of data pairs
       $dataSet[]= $values;
     }
