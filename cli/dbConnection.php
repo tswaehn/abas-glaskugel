@@ -43,6 +43,7 @@
     );
     
     $pdo = new PDO('mysql:host=localhost;dbname='.$dbname.';', $user, $pass, $opt);  
+    // set connection to be able to communicate in UTF8
     $pdo->exec("set names utf8");
     
     lg("--- db connected to ".$dbname );
@@ -153,7 +154,7 @@
     }
 
     try {
-	$sql ="CREATE table ".q($table)." (".$field_str.") ENGINE=InnoDB DEFAULT CHARSET=utf8;";
+        $sql ="CREATE table ".q($table)." (".$field_str.") ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_german2_ci;";
 	
 	lg( $sql) ;
 	$q=$pdo->query($sql);

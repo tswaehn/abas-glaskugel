@@ -397,8 +397,8 @@ search-and=1
         
     $import = array(
         
-          //  $teil_artikel,
-          //  $fertigungs_liste,
+            $teil_artikel,
+            $fertigungs_liste,
             $lager,
             $lmenge_lagermenge,
             $lager_lagergruppe,
@@ -418,11 +418,6 @@ search-and=1
         */
         );
     
-    /*$import = array(
-		$einkauf_bestellung,
-
-		);
-*/
 	return $import;
   }
 ?>

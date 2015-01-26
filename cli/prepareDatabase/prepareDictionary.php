@@ -4,13 +4,17 @@
     
     $table = DB_DICT;
   
-    $fields = array( "id", "str", "article_id");
+    $fields = array( "id", "str", "article_id", "frequency" );
+    
+    $fieldinfo=array();
     $fieldinfo["id"]["type"]=INDEX;
     $fieldinfo["id"]["size"]=0;
     $fieldinfo["str"]["type"]=ASCII;
     $fieldinfo["str"]["size"]=30;
     $fieldinfo["article_id"]["type"]=INT;
     $fieldinfo["article_id"]["size"]=0;
+    $fieldinfo["frequency"]["type"]=INT;
+    $fieldinfo["frequency"]["size"]=0;
     
 
     if (tableExists( $table ) == true ){
@@ -114,6 +118,7 @@
     return $dict;
   }
 
+/*
   function dbAddToDict( $article_id, $values ){
     global $pdo;
 
@@ -122,7 +127,7 @@
 	insertIntoTable( DB_DICT, $fields, array( array( $value, $article_id )) );
     }
   }
-  
+  */
   function dbCreateDict(){
     echo 'creating dict ';
     $starttime = microtime(true); 
@@ -130,9 +135,9 @@
     dbCreateTableDict();
     
     //$fields = array( "article_id", "nummer", "such", "name", "ebez", "bsart", "ynlief","zeichn","lief","lief2","yersteller","yzeissnr"  );
-    $fields = array( "article_id", "nummer", "such", "name", "ebez", "bsart", "ynlief","zeichn","yersteller","yzeissnr"  );    
+    $articleFields = array( "article_id", "nummer", "such", "name", "ebez", "bsart", "ynlief","zeichn","yersteller","yzeissnr"  );    
     
-    $result = dbGetFromTable( DB_ARTICLE, $fields, "", 100000 );
+    $result = dbGetFromTable( DB_ARTICLE, $articleFields, "", 100000 );
 
     $count = $result->rowCount();
     
@@ -142,6 +147,7 @@
     $outputCount=10;
     
     $dataSet = array();
+    $frequency= array();
     
     foreach ($result as $item ){
     
@@ -166,17 +172,55 @@
       $dict = dictSplit( $item );
       $article_id = $item["article_id"];
       
-      foreach ($dict as $value){
-	$dataSet[] = array( $value, $article_id);      
+      foreach ($dict as $str){
+        // add to set
+	$dataSet[] = array( $str, $article_id,0);   
+        
+        // count occurences of strings
+        if (isset($frequency[$str])){
+          // existing entry
+          $frequency[$str]++;
+        } else {
+          // new entry
+          $frequency[$str]=1;
+        }
       }
-      
-      
-    
     
     }
+
+    $rank= array();
+    // attach to each existing (str,article)-pair the appropriate frequency
+    foreach ($dataSet as $key=>$data){
+      // load dataSet line values
+      $str= $data[0];
+      $article_id= $data[1];
+      // lookup frequency
+      $freq= $frequency[$str];
+      // write back
+      $dataSet[$key][2]= $freq;
+      // sum up article rank
+      if (isset($rank[$article_id])){
+        // add count to existing 
+        $rank[$article_id] += $freq;
+      } else {
+        // create new rank entry
+        $rank[$article_id]= $freq;
+      }
+    }
     
-    $fields = array( "str", "article_id" );
+    // set rank for each single article_id
+    foreach ($rank as $article_id=>$freq){
+      $sql = "UPDATE ".q(DB_ARTICLE)." SET rank = ".$freq." WHERE article_id = ".$article_id;
+      dbExecute( $sql );
+            
+      lg( $article_id." ".$freq );
+    } 
+    
+    
+    // finally write each single (str,article_id,frequency)-pair to database (including reference to article)
+    $fields = array( "str", "article_id", "frequency" );
     insertIntoTable( DB_DICT, $fields, $dataSet );
+    
     
     
     $endtime = microtime(true); 
@@ -187,43 +231,5 @@
   
 
 
-  function dbCreateRank(){
-    
-    // for faster access: calculate data once and store into temp table
-    $table = DB_DICT_RANK;
-    if (tableExists( $table ) == true ){
-      removeTable( $table );
-    }
-    
-    $sql = "CREATE TABLE ".q($table)." AS SELECT id,str,count(*) AS cnt FROM ".q(DB_DICT)." GROUP BY `str` ";
-    $rankRes = dbExecute( $sql );
-    
-
-    // --- 
-    $table = DB_ARTICLE;
-    
-    // get all entries by id
-    $result = dbGetFromTable( $table, array("article_id"), "rank IS NULL", 100000 );
-    
-    
-    //hier zuvor noch dict_rank aus "count" des dict erstellen !!
-    
-    foreach ($result as $item){
-      
-      $article_id = $item["article_id"];
-      
-      //$sql = "SELECT article_id,sum(cnt) AS rank FROM (SELECT * FROM `dict` WHERE (article_id=".$article_id.")) AS d0, dict_rank AS d1 WHERE d0.str=d1.str GROUP BY d0.article_id";
-      $sql = "SELECT sum(cnt) AS rank FROM ".q(DB_DICT_RANK)." WHERE (str) IN (SELECT str FROM ".q(DB_DICT)." WHERE article_id=".$article_id.")";
-      $rankRes = dbExecute( $sql );
-      $res = $rankRes->fetch();
-
-      $sql = "UPDATE ".q(DB_ARTICLE)." SET rank = ".$res["rank"]." WHERE article_id = ".$article_id;
-      dbExecute( $sql );
-            
-      echo $article_id." ".$res["rank"];
-    }
-    
-  }
-  
-  
+   
  ?>

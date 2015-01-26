@@ -66,12 +66,11 @@
 
   function prepareDatabase(){
     
-    //dbCreateTableArticle();
-    //dbCreateProductionList();
+    dbCreateTableArticle();
+    dbCreateProductionList();
     dbCreateTableStoragePlaces();
-    //dbCreateDict();
-    //dbCreateRank();
-    dbCreateOrders();
+    dbCreateDict();
+    //dbCreateOrders();
    
   }
  
