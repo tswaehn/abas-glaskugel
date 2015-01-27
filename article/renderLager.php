@@ -40,16 +40,17 @@
     disp( $bestand );
     $article_id= $article["article_id"];
     
-    $sql = "SELECT lemge,such,lgruppe,lager,dispo,name FROM ".q(DB_STORAGE)." WHERE article_id=".$article_id.";";
+    $sql = "SELECT lemge,le,such,lgruppe,lager,dispo,name FROM ".q(DB_STORAGE)." WHERE article_id=".$article_id.";";
     $result = dbExecute( $sql );
     
     if ($result->rowCount() > 0){
       out('<table class="sortable">');
-      out('<tr><th>Menge</th><th>Platz</th><th>Lager</th><th>Dispo</th><th>Name</th></tr>');
+      out('<tr><th>Menge</th><th>Einheit</th><th>Platz</th><th>Lager</th><th>Dispo</th><th>Name</th></tr>');
       
       foreach($result as $item ){
         $out='<tr>';  
         $out.= '<td>'.$item["lemge"].'</td>';
+        $out.= '<td>'.$item["le"].'</td>';        
         $out.= '<td>'.$item["such"].'</td>';
         //$out.= '<td>'.$item["lgruppe"].'</td>';
         $out.= '<td>'.$item["lager"].'</td>';

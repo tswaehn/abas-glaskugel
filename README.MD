@@ -27,6 +27,7 @@ offene Punkte
   - fertigungsliste mit überschriften
   - fertigungsliste ist mit klick auf überschrift sortierbar
   - lagerliste ist mit klick auf überschrift sortierbar
+  - darstellung von bestellinformationen
 
 2015 jan.23 - v0.2.4
   - einfluss von "flistestd" in "Fertigungsliste:Fertigungsliste" unklar => es wird immer die aktuelle stammdaten fertigungsliste angezeigt

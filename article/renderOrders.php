@@ -53,8 +53,8 @@
 */
   function renderEinkaufBestellung($article){
 
-    div("EinkaufBestellung", "articleview");
-    disp('<span id="caption">Einkauf:Bestellung(Stammdaten)</span><br>');
+    div("", "articleview");
+    disp('<span id="caption">Offene Bestellung</span><br>');
     $article_id = $article["article_id"];
 /*    
     echo '<div id="bestellung-ajax"></div>';
@@ -74,7 +74,7 @@
     if (empty($article_id)){
       $article_id = getUrlParam("article_id");
     }
-    
+
     
     // join orders with articles to get required info
     //
@@ -84,32 +84,23 @@
     //		ON d0.nummer=d1.article_id 
     //		ORDER BY nummer
     //
-    $sql = "SELECT d1.*,d0.nummer,d0.betreff,d0.aumge,d0.planmge,d0.such FROM (SELECT * FROM ".q(DB_ORDERS)." WHERE article_id=".$article_id.") AS d0 INNER JOIN ".q(DB_ARTICLE)." AS d1 ON d0.article_id ORDER BY nummer";
+    $sql = "SELECT * FROM ".q(DB_ORDERS)." WHERE article_id=".$article_id;
     $result = dbExecute( $sql );
     
-    disp( "");
-    
-    if (!empty($result)){
-      disp( "<table>" );
+    if ((!empty($result)) && ($result->rowCount() > 0)){
+      echo '<table class="sortable">';
 
+      echo "<tr><th>Bestellnummer</th><th>Lieferant</th><th>Bedarf</th><th>Offen</th><th>VPE</th><th>Liefer- termin</th></tr>";
       foreach ($result as $part ){
 
-	//disp( $item["bem"]." ".$item["nummer"]." ".$item["such"]." ".$item["betreff"]." ".$item["art"]." ".$item["planmge"]." ".$item["aumge"]." ".$item["tename"] );
 	echo "<tr>";
 	echo "<td>".$part["nummer"]."</td>";
-	echo '<td><a href="?action=article&article_id='.$part["article_id"].'">'.$part["nummer"]."</td>";
-	switch ($part["elem_type"]){
-	  case 1: echo "<td>Artikel</td>";break;
-	  case 3: echo "<td>Arbeitsschritt</td>";break;
-	  default: echo "<td>unbekannt</td>";break;
-	}
 	echo "<td>".$part["such"]."</td>";    
-	echo "<td>".$part["ls"]."</td>";
-	echo "<td>".$part["lief"]."</td>";
-	echo "<td>".$part["re"]."</td>";	
-	echo "<td>".renderBestand( $part)."</td>";	
-	
-	echo "</tr>";
+	echo "<td>".$part["bedmge"]."</td>";
+	echo "<td>".$part["limge"]."</td>";
+	echo "<td>".$part["vpe"]."</td>";
+	echo "<td>".$part["term"]."</td>";
+        echo "</tr>";
       }
       disp( "</table>" ); 
     }

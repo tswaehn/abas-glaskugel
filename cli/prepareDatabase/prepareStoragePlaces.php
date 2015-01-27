@@ -21,7 +21,7 @@
     if (tableExists( $table ) == true ){
       removeTable( $table );
     }
-    $new_table_fields = array( "storage_id", "article_id", "lemge", "such", "name", "lgruppe", "lager", "dispo" );
+    $new_table_fields = array( "storage_id", "article_id", "lemge", "le", "such", "name", "lgruppe", "lager", "dispo" );
         
     $fieldinfo=array();
 
@@ -34,6 +34,9 @@
     $fieldinfo["lemge"]["type"]=FLOAT;
     $fieldinfo["lemge"]["size"]=0;
 
+    $fieldinfo["le"]["type"]=ASCII;
+    $fieldinfo["le"]["size"]=15;
+    
     $fieldinfo["such"]["type"]=ASCII;
     $fieldinfo["such"]["size"]=15;
     
@@ -90,7 +93,7 @@
     }
 
     // copy values from table to glaskugel
-    $sql = "SELECT artikel,lemge,platz from `lmenge:lagermenge` WHERE 1";
+    $sql = "SELECT artikel,lemge,le,platz from `lmenge:lagermenge` WHERE 1";
     $result = dbExecute( $sql );
     $dataSet=array();
     foreach ($result as $item){
@@ -98,13 +101,14 @@
       $articleID= $articles[ $item["artikel"]];
       // take count
       $lemge= $item["lemge"];
+      $le= $item["le"];
       // take place
       $platzNummer= $item["platz"];
       // lookup place info
       $platz= $lagerplatz[$platzNummer];
 
       // create single data pair
-      $values= array_merge( array("", $articleID, $lemge), $platz);
+      $values= array_merge( array("", $articleID, $lemge, $le), $platz);
       
       // add to list of data pairs
       $dataSet[]= $values;

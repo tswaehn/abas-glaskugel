@@ -91,7 +91,7 @@
 
   echo "<table>";
     echo "<tr><td>";
-      renderMedia( $article );
+      //renderMedia( $article );
       
       renderEinkaufBestellung( $article );
     echo "</td><td>";

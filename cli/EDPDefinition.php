@@ -28,8 +28,8 @@ sortasc=1
 search-and=1
 
 [Einkauf:Bestellung]
-fieldlist=id,nummer,such,betreff,art,artex,artikel,tename,ls,re,aumge,planmge,bem,ysenddat,ysendusr,lief
-sortby=nummer
+fieldlist=id,nummer,such,artikel,bem,ysenddat,ysendusr,yztterm,lief,aumge,limge,he,lehe
+sortby=
 maxdatasize=100000
 byrows=1
 sortasc=1
@@ -69,8 +69,8 @@ sortasc=1
 search-and=1
 
 [Lmenge:Lagermenge]
-fieldlist=id,artikel,tename,lager,platz,lgruppe,lemge,lab,lzu
-sortby=id
+fieldlist=id,artikel,tename,lager,platz,lgruppe,lemge,le,lab,lzu
+sortby=
 maxdatasize=100000
 byrows=0
 sortasc=1
@@ -205,6 +205,7 @@ search-and=1
   // -----------------------------------------------------------------
   //
   $teil_artikel = new EDPImport( "Teil:Artikel" );  
+  $teil_artikel->addSearch("nummer=0!0000-00000");    
   $teil_artikel->addSearch("nummer=0000-00000!1199-99999");  
   $teil_artikel->addSearch( "nummer=1200-00000!1399-99999" );  
   $teil_artikel->addSearch( "nummer=1400-00000!1599-99999" );  
@@ -396,13 +397,20 @@ search-and=1
         global $einkauf_rahmanauftrag;
         
     $import = array(
-        
+            
+            // single part information
             $teil_artikel,
             $fertigungs_liste,
+        
+            // stock information
             $lager,
             $lmenge_lagermenge,
             $lager_lagergruppe,
             $lplatz_lagerplatzkopf,
+          
+            // order information
+            $einkauf_bestellung
+            
         /*
             $einkauf,
        //einkauf_fertigungsvorschlag
