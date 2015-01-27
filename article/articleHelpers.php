@@ -9,8 +9,8 @@
     
   }
   
-  function div( $id ){
-    echo "<div id =".$id.">";
+  function div( $id, $class="" ){
+    echo '<div id ="'.$id.'" class="'.$class.'">';
   }
 
   function ediv(){

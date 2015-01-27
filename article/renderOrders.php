@@ -51,9 +51,9 @@
     ediv();
   }
 */
-  function renderEinkauf:Bestellung($article){
+  function renderEinkaufBestellung($article){
 
-    div("Einkauf:Bestellung");
+    div("EinkaufBestellung", "articleview");
     disp('<span id="caption">Einkauf:Bestellung(Stammdaten)</span><br>');
     $article_id = $article["article_id"];
 /*    

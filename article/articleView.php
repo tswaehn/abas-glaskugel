@@ -4,7 +4,7 @@
 
 
   function renderInfo( $article ){
-    div("artikel");
+    div("artikel","articleview");
     disp( shortArticle( $article ));
     //disp( '<span id="abas_nr">'.$article["nummer"].'</span>'.'<span id="such">'.$article["such"].'</span>' );
     //disp( $article["sucherw"] );
@@ -20,7 +20,7 @@
 
 
   function renderSimilar( $article ){
-    div("artikel");  
+    div("","articleview");  
     disp('<span id="caption">Ähnliche Artikel</span><br>');
           
     $result = getSimilarItems( $article );
@@ -81,7 +81,7 @@
   echo '</div>';
 
   
-  echo '<div id="articleview">';
+  echo '<div id="articleFrame">';
 
   if (empty($article)){
     echo 'Artikel nicht gefunden. Bitte korrekte Artikelnummer eingeben, oder vielleicht einen Artikel <a href="?action=search">suchen</a>?';
@@ -92,6 +92,8 @@
   echo "<table>";
     echo "<tr><td>";
       renderMedia( $article );
+      
+      renderEinkaufBestellung( $article );
     echo "</td><td>";
       renderInfo( $article );
       renderLager($article );    

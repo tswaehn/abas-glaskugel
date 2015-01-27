@@ -21,6 +21,7 @@
     include('./article/renderLager.php');
     include('./article/renderFertigung.php');
     include('./article/renderVerwendung.php');
+    include('./article/renderOrders.php');
     include('./article/renderArticle.php');    
 
     include('./stats/getRemoteInfo.php');

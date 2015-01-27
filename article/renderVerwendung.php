@@ -2,7 +2,7 @@
 
 
   function renderVerwendungen( $article ){
-    div("artikel");
+    div("", "articleview");
     disp('<span id="caption">Verwendung</span><br>');
     
     /*

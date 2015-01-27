@@ -53,8 +53,8 @@
 */
   function renderFertingsliste($article){
 
-    div("fertigungsliste");
-    disp('<span id="caption">Fertigungsliste (Stammdaten)</span><br>');
+    div("fertigungslisteX","articleview");
+    disp('<span id="caption">Fertigungsliste / Stückliste (Stammdaten)</span><br>');
     $article_id = $article["article_id"];
 /*    
     echo '<div id="fertigungsliste-ajax"></div>';

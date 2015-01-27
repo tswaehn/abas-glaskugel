@@ -1,11 +1,30 @@
 
-#articleview {
+#articleFrame {
 
   border:thin solid grey;
   
   margin-top:10px;
   padding:20px;
 
+}
+
+.articleview {
+
+  border:thin solid #aaaaaa; 
+  margin:5px;
+  padding:5px;
+  
+  font-size:small;    
+  
+}
+
+.articleview td {
+  
+  text-align:center;  
+  padding-left:10px;
+  padding-right:10px;  
+  font-size:small;
+  
 }
 
 /* short article */
@@ -24,75 +43,10 @@
     color:gray;
   }
 
-#artikel {
-  padding:5px;
-  margin:5px;
-  
-  border: thin solid #aaaaaa;
-  
-  font-size:small;
-
-}
-
   #media {
-    padding:5px;
-    margin:5px;
-    
-    border: thin solid #aaaaaa;
-    
-    font-size:small;  
     width:500px;
-  
-  }
-  
-  #fertigung {
-    padding:5px;
-    margin:5px;
-    
-    border: thin solid #aaaaaa;
-    
-    font-size:small;
-  
-  }
-  
-  #fertigung td {
-    
-    font-size:small;
-
-  }
-  
-  #fertigungsliste {
-    padding:5px;
-    margin:5px;
-    
-    border: thin solid #aaaaaa;
-    
-    font-size:small;
-
   }
 
-  #fertigungsliste td {
-    text-align: center;
-    padding-left:5px;
-    padding-right:5px;
-    font-size:small;
-  }
-
-  #lager {
-    font-size:small;
-    padding:5px;
-    margin:5px;
-    
-    border: thin solid #aaaaaa;    
-  }
-
-  #lager td {
-    font-size:small;
-    padding-left:10px;
-    padding-right:10px;
-    text-align:center;
-  }
-  
   #orders {
     padding:5px;
     margin:5px;

@@ -170,7 +170,7 @@
   
  
   function renderMedia( $article ){
-    div("media");
+    div("media","articleview");
   
     $media = filterValidMedia( $article );
     

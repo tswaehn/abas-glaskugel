@@ -32,7 +32,7 @@
   }
   
   function renderLager( $article ){
-    div("lager");
+    div("","articleview");
     disp('<span id="caption">Lager</span><br>');
     //disp( "Ein-/Ausgang ".$article["zuplatz"]."/".$article["abplatz"] );
     
