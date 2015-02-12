@@ -87,12 +87,3 @@
     padding-left:10px;
   } 
 
-  
-/* Sortable tables */
-table.sortable thead {
-    font-size:small;
-    padding:5px;
-    margin:5px; 
-    text-align:center;
-    background-color:#f2f2f2;  
-}  

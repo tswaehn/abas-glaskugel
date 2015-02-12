@@ -10,16 +10,13 @@ offene Punkte
 
   - Fertigungsliste: Arbeitsgänge und Fertigungsmittel mit anzeigen
 
-  - Sortieren der Fertigungsliste nach Spalte
   - Doppelte Medien sollten vermieden werden: 7500-65401 (gleichzeitig ein Pfad+ein Bildlink)
-
-  - Suchergebnisse nach Spalten sortierbar machen
   - "2058-17090" bg-msu hat zwei stücklisten
 
   - import von arbeitsgängen
   - import von interner fertigung aus "Betr-Auftrag:Betriebsaufträge"
 
-2015 feb.?? - v0.2.4+
+2015 feb.?? - v0.2.5
   - deutliche reduzierung der EDP import zeit von 3h auf 15min!!
   - article_IDs werden aus artikel-nummern berechnet. hyper-links auf artikel 
     bleiben ab jetzt für immer erhalten und können auch per email verschickt werden.
@@ -28,6 +25,8 @@ offene Punkte
   - fertigungsliste ist mit klick auf überschrift sortierbar
   - lagerliste ist mit klick auf überschrift sortierbar
   - darstellung von bestellinformationen
+  - im kopf wird "suchen" und "artikel" gleichzeitig und immer angezeigt
+  - zeige "auf" / "ab" pfeilchen in sortierbaren tabellen
 
 2015 jan.23 - v0.2.4
   - einfluss von "flistestd" in "Fertigungsliste:Fertigungsliste" unklar => es wird immer die aktuelle stammdaten fertigungsliste angezeigt
