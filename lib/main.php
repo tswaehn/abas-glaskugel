@@ -2,7 +2,7 @@
   
   $scriptStartTime = microtime(true);
   
-  include( 'config.txt');
+  include( './cli/config.txt');
 
   include('./lib/browserCheck.php');
   include('./lib/lib.php');
