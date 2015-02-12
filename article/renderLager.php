@@ -43,7 +43,7 @@
     $sql = "SELECT lemge,le,such,lgruppe,lager,dispo,name FROM ".q(DB_STORAGE)." WHERE article_id=".$article_id.";";
     $result = dbExecute( $sql );
     
-    if ($result->rowCount() > 0){
+    if ($result){
       out('<table class="sortable">');
       out('<tr><th>Menge</th><th>Einheit</th><th>Platz</th><th>Lager</th><th>Dispo</th><th>Name</th></tr>');
       

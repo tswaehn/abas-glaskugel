@@ -22,6 +22,10 @@
     
   </div>
   
+  <div id="search">
+    <?php include('./lib/search.php'); ?>
+  </div>
+
   <div id="main">
     
     <?php include( $script ) ?>

@@ -36,8 +36,6 @@
   
   checkForSiteDown();
   
-  addClientInfo( $action );
-  
   switch ($action){	
     case "raw": 
 		$title="Raw";
@@ -65,7 +63,8 @@
   
   }
   
-  
+  addClientInfo( $action );
+
   
   function footer(){
   

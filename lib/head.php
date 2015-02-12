@@ -13,8 +13,8 @@
   <tr><td>
 	
 	
-    <span id="menu"><a href="?action=search" >Suchen<a></span>
-    <span id="menu"><a href="?action=article" >Artikel<a></span>
+    <!-- <span id="menu"><a href="?action=search" >Suchen<a></span>
+    <span id="menu"><a href="?action=article" >Artikel<a></span> -->
 	
   </td><td style="text-align:right">
   
@@ -24,7 +24,7 @@
     }
     ?>
     
-    <a href="?action=raw">°°raw°°<a>
+    <!-- <a href="?action=raw">°°raw°°<a> -->
     
   </td></tr>
   </table>

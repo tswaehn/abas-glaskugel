@@ -49,38 +49,6 @@
   }
     // -------------------
   
-  echo '<div id="searchform">';
-    
-    $abas_nr = getUrlParam("search_abas_nr");
-    
-    if (!empty($abas_nr)){
-    
-      $result = getArticleByAbasNr( $abas_nr );
-      $article = $result->fetch();
-    
-    } else {
-    
-      $article_id=getUrlParam( "article_id");
-
-      if (!empty($article_id)){
-      
-	$result = getArticle( $article_id );
-	$article = $result->fetch();
-      
-      }
-      
-    }
-      
-      
-    echo '<form action="?action=article" method="POST">
-	    ABAS Nr.: <input type="edit" name="search_abas_nr" value="'.$abas_nr.'">
-	    <input type="submit" value="öffnen">
-	  </form>';    
-      
-    
-  echo '</div>';
-
-  
   echo '<div id="articleFrame">';
 
   if (empty($article)){

@@ -67,10 +67,17 @@ a:active {
   
   width:100%;
   text-align:center;
+  min-height: 25px;
   
   padding-top:20px;
   padding-bottom:20px;
+  
+  background-color:#f5f5f5;
 
+}
+#searchformfield {
+  float:left;
+  width:48%;
 }
 
 #search_item {

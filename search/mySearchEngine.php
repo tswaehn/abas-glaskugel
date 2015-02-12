@@ -1,17 +1,4 @@
 <?php
-
-  function searchForm( $search ){
-    
-    echo '<form action="?action=search" method="POST">
-		    <span style="margin-right:10px">Suchbegriff </span>
-	  <input type="edit" name="search" value="'.$search.'" size="40">
-	  <input type="submit" value="suchen">
-	  </form>';
-    echo 'Beispiel: <span style="color:grey;font-weight:bold">bnc kabel</span>';
-    echo ' oder <span style="color:grey;font-weight:bold">lemo stecker</span> ';
-    
-  }
-  
   
   function createLike( $cols, $value ){
     
@@ -148,10 +135,6 @@
   $search = preg_replace( ALLOWED_ASCII, " ", $search );
   $search = trim( $search );
   
-  echo '<div id="searchform">';
-  searchForm($search);
-  echo '</div>';
-    
   echo '<div id="searchresult">';
   mySearch($search);
   echo '</div>';
