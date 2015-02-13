@@ -3,7 +3,8 @@
 	$dbname="abas-shadow-test";
 	$user="root";
 	$pass="";
-	
+
+        define( "BUILD_NR", "v0.2.5");	
 	define( "_REAL_EDP_", 1 );
         define( "DO_IMPORT_FROM_EDP", 1);
 ?>
