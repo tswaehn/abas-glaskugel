@@ -7,7 +7,7 @@
     // do nothing
   }
   
-  
+  include('../cli/config.txt');
   include('../cli/dbConnection.php');
   
   // http://www.goat1000.com/svggraph-using.php
