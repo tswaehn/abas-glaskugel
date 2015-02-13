@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12.02.2015, 18:17:48
+    Author     : ginka
+*/
+
+/* Sortable tables */
+table.sortable thead {
+    font-size:small;
+    padding:5px;
+    margin:5px; 
+    text-align:center;
+    background-color:#f2f2f2;  
+}  
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
