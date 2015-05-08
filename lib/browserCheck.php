@@ -50,7 +50,10 @@
       {
 	  $bname = 'Netscape';
 	  $ub = "Netscape";
-      }
+      } else {
+	  echo "unknown browser type ".$u_agent."<br>";
+	  $ub = "unknown";
+	  }
     
       // finally get the correct version number
       $known = array('Version', $ub, 'other');
