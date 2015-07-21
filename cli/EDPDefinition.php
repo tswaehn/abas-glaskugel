@@ -38,7 +38,7 @@ search-and=1
 [Fertigungsliste:Fertigungsliste]
 fieldlist=id,nummer,artikel,anzahl,elem,elart,elarta,elle,zid,tabnr
 sortby=nummer
-maxdatasize=100000
+maxdatasize=10000000
 byrows=1
 sortasc=1
 search-and=1
