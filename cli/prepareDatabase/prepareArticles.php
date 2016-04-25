@@ -32,7 +32,9 @@
 		     
 		     "erfass", "stand", "zeichen",
 		     
-		     "bem", "kenn", "bstnr", "vbezbspr", "vkbezbspr", "ftext"
+		     "bem", "kenn", "bstnr", "vbezbspr", "vkbezbspr", "ftext",
+        
+                     "thumbnail"
 		     );
     
     $fieldinfo=array();
@@ -127,6 +129,7 @@
     $fieldinfo["vbezbspr"]["type"]=ASCII;     
     $fieldinfo["vkbezbspr"]["type"]=ASCII;     
     $fieldinfo["ftext"]["type"]=ASCII;     
+    $fieldinfo["thumbnail"]["type"]=ASCII;
 
     createTable( $table, $new_table_fields, $fieldinfo );
 

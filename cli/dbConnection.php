@@ -250,6 +250,63 @@
   
   }
   
+  /*
+   *  update single column to value where column is special value
+   * 
+   *  expected input
+   *  
+   *  - table name
+   *  - array ( col, val, whereCol, whereVal )
+   * 
+   */
+  function updateTable( $table, $values ){
+    
+    global $pdo;
+
+    $totalCount= count($values);
+    $percentStep= $totalCount / 100;
+    $count= 0;
+    $cnt= 0;
+    lg("updating table ".$table." ".$totalCount." values");
+    foreach( $values as $item ){
+      
+      $col= $item["col"];
+      $val= $item["val"];
+      $whereCol= $item["whereCol"];
+      $whereVal= $item["whereVal"];
+      
+      $sql= "UPDATE ".$table." SET ".$col."='".$val."' WHERE ".$whereCol."=".$whereVal;
+
+      //lg( $sql );
+      
+      try {
+
+          $result = $pdo->query( $sql);
+
+      } catch (Exception $e) {
+          lg("exec failed");
+          return;
+      } 
+      
+      $count++;
+      $cnt++;
+      if ($count >= $percentStep){
+        $count= 0;
+        lg( $cnt."/".$totalCount." ".floor($cnt/$totalCount*100)."%" );
+      }
+
+      if (!empty($result)){
+        //lg('found '.$result->rowCount().' rows' );
+      } else {
+        lg('result empty');
+      }
+      
+    }
+
+    lg("update done");
+    
+  }
+  
   function getLastInsertIndex(){
     global $pdo;
 

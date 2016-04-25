@@ -22,6 +22,7 @@
   include('./prepareDatabase/prepareStoragePlaces.php');
   include('./prepareDatabase/prepareDictionary.php');
   include('./prepareDatabase/prepareOrders.php');
+  include('./prepareDatabase/prepareArticleThumbnails.php');
 
 
   /*
@@ -63,7 +64,7 @@
     setConfigDb("dbLink", 1);
   }
   
-
+/*
   function prepareDatabase(){
     
     dbCreateTableArticle();
@@ -73,6 +74,11 @@
     dbCreateOrders();
    
   }
- 
-  
+*/ 
+    function prepareDatabase(){
+    
+    //dbCreateTableArticle();
+    dbCreateArticleThumbnails();
+   
+  }
   ?>

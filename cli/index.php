@@ -7,7 +7,7 @@
   echo "<pre>";
   $starttime = microtime(true);
   
-  include( 'lib.php');
+  include( '../lib/lib.php');
   include( 'dbConnection.php');
   include( 'EDPDefinition.php');
   include( 'EDPConsole.php');
