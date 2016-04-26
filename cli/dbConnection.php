@@ -275,9 +275,9 @@
       $whereCol= $item["whereCol"];
       $whereVal= $item["whereVal"];
       
-      $sql= "UPDATE ".$table." SET ".$col."='".$val."' WHERE ".$whereCol."=".$whereVal;
+      $sql= "UPDATE ".$table." SET `".$col."`='".$val."' WHERE `".$whereCol."`='".$whereVal."';";
 
-      //lg( $sql );
+      lg( $sql );
       
       try {
 
@@ -296,7 +296,7 @@
       }
 
       if (!empty($result)){
-        //lg('found '.$result->rowCount().' rows' );
+        lg('found '.$result->rowCount().' rows' );
       } else {
         lg('result empty');
       }

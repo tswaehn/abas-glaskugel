@@ -67,8 +67,9 @@
 
   function prepareDatabase(){
     
-	/*
-    dbCreateTableArticle();
+	
+    //dbCreateTableArticle();
+        /* * 
     dbCreateProductionList();
     dbCreateTableStoragePlaces();
     dbCreateDict();

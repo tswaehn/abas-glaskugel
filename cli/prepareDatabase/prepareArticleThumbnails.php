@@ -6,6 +6,8 @@
  * and open the template in the editor.
  */
 
+define ("CACHE_FOLDER", "../article/cache/");
+
 /*
  *  we expect a ready imported article database
  * 
@@ -27,19 +29,22 @@ function dbCreateArticleThumbnails(){
   foreach ($result as $article){
 
     $count++;
-    if ($count >=10){
-      //break;
-    }
+
     // need the article ID
     $articleID= $article["article_id"];
 
     // set thumbnail directory
-    $filename= "../article/cache/thumb--".$articleID.".jpg";
+    $filename= "thumb-".$articleID.".jpg";
     // convert
     $media= filterValidMedia( $article );
-    print_r( $media );
+    //print_r( $media );
+    if ($count >=1000){
+      $count= 0;
+      lg( date("r") );
+      //continue;
+    }
     
-    cacheThumbnail( $media, $filename, 80, 80 );    
+    cacheThumbnail( $media, CACHE_FOLDER.$filename, 320, 240 );    
 
 
     // prepare the item for the database
@@ -125,7 +130,7 @@ function dbCreateArticleThumbnails(){
   
   
   
-  function cacheThumbnail( $media, $targetFile, $max_width=500, $min_width=40 ){
+  function cacheThumbnail( $media, $targetFile, $width=800, $height=600 ){
     global $mediaThumbnail;
     //$max_width=500;
     //$min_width=40;
@@ -171,12 +176,12 @@ function dbCreateArticleThumbnails(){
       
       $img = new imagick(); // [0] can be used to set page number
       $img->setResolution(90,90);
-	  $img->setSize(800,600);
+	  //$img->setSize(800,600);
       $img->readImage($image );
       $img->setImageFormat( "jpeg" );
       $img->setImageCompression(imagick::COMPRESSION_JPEG); 
       $img->setImageCompressionQuality(90); 
-		$img->scaleImage(800,600,true);
+      $img->scaleImage($width, $height,true);
 
       $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
 
@@ -192,18 +197,22 @@ function dbCreateArticleThumbnails(){
 	  echo "converting pdf2jpg";
 	  $found_something_to_display=1;
 
-          $img = new imagick(); // [0] can be used to set page number
-          $img->setResolution(90,90);
-		  $img->setSize(800,600);
-          $img->readImage($item."[0]" );
-          $img->setImageFormat( "jpeg" );
-          $img->setImageCompression(imagick::COMPRESSION_JPEG); 
-          $img->setImageCompressionQuality(90); 
-		$img->scaleImage(800,600,true);
+	      $img = new imagick(); // [0] can be used to set page number
+	      $img->setResolution(90,90);
+	      $img->readImage($item.'[0]');
+              
 
-          $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
+              $img->setImageFormat( "jpeg" );
+	      $img->setImageCompression(imagick::COMPRESSION_JPEG); 
+	      $img->setImageCompressionQuality(90); 
 
-          $img->writeimage( $targetFile );
+	      //$img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
+	      
+	      //$img->__toString();
+	      $img = $img->flattenImages();
+              $img->resizeimage($width, $height, Imagick::FILTER_LANCZOS, 0.9, true);
+	      //$img->writeImage('./pageone.jpg'); 
+              $img->writeimage( $targetFile );
           
 	  break;
 	}	
@@ -218,7 +227,7 @@ function dbCreateArticleThumbnails(){
         $img->setImageFormat( "jpeg" );
         $img->setImageCompression(imagick::COMPRESSION_JPEG); 
         $img->setImageCompressionQuality(90); 
-		$img->scaleImage(800,600,true);
+		$img->scaleImage( $width, $height,true);
 
         $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
 

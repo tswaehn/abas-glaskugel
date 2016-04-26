@@ -77,6 +77,9 @@
   lg( "done" );
   
   lg( "bye" );
+  
+  file_put_contents("log.txt", $logging);
+  
   echo "</pre>";  
 
 
