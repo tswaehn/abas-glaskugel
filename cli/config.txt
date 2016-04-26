@@ -1,10 +1,10 @@
 <?php
 
-	$dbname="abas-shadow-test";
+	$dbname="abas-shadow-v0.2.6";
 	$user="root";
 	$pass="";
 
-        define( "BUILD_NR", "v0.2.5");	
+        define( "BUILD_NR", "v0.2.6");	
 	define( "_REAL_EDP_", 1 );
-        define( "DO_IMPORT_FROM_EDP", 1);
+     //   define( "DO_IMPORT_FROM_EDP", 1);
 ?>

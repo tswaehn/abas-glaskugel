@@ -64,21 +64,19 @@
     setConfigDb("dbLink", 1);
   }
   
-/*
+
   function prepareDatabase(){
     
+	/*
     dbCreateTableArticle();
     dbCreateProductionList();
     dbCreateTableStoragePlaces();
     dbCreateDict();
     dbCreateOrders();
+	*/
+	dbCreateArticleThumbnails();
    
   }
-*/ 
-    function prepareDatabase(){
-    
-    //dbCreateTableArticle();
-    dbCreateArticleThumbnails();
-   
-  }
+ 
+
   ?>

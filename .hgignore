@@ -1,2 +1,4 @@
 syntax: glob
 cli/edp.ini
+article/cache/
+cli/data/

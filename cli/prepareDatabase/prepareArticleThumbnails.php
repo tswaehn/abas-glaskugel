@@ -6,7 +6,6 @@
  * and open the template in the editor.
  */
 
-include( '../article/renderMedia.php');
 /*
  *  we expect a ready imported article database
  * 
@@ -29,13 +28,13 @@ function dbCreateArticleThumbnails(){
 
     $count++;
     if ($count >=10){
-      break;
+      //break;
     }
     // need the article ID
     $articleID= $article["article_id"];
 
     // set thumbnail directory
-    $filename= "../article/cache/thumb--".$articleID."jpg";
+    $filename= "../article/cache/thumb--".$articleID.".jpg";
     // convert
     $media= filterValidMedia( $article );
     print_r( $media );
@@ -57,3 +56,175 @@ function dbCreateArticleThumbnails(){
   updateTable( DB_ARTICLE, $updateArray );
   
 }
+
+// ----------------
+
+  $mediaFields = array("ypdf1", "ydxf", "yxls", "ytpdf", "ytlink", "bild",
+		  "bbesch", "foto", "fotoz", "catpics", "catpicsz", 
+		  "catpicl", "catpiclz", "caturl" );
+
+  $mediaIgnore = array("W:\DXF\\", "W:\Bilder\\", "W:\PDF\\", "W:\Doku\\", "W:\Datenblaetter\\", "WWW.", "W:\\", "" );
+  
+  $mediaThumbnail = array( "png", "jpg", "jpeg", "gif", "tif" );
+  
+  function filterValidMedia( $article ){
+  
+    global $mediaFields;
+    global $mediaIgnore;
+
+    $media = array();
+    
+    foreach ($mediaFields as $field ){
+      if (isset( $article[$field] )){
+	$name = $article[$field];
+	$ignore=0;
+	foreach ($mediaIgnore as $ignore){
+	  if (strcasecmp( $name, $ignore ) == 0){
+	    $ignore=1;
+	    break;
+	  }
+	}
+	
+	if ($ignore==0){
+	  // replace mapped drive by unc
+	  //$name=str_ireplace("W:\\", "\\\\HSEB-SV2\\Daten\\", $name);
+	  $name=str_ireplace("W:\\", "\\\\192.168.0.241\\Daten\\", $name);
+	  $media[] = $name;
+	}
+	
+      }
+    }
+    
+    // remove duplicate items
+    $media = array_unique ( $media );
+    
+    return $media;
+  }
+
+  function dir_contents_recursive($dir, &$result=array() ) {
+      // open handler for the directory
+      $iter = new DirectoryIterator(  utf8_decode( $dir ) ); // php file access is always ISO-8859-1 
+
+      foreach( $iter as $item ) {
+	  // make sure you don't try to access the current dir or the parent
+	  if ($item != '.' && $item != '..') {
+		  if( $item->isDir() ) {
+			  // call the function on the folder
+			  dir_contents_recursive("$dir/$item", $result);
+		  } else {
+			  // print files
+			  $file =  $dir . "/" .utf8_encode( $item->getFilename() );
+			  $result[] = $file;
+		  }
+	  }
+      }
+      
+      return $result;
+  }
+
+  
+  
+  
+  function cacheThumbnail( $media, $targetFile, $max_width=500, $min_width=40 ){
+    global $mediaThumbnail;
+    //$max_width=500;
+    //$min_width=40;
+
+    foreach ($media as $item ){
+      // php file access is always ISO-8859-1 
+      if (is_dir( utf8_decode( $item))){
+	$result=dir_contents_recursive( $item );
+	foreach ($result as $newitem){
+	  $media[] = $newitem;
+	}
+      }
+    }
+
+    $images = array();
+    
+    foreach ($media as $item ){
+      
+      if (is_file( utf8_decode( $item ))){ // php file access is always ISO-8859-1 
+	$info = pathinfo( $item );
+	
+	if (isset($info["extension"])){
+	  $ext = $info["extension"];
+	  
+	  if (in_arrayi( $ext, $mediaThumbnail)){
+	    $images[] = $item;
+	  }
+	}
+      }
+    }
+    
+    // unique
+    $images = array_unique( $images );
+    
+    $count=sizeof($images);
+    if ($count > 0){
+      
+      // copy - paste to cache
+      // take always the first image
+      $image= $images[0];
+
+      lg( "taking ".$image );
+      
+      $img = new imagick(); // [0] can be used to set page number
+      $img->setResolution(90,90);
+	  $img->setSize(800,600);
+      $img->readImage($image );
+      $img->setImageFormat( "jpeg" );
+      $img->setImageCompression(imagick::COMPRESSION_JPEG); 
+      $img->setImageCompressionQuality(90); 
+		$img->scaleImage(800,600,true);
+
+      $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
+
+      $img->writeimage( $targetFile );
+      
+    } else {
+	
+      $found_something_to_display=0;
+      // check for an pdf to display
+      foreach ($media as $item){
+	$info = pathinfo($item, PATHINFO_EXTENSION);
+	if (in_arrayi( $info, array("pdf"))){
+	  echo "converting pdf2jpg";
+	  $found_something_to_display=1;
+
+          $img = new imagick(); // [0] can be used to set page number
+          $img->setResolution(90,90);
+		  $img->setSize(800,600);
+          $img->readImage($item."[0]" );
+          $img->setImageFormat( "jpeg" );
+          $img->setImageCompression(imagick::COMPRESSION_JPEG); 
+          $img->setImageCompressionQuality(90); 
+		$img->scaleImage(800,600,true);
+
+          $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
+
+          $img->writeimage( $targetFile );
+          
+	  break;
+	}	
+      }
+      
+      if ($found_something_to_display==0){
+	$file_link="../article/image_placeholder.png";
+        
+        $img = new imagick(); // [0] can be used to set page number
+        $img->setResolution(90,90);
+        $img->readImage($file_link );
+        $img->setImageFormat( "jpeg" );
+        $img->setImageCompression(imagick::COMPRESSION_JPEG); 
+        $img->setImageCompressionQuality(90); 
+		$img->scaleImage(800,600,true);
+
+        $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
+
+        $img->writeimage( $targetFile );
+        
+      }
+    }
+
+  }
