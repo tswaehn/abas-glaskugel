@@ -30,7 +30,8 @@
 	  // replace mapped drive by unc
 	  //$name=str_ireplace("W:\\", "\\\\HSEB-SV2\\Daten\\", $name);
 	  $name=str_ireplace("W:\\", "\\\\192.168.0.241\\Daten\\", $name);
-	  $media[] = $name;
+	  $name=str_ireplace("O:\\", "\\\\192.168.0.6\\Daten\\", $name);
+          $media[] = $name;
 	}
 	
       }
