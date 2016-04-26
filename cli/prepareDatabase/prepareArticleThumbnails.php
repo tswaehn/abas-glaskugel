@@ -166,7 +166,7 @@ function dbCreateArticleThumbnails(){
     $images = array_unique( $images );
     
     $count=sizeof($images);
-    if ($count > 0){
+    if (($count > 0) && (is_file($images[0]))){
       
       // copy - paste to cache
       // take always the first image
@@ -174,19 +174,19 @@ function dbCreateArticleThumbnails(){
 
       lg( "taking ".$image );
       
-      $img = new imagick(); // [0] can be used to set page number
-      $img->setResolution(90,90);
-	  //$img->setSize(800,600);
-      $img->readImage($image );
-      $img->setImageFormat( "jpeg" );
-      $img->setImageCompression(imagick::COMPRESSION_JPEG); 
-      $img->setImageCompressionQuality(90); 
-      $img->scaleImage($width, $height,true);
+		  $img = new imagick(); // [0] can be used to set page number
+		  $img->setResolution(90,90);
+		  //$img->setSize(800,600);
+		  $img->readImage($image );
+		  $img->setImageFormat( "jpeg" );
+		  $img->setImageCompression(imagick::COMPRESSION_JPEG); 
+		  $img->setImageCompressionQuality(90); 
+		  $img->scaleImage($width, $height,true);
 
-      $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
+		  $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
 
-      $img->writeimage( $targetFile );
-      
+		  $img->writeimage( $targetFile );
+	  
     } else {
 	
       $found_something_to_display=0;
@@ -195,7 +195,9 @@ function dbCreateArticleThumbnails(){
 	$info = pathinfo($item, PATHINFO_EXTENSION);
 	if (in_arrayi( $info, array("pdf"))){
 	  echo "converting pdf2jpg";
-	  $found_something_to_display=1;
+	  
+	  if (is_file($item)){
+		$found_something_to_display=1;
 
 	      $img = new imagick(); // [0] can be used to set page number
 	      $img->setResolution(90,90);
@@ -214,7 +216,8 @@ function dbCreateArticleThumbnails(){
 	      //$img->writeImage('./pageone.jpg'); 
               $img->writeimage( $targetFile );
           
-	  break;
+		break;
+	  }
 	}	
       }
       
