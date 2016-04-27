@@ -82,9 +82,14 @@ a:active {
   background-color:#fdfdfd;
   border: thin solid gray; 
   padding:10px; 
-  margin:10px
+  margin:10px;
+  min-height: 60px;
 }
 
+#search_item img {
+  height:60px;
+  margin-right:10px;
+}
 
 #down {
   height:500px;

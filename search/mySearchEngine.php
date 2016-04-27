@@ -109,6 +109,7 @@
 	foreach ($result as $item){
 	
 	  echo '<div id="search_item">';
+            echo showThumbnail( $item );
 	    echo shortArticle( $item );
 	  echo '</div>';
 	}

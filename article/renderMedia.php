@@ -31,6 +31,8 @@
 	  //$name=str_ireplace("W:\\", "\\\\HSEB-SV2\\Daten\\", $name);
 	  $name=str_ireplace("W:\\", "\\\\192.168.0.241\\Daten\\", $name);
 	  $name=str_ireplace("O:\\", "\\\\192.168.0.6\\Daten\\", $name);
+          $name=str_ireplace("T:\\", "\\\\192.168.0.252\\HSEB-temp\\", $name);
+          
           $media[] = $name;
 	}
 	

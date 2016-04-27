@@ -61,5 +61,30 @@
     return $text ;
   }
   
+  function showThumbnail( $article ){
+    
+    // check if thumbnail exists
+    if (!isset($article["thumbnail"])){
+      $thumbnail= "";
+    } else {
+      // get the value
+      $thumbnail= $article["thumbnail"];
+    }
+    
+    // if empty
+    if (empty($thumbnail)){
+      $thumbnail= "./article/image_placeholder.png";      
+    } else {
+      // get thumbnail from DB
+      $cacheDir= "./article/cache/";
+      $thumbnail= $cacheDir. $article["thumbnail"];
+    }
+    
+    $link = "?action=article&article_id=".$article["article_id"];
+    
+    $text= '<a href="'.$link.'"><img src="'.$thumbnail.'" align="left" /></a>';
+    
+    return $text;
+  }
   
 ?>

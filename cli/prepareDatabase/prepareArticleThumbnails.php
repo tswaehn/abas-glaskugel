@@ -66,6 +66,7 @@ define ("CACHE_FOLDER", "../article/cache/");
       // replace mapped drive by unc
       $filename=str_ireplace("W:\\", "\\\\192.168.0.241\\Daten\\", $filename);
       $filename=str_ireplace("O:\\", "\\\\192.168.0.6\\Daten\\", $filename);
+      $filename=str_ireplace("T:\\", "\\\\192.168.0.252\\HSEB-temp\\", $filename);
       
       // double check if the file or folder really exists
       // php file access is always ISO-8859-1 
@@ -194,20 +195,24 @@ define ("CACHE_FOLDER", "../article/cache/");
       // load other image
       $img->readImage($imageFile );
     }
-
-    // setup image parameters
-    $img->setImageFormat( "jpeg" );
-    $img->setImageCompression(imagick::COMPRESSION_JPEG); 
-    $img->setImageCompressionQuality(90); 
-    $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
     
-    // scale down to final size
-    $img = $img->flattenImages();
-    $img->resizeimage($width, $height, Imagick::FILTER_LANCZOS, 0.9, true);
+    // check if the thumbnail already exists - otherwise we skip this
+    if ((!file_exists($targetFile)) ||(date("w") == 6)){  // tag der woche ist samstag
+      // setup image parameters
+      $img->setImageFormat( "jpeg" );
+      $img->setImageCompression(imagick::COMPRESSION_JPEG); 
+      $img->setImageCompressionQuality(90); 
+      $img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
 
-    // write file to disk
-    $img->writeimage( $targetFile );
-    
+      // scale down to final size
+      $img = $img->flattenImages();
+      $img->resizeimage($width, $height, Imagick::FILTER_LANCZOS, 0.9, true);
+
+      // write file to disk
+      $img->writeimage( $targetFile );
+    } else {
+      lg( "thumbnail already exists");
+    }
     
     lg( "caching thumbnail done");
   }
