@@ -18,7 +18,8 @@ define ("CACHE_FOLDER", "../article/cache/");
                   "ypdf1", "ydxf", "yxls", "ytpdf", "ytlink" );
 
   // value fields that need to be skipped as these are some default values only
-  $mediaIgnore = array("W:\DXF\\", "W:\Bilder\\", "W:\PDF\\", "W:\Doku\\", "W:\Datenblaetter\\", "WWW.", "W:\\", "" );
+  $mediaIgnore = array("W:\DXF\\", "W:\Bilder\\", "W:\PDF\\", "W:\Doku\\", "W:\Datenblaetter\\", "W:\XLS\\", "WWW.", "W:\\", "W:", "",
+					   "W:\DXF", "W:\Bilder", "W:\PDF", "W:\DOKU", "W:\Datenblaetter", "W:\XLS");
   
   // media of first choice that is usable as thumbnail
   $mediaThumbnail = array( "png", "jpg", "jpeg", "gif", "tif", "pdf" );
@@ -52,8 +53,8 @@ define ("CACHE_FOLDER", "../article/cache/");
       
       // check the value against our ignore list
       $ignore=0;
-      foreach ($mediaIgnore as $ignore){
-        if (strcasecmp( $filename, $ignore ) == 0){
+      foreach ($mediaIgnore as $ignoreName ){
+        if (strcasecmp( $filename, $ignoreName ) == 0){
           $ignore=1;
           break;
         }
@@ -105,7 +106,20 @@ define ("CACHE_FOLDER", "../article/cache/");
    * output will be a list of files
    * 
    */
-  function dir_contents_recursive($dir, &$result=array() ) {
+  function dir_contents_recursive($dir, &$result=array(), &$fileCount ) {
+	  
+	  file_put_contents( "dir.log", $dir."\n", FILE_APPEND );
+	  if (!file_exists( $dir )){
+		lg( "failed to check dir ".$dir );
+		return $result;
+	  }
+	  
+	  $fileCount++;
+	  if ($fileCount > 50 ){
+		return $result;
+	  }
+	  
+	  lg( $dir );
       // open handler for the directory
       $iter = new DirectoryIterator(  utf8_decode( $dir ) ); // php file access is always ISO-8859-1 
 
@@ -118,7 +132,7 @@ define ("CACHE_FOLDER", "../article/cache/");
           // if we have a directory go for subdirs
           if( $item->isDir() ) {
             // call the function on the folder
-            dir_contents_recursive("$dir/$item", $result);
+            dir_contents_recursive( utf8_encode( $dir."/".$item ), $result, $fileCount);
             continue;
           }
           
@@ -159,7 +173,7 @@ define ("CACHE_FOLDER", "../article/cache/");
     
     // unique
     $imageMedia = array_unique( $imageMedia );
-    
+    print_r($imageMedia); 
     return $imageMedia;    
   }
    
@@ -236,6 +250,7 @@ function dbCreateArticleThumbnails(){
   // go through each of them
   $updateArray= array();
   $count= 0;
+  $totalCount= $result->rowCount();
   foreach ($result as $article){
 
     $count++;
@@ -260,15 +275,9 @@ function dbCreateArticleThumbnails(){
       continue;
     }
     
-    //print_r( $media );
-    if ($count >=1000){
-      $count= 0;
-      lg( date("r") );
-      //continue;
-    }
-    
-    cacheThumbnail( $media, CACHE_FOLDER.$filename, 320, 240 );    
+    cacheThumbnail( $imageMedia, CACHE_FOLDER.$filename, 320, 240 );    
 
+	lg( $count ."/". $totalCount. " ".ceil($count/$totalCount*100)."%" );
 
     // prepare the item for the database
     $item["col"]= "thumbnail";
