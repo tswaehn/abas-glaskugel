@@ -180,24 +180,24 @@ define ("CACHE_FOLDER", "../article/cache/");
     //
     lg( "taking ".$imageFile );
     
-    
-    $img = new imagick(); // [0] can be used to set page number
-    $img->setResolution(90,90);
-
-    // load image
-    $info = pathinfo( $imageFile );
-    $ext = $info["extension"];
-    
-    if (strcasecmp( $ext, "pdf")){
-      // load PDF
-      $img->readImage($imageFile.'[0]');
-    } else {
-      // load other image
-      $img->readImage($imageFile );
-    }
-    
     // check if the thumbnail already exists - otherwise we skip this
     if ((!file_exists($targetFile)) ||(date("w") == 6)){  // tag der woche ist samstag
+
+      $img = new imagick(); // [0] can be used to set page number
+      $img->setResolution(90,90);
+
+      // load image
+      $info = pathinfo( $imageFile );
+      $ext = $info["extension"];
+
+      if (strcasecmp( $ext, "pdf")){
+        // load PDF
+        $img->readImage($imageFile.'[0]');
+      } else {
+        // load other image
+        $img->readImage($imageFile );
+      }
+    
       // setup image parameters
       $img->setImageFormat( "jpeg" );
       $img->setImageCompression(imagick::COMPRESSION_JPEG); 
