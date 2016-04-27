@@ -4,7 +4,8 @@
 		  "bbesch", "foto", "fotoz", "catpics", "catpicsz", 
 		  "catpicl", "catpiclz", "caturl" );
 
-  $mediaIgnore = array("W:\DXF\\", "W:\Bilder\\", "W:\PDF\\", "W:\Doku\\", "W:\Datenblaetter\\", "WWW.", "W:\\", "" );
+  $mediaIgnore = array("W:\DXF\\", "W:\Bilder\\", "W:\PDF\\", "W:\Doku\\", "W:\Datenblaetter\\", "W:\XLS\\", "WWW.", "W:\\", "W:", "",
+					   "W:\DXF", "W:\Bilder", "W:\PDF", "W:\DOKU", "W:\Datenblaetter", "W:\XLS");
   
   $mediaThumbnail = array( "png", "jpg", "jpeg", "gif", "tif" );
   
