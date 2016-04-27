@@ -3,6 +3,8 @@
   date_default_timezone_set('Europe/Berlin');
   
   include( 'config.txt');
+  
+  define( "CLI", true );
 
   echo "<pre>";
   $starttime = microtime(true);

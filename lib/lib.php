@@ -9,7 +9,7 @@
   function lg( $text ){
     global $logging;
     $text .= "\n";
-    if (defined("DEBUG")){
+    if (defined("DEBUG") || defined("CLI")){
       echo $text;
     }
     $logging .= $text;
