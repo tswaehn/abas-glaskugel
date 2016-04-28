@@ -73,6 +73,7 @@ define ("CACHE_FOLDER", "../article/cache/");
       // php file access is always ISO-8859-1 
       if (!file_exists(utf8_decode($filename))){
         // skip and try next field
+        error("filterValidMedia();", "attachment does not exist ".$filename );
         continue;
       }
       
@@ -110,12 +111,13 @@ define ("CACHE_FOLDER", "../article/cache/");
 	  
 	  file_put_contents( "dir.log", $dir."\n", FILE_APPEND );
 	  if (!file_exists( $dir )){
-		lg( "failed to check dir ".$dir );
+		error( "dir_contents_recursive()", "directory does not exist ".$dir );
 		return $result;
 	  }
 	  
 	  $fileCount++;
 	  if ($fileCount > 50 ){
+                error( "dir_contents_recursive();", "too many files in the folder ".$dir );
 		return $result;
 	  }
 	  
@@ -184,7 +186,7 @@ define ("CACHE_FOLDER", "../article/cache/");
     lg("caching thumbnail started");
     $count=sizeof($imageMedia);
     if ($count <= 0){
-      die("cacheThumbnail(); no valid images found");
+      error("cacheThumbnail(); no valid images found ".$targetFile );
       return;
     }
     
@@ -204,12 +206,19 @@ define ("CACHE_FOLDER", "../article/cache/");
       $info = pathinfo( $imageFile );
       $ext = $info["extension"];
 
-      if (strcasecmp( $ext, "pdf")){
-        // load PDF
-        $img->readImage($imageFile.'[0]');
-      } else {
-        // load other image
-        $img->readImage($imageFile );
+      try {
+        
+        if (strcasecmp( $ext, "pdf")){
+          // load PDF
+          $img->readImage($imageFile.'[0]');
+        } else {
+          // load other image
+          $img->readImage($imageFile );
+        }
+        
+      } catch (Exception $ex) {
+        error("cacheThumbnail();", "failed to load from file ".$imageFile );
+        return;
       }
     
       // setup image parameters
@@ -253,6 +262,7 @@ function dbCreateArticleThumbnails(){
   $totalCount= $result->rowCount();
   foreach ($result as $article){
 
+    backTrace( "dbCreateArticleThumbnails ". $article["nummer"]);
     $count++;
 
     // need the article ID

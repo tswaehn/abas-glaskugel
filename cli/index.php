@@ -9,6 +9,7 @@
   echo "<pre>";
   $starttime = microtime(true);
   
+  include( 'logging.php');
   include( '../lib/lib.php');
   include( 'dbConnection.php');
   include( 'EDPDefinition.php');
@@ -21,7 +22,8 @@
   lg( date("r") );
   lg( "start" );
   
-  
+  errorInit();
+    
   connectToDb();
   
   setupConfigDb();
