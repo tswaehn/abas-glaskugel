@@ -87,8 +87,8 @@ a:active {
 }
 
 #search_item img {
-  height:60px;
-  margin-right:10px;
+  max-height:60px;
+  max-width:90px;
 }
 
 #down {

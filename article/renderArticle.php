@@ -82,7 +82,7 @@
     
     $link = "?action=article&article_id=".$article["article_id"];
     
-    $text= '<a href="'.$link.'"><img src="'.$thumbnail.'" align="left" /></a>';
+    $text= '<a href="'.$link.'"><img src="'.$thumbnail.'"/></a>';
     
     return $text;
   }
