@@ -3,6 +3,8 @@
 
   function dbCreateOrders(){
      
+      backTrace("dbCreateOrders");
+      
       $table = DB_ORDERS;
       
       if (tableExists( $table )== true ){
@@ -85,6 +87,8 @@
       
       lg( "inserting into table now " );
       insertIntoTable( $table, $fields, $dataSet );
+      
+      report("found ".count($dataSet)." open external orders for articles");
   }
   
     // replace all string article numbers by integer (performs much faster)

@@ -4,25 +4,7 @@
   extract( $_GET, EXTR_PREFIX_ALL, "url" );
   extract( $_POST, EXTR_PREFIX_ALL, "url" );
 
-  $logging = "";
-  
-  function lg( $text ){
-    global $logging;
-    $text .= "\n";
-    if (defined("DEBUG") || defined("CLI")){
-      echo $text;
-    }
-    $logging .= $text;
-  }
-  
-  function storeAllLog(){
-    global $logging;
-    
-    $logfile="/tmp/sql.log";
-    file_put_contents( $logfile, $logging, FILE_APPEND);
-    
-  }
-
+ 
   function getGlobal( $var ){
     
     if (!isset($GLOBALS[$var])){

@@ -17,6 +17,7 @@
   
     $table = DB_STORAGE;
     
+    backTrace("dbCreateTableStoragePlaces");
     
     if (tableExists( $table ) == true ){
       removeTable( $table );
@@ -114,11 +115,12 @@
       $dataSet[]= $values;
     }
     
-    lg( "inserting into table now " );
+    lg( "inserting into table ".$table." now " );
     
     // finally we put the big table into our database
     insertIntoTable( $table, $new_table_fields, $dataSet );
-    
+
+    report("imported ".count($dataSet)." stock locations successfully");
   }
 
 ?>

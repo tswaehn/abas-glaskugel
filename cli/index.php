@@ -1,10 +1,9 @@
 <?php
-
+  
   date_default_timezone_set('Europe/Berlin');
   
   include( 'config.txt');
-  
-  define( "CLI", true );
+  include( "emailSettings.php");
 
   echo "<pre>";
   $starttime = microtime(true);
@@ -12,18 +11,19 @@
   include( 'logging.php');
   include( '../lib/lib.php');
   include( 'dbConnection.php');
-  include( 'EDPDefinition.php');
-  include( 'EDPConsole.php');
+  include( './EDP/EDPDefinition.php');
+  include( './EDP/EDPConsole.php');
   include( 'prepareDatabase.php');
-
+  include( 'smtpMail.php' );
+  
+  initLogging();
+  
   lg( "---" );
   lg( "CLI EDP importer ".BUILD_NR );
   
   lg( date("r") );
   lg( "start" );
   
-  errorInit();
-    
   connectToDb();
   
   setupConfigDb();
@@ -33,6 +33,9 @@
 
   if (defined("DO_IMPORT_FROM_EDP")){
     // 
+    backTrace("EDP import");
+    lg("EPD import started");
+    
     createEDPini();
 
     // load complete table info from EDP
@@ -63,9 +66,12 @@
 
     }
 
-    lg( "import done" );
+    lg( "EDP import done" );
   }
-   prepareDatabase();
+  
+  lg("preare database started");
+  prepareDatabase();
+  lg("prepare databease done");
 
   //
   unlockDb();
@@ -75,17 +81,22 @@
   // done
   $endtime = microtime(true); 
   $timediff = $endtime-$starttime;
-  lg( '--- total exec time is '.($timediff).'sec ('.$timediff/60 .' min)' );   
+  report( 'total exec time is '.($timediff).'sec ('.$timediff/60 .' min)' );   
     
   lg( date("r") );
   lg( "done" );
   
   lg( "bye" );
-  
-  file_put_contents("log.txt", $logging);
-  
+    
   echo "</pre>";  
 
+  $emailText= "<h3>Glaskugel Sync Report</h3>";
+  $emailText.= "host ".$_SERVER["COMPUTERNAME"]." (".$_SERVER["HLS_IPADDR"].")<br>";
+  $emailText.= '<pre style="border:thin solid gray; background-color:#DDDDDD;margin:10px;padding:10px;font-size:15px">';
+  $emailText.= file_get_contents( REPORT_FILE );
+  $emailText.= '</pre>';
+  $emailText.= "<br>thats all for now. see you tomorrow.<br>buy<br>";
+  sendMail( "sven.ginka@gmail.com", "Glaskugel Sync Report" , $emailText );
 
 ?>
 

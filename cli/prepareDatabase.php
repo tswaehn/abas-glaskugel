@@ -55,6 +55,7 @@
    */
   function lockDb(){
     setConfigDb("dbLink", 0);
+    report("locked search database");
   }
   
   /*
@@ -62,6 +63,7 @@
    */
   function unlockDb(){
     setConfigDb("dbLink", 1);
+    report("unlocked search database");
   }
   
 
@@ -69,13 +71,11 @@
     
 	
     //dbCreateTableArticle();
-        /* * 
-    dbCreateProductionList();
-    dbCreateTableStoragePlaces();
-    dbCreateDict();
+    //dbCreateProductionList();
+    //dbCreateTableStoragePlaces();
+    //dbCreateDict();
     dbCreateOrders();
-	*/
-	dbCreateArticleThumbnails();
+    //dbCreateArticleThumbnails();
    
   }
  

@@ -129,7 +129,10 @@
   }
   */
   function dbCreateDict(){
-    echo 'creating dict ';
+
+    backTrace("dbCreateDict");
+    
+    lg( 'creating dict ' );
     $starttime = microtime(true); 
     
     dbCreateTableDict();
@@ -209,13 +212,15 @@
     }
     
     // set rank for each single article_id
+    $values= array();
     foreach ($rank as $article_id=>$freq){
-      $sql = "UPDATE ".q(DB_ARTICLE)." SET rank = ".$freq." WHERE article_id = ".$article_id;
-      dbExecute( $sql );
-            
-      lg( $article_id." ".$freq );
+      $item["col"]= "rank";
+      $item["val"]= $freq;
+      $item["whereCol"]= "article_id";
+      $item["whereVal"]= $article_id;
+      $values[]= $item;
     } 
-    
+    updateTable( DB_ARTICLE, $values);
     
     // finally write each single (str,article_id,frequency)-pair to database (including reference to article)
     $fields = array( "str", "article_id", "frequency" );
@@ -225,8 +230,9 @@
     
     $endtime = microtime(true); 
     $timediff = $endtime-$starttime;
-    echo '\n exec time is '.($timediff);    
+    debug( '\n exec time is '.($timediff) );    
     
+    report( "found ".count($frequency)." different words for my search dictionary");
   }
   
 

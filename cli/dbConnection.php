@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   //phpinfo();
   define('_UPDATE_', 'update' );
   define('_CLEAN_', 'clean' );
@@ -52,10 +52,10 @@
     
     try {
 	$sql = "SELECT 1 FROM ".q($table)." LIMIT 1;";
-	lg($sql);
+	debug($sql);
 	$result = $pdo->query( $sql);
     } catch (Exception $e) {
-	lg( $e->getMessage() );
+	error("tableExists();",  $e->getMessage() );
 	// We got an exception == table not found
 	return FALSE;
     } 
@@ -67,11 +67,12 @@
     global $pdo;
     
     if (empty($sql)){
+      error("dbExecute();", "empty sql statement");
       return null;
     }
     
     $sql .= ";";
-    lg($sql);   
+    debug($sql);   
     
     try {
 
@@ -82,17 +83,17 @@
 	$endtime = microtime(true); 
 	$timediff = $endtime-$starttime;
 	
-	lg('exec time is '.($timediff) );
+	debug('exec time is '.($timediff) );
 	
     } catch (Exception $e) {
-	lg("exec failed");
+	error("dbExecute();", "exec failed ".$sql );
 	return;
     } 
     
     if (!empty($result)){
-      lg('found '.$result->rowCount().' rows' );
+      debug('found '.$result->rowCount().' rows' );
     } else {
-      lg('result empty');
+      error('result empty');
     }
     
     return $result;  
@@ -138,7 +139,7 @@
 	
 	default:
 	  $type_str = "TEXT";
-	  lg( "failed to set type ");
+	  error( "failed to set type ");
       }
       
       if (isset($fieldinfo[$field]['additional'])){
@@ -154,17 +155,17 @@
     try {
         $sql ="CREATE table ".q($table)." (".$field_str.") ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_german2_ci;";
 	
-	lg( $sql) ;
+	debug( $sql) ;
 	$q=$pdo->query($sql);
 	
 
     } catch(PDOException $e) {
-	lg("failed to create table ".$table);
-	lg( $e->getMessage() );//Remove in production code
+	error("createTable();","failed to create table ".$table);
+	error("createTable();", $e->getMessage() );//Remove in production code
 	return;
     }  
     
-    lg("Created ".$table." Table.");
+    debug("Created ".$table." Table.");
   
   }
   
@@ -174,14 +175,14 @@
     try {
 	$sql ="DROP TABLE IF EXISTS ".q($table).";";
 	
-	lg( $sql) ;
+	debug( $sql) ;
 	
 	$pdo->exec($sql);
 	
-	lg("removed $table Table.");
+	debug("removed $table Table.");
 
     } catch(PDOException $e) {
-	lg( $e->getMessage() );//Remove in production code
+	error( $e->getMessage() );//Remove in production code
     }  
   
   }
@@ -210,7 +211,7 @@
     }
 
     $total_count=count($lines);
-    lg( "inserting ".$total_count." data sets");
+    debug( "inserting ".$total_count." data sets into ".$table );
     $step_size = $total_count / 100;
     
     $total=0;
@@ -218,7 +219,7 @@
     // query
     try {
       $sql = "INSERT INTO ".q($table)." (".$field_str.") VALUES (".$placeholder.")";
-      lg($sql);
+      debug($sql);
       
       $q = $pdo->prepare($sql);
       
@@ -242,11 +243,11 @@
 	}
       }
     } catch(PDOException $e) {
-      lg( "something went wrong while inserting data");
+      error("insertIntoTable();", "something went wrong while inserting data");
+      error("insertIntoTable();", $e->getMessage() );//Remove in production code
       return;
     }
     
-    //lg( "insert into tables complete" );
   
   }
   
@@ -267,7 +268,7 @@
     $percentStep= $totalCount / 100;
     $count= 0;
     $cnt= 0;
-    lg("updating table ".$table." ".$totalCount." values");
+    debug("updating table ".$table." with ".$totalCount." values");
     foreach( $values as $item ){
       
       $col= $item["col"];
@@ -277,14 +278,14 @@
       
       $sql= "UPDATE ".$table." SET `".$col."`='".$val."' WHERE `".$whereCol."`='".$whereVal."';";
 
-      lg( $sql );
+      // debug( $sql );
       
       try {
 
           $result = $pdo->query( $sql);
 
       } catch (Exception $e) {
-          lg("exec failed");
+          error("updateTable();", "exec failed");
           return;
       } 
       
@@ -296,14 +297,14 @@
       }
 
       if (!empty($result)){
-        lg('found '.$result->rowCount().' rows' );
+        // debug('found '.$result->rowCount().' rows' );
       } else {
-        lg('result empty');
+        error("updateTable();", 'result empty');
       }
       
     }
 
-    lg("update done");
+    debug("update done");
     
   }
   
@@ -319,7 +320,7 @@
       $q = $pdo->query($sql);
       
     } catch(PDOException $e) {
-      lg( "something went wrong while requesting index");
+      error( "getLastInsertIndex();", "something went wrong while requesting index");
       return;
     }
     
@@ -341,10 +342,10 @@
     $sql = 'SHOW COLUMNS FROM '.q($table).';';
 
     try {
-	lg($sql);
+	debug($sql);
 	$result = $pdo->query( $sql);
     } catch (Exception $e) {
-	lg("search failed");
+	error("getColumns();", "search failed");
 	return;
     } 
     
@@ -371,19 +372,20 @@
     $sql = 'SELECT '.$fields_str.' FROM '.q($table).' WHERE ('.$search.') LIMIT '.$limit.' OFFSET '.$offset;
     
     try {
-	lg($sql);
+	debug($sql);
 	$starttime = microtime(true); 
 	$result = $pdo->query( $sql);
 	$endtime = microtime(true); 
 	$timediff = $endtime-$starttime;
     } catch (Exception $e) {
-	lg("search failed");
+	error("dbGetFromTable();", "search failed");
+        error("dbGetFromTable();", $e->getMessage() );
 	return;
     } 
     
-    lg('exec time is '.($timediff) );
+    debug('exec time is '.($timediff) );
     
-    lg('found '.$result->rowCount().' items' );
+    debug('found '.$result->rowCount().' items' );
     
     return $result;  
   
@@ -409,19 +411,20 @@
     $sql .= ') GROUP BY ( `'.$group.'` );';
     
     try {
-	lg($sql);
+	debug($sql);
 	$starttime = microtime(true); 
 	$result = $pdo->query( $sql);
 	$endtime = microtime(true); 
 	$timediff = $endtime-$starttime;
     } catch (Exception $e) {
-	lg("search failed");
+	error("searchInTable();", "search failed");
+        error("searchInTable();", $e->getMessage() );
 	return;
     } 
     
-    lg('exec time is '.($timediff) );
+    debug('exec time is '.($timediff) );
 
-    lg('found '.$result->rowCount().' items' );
+    debug('found '.$result->rowCount().' items' );
     
     return $result;
   
@@ -432,7 +435,7 @@
     
       
     if (tableExists( $table )){
-      lg( "table ".$table." exists" );
+      debug( "table ".$table." exists" );
       
       if ($mode == _CLEAN_){
 	removeTable( $table );
@@ -440,7 +443,7 @@
       }
       
     } else {
-      lg( "table ".$table." does not exist" );
+      debug( "table ".$table." does not exist" );
       createTable( $table, $fields, $fieldinfo );
     }
     

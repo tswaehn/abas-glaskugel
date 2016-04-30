@@ -17,6 +17,7 @@
   
     $table = DB_ARTICLE;
     
+    backTrace("dbCreateTableArticle");
     
     if (tableExists( $table ) == true ){
       removeTable( $table );
@@ -172,17 +173,8 @@
     
     // finally we put the big table into our database
     insertIntoTable( $table, $fields, $dataSet );
-/*    
-    
-    // put into new table
-    $sql = "INSERT INTO ".q(DB_ARTICLE)." (".$fieldStr.") ";
-    
-    // copy/paste from 'Teil:Artikel'
-    $sql .= "SELECT ".$fieldStr." FROM `Teil:Artikel` WHERE 1";
-    
-    //
-    dbExecute( $sql );
-*/  
+
+    report("imported ".count($dataSet)." articles successfully");
   }
 
 ?>

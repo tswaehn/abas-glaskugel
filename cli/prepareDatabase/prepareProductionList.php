@@ -12,7 +12,7 @@
   
  
     $table = DB_PRODUCTION_LIST;
-    
+    backTrace("dbCreateProductionList");
     
     if (tableExists( $table ) == true ){
       removeTable( $table );
@@ -90,11 +90,12 @@
       $dataSet[] = $values;
       
     }
-    lg( "inserting into table now " );
+    lg( "inserting into table ".$table." now " );
     
     // finally we put the big table into our database
     insertIntoTable( $table, $fields, $dataSet );
     
+    report("imported ".count($dataSet)." items of productions list successfully");
   }
 
   // replace all string article numbers by integer (performs much faster)

@@ -45,7 +45,7 @@
     foreach($fields as $field){
       $field_str .= $field. '  ';
     }
-    lg( $field_str);
+    debug( $field_str);
 
     
     foreach($lines as $line){
@@ -53,28 +53,29 @@
       foreach($line as $elem){
 	$line_str .= $elem. '  ';
       }
-      lg( $line_str);  
+      debug( $line_str);  
     }
     
   }
   
   function executeEDP( $cmdLine ){
 	
-	$filename='./data/edp-'.preg_replace("/[^A-Za-z0-9\ ]/", "-",$cmdLine).'.dat';
+    // create local backup filename
+    $filename='./data/edp-'.preg_replace("/[^A-Za-z0-9\ ]/", "-",$cmdLine).'.dat';
     $filename = preg_replace("/[^A-Za-z0-9\.\/\-]/", " ", $filename);
 
-    lg("using file ".$filename );
+    debug("using file ".$filename );
     
     if (_REAL_EDP_ == 1){
       //$table = utf8_encode( $table );
       //$search = utf8_encode( $search );
-	  lg( "exec :".$cmdLine);
+      lg( "EDP exec :".$cmdLine);
 	  
-	  // table and search are given in UTF8 
-	  shell_exec( "echo ".$cmdLine." > cmd_line.txt ");
+      // table and search are given in UTF8 
+      shell_exec( "echo ".$cmdLine." > ./EDP/cmd_line.log");
 	  
 	  // the external programm has to convert from UTF8 to ANSI
-      $contents = shell_exec( $cmdLine );
+      $contents = shell_exec( "cd ./EDP/ && ".$cmdLine );
 	  
 	  // the return needs to be converted into UTF8
       $contents = utf8_encode( $contents );      
@@ -112,9 +113,9 @@
     $par1 = "fieldnames";
     $par2 = $table;
 	
-	$cmdLine = 'EDPConsole '.$par1.' '.$par2 ; 
-	
-	$contents= executeEDP( $cmdLine );
+    $cmdLine = 'EDPConsole '.$par1.' '.$par2 ; 
+
+    $contents= executeEDP( $cmdLine );
 	
     $data = stringsToArray( $contents );
     
@@ -130,7 +131,7 @@
 	case 'D': $type = ASCII; break; // fix: treat datetime as ASCII due to conversion problems
 	default:
 	  $type = $line[1] ; 
-	  lg( "unknown type ".$line[1] );
+	  error( "getEDPFieldNames();", "unknown type ".$line[1] );
       }
       
       $size = $line[2];
@@ -140,8 +141,8 @@
       
     }
 //     
-    lg( "fieldnames of ".$table." are ".count($fieldnames ) );
-    lg( $fieldnames_str );
+    debug( "fieldnames of ".$table." are ".count($fieldnames ) );
+    debug( $fieldnames_str );
     return $fieldnames;
   }
   
@@ -157,29 +158,18 @@
   */
   function getEDPData( $table, $search ){
 
-	lg( "table: ".$table );
-	lg( "search: ".$search );
+    lg( "table: ".$table );
+    lg( "search: ".$search );
 
-	$cmdLine = 'EDPConsole.exe '.$table.' '.$search;
+    $cmdLine = 'EDPConsole.exe '.$table.' '.$search;
 
-	$contents=executeEDP( $cmdLine);
+    $contents=executeEDP( $cmdLine);
 	  
     $data = stringsToArray( $contents );
     return $data;  	
   
   
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
 ?>

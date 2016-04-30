@@ -24,6 +24,10 @@ define ("CACHE_FOLDER", "../article/cache/");
   // media of first choice that is usable as thumbnail
   $mediaThumbnail = array( "png", "jpg", "jpeg", "gif", "tif", "pdf" );
   
+  $failedMediaLinks= 0;
+  $cachedMediaToday= 0;
+  $articlesWitoutThumbnails= 0;
+  
   /*
    * this routine takes the dataset of an article and will find
    * all relevant attachement files/folders
@@ -36,7 +40,8 @@ define ("CACHE_FOLDER", "../article/cache/");
   
     global $mediaFields;
     global $mediaIgnore;
-
+    global $failedMediaLinks;
+    
     $media = array();
     
     // go through all available fields
@@ -74,6 +79,7 @@ define ("CACHE_FOLDER", "../article/cache/");
       if (!file_exists(utf8_decode($filename))){
         // skip and try next field
         error("filterValidMedia();", "attachment does not exist ".$filename );
+        $failedMediaLinks++;
         continue;
       }
       
@@ -183,10 +189,14 @@ define ("CACHE_FOLDER", "../article/cache/");
   
   function cacheThumbnail( $imageMedia, $targetFile, $width=800, $height=600 ){
     
+    global $articlesWitoutThumbnails;
+    global $cachedMediaToday;
+    
     lg("caching thumbnail started");
     $count=sizeof($imageMedia);
     if ($count <= 0){
       error("cacheThumbnail(); no valid images found ".$targetFile );
+      $articlesWitoutThumbnails++;
       return;
     }
     
@@ -197,8 +207,10 @@ define ("CACHE_FOLDER", "../article/cache/");
     lg( "taking ".$imageFile );
     
     // check if the thumbnail already exists - otherwise we skip this
-    if ((!file_exists($targetFile)) ||(date("w") == 6)){  // tag der woche ist samstag
+    if ((!file_exists($targetFile)) ||(date("w") == FULL_THUMBNAIL_DAY)){  // tag der woche ist samstag
 
+      $cachedMediaToday++;
+      
       $img = new imagick(); // [0] can be used to set page number
       $img->setResolution(90,90);
 
@@ -252,6 +264,10 @@ define ("CACHE_FOLDER", "../article/cache/");
  */
 function dbCreateArticleThumbnails(){
   
+  global $failedMediaLinks;
+  global $cachedMediaToday;
+  global $articlesWitoutThumbnails;
+  
   // get all articles
   $sql = "SELECT * FROM `".DB_ARTICLE."` WHERE 1 ";
   $result = dbExecute($sql);  
@@ -301,6 +317,10 @@ function dbCreateArticleThumbnails(){
   
   // finally write the array to the table
   updateTable( DB_ARTICLE, $updateArray );
+  
+  report("found ".$failedMediaLinks." incorrect file links in articles");
+  report("today I was able to update ".$cachedMediaToday." new thumbnails");
+  report("btw. there are still ".$articlesWitoutThumbnails." articles without attachement :( ");
   
 }
 

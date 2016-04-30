@@ -1,4 +1,6 @@
-﻿<?php
+<?php
+  
+  define("EDP_INI_FILE", "./EDP/edp.ini");
   
   // note: this is UTF-8
   $edp_conf = '
@@ -176,11 +178,10 @@ search-and=1
   
   function createEDPini(){
     global $edp_conf;
-    // create config for EDPConsole
-    $ini_filename = "EDP.ini";
+
     // the external program reads the ini-file as ANSI thus convert it into ANSI
     $edp_conf = iconv( "UTF-8", "Windows-1252", $edp_conf );
-    file_put_contents( $ini_filename, $edp_conf );
+    file_put_contents( EDP_INI_FILE, $edp_conf );
   }
     
   class EDPImport {
