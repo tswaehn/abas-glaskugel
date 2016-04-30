@@ -318,10 +318,16 @@ function dbCreateArticleThumbnails(){
   // finally write the array to the table
   updateTable( DB_ARTICLE, $updateArray );
   
-  report("found ".$failedMediaLinks." incorrect file links in articles");
-  report("today I was able to update ".$cachedMediaToday." new thumbnails");
-  report("btw. there are still ".$articlesWitoutThumbnails." articles without attachement :( ");
-  
+  if ($failedMediaLinks){
+    report("found ".$failedMediaLinks." incorrect file links in articles"); 
+  }
+	
+  if ($cachedMediaToday > 0){
+	report("today I was able to update ".$cachedMediaToday." new thumbnails");
+  }
+  if ($articlesWitoutThumbnails > 0){	
+    report("btw. there are still ".$articlesWitoutThumbnails." articles without attachement :( ");
+  }
 }
 
 
