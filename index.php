@@ -37,4 +37,5 @@
   
   <?php footer(); ?>
  
+  <?php writeLogToDisk(); ?>
 </html>

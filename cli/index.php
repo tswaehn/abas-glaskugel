@@ -81,11 +81,10 @@
   // done
   $endtime = microtime(true); 
   $timediff = $endtime-$starttime;
-  report( 'total exec time is '.($timediff).'sec ('.$timediff/60 .' min)' );   
+  report( 'total exec time is '.ceil($timediff).'sec ('.ceil($timediff/60) .' min)' );   
     
   lg( date("r") );
   lg( "done" );
-  
   lg( "bye" );
     
   echo "</pre>";  
@@ -95,8 +94,8 @@
   $emailText.= '<pre style="border:thin solid gray; background-color:#DDDDDD;margin:10px;padding:10px;font-size:15px">';
   $emailText.= file_get_contents( REPORT_FILE );
   $emailText.= '</pre>';
-  $emailText.= "<br>thats all for now. see you tomorrow.<br>buy<br>";
-  sendMail( "sven.ginka@gmail.com", "Glaskugel Sync Report" , $emailText );
+  $emailText.= "<br>thats all for now. see you tomorrow.<br>bye<br>";
+  sendMail( "sven.ginka@gmail.com", "Glaskugel Sync Successful" , $emailText );
 
 ?>
 

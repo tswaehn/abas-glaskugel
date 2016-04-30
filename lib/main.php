@@ -4,6 +4,7 @@
   
   include( './cli/config.txt');
 
+  include('./lib/logging.php');
   include('./lib/browserCheck.php');
   include('./lib/lib.php');
   include('./cli/dbConnection.php');  

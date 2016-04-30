@@ -66,16 +66,20 @@
     report("unlocked search database");
   }
   
-
+  /*
+   * this is the main entry for post-processing the import 
+   * of EDP
+   * 
+   */
   function prepareDatabase(){
     
 	
-    //dbCreateTableArticle();
-    //dbCreateProductionList();
-    //dbCreateTableStoragePlaces();
-    //dbCreateDict();
+    dbCreateTableArticle();
+    dbCreateProductionList();
+    dbCreateTableStoragePlaces();
+    dbCreateDict();
     dbCreateOrders();
-    //dbCreateArticleThumbnails();
+    dbCreateArticleThumbnails();
    
   }
  
