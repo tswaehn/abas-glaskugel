@@ -1,10 +1,13 @@
 <?php
 
-	$dbname="abas-shadow-test";
-	$user="root";
-	$pass="";
+  $dbname="abas-shadow-test";
+  $user="root";
+  $pass="";
 
-        define( "BUILD_NR", "v0.2.6");	
-	define( "_REAL_EDP_", 0 );
-     //   define( "DO_IMPORT_FROM_EDP", 1);
+  define( "BUILD_NR", "v0.2.6");	
+  define( "_REAL_EDP_", 1 );
+  define( "DO_IMPORT_FROM_EDP", 1);
+
+  define( "FULL_THUMBNAIL_DAY", 0 ); // sun=0, mo=1, ..., sat=6
+
 ?>
