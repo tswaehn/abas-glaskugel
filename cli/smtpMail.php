@@ -8,7 +8,7 @@
   
   include("./PHPMailer/PHPMailerAutoload.php");
 
-function sendMail($email, $subject, $text){
+function sendMail($email, $subject, $text, $attachment=array() ){
   global $emailSettings;
   
   $mail = new PHPMailer();
@@ -24,10 +24,24 @@ function sendMail($email, $subject, $text){
   $mail->setFrom( $emailSettings->from );
   
   $mail->isHTML(true); 
-
-  $mail->addAddress( $email );
   
+  // add one ore more email addresses
+  if (is_array( $email )){
+    foreach($email as $item ){
+      $mail->addAddress( $item );
+    }
+  } else {
+    $mail->addAddress( $email );
+  }
   
+  // add attachements
+  if (!empty($attachment)){
+    foreach($attachment as $item){
+      $mail->addAttachment($item);
+    }
+  }
+  
+  // replace line break by html line break
   $text= str_replace( "\n", "<br>", $text);
   $mail->Subject= $subject;
   $mail->Body= $text;

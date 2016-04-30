@@ -26,7 +26,7 @@ define ("CACHE_FOLDER", "../article/cache/");
   
   $failedMediaLinks= 0;
   $cachedMediaToday= 0;
-  $articlesWitoutThumbnails= 0;
+  $articlesWithoutThumbnails= 0;
   
   /*
    * this routine takes the dataset of an article and will find
@@ -189,14 +189,14 @@ define ("CACHE_FOLDER", "../article/cache/");
   
   function cacheThumbnail( $imageMedia, $targetFile, $width=800, $height=600 ){
     
-    global $articlesWitoutThumbnails;
+    global $articlesWithoutThumbnails;
     global $cachedMediaToday;
     
     lg("caching thumbnail started");
     $count=sizeof($imageMedia);
     if ($count <= 0){
       error("cacheThumbnail(); no valid images found ".$targetFile );
-      $articlesWitoutThumbnails++;
+      $articlesWithoutThumbnails++;
       return;
     }
     
@@ -266,7 +266,7 @@ function dbCreateArticleThumbnails(){
   
   global $failedMediaLinks;
   global $cachedMediaToday;
-  global $articlesWitoutThumbnails;
+  global $articlesWithoutThumbnails;
   
   // get all articles
   $sql = "SELECT * FROM `".DB_ARTICLE."` WHERE 1 ";
@@ -325,8 +325,8 @@ function dbCreateArticleThumbnails(){
   if ($cachedMediaToday > 0){
 	report("today I was able to update ".$cachedMediaToday." new thumbnails");
   }
-  if ($articlesWitoutThumbnails > 0){	
-    report("btw. there are still ".$articlesWitoutThumbnails." articles without attachement :( ");
+  if ($articlesWithoutThumbnails > 0){	
+    report("btw. there are still ".$articlesWithoutThumbnails." articles without attachement :( ");
   }
 }
 

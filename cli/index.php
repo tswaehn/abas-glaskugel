@@ -70,7 +70,7 @@
   }
   
   lg("preare database started");
-  prepareDatabase();
+  //prepareDatabase();
   lg("prepare databease done");
 
   //
@@ -95,7 +95,7 @@
   $emailText.= file_get_contents( REPORT_FILE );
   $emailText.= '</pre>';
   $emailText.= "<br>thats all for now. see you tomorrow.<br>bye<br>";
-  sendMail( "sven.ginka@gmail.com", "Glaskugel Sync Successful" , $emailText );
+  sendMail( "sven.ginka@gmail.com", "Glaskugel Sync Successful" , $emailText, array( ERROR_FILE, LOG_FILE) );
 
 ?>
 
