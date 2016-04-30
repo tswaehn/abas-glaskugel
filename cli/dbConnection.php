@@ -93,7 +93,7 @@
     if (!empty($result)){
       debug('found '.$result->rowCount().' rows' );
     } else {
-      error('result empty');
+      error("dbExecute", 'result empty');
     }
     
     return $result;  
