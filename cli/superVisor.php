@@ -68,7 +68,7 @@
 
     echo $emailText;
     
-    sendMail( "sven.ginka@gmail.com", "Glaskugel <> SuperVisor" , $emailText, array( LOG_FILE, ERROR_FILE, REPORT_FILE, DEBUG_FILE ) );
+    sendMail( $emailNotificationRecipients, "Glaskugel <> SuperVisor" , $emailText, array( LOG_FILE, ERROR_FILE, REPORT_FILE, DEBUG_FILE ) );
     
     if ($canExit){
       break;

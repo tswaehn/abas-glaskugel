@@ -10,4 +10,8 @@
 
   define( "FULL_THUMBNAIL_DAY", 0 ); // sun=0, mo=1, ..., sat=6
 
+  $emailNotificationRecipients= array(
+                 "sven.ginka@gmail.com",
+                 "s.ginka@hseb-dresden.de"
+                );
 ?>

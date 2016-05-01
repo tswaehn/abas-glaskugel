@@ -26,12 +26,12 @@ function sendMail($email, $subject, $text, $attachment=array() ){
   $mail->isHTML(true); 
   
   // add one ore more email addresses
-  if (is_array( $email )){
+  if (is_string( $email )){
+    $mail->addAddress( $email );
+  } else {
     foreach($email as $item ){
       $mail->addAddress( $item );
     }
-  } else {
-    $mail->addAddress( $email );
   }
   
   // add attachements
