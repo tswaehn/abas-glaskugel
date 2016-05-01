@@ -1,0 +1,15 @@
+﻿•OS: Windows 7 64 Bit
+•PHP: 5.5.6
+•XAMPP: 1.8.3 
+•Compiler: MSVC11
+•Architecture: x86
+•ImageMagick: ImageMagick-6.7.7-5-Q16-windows-dll (available here:http://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/binaries/)
+•Imagick DLL: PHP5.5.x version from http://www.peewit.fr/imagick/
+
+
+INSTALL
+-------
+- install ImageMagick into "C:\xampp\ImageMagick-6.7.7-Q16"
+- copy "php_imagick.dll" into "C:\xampp\php\ext"
+- add "extension=php_imagick.dll" into "php.ini"
+- restart APACHE
