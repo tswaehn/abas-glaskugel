@@ -73,7 +73,7 @@
     $emailText.= "<p><p>";
     $emailText.= "please see attached my logfiles or consider to restart syncing.\n";
     $emailText.= "contact r.zaspel@hseb-dresden.de to get the sync back online.\n\n";
-    $emailText.= "Thank you\n-Glaskugel\n"
+    $emailText.= "Thank you\n-Glaskugel\n";
 
     echo $emailText;
     
