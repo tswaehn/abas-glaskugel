@@ -8,7 +8,9 @@
   define( "_REAL_EDP_", 1 );
   define( "DO_IMPORT_FROM_EDP", 1);
 
-  define( "FULL_THUMBNAIL_DAY", 0 ); // sun=0, mo=1, ..., sat=6
+  define( "FULL_THUMBNAIL_DAY", 0 ); // sun=0, mo=1, .., sat=6 ... on this day all thumbnails will be rebuild
+
+  define("POLLING_TIME", 60); // [min] ... superVisor polling time
 
   $emailNotificationRecipients= array(
                  "sven.ginka@gmail.com",

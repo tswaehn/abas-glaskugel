@@ -16,8 +16,7 @@
   define("REPORT_FILE", "./logging/report.log");
   define("DEBUG_FILE", "./logging/debug.log");
 
-  define("POLLING_TIME", 30); // [sec]
-  
+
   date_default_timezone_set('Europe/Berlin');
   
   include( 'config.txt');
@@ -53,26 +52,33 @@
 
     $databaseIsUnlocked= getConfigDb( "dbLink" );
     if (!$databaseIsUnlocked){
-      $text= '<span style="color:red;background-color:#DDDDDD;border:thin solid red;padding:10px;margin:10px;">database is blocked!</span>';
+      $text= '<span style="color:red;background-color:#DDDDDD;border:thin solid red;padding:10px;margin:10px;">database is unexpectedly still blocked!</span>';
     } else {
-      $text= '<span style="color:green;background-color:#DDDDDD;border:thin solid green;padding:10px;margin:10px;">everything is fine - database is unlocked</span>';
+      //$text= '<span style="color:green;background-color:#DDDDDD;border:thin solid green;padding:10px;margin:10px;">everything is fine - database is unlocked</span>';
       $canExit= 1;
     }
     $text.= "\n";
 
-    $emailText= "<h3>Glaskugel SuperVisor</h3>";
+    // do not send an email if everything is fine
+    if ($canExit){
+      break;
+    }
+    
+    $emailText= "<h3>Glaskugel Sync Problem</h3>";
+    $emailText.= "It looks like I need some help.\n";
     $emailText.= "host ".$_SERVER["COMPUTERNAME"]." (".$_SERVER["HLS_IPADDR"].")<br>";
     
     $emailText.= date("r", $startTime). " +". ceil(($endTime-$startTime)/60)."min\n<p><p>";
     $emailText.= $text;
+    $emailText.= "<p><p>";
+    $emailText.= "please see attached my logfiles or consider to restart syncing.\n";
+    $emailText.= "contact r.zaspel@hseb-dresden.de to get the sync back online.\n\n";
+    $emailText.= "Thank you\n-Glaskugel\n"
 
     echo $emailText;
     
     sendMail( $emailNotificationRecipients, "Glaskugel <> SuperVisor" , $emailText, array( LOG_FILE, ERROR_FILE, REPORT_FILE, DEBUG_FILE ) );
     
-    if ($canExit){
-      break;
-    }
   }
   
   
