@@ -70,7 +70,7 @@
   }
   
   lg("preare database started");
-  //prepareDatabase();
+  prepareDatabase();
   lg("prepare databease done");
 
   //

@@ -64,7 +64,7 @@
     $filename='./data/edp-'.preg_replace("/[^A-Za-z0-9\ ]/", "-",$cmdLine).'.dat';
     $filename = preg_replace("/[^A-Za-z0-9\.\/\-]/", " ", $filename);
 
-    debug("using file ".$filename );
+    debug("writing to file ".$filename );
     
     if (_REAL_EDP_ == 1){
       //$table = utf8_encode( $table );
@@ -75,7 +75,7 @@
       shell_exec( "echo ".$cmdLine." > ./EDP/cmd_line.log");
 	  
 	  // the external programm has to convert from UTF8 to ANSI
-      $contents = shell_exec( "cd ./EDP/ && ".$cmdLine );
+      $contents = shell_exec( "cd ./EDP/ && ".$cmdLine ." 2>&1");
 	  
 	  // the return needs to be converted into UTF8
       $contents = utf8_encode( $contents );      

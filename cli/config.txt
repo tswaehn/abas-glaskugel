@@ -13,7 +13,7 @@
   define("POLLING_TIME", 60); // [min] ... superVisor polling time
 
   $emailNotificationRecipients= array(
-                 "sven.ginka@gmail.com",
-                 "s.ginka@hseb-dresden.de"
+                 "s.ginka@hseb-dresden.de",
+				 "r.zaspel@hseb-dresden.de"
                 );
 ?>
