@@ -46,7 +46,7 @@
     }
   }
       
-  function mySearchInTable( $table, $search ){
+  function mySearchInTable( $table, $search, $options ){
     global $pdo;
     
     $searches = preg_split( "/( )/", $search, -1, PREG_SPLIT_NO_EMPTY );
@@ -63,6 +63,15 @@
 	$sql .= ' AND ';
       }
     }
+    
+    // options
+    if (isset($options["searchSparePart"]) && $options["searchSparePart"]==1){
+      $sql.= ' AND '.q("ersatzt"). "='ja' ";
+    }
+    if (isset($options["searchSalesPart"]) && $options["searchSalesPart"]==1){
+      $sql.= ' AND '.q("ycatsale"). "='ja' ";
+    }
+    
     
     //showResultCount($table, $searches, $columns );
     
@@ -91,12 +100,12 @@
   }
 
 
-  function mySearch( $search ){
+  function mySearch( $search, $options ){
       
       $count = 0;
       
       $start=microtime(true);
-      $result = mySearchInTable(DB_ARTICLE, $search );
+      $result = mySearchInTable(DB_ARTICLE, $search, $options );
       $end=microtime(true);
       
       $diff = number_format( $end-$start, 3) ;      
@@ -131,17 +140,28 @@
   // ---
   
   $search = getUrlParam('search');
-  
-
   if ($search ==''){
     $search ='';
   }
-
+  
+  $sparePart= getUrlParam('searchSparePart');
+  if ($sparePart==''){
+    $sparePart= 0;
+  }
+  $salesPart= getUrlParam('searchSalesPart');
+  if ($salesPart==''){
+    $salesPart= 0;
+  }
+  
+  
   $search = preg_replace( ALLOWED_ASCII, " ", $search );
   $search = trim( $search );
   
+  
+  $options= array( "searchSparePart"=>$sparePart, "searchSalesPart"=>$salesPart );
+  
   echo '<div id="searchresult">';
-  mySearch($search);
+  mySearch($search, $options);
   echo '</div>';
   
 

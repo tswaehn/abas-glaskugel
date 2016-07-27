@@ -10,7 +10,7 @@
 
   define( "FULL_THUMBNAIL_DAY", 0 ); // sun=0, mo=1, .., sat=6 ... on this day all thumbnails will be rebuild
 
-  define("POLLING_TIME", 60); // [min] ... superVisor polling time
+  define("POLLING_TIME", 120); // [min] ... superVisor polling time
 
   $emailNotificationRecipients= array(
                  "s.ginka@hseb-dresden.de",

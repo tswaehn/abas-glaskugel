@@ -33,9 +33,12 @@
 		     
 		     "erfass", "stand", "zeichen",
 		     
-		     "bem", "kenn", "bstnr", "vbezbspr", "vkbezbspr", "ftext",
+		     "bem", "kenn", "bstnr", "vkbezbspr", "ftext",
         
-                     "thumbnail"
+                     "thumbnail",
+        
+                     "vkbez", "vbezbspr", "vkbez2", "vbez2", "zoll", "ycatsale", "ersatzt", "verschlt", "mpr", "vpr9", "urland", "urregion"
+        
 		     );
     
     $fieldinfo=array();
@@ -127,11 +130,23 @@
     $fieldinfo["bem"]["type"]=ASCII;     
     $fieldinfo["kenn"]["type"]=ASCII;     
     $fieldinfo["bstnr"]["type"]=ASCII;     
-    $fieldinfo["vbezbspr"]["type"]=ASCII;     
     $fieldinfo["vkbezbspr"]["type"]=ASCII;     
     $fieldinfo["ftext"]["type"]=ASCII;     
     $fieldinfo["thumbnail"]["type"]=ASCII;
 
+    $fieldinfo["vbezbspr"]["type"]=ASCII;     
+    $fieldinfo["vkbez"]["type"]=ASCII;
+    $fieldinfo["vkbez2"]["type"]=ASCII;
+    $fieldinfo["vbez2"]["type"]=ASCII;
+    $fieldinfo["zoll"]["type"]=ASCII;
+    $fieldinfo["ycatsale"]["type"]=ASCII;
+    $fieldinfo["ersatzt"]["type"]=ASCII;
+    $fieldinfo["verschlt"]["type"]=ASCII;
+    $fieldinfo["mpr"]["type"]=ASCII;
+    $fieldinfo["vpr9"]["type"]=ASCII;
+    $fieldinfo["urland"]["type"]=ASCII;
+    $fieldinfo["urregion"]["type"]=ASCII;
+    
     createTable( $table, $new_table_fields, $fieldinfo );
 
     $copy_fields = array( "nummer", "such", "name", "ebez", 
@@ -141,8 +156,9 @@
 		     "ypdf1", "ydxf", "yxls", "ytpdf", "ytlink", "bild", "bbesch", "foto",
 		     "fotoz", "catpics", "catpicsz", "catpiclz", "caturl",
 		     "erfass", "stand","zeichen",
-		     "bem", "kenn", "bstnr", "vbezbspr", "vkbezbspr", "ftext"
+		     "bem", "kenn", "bstnr", "vkbezbspr", "ftext",
 		     
+                     "vbezbspr", "vkbez", "vkbez2", "vbez2", "zoll", "ycatsale", "ersatzt", "verschlt", "mpr", "vpr9", "urland", "urregion"
 		     );
 
     // get all entries which need to be copied

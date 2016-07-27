@@ -11,10 +11,16 @@
     // --- search block
     echo '<div id="searchformfield">';
     $search = getUrlParam('search');
+    $sparePart= getUrlParam('searchSparePart');
+    $salesPart= getUrlParam('searchSalesPart');
+    
     echo '<form action="?action=search" method="POST">
 		    <span style="margin-right:10px">Suchbegriff </span>
 	  <input type="edit" name="search" value="'.$search.'" size="40">
-	  <input type="submit" value="suchen">
+	  <input type="submit" value="suchen"> 
+          <br><br>
+          <input type="checkbox" name="searchSparePart" value="1" '. ($sparePart==1?"checked":"") .'> Ersatzteil 
+          <input type="checkbox" name="searchSalesPart" value="1" '. ($salesPart==1?"checked":"") .'> Vertriebsartikel
 	  </form>';    
     echo "</div>";
 
