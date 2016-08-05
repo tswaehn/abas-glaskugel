@@ -75,11 +75,11 @@
     
 	
     dbCreateTableArticle();
-    //dbCreateProductionList();
-    //dbCreateTableStoragePlaces();
-    //dbCreateDict();
-    //dbCreateOrders();
-    //dbCreateArticleThumbnails();
+    dbCreateProductionList();
+    dbCreateTableStoragePlaces();
+    dbCreateDict();
+    dbCreateOrders();
+    dbCreateArticleThumbnails();
    
   }
  
