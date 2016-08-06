@@ -2,7 +2,7 @@
   
   $scriptStartTime = microtime(true);
   
-  include( './cli/config.txt');
+  include( './cli/config.php');
 
   include('./lib/logging.php');
   include('./lib/browserCheck.php');
@@ -89,6 +89,9 @@
     echo "letzter sync ".getConfigdb("lastSync")."<br>";
    // echo 'Im Internet <a href="http://abas.metagons-software.de" target="_blank" >abas.metagons-software.de</a>';
     browserCheck();
+    
+    echo '<a href="./cli/index.php">cli</a>';
+    
     echo '</div>';
     
   }

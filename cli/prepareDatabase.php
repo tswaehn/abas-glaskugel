@@ -23,6 +23,7 @@
   include('./prepareDatabase/prepareDictionary.php');
   include('./prepareDatabase/prepareOrders.php');
   include('./prepareDatabase/prepareArticleThumbnails.php');
+  include('./prepareDatabase/prepareTags.php');
 
 
   /*
@@ -73,14 +74,16 @@
    */
   function prepareDatabase(){
     
-	
+
     dbCreateTableArticle();
     dbCreateProductionList();
     dbCreateTableStoragePlaces();
     dbCreateDict();
     dbCreateOrders();
     dbCreateArticleThumbnails();
-   
+    
+    dbCreateTags();
+    
   }
  
 

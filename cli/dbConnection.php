@@ -14,6 +14,8 @@
   // table names
   define( "DB_CONFIG", "gk_config" );
   define( "DB_ARTICLE", "gk_article" );
+  define( "DB_ARTICLE_TAGS", "gk_article_tags");
+  define( "DB_ARTICLE_GROUPS", "gk_article_groups");
   define( "DB_PRODUCTION_LIST", "gk_production_list" );
   define( "DB_DICT", "gk_dict");
   define( "DB_DICT_RANK", "gk_dict_rank" );  

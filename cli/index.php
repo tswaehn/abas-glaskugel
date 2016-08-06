@@ -2,7 +2,7 @@
   
   date_default_timezone_set('Europe/Berlin');
   
-  include( 'config.txt');
+  include( 'config.php');
   include( "emailSettings.php");
 
   echo "<pre>";
@@ -11,8 +11,6 @@
   include( 'logging.php');
   include( '../lib/lib.php');
   include( 'dbConnection.php');
-  include( './EDP/EDPDefinition.php');
-  include( './EDP/EDPConsole.php');
   include( 'prepareDatabase.php');
   include( 'smtpMail.php' );
   
@@ -31,10 +29,13 @@
   // 
   lockDb();
 
-  if (defined("DO_IMPORT_FROM_EDP")){
+  if (DO_IMPORT_FROM_EDP > 0){
     // 
     backTrace("EDP import");
     lg("EPD import started");
+    
+    include( './EDP/EDPDefinition.php');
+    include( './EDP/EDPConsole.php');
     
     createEDPini();
 

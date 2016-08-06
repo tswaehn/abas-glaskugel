@@ -19,7 +19,7 @@
 
   date_default_timezone_set('Europe/Berlin');
   
-  include( 'config.txt');
+  include( 'config.php');
   include( "emailSettings.php");
   
   include( 'dbConnection.php');
