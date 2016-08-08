@@ -110,11 +110,31 @@
       
       $diff = number_format( $end-$start, 3) ;      
       
-      
       if (!empty($result)){
 	$count=$result->rowCount();
+      
+        echo "Habe ".$count." Ergebnisse in ".$diff." Sekunden gefunden.";
+      }
+      
+      addClientInfo( $search );
+      addClientInfo("res ".$count." ".$diff );
+      
+      $result_arr= array();
+      if (!empty($result)){
+	$count=$result->rowCount();
+        foreach ($result as $item){
+          $result_arr[]= $item;
+        }
+      }
+      
+      return $result_arr;
+  }
+  
+  function renderSearchResult( $result ){
+    
+      
+      if (!empty($result)){
 
-	echo "found ".$count." results in ".$diff."secs";
 	foreach ($result as $item){
 	
 	  echo '<div id="search_item">';
@@ -131,11 +151,103 @@
 	//echo "empty result";
       }
 
-      addClientInfo( $search );
-      addClientInfo("res ".$count." ".$diff );
-      
   }
   
+  function renderFullTags( $result ){
+
+      if (empty($result)){
+        return;
+      }
+      
+      echo '<script>
+
+          $(document).ready(function() {
+            console.log("start");
+
+            $("#filters").on("click", ".remove_filter", function(event){
+              var item= $(this);
+              var id= $(this).attr("id");
+              
+              console.log("removing "+ name );
+              
+              var ip= $( "[id="+id+"]");
+              ip.remove();
+              item.remove();
+              
+              document.getElementById("search_form").submit();
+
+            });
+
+            $(".filtersX").on("click", function(event){
+              var name= $(this).attr("id");
+              console.log("testing"+ name);
+              
+              $("#filters").append( name );
+              
+              $("<input>").attr({
+                  type: "hidden",
+                  name: "filters[]",
+                  value: name
+              }).appendTo("form");
+
+              document.getElementById("search_form").submit();
+            });
+
+          });
+          
+          
+        </script>';
+      
+      $groups= array();
+      foreach ($result as $item){
+        $group_name= $item["group_name"];
+        $tag_name= $item["tag_name"];
+        $groups[$group_name][]= $tag_name;
+      }
+      
+      $keys= array_keys( $groups );
+      foreach ($keys as $group_name){
+        echo $group_name."<br>";
+          echo "<ul>";
+          foreach( $groups[$group_name] as $tag_name){
+            echo '<li><a id="filter_'.$group_name.'_'.$tag_name.'" class="filtersX" href="#">'.$tag_name.'</a></li>';
+          }
+          echo "</ul>";
+        echo "</li>";
+      }
+        
+  }
+  
+  function renderSearchTags( $result ){
+  
+      if (empty($result)){
+        return;
+      }
+      
+      // get all resulting IDs
+      $article_IDs= array();
+      foreach ($result as $item){
+        $article_id= $item["article_id"];
+        $article_IDs[]= $article_id;
+      }
+      
+      // lookup all suiting tags of articles
+      $search= implode(",", $article_IDs);
+      $sql= "SELECT * FROM `gk_article_tags` WHERE `article_id` IN (".$search.") GROUP BY `tag`";
+      $result = dbExecute( $sql );
+      $tags= array();
+      foreach( $result as $item){
+        $tags[]= $item["tag"];
+      }
+      
+      // lookup suiting full tag info for all tags
+      $search= implode(",", $tags);
+      $sql= "SELECT * FROM `gk_article_groups` WHERE `tag` IN (".$search.")";
+      $result = dbExecute( $sql );
+      
+      renderFullTags( $result );
+    
+  }
   
   // ---
   
@@ -160,10 +272,21 @@
   
   $options= array( "searchSparePart"=>$sparePart, "searchSalesPart"=>$salesPart );
   
-  echo '<div id="searchresult">';
-  mySearch($search, $options);
-  echo '</div>';
-  
+  $searchResult= mySearch($search, $options);
+      
+  echo '<table>';
+  echo '<tr><td>';
+      echo '<div id="search_navi">';
+      renderSearchTags($searchResult);
+      echo '</div>';
 
+  echo '</td><td>';
+      echo '<div id="searchresult">';
+      renderSearchResult($searchResult);
+      echo '</div>';
+      
+  echo '</td></tr>';
+  echo '</table>';
+  
 
 ?>

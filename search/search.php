@@ -5,7 +5,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+  echo '<script>
 
+
+
+      </script>';
   echo '<div id="searchform">';
 
     // --- search block
@@ -14,14 +18,35 @@
     $sparePart= getUrlParam('searchSparePart');
     $salesPart= getUrlParam('searchSalesPart');
     
-    echo '<form action="?action=search" method="POST">
-		    <span style="margin-right:10px">Suchbegriff </span>
+    $filters= getUrlParam('filters');
+    
+    echo '<form id="search_form" action="?action=search" method="POST">
+          <span style="margin-right:10px">Suchbegriff </span>
 	  <input type="edit" name="search" value="'.$search.'" size="40">
-	  <input type="submit" value="suchen"> 
+	  <input type="submit" value="suchen"> ';
+    echo '<p>';
+    
+    
+    /*
           <br><br>
           <input type="checkbox" name="searchSparePart" value="1" '. ($sparePart==1?"checked":"") .'> Ersatzteil 
           <input type="checkbox" name="searchSalesPart" value="1" '. ($salesPart==1?"checked":"") .'> Vertriebsartikel
-	  </form>';    
+      */      
+    
+    // --- 
+    echo '<div id="filters">';
+    if (is_array($filters)){
+      foreach ($filters as $item){
+        $itemArr= explode("_", $item);
+        $dispText= $itemArr[1].":".$itemArr[2];
+        echo ' <span id="'.$item.'" class="remove_filter">['.$dispText.'<a href="#"><img src="./search/cross.png"></a>]</span> ';
+        echo '<input id="'.$item.'" type="text" name="filters[]" value="'.$item.'"> ';
+      }
+    }
+    echo '</div>';
+
+  
+    echo '</form>';    
     echo "</div>";
 
 

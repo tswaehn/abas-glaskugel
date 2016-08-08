@@ -71,7 +71,7 @@
   
     global $scriptStartTime;
 
-    echo "<hr>";
+    echo '<hr style="clear:both;">';
     
 
     

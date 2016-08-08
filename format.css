@@ -91,6 +91,29 @@ a:active {
   max-width:90px;
 }
 
+#search_navi {
+  border:thin solid green;
+  width:150px;
+  min-height:400px;
+  font-size: x-small;
+  
+}
+
+#filters {
+  border:thin solid blue;
+}
+
+#filters .remove_filter {
+  font-size: x-small;
+  margin:10px;
+} 
+
+
+#searchresult {
+  border: thin solid red;
+  width:auto;
+}
+
 #down {
   height:500px;
   margin:50px;

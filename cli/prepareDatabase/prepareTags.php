@@ -62,6 +62,62 @@
     
   }
   
+  /*
+   * go in these steps
+   *   1. get the unique groups that need be associated
+   *   2. insert groups into group table
+   *   3. get the correct tag IDs and tag names
+   *   4. get all articles and attach correct group-tag-id
+   *   5. store into tag table
+   * 
+   */
+  function fill_serviceParts(){
+    
+    // 1. get groups
+    $sql= "SELECT `article_id`,`ersatzt` FROM `gk_article` WHERE 1 GROUP BY `ersatzt`";
+    $result= dbExecute($sql);
+    
+    $dataSet= array();
+    foreach ($result as $item ){
+      $tagName= $item["ersatzt"];
+      $dataSet[]= array( 0, "Ersatzteil", $tagName );
+    }
+    
+    // 2. insert groups into table
+    $fields = array( "tag", "group_name", "tag_name" );
+    insertIntoTable( DB_ARTICLE_GROUPS, $fields, $dataSet );
+    
+    // 3. get correct tag IDs and tag names => create array with TagName=>Tag
+    $result= dbGetFromTable(DB_ARTICLE_GROUPS, array("tag", "tag_name"), "" , 100000 );
+    $tags= array();
+    foreach ($result as $item){
+      $tag= $item["tag"];
+      $tagName= $item["tag_name"];
+      $tags[$tagName]= $tag;
+    }
+    
+    // 4. get all articles and tag them
+    $articleFields = array( "article_id", "ersatzt" );    
+    $result = dbGetFromTable( DB_ARTICLE, $articleFields, "", 100000 );
+    $count = $result->rowCount();
+    // start with empty dataset
+    $dataSet= array();
+    foreach( $result as $item ){
+      
+      $article_id = $item["article_id"];
+      $tag= $tags[ $item["ersatzt"] ];
+      
+      $dataSet[]= array(0, $article_id, $tag );
+      
+    }
+    
+    // 5. finally write each single (str,article_id,frequency)-pair to database (including reference to article)
+    $fields = array( "tid", "article_id", "tag" );
+    insertIntoTable( DB_ARTICLE_TAGS, $fields, $dataSet );
+    
+  }
+  
+  
   function dbCreateTableTags(){
 
     $table = DB_ARTICLE_TAGS;
@@ -123,5 +179,7 @@
    
     // 
     fill_beschaffungsart();   
+    //
+    fill_serviceParts();
    
  }

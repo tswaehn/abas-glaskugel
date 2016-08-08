@@ -8,6 +8,7 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <script src="./lib/sorttable.js"></script>
+<script src="./js/jquery-3.1.0.min.js"></script>
 
 
 <?php include('./lib/main.php'); ?>
@@ -22,9 +23,9 @@
     <?php include('./lib/head.php'); ?>
     
   </div>
-  
+
   <div id="search">
-    <?php include('./lib/search.php'); ?>
+    <?php include('./search/search.php'); ?>
   </div>
 
   <div id="main">
