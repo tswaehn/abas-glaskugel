@@ -72,6 +72,7 @@
 
   function mySearch( $search, $validArticles ){
       
+      global $searchResultText;
       $count = 0;
       
       $start=microtime(true);
@@ -83,7 +84,7 @@
       if (!empty($result)){
 	$count=$result->rowCount();
       
-        echo '<span class="search_report">Habe '.$count.' Ergebnisse in '.$diff.' Sekunden gefunden. </span>';
+        $searchResultText= '<span class="search_report">Habe '.$count.' Ergebnisse in '.$diff.' Sekunden gefunden. </span>';
       }
       
       addClientInfo( $search );
@@ -199,9 +200,9 @@
           echo '<ul class="navi-li">';
           foreach( $groups[$group_name] as $tag_name){
             if (isset($searchFilters[$group_name]) && (in_array( $tag_name, $searchFilters[$group_name]))){
-              echo '<li ><span class="disabled_search ui-button ui-state-disabled">'.$tag_name.'</span></li>';
+              echo '<li ><span class="ui-button ui-state-disabled">'.$tag_name.'</span></li>';
             } else {
-              echo '<li><a id="filter_'.$group_name.'_'.$tag_name.'" class="filtersX enabled_search ui-button" href="#">'.$tag_name.'</a></li>';
+              echo '<li><a id="filter_'.$group_name.'_'.$tag_name.'" class="filtersX ui-button" href="#">'.$tag_name.'</a></li>';
             }
           }
           echo "</ul>";
@@ -262,6 +263,7 @@
 
   echo '</td><td>';
       echo '<div id="searchresult">';
+      echo $searchResultText;
       renderSearchResult($foundArticleIDs);
       echo '</div>';
       

@@ -40,7 +40,7 @@
         
         // render the filter text
         echo ' <span id="'.$item.'" class="remove_filter">['.$dispText.'<a href="#"><img src="./search/cross.png"></a>]</span> ';
-        echo '<input id="'.$item.'" type="text" name="searchFilters[]" value="'.$item.'"> ';
+        echo '<input id="'.$item.'" type="hidden" name="searchFilters[]" value="'.$item.'"> ';
       }
     }
     echo '</div>';
@@ -79,6 +79,7 @@
 	  </form>';    
     echo "</div>";
     
+    echo '<div id="clearfloat"></div>';
   echo '</div>';
 
 
