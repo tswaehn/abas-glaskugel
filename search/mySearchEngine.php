@@ -19,53 +19,34 @@
     return $likeStatement;
   }
   
-  function showResultCount( $table, $searches, $cols ){
-    global $pdo;
-    foreach ($searches as $search){
-      $sql = 'SELECT * FROM '.q($table).' WHERE (';
-      
-      $sql .= createLike($cols, $search);
-      
-      //$sql .= ' );';
-      $sql .= ') GROUP BY ( `nummer` );';
-      
-      try {
-	  lg($sql);
-	  $starttime = microtime(true); 
-	  $result = $pdo->query( $sql);
-	  $endtime = microtime(true); 
-	  $timediff = $endtime-$starttime;
-      } catch (Exception $e) {
-	  lg("search failed");
-	  return;
-      } 
-      lg('exec time is '.($timediff) );      
-      $count = $result->rowCount();
-      
-      print_r($count);
-    }
-  }
-      
-  function mySearchInTable( $table, $search ){
+    
+  function mySearchInArticles( $search, $validArticles ){
     global $pdo;
     
     $searches = preg_split( "/( )/", $search, -1, PREG_SPLIT_NO_EMPTY );
     //print_r($searches);
     
-    $columns = getColumns( $table );
+    $columns = getColumns( DB_ARTICLE );
     
-    $sql = 'SELECT * FROM '.q($table).' WHERE (';
-    
-    $last=end($searches);
+    // define all columns which need to be searched through
+    $whereArr= array();
     foreach ($searches as $search ){
-      $sql .= createLike( $columns, $search);
-      if ($search!=$last){
-	$sql .= ' AND ';
-      }
+      $whereArr[]= createLike( $columns, $search);
     }
+    $where= implode(" AND ", $whereArr);
     
-    //$sql .= ' );';
-    $sql .= ') GROUP BY ( `nummer` ) ORDER BY rank ASC;';
+    // define search restriction
+    if (is_array( $validArticles )){
+      // restrict search on defined articles
+      $valid_article_ids= implode(",", $validArticles);
+      $ext= ' AND (`article_id` IN ('.$valid_article_ids.') )';
+    } else {
+      // no restriction
+      $ext= "";
+    }
+            
+    // finally the query
+    $sql = 'SELECT `article_id` FROM '.q(DB_ARTICLE).' WHERE ('. $where .') '.$ext.' ORDER BY rank ASC;';
     
     try {
 	lg($sql);
@@ -89,12 +70,12 @@
   }
 
 
-  function mySearch( $search ){
+  function mySearch( $search, $validArticles ){
       
       $count = 0;
       
       $start=microtime(true);
-      $result = mySearchInTable(DB_ARTICLE, $search );
+      $result = mySearchInArticles( $search, $validArticles );
       $end=microtime(true);
       
       $diff = number_format( $end-$start, 3) ;      
@@ -112,15 +93,27 @@
       if (!empty($result)){
 	$count=$result->rowCount();
         foreach ($result as $item){
-          $result_arr[]= $item;
+          $result_arr[]= $item["article_id"];
         }
       }
       
       return $result_arr;
   }
   
-  function renderSearchResult( $result ){
-    
+  function renderSearchResult( $foundArticleIDs ){
+
+      // define search restriction
+      if (!is_array( $foundArticleIDs )){
+        return;
+      }
+      
+      // prepare the article_id
+      $article_ids= implode(",", $foundArticleIDs);
+
+      // query for the full articles
+      $sql = 'SELECT * FROM '.q(DB_ARTICLE).' WHERE (`article_id` IN ('.$article_ids.')) ORDER BY rank ASC;';
+      $result= dbExecute($sql);
+      
       
       if (!empty($result)){
 
@@ -202,13 +195,13 @@
       // print groups and tags
       $keys= array_keys( $groups );
       foreach ($keys as $group_name){
-        echo $group_name."<br>";
-          echo "<ul>";
+        echo "<br>".$group_name."<br>";
+          echo '<ul class="navi-li">';
           foreach( $groups[$group_name] as $tag_name){
             if (isset($searchFilters[$group_name]) && (in_array( $tag_name, $searchFilters[$group_name]))){
-              echo '<li><span class="disabled_search">'.$tag_name.'</span></li>';
+              echo '<li ><span class="disabled_search ui-button ui-state-disabled">'.$tag_name.'</span></li>';
             } else {
-              echo '<li><a id="filter_'.$group_name.'_'.$tag_name.'" class="filtersX enabled_search" href="#">'.$tag_name.'</a></li>';
+              echo '<li><a id="filter_'.$group_name.'_'.$tag_name.'" class="filtersX enabled_search ui-button" href="#">'.$tag_name.'</a></li>';
             }
           }
           echo "</ul>";
@@ -217,17 +210,10 @@
         
   }
   
-  function renderSearchTags( $result ){
+  function renderSearchTags( $article_IDs ){
   
-      if (empty($result)){
+      if (empty($article_IDs)){
         return;
-      }
-      
-      // get all resulting IDs
-      $article_IDs= array();
-      foreach ($result as $item){
-        $article_id= $item["article_id"];
-        $article_IDs[]= $article_id;
       }
       
       // lookup all suiting tags of articles
@@ -248,30 +234,6 @@
     
   }
   
-  function filterResultByTags( $result ){
-
-    if (empty($result)){
-      return;
-    }
-    
-    // load all existing/already enabled filters
-    global $searchFilters;
-    
-    $tagIDs= getAllTagIDs( $searchFilters );
-    
-    $validArticles= getAllTagFilteredArticles( $tagIDs );
-
-    if (is_array($validArticles)){
-      foreach ($result as $key=>$item){
-        if (!in_array( $item["article_id"], $validArticles )){
-          unset( $result[$key]);
-        }
-      }
-    }
-    
-    return $result;
-  }
-  
   // ---
   
   $search = getUrlParam('search');
@@ -283,21 +245,24 @@
   $search = trim( $search );
   
   
-  $searchResult= mySearch($search);
+  // apply all filter tags
+  $searchFilters;
+  $tagIDs= getAllTagIDs( $searchFilters );
+  $validArticles= getAllTagFilteredArticles( $tagIDs );  
   
+  // actually search for the article_ids
+  $foundArticleIDs= mySearch($search, $validArticles);
   
-  $searchResult= filterResultByTags( $searchResult );
-  echo '<span class="search_report">Nach Anwendung der Filter Tags sind es '.count($searchResult).' Ergebnisse </span><br>';
   
   echo '<table>';
   echo '<tr><td>';
       echo '<div id="search_navi">';
-      renderSearchTags($searchResult);
+      renderSearchTags($foundArticleIDs);
       echo '</div>';
 
   echo '</td><td>';
       echo '<div id="searchresult">';
-      renderSearchResult($searchResult);
+      renderSearchResult($foundArticleIDs);
       echo '</div>';
       
   echo '</td></tr>';

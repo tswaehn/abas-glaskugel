@@ -5,11 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-  echo '<script>
 
-
-
-      </script>';
   echo '<div id="searchform">';
 
     // --- search block
@@ -79,7 +75,7 @@
     
     echo '<form action="?action=article" method="POST">
 	    ABAS Nr.: <input type="edit" name="search_abas_nr" value="'.$abas_nr.'">
-	    <input type="submit" value="öffnen">
+	    <input type="submit" value="öffnen" class="ui-button ui-widget ui-corner-all" >
 	  </form>';    
     echo "</div>";
     

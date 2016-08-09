@@ -104,22 +104,25 @@ a:active {
 }
 
 .enabled_search {
-  display:block;
-  width:auto;
-  padding:2px;
+  //display:block;
+  //width:auto;
+  //padding:2px;
 }
 
 .enabled_search:hover {
   //background-color:green;
-  display:block;
-  width:auto;
+  //display:block;
+  //width:auto;
 }
 
-#filters {
-  border:thin solid blue;
+.navi-li {
+  list-style-type: none;
+  padding:0px;
+  margin:0px;
+  padding-left:5px;
 }
 
-#filters .remove_filter {
+#div_search_filters .remove_filter {
   font-size: x-small;
   margin:10px;
 } 
