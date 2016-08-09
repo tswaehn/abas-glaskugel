@@ -1,5 +1,71 @@
 <?php
-
+  
+  $dict_ignore= array( 
+            "00", "schillhahn", "hseb", "0", "1", "sinkwitz", "2", "01", "3", "mit", 
+            "hebenstreit", "4", "für", "5", "zeichnung", "02", "rs", "6", "s", "8", "10", "sonder", "zimmer", "ohne", "a2",
+            "version", "7", "in", "m", "flon", "9", "f", "und", "03", "d", "niedballa", "hseb01", "oz", "kauf", "r",
+            "voigt", "farnell", "raue", "kleisz", "metrofunk", "vk", "lang", "12", "20", "zaspel", "dell", "äz0",
+            "srocka", "04", "15", "bearb", "30", "äz01", "zeiss", "igus", "dsub", "rj45", "eis", "ring", "bis",
+            "änd", "v2", "naumann", "für", "äz02", "typ", "alt", "2009", "AEZ00", "lapp", "nr.", "neu",
+            "äz", "bearb.", "dresden", "ab", "achtung", "möglich", "universal", "material", "schroff",
+            "gesamt", "allgemein", "kalkulation", "neuem"
+            
+      
+  );
+  
+  // unklar
+  /*
+   * zu 6kt shr led pc aus 4.015000 pl li power rechts front 24 links light re uni hr hf whm us hz may snr gross
+   * 
+   * mc1.5
+   */
+  $synonyme= array(
+      "schwarz"=> array("schwarz", "sw"),
+      "rot"=> array("rot", "rt"),
+      "orange"=> array("orange", "or"),
+      "gelb"=> array("gelb", "ge"),
+      "grün" => array("grün", "gr", "gruen"),
+      "buchse"=> array("buchse", "bu"),
+      "stecker"=> array("stecker", "st"),
+      "schalter"=> array("schalter", "switch"),
+      "braun"=> array("braun", "bn"),
+      "blau"=> array("blau", "bl"),
+      "schraube"=> array("schraube", "innensechskant", "zylinderschraube"),
+      "winkel"=> array("halter", "winkel"),
+      "leiterplatte"=> array("leiterplatte", "lp", "board", "if", "interface"),
+      "elektro"=> array("elektro", "elt"),
+      "aluprofil"=> array("profil", "40x40", "30x30", "20x20"),
+      "führung"=> array("führung", "fuehrung"),
+      "rm381"=> array("rm381", "3.81"),
+      "5m" => array("5m", "5000mm"),
+      "3m" => array("3m", "3000mm"),
+      "2m" => array("2m", "2000mm"),
+      "1.8m" => array("1.8m"),
+      "kabel" => array("kabel", "cable", "schaltgeräteleitung"),
+      "awg"=> array("2xawg18"),
+      "netzteil" => array("netzteil"),
+      "set"=> array("set", "kit"),
+      "platte"=> array("platte", "grundplatte", "platte2"),
+      "gehäuse"=> array("gehäuse", "gehaeuse"),
+      "dsub"=> array("dsub", "hd", "dsub15" ),
+      "kamera"=> array("kamera", "camera"),
+      "aderend"=> array("aderend", "löt", "crimp"),
+      "klemme"=> array("klemme", "kl"),
+      "modul"=> array("modul", "module"),
+      "objektiv"=> array("objektiv", "objective", "obj"),
+      "reflektor"=> array("reflektor", "reflector", "refl"),
+      "dunkelfeld"=> array("dunkelfeld", "df"),
+      "lampe"=> array("lampe", "lamp"),
+      "backside"=> array("backside", "bs"),
+      "bolzen"=> array("bolzen", "abstandsbolzen" ),
+      "endeffektor"=> array("endeffektor", "eef"),
+      "m4"=> array("m4", "m4x8"),
+      "blech"=> array("blech", "blech3"),
+      "groß"=> array("groß", "gross")
+      
+      
+  );
+  
   function dbCreateTableDict(){
     
     $table = DB_DICT;
@@ -138,7 +204,7 @@
     dbCreateTableDict();
     
     //$fields = array( "article_id", "nummer", "such", "name", "ebez", "bsart", "ynlief","zeichn","lief","lief2","yersteller","yzeissnr"  );
-    $articleFields = array( "article_id", "nummer", "such", "name", "ebez", "bsart", "ynlief","zeichn","yersteller","yzeissnr"  );    
+    $articleFields = array( "article_id", "nummer", "such", "name", "ebez", "ynlief","zeichn","yersteller","yzeissnr"  );    
     
     $result = dbGetFromTable( DB_ARTICLE, $articleFields, "", 100000 );
 

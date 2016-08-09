@@ -6,7 +6,25 @@
  * and open the template in the editor.
  */
 
-
+  $superSearchTags= array(  
+      "bg", "kabel", "schwarz", "steuerkabel", "ul", "rohs","rk", "profil", 
+      "natur", "zuschnitt", "blech", "platte", "stecker", "buchse", "winkel",
+      "phoenix", "sensor", "kaufkabel", "adapter", "braun", "blau", "schraube",
+      "grau", "netzkabel", "odin", "leiterplatte", "controller", "rolle", "aluprofil",
+      "kamera", "aderend", "gerade", "motor", "2000", "1000", "500", "301", "300", "200", "100", "1mm", "300v", "90", "6mm", "axiospect", "axiotron",
+      "albatros", "patchkabel", "gestell", "haube", "netzteil", "komplett", "dedo", "filter",
+      "pvc", "kabelsatz", "wafer", "set", "deckel", "schild", "stage", "usb", "lpm", "din912", 
+      "edelstahl", "scheibe", "gehäuse", "rund", "objektiv", "abdeckung", "dc","bedienpult", "endeffektor",
+      "kassette", "linse", "mini", "dunkelfeld", "gewindestift", "oben", "schleuse", "monitor", "alu", "pa",
+      "spiegel", "kunststoff", "lampe", "mima", "auflage", "dimmbox", "hub", "epi", "backside", "klotz",
+      "rack", "blu", "schlauch", "emo", "klemme", "lochblech", "bolzen", "selbstklebend", "aufnahme", "tragschiene",
+      "target", "stange", "zylinderstift", "bnc", "niro", "reflektor", "apex", "bearbeitet", "lim", "eslon",
+      "anbau", "führung", "steckerplatte", "lic", "rechte", "träger", "streuscheibe", "hülse","ungelocht",
+      "flach", "ebene", "einsatz", "ns3515", "basisplatte", "glas", "kappe", "labmic","transportsicherung",
+      "dichtung", "fixierung", "verpackung", "groß", "holzkiste", "auflagebolzen", "rg174",
+      "m5", "m3", "m4"
+      
+      );
   /*
    * go in these steps
    *   1. get the unique groups that need be associated
