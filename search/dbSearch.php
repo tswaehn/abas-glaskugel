@@ -159,7 +159,52 @@
   }
 
 
-
-
+  function getAllTagIDs( $searchFilters ){
+    
+    if (!is_array($searchFilters)){
+      return;
+    }
+    
+    $searchArr= array();
+    foreach ($searchFilters as $group_name=>$item){
+      foreach ($item as $tag_name){
+        $searchArr[]= "(`group_name`='".$group_name."' AND `tag_name`='".$tag_name."')";
+      }
+    }
+    $search= implode(" OR ", $searchArr);
+    $sql= "SELECT * FROM `gk_article_groups` WHERE ".$search.";";
+    $result = dbExecute( $sql );
+    
+    $tagIDs= array();
+    foreach( $result as $item ){
+      $tagIDs[]= $item["tag"];
+    }
+    
+    return $tagIDs;
+  }
+  
+  function getAllTagFilteredArticles( $tagIDs ){
+    
+    if (!is_array($tagIDs)){
+      return;
+    }
+    
+    // get all articles that have at least one of the tags
+    $search= implode(",", $tagIDs);
+    //$sql= "SELECT * FROM `gk_article_tags` WHERE `tag` IN (".$search."); ";
+    //$sql= "SELECT *,count(*) as CNT FROM `gk_article_tags` WHERE `tag` IN (".$search.") GROUP BY `article_id` ORDER BY `CNT` DESC"; 
+    $sql= "SELECT * FROM (SELECT *,count(*) as CNT FROM `gk_article_tags` WHERE `tag` IN (".$search.") GROUP BY `article_id` ORDER BY `CNT` DESC) AS T1 WHERE T1.CNT=".count($tagIDs);
+    $result = dbExecute( $sql );
+    
+    // filter these articles that have ALL tags at the same time applied
+    
+    $validArticleIds= array();
+    foreach( $result as $item ){
+      $validArticleIds[]= $item["article_id"];
+    }
+    
+    return $validArticleIds;
+    
+  }
 
 ?>

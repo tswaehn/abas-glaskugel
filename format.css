@@ -99,6 +99,22 @@ a:active {
   
 }
 
+.disabled_search {
+  color:gray;
+}
+
+.enabled_search {
+  display:block;
+  width:auto;
+  padding:2px;
+}
+
+.enabled_search:hover {
+  //background-color:green;
+  display:block;
+  width:auto;
+}
+
 #filters {
   border:thin solid blue;
 }
@@ -112,6 +128,10 @@ a:active {
 #searchresult {
   border: thin solid red;
   width:auto;
+}
+
+.search_report {
+  font-size:small;
 }
 
 #down {

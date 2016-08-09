@@ -15,10 +15,7 @@
     // --- search block
     echo '<div id="searchformfield">';
     $search = getUrlParam('search');
-    $sparePart= getUrlParam('searchSparePart');
-    $salesPart= getUrlParam('searchSalesPart');
-    
-    $filters= getUrlParam('filters');
+    $searchFilters= getUrlParam('searchFilters');
     
     echo '<form id="search_form" action="?action=search" method="POST">
           <span style="margin-right:10px">Suchbegriff </span>
@@ -27,20 +24,27 @@
     echo '<p>';
     
     
-    /*
-          <br><br>
-          <input type="checkbox" name="searchSparePart" value="1" '. ($sparePart==1?"checked":"") .'> Ersatzteil 
-          <input type="checkbox" name="searchSalesPart" value="1" '. ($salesPart==1?"checked":"") .'> Vertriebsartikel
-      */      
     
     // --- 
-    echo '<div id="filters">';
-    if (is_array($filters)){
-      foreach ($filters as $item){
+    echo '<div id="div_search_filters">';
+    if (is_array($searchFilters)){
+      // check if there is something to do for filters
+      $temp= $searchFilters;
+      $searchFilters= array();
+      // go through all items
+      foreach ($temp as $item){
+        // filters come like "filter_Ersatzteil_ja" so need to cut them into pieces
         $itemArr= explode("_", $item);
+        
+        // add filter
+        $searchFilters[$itemArr[1]][]= $itemArr[2];
+        
+        // create display text
         $dispText= $itemArr[1].":".$itemArr[2];
+        
+        // render the filter text
         echo ' <span id="'.$item.'" class="remove_filter">['.$dispText.'<a href="#"><img src="./search/cross.png"></a>]</span> ';
-        echo '<input id="'.$item.'" type="text" name="filters[]" value="'.$item.'"> ';
+        echo '<input id="'.$item.'" type="text" name="searchFilters[]" value="'.$item.'"> ';
       }
     }
     echo '</div>';

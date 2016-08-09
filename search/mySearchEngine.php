@@ -46,7 +46,7 @@
     }
   }
       
-  function mySearchInTable( $table, $search, $options ){
+  function mySearchInTable( $table, $search ){
     global $pdo;
     
     $searches = preg_split( "/( )/", $search, -1, PREG_SPLIT_NO_EMPTY );
@@ -63,17 +63,6 @@
 	$sql .= ' AND ';
       }
     }
-    
-    // options
-    if (isset($options["searchSparePart"]) && $options["searchSparePart"]==1){
-      $sql.= ' AND '.q("ersatzt"). "='ja' ";
-    }
-    if (isset($options["searchSalesPart"]) && $options["searchSalesPart"]==1){
-      $sql.= ' AND '.q("ycatsale"). "='ja' ";
-    }
-    
-    
-    //showResultCount($table, $searches, $columns );
     
     //$sql .= ' );';
     $sql .= ') GROUP BY ( `nummer` ) ORDER BY rank ASC;';
@@ -100,12 +89,12 @@
   }
 
 
-  function mySearch( $search, $options ){
+  function mySearch( $search ){
       
       $count = 0;
       
       $start=microtime(true);
-      $result = mySearchInTable(DB_ARTICLE, $search, $options );
+      $result = mySearchInTable(DB_ARTICLE, $search );
       $end=microtime(true);
       
       $diff = number_format( $end-$start, 3) ;      
@@ -113,7 +102,7 @@
       if (!empty($result)){
 	$count=$result->rowCount();
       
-        echo "Habe ".$count." Ergebnisse in ".$diff." Sekunden gefunden.";
+        echo '<span class="search_report">Habe '.$count.' Ergebnisse in '.$diff.' Sekunden gefunden. </span>';
       }
       
       addClientInfo( $search );
@@ -164,7 +153,7 @@
           $(document).ready(function() {
             console.log("start");
 
-            $("#filters").on("click", ".remove_filter", function(event){
+            $("#div_search_filters").on("click", ".remove_filter", function(event){
               var item= $(this);
               var id= $(this).attr("id");
               
@@ -186,7 +175,7 @@
               
               $("<input>").attr({
                   type: "hidden",
-                  name: "filters[]",
+                  name: "searchFilters[]",
                   value: name
               }).appendTo("form");
 
@@ -198,19 +187,29 @@
           
         </script>';
       
+  
+      // prepare all groups with tag names
       $groups= array();
       foreach ($result as $item){
         $group_name= $item["group_name"];
         $tag_name= $item["tag_name"];
         $groups[$group_name][]= $tag_name;
       }
+
+      // load all existing/already enabled filters
+      global $searchFilters;
       
+      // print groups and tags
       $keys= array_keys( $groups );
       foreach ($keys as $group_name){
         echo $group_name."<br>";
           echo "<ul>";
           foreach( $groups[$group_name] as $tag_name){
-            echo '<li><a id="filter_'.$group_name.'_'.$tag_name.'" class="filtersX" href="#">'.$tag_name.'</a></li>';
+            if (isset($searchFilters[$group_name]) && (in_array( $tag_name, $searchFilters[$group_name]))){
+              echo '<li><span class="disabled_search">'.$tag_name.'</span></li>';
+            } else {
+              echo '<li><a id="filter_'.$group_name.'_'.$tag_name.'" class="filtersX enabled_search" href="#">'.$tag_name.'</a></li>';
+            }
           }
           echo "</ul>";
         echo "</li>";
@@ -249,6 +248,30 @@
     
   }
   
+  function filterResultByTags( $result ){
+
+    if (empty($result)){
+      return;
+    }
+    
+    // load all existing/already enabled filters
+    global $searchFilters;
+    
+    $tagIDs= getAllTagIDs( $searchFilters );
+    
+    $validArticles= getAllTagFilteredArticles( $tagIDs );
+
+    if (is_array($validArticles)){
+      foreach ($result as $key=>$item){
+        if (!in_array( $item["article_id"], $validArticles )){
+          unset( $result[$key]);
+        }
+      }
+    }
+    
+    return $result;
+  }
+  
   // ---
   
   $search = getUrlParam('search');
@@ -256,24 +279,16 @@
     $search ='';
   }
   
-  $sparePart= getUrlParam('searchSparePart');
-  if ($sparePart==''){
-    $sparePart= 0;
-  }
-  $salesPart= getUrlParam('searchSalesPart');
-  if ($salesPart==''){
-    $salesPart= 0;
-  }
-  
-  
   $search = preg_replace( ALLOWED_ASCII, " ", $search );
   $search = trim( $search );
   
   
-  $options= array( "searchSparePart"=>$sparePart, "searchSalesPart"=>$salesPart );
+  $searchResult= mySearch($search);
   
-  $searchResult= mySearch($search, $options);
-      
+  
+  $searchResult= filterResultByTags( $searchResult );
+  echo '<span class="search_report">Nach Anwendung der Filter Tags sind es '.count($searchResult).' Ergebnisse </span><br>';
+  
   echo '<table>';
   echo '<tr><td>';
       echo '<div id="search_navi">';
