@@ -90,7 +90,7 @@
    // echo 'Im Internet <a href="http://abas.metagons-software.de" target="_blank" >abas.metagons-software.de</a>';
     browserCheck();
     
-    echo '<a href="./cli/index.php">cli</a>';
+    //echo '<a href="./cli/index.php">cli</a>';
     
     echo '</div>';
     

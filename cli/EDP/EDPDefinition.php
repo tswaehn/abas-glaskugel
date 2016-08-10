@@ -174,6 +174,15 @@ maxdatasize=100000
 byrows=0
 sortasc=1
 search-and=1
+
+[Lieferant:Lieferant]
+fieldlist=id,nummer,such,name,ans
+sortby=nummer
+maxdatasize=100000
+byrows=0
+sortasc=1
+search-and=1
+
 ';
   
   function createEDPini(){
@@ -376,6 +385,12 @@ search-and=1
   $einkauf_rahmanauftrag = new EDPImport( "Einkauf:Rahmanauftrag" );
   $einkauf_rahmanauftrag ->addSearch("id=");
   
+  // -----------------------------------------------------------------
+  //  
+  
+  $lieferant = new EDPImport( "Lieferant:Lieferant" );
+  $lieferant ->addSearch("id=");
+
   
   function getEDPDefinition(){
     
@@ -396,6 +411,7 @@ search-and=1
         global $lager_lagergruppeneigenschaft;
         global $einkauf_offener_posten;
         global $einkauf_rahmanauftrag;
+        global $lieferant;
         
     $import = array(
             
@@ -410,8 +426,9 @@ search-and=1
             $lplatz_lagerplatzkopf,
           
             // order information
-            $einkauf_bestellung
+            $einkauf_bestellung,
             
+            $lieferant
         /*
             $einkauf,
        //einkauf_fertigungsvorschlag
