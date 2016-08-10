@@ -9,6 +9,33 @@
   
   }
   
+  function renderCaption( $article ){
+    $such= $article["such"];
+    $salesNameDE= $article["vkbez"];
+    $salesLongNameDE= $article["vbezbspr"];
+    $salesNameEN= $article["vkbez2"];
+    $salesLongNameEN= $article["vbez2"];
+    
+    $buyInName= $article["ebez"];
+    
+    if (!empty($salesNameEN)){
+      return $salesNameEN;
+    }
+    if (!empty($salesLongNameEN)){
+      return $salesLongNameEN;
+    }
+    
+    if (!empty($salesNameDE)){
+      return $salesNameDE;
+    }
+    if ((!empty($salesLongNameDE)) && ($buyInName != $salesLongNameDE)){
+      return $salesLongNameDE;
+    }
+    
+    return $such;
+  }
+  
+  
   function renderKennzeichen( $kenn ){
     $str = "";
     
@@ -45,10 +72,10 @@
     $name= explode( "@@", $article["name"]);
     $name= $name[0];
     
-	$strings = array( $name, $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
+	$strings = array( '['.strtolower($article["such"]).']', $name, $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
 	
     $text = '<span id="abas_nr"><a href="'.$link.'">'.$article["nummer"].'</a></span>';
-    $text .= ' <span id="such">'.$article["such"].'</span>';
+    $text .= ' <span id="such">'.renderCaption($article).'</span>';
     $text .= ' <span id="desc">';
 	$text .=  implode( $strings, " ");
 	$text .= ' '.renderKennzeichen( $article["kenn"] );

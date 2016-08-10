@@ -16,6 +16,14 @@ offene Punkte
   - import von arbeitsgängen
   - import von interner fertigung aus "Betr-Auftrag:Betriebsaufträge"
 
+2016 aug
+  - anstelle Artikelbezeichnung die Verkaufsbezeichnung, wenn vorhanden
+    - Bezeichnung
+    - Verkauf deutsch
+    - Verkauf englisch
+  - thumbnails
+  - search tags
+
 2015 feb.?? - v0.2.5
   - darstellung von bestellinformationen
   - im kopf wird "suchen" und "artikel" gleichzeitig und immer angezeigt
