@@ -75,7 +75,7 @@
 	$strings = array( '['.strtolower($article["such"]).']', $name, $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
 	
     $text = '<span id="abas_nr"><a href="'.$link.'">'.$article["nummer"].'</a></span>';
-    $text .= ' <span id="such">'.renderCaption($article).'</span>';
+    $text .= ' <span id="caption_L">'.renderCaption($article).'</span>';
     $text .= ' <span id="desc">';
 	$text .=  implode( $strings, " ");
 	$text .= ' '.renderKennzeichen( $article["kenn"] );
