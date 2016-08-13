@@ -147,6 +147,17 @@ hr {
   color:grey;
 }
 
+.list  {
+  list-style-type: none;
+}
+
+.Collapsable {
+  padding-left:20px;
+}
+.NotCollapsable {
+  color:rgb(99,99,99);
+  padding-left:38px;
+}
 
 input[type=text] {
     padding: 7px 7px;
