@@ -15,7 +15,7 @@
     
     echo '<form id="search_form" action="?action=search" method="POST">
           <span style="margin-right:10px">Suchbegriff </span>
-	  <input type="edit" name="search" value="'.$search.'" size="40">
+	  <input type="text" name="search" value="'.$search.'" size="40">
 	  <input type="submit" value="suchen"> ';
     echo '<p>';
     
@@ -74,7 +74,7 @@
     }
     
     echo '<form action="?action=article" method="POST">
-	    ABAS Nr.: <input type="edit" name="search_abas_nr" value="'.$abas_nr.'">
+	    ABAS Nr.: <input type="text" name="search_abas_nr" value="'.$abas_nr.'">
 	    <input type="submit" value="öffnen" class="ui-button ui-widget ui-corner-all" >
 	  </form>';    
     echo "</div>";

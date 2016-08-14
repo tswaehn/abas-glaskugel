@@ -25,7 +25,14 @@ a:active {
     color:blue; text-decoration:none; 
     }
 
-
+hr {
+  border: none;
+  background-color:gray;
+  height:1px;
+  margin-top:20px;
+  margin-bottom: 5px;
+    }
+    
 #caption {
   font-weight:bold;
   font-size:small;
@@ -51,6 +58,8 @@ a:active {
   margin:0px;
   padding:10px;
   height:30px;
+  
+  border-radius: 4px;
 }
 
 #title {
@@ -93,6 +102,7 @@ a:active {
   padding:10px; 
   margin:10px;
   min-height: 60px;
+  border-radius: 4px;
 }
 
 #search_item img {
@@ -142,4 +152,25 @@ a:active {
 #footer {
   font-size:small;
   color:grey;
+}
+
+.list  {
+  list-style-type: none;
+}
+
+.Collapsable {
+  padding-left:20px;
+}
+.NotCollapsable {
+  color:rgb(99,99,99);
+  padding-left:38px;
+}
+
+input[type=text] {
+    padding: 7px 7px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

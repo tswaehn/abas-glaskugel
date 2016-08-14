@@ -14,7 +14,7 @@ table.sortable thead {
     padding:5px;
     margin:5px; 
     text-align:center;
-    background-color:#f2f2f2;  
+    background-color:#d2d2d2;  
 }  
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
     content: " \25B4\25BE" 

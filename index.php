@@ -3,7 +3,6 @@
   
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   
-  <link rel="stylesheet" type="text/css" href="format.css">
   <link rel="stylesheet" type="text/css" href="./article/article.css">
   <link rel="stylesheet" type="text/css" href="./stats/stats.css">
   <link rel="stylesheet" type="text/css" href="./lib/sorttable.css">
@@ -19,7 +18,7 @@
     $( "input[type=submit], button" ).button();
   } );
   </script>
-  
+  <link rel="stylesheet" type="text/css" href="format.css">  
   
 <?php include('./lib/main.php'); ?>
 
