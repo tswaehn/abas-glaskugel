@@ -96,7 +96,7 @@
   $emailText.= file_get_contents( REPORT_FILE );
   $emailText.= '</pre>';
   $emailText.= "<br>thats all for now. see you tomorrow.<br>bye<br>";
-  sendMail( $emailNotificationRecipients, "Glaskugel Sync Successful" , $emailText, array( ERROR_FILE, LOG_FILE) );
+  sendMail( $emailNotificationRecipients, "Glaskugel Sync Successful" , $emailText, array( ERROR_FILE ) );
 
 ?>
 
