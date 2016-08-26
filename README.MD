@@ -23,6 +23,9 @@ offene Punkte
     - Verkauf englisch
   - thumbnails
   - search tags
+  - reduzieren des standard logs
+  - zeilenendezeichen vom log
+  - reduzieren der thumbnail erzeugung
 
 2015 feb.?? - v0.2.5
   - darstellung von bestellinformationen

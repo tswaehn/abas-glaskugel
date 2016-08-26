@@ -11,6 +11,8 @@ define("ERROR_FILE", "./logging/errors.log");
 define("REPORT_FILE", "./logging/report.log");
 define("DEBUG_FILE", "./logging/debug.log");
 
+define("LE", "\r\n" );
+
   // global storage for back trace
   $errorBackTrace= "";
   
@@ -25,18 +27,18 @@ function initLogging(){
 }
   
 function logInit(){
-  file_put_contents( LOG_FILE, "\n---".date("r")."\n" );
+  file_put_contents( LOG_FILE, LE."---".date("r"). LE );
 }
 function errorInit(){
-  file_put_contents( ERROR_FILE, "\n---".date("r")."\n" );
+  file_put_contents( ERROR_FILE, LE."---".date("r").LE );
 }
 
 function reportInit(){
-  file_put_contents( REPORT_FILE, date("r")."\n" );
+  file_put_contents( REPORT_FILE, date("r").LE );
 }
 
 function debugInit(){
-  file_put_contents( DEBUG_FILE, "\n---".date("r")."\n" );
+  file_put_contents( DEBUG_FILE, LE."---".date("r").LE );
 }
 
 
@@ -53,7 +55,7 @@ function backTrace( $text ){
 }
 
 function lg( $text ){
-  $text .= "\n";
+  $text .= LE;
   
   echo $text;
   
@@ -63,8 +65,8 @@ function lg( $text ){
 function error( $function, $message ){
   global $errorBackTrace;
   
-  $line= $errorBackTrace."\n";
-  $line.= $function.">".$message."\n";
+  $line= $errorBackTrace.LE;
+  $line.= $function.">".$message.LE;
   
   lg($line);
   file_put_contents( ERROR_FILE, $line, FILE_APPEND );
@@ -73,13 +75,13 @@ function error( $function, $message ){
 
 function report( $text ){
   
-  $text.= "\n";
+  $text.= LE;
   lg($text);
   file_put_contents( REPORT_FILE, $text, FILE_APPEND );
 }
 
 function debug( $text ){
   
-  $text.= "\n";
+  $text.= LE;
   file_put_contents( DEBUG_FILE, $text, FILE_APPEND );
 }

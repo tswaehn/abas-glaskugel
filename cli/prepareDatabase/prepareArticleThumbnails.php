@@ -23,7 +23,7 @@ define ("CACHE_FOLDER", "../article/cache/");
   
   // media of first choice that is usable as thumbnail
   $mediaThumbnail = array( "png", "jpg", "jpeg", "gif", "tif", "pdf" );
-  
+    
   $failedMediaLinks= 0;
   $cachedMediaToday= 0;
   $articlesWithoutThumbnails= 0;
@@ -54,7 +54,7 @@ define ("CACHE_FOLDER", "../article/cache/");
       }
       
       // get the value
-      $filename = $article[$field];
+      $filename = strtolower( $article[$field] );
       
       // check the value against our ignore list
       $ignore=0;
@@ -70,9 +70,9 @@ define ("CACHE_FOLDER", "../article/cache/");
       }
 
       // replace mapped drive by unc
-      $filename=str_ireplace("W:\\", "\\\\192.168.0.241\\Daten\\", $filename);
-      $filename=str_ireplace("O:\\", "\\\\192.168.0.6\\Daten\\", $filename);
-      $filename=str_ireplace("T:\\", "\\\\192.168.0.252\\HSEB-temp\\", $filename);
+      $filename=str_ireplace("w:\\", "\\\\192.168.0.241\\Daten\\", $filename);
+      $filename=str_ireplace("o:\\", "\\\\192.168.0.6\\Daten\\", $filename);
+      $filename=str_ireplace("t:\\", "\\\\192.168.0.252\\HSEB-temp\\", $filename);
       
       // double check if the file or folder really exists
       // php file access is always ISO-8859-1 
@@ -115,7 +115,7 @@ define ("CACHE_FOLDER", "../article/cache/");
    */
   function dir_contents_recursive($dir, &$result=array(), &$fileCount ) {
 	  
-	  file_put_contents( "dir.log", $dir."\n", FILE_APPEND );
+	  //file_put_contents( "dir.log", $dir."\n", FILE_APPEND );
 	  if (!file_exists( $dir )){
 		error( "dir_contents_recursive()", "directory does not exist ".$dir );
 		return $result;
@@ -127,7 +127,7 @@ define ("CACHE_FOLDER", "../article/cache/");
 		return $result;
 	  }
 	  
-	  lg( $dir );
+	  
       // open handler for the directory
       $iter = new DirectoryIterator(  utf8_decode( $dir ) ); // php file access is always ISO-8859-1 
 
@@ -181,7 +181,7 @@ define ("CACHE_FOLDER", "../article/cache/");
     
     // unique
     $imageMedia = array_unique( $imageMedia );
-    print_r($imageMedia); 
+    
     return $imageMedia;    
   }
    
@@ -192,7 +192,6 @@ define ("CACHE_FOLDER", "../article/cache/");
     global $articlesWithoutThumbnails;
     global $cachedMediaToday;
     
-    lg("caching thumbnail started");
     $count=sizeof($imageMedia);
     if ($count <= 0){
       error("cacheThumbnail(); no valid images found ".$targetFile );
@@ -202,9 +201,14 @@ define ("CACHE_FOLDER", "../article/cache/");
     
     // just get the first entry
     $imageFile= $imageMedia[0];
+    foreach ($imageMedia as $fileitem ){
+      $info = pathinfo( $fileitem );
+      if ($info["extension"] != 'pdf'){
+        $imageFile= $fileitem;
+        break;
+      }
+    }
     
-    //
-    lg( "taking ".$imageFile );
     
     // check if the thumbnail already exists - otherwise we skip this
     if ((!file_exists($targetFile)) ||(date("w") == FULL_THUMBNAIL_DAY)){  // tag der woche ist samstag
@@ -246,10 +250,9 @@ define ("CACHE_FOLDER", "../article/cache/");
       // write file to disk
       $img->writeimage( $targetFile );
     } else {
-      lg( "thumbnail already exists");
+      //lg( "thumbnail already exists");
     }
     
-    lg( "caching thumbnail done");
   }
 
   
