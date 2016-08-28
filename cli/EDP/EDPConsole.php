@@ -1,7 +1,7 @@
 <?php
 
   function splitLine( $line ){
-    $elements = preg_split( '/\x7F/', $line );
+    $elements = preg_split( '/\x{007F}/', $line );
     // remove first elements
     array_shift( $elements );
     return $elements;
