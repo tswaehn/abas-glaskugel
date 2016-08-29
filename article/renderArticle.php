@@ -9,6 +9,11 @@
   
   }
   
+  function removeLineFeed( $text ){
+    $text= preg_replace("/\[-10-\]/", " ", $text );
+    return $text;
+  }
+  
   function renderCaption( $article ){
     $such= $article["such"];
     $salesNameDE= $article["vkbez"];
@@ -19,17 +24,17 @@
     $buyInName= $article["ebez"];
     
     if (!empty($salesNameEN)){
-      return $salesNameEN;
+      return removeLineFeed($salesNameEN);
     }
     if (!empty($salesLongNameEN)){
-      return $salesLongNameEN;
+      return removeLineFeed($salesLongNameEN);
     }
     
     if (!empty($salesNameDE)){
-      return $salesNameDE;
+      return removeLineFeed($salesNameDE);
     }
     if ((!empty($salesLongNameDE)) && ($buyInName != $salesLongNameDE)){
-      return $salesLongNameDE;
+      return removeLineFeed($salesLongNameDE);
     }
     
     return $such;

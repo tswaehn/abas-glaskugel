@@ -43,9 +43,10 @@ hr {
 
 #caption_L {
   font-weight:bold;
-  font-variant:small-caps;
+  //font-variant:small-caps;
   padding-bottom:2px;
   margin-bottom:2px;
+  font-family: sans-serif;
 }
 
 #head {
