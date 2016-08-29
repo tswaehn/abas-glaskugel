@@ -1,7 +1,7 @@
 <?php
 
   function splitLine( $line ){
-    $elements = preg_split( '/\x{007F}/', $line );
+    $elements = preg_split( '/\|/', $line );
     // remove first elements
     array_shift( $elements );
     return $elements;
@@ -17,15 +17,25 @@
     //$contents= preg_replace( array('/#\s+/','/\s+#/'), '#', $contents);
     
     //print_r($contents);
+    $fieldCount= -1;
     foreach(preg_split("/((\r?\n)|(\r\n?))/", $contents) as $line){
 
       if (strpos($line, 'DATA>') !== FALSE){
 	if ($isFirst){
 	  $isFirst = 0;
 	  $elem = preg_split( '/>/', $line );
-	  $data['fields'] = preg_split( "/,/", $elem[1] );
+          $fields= preg_split( "/,/", $elem[1] );
+	  $data['fields'] = $fields;
+          $fieldCount= count($fields);
 	} else {
-	  $data['lines'][] = splitLine( $line );
+          $splitLine= splitLine( $line );
+          if (count($splitLine) == $fieldCount){
+            $data['lines'][] = $splitLine;
+          } else {
+            //die("split error on line \n".implode(",", $fields)."\n".implode("||", $splitLine )."\n".$line );
+            //file_put_contents("failed_articles.log", "--".$line."\n", FILE_APPEND);
+            error("stringsToArray()", $line );
+          }
 	}
 	
       } else {
