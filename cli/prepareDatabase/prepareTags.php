@@ -211,7 +211,7 @@
    */
   function fill_serviceTags(){
     
-    $validGroups= array("Steck", "Pin", "kab", "pt", "jjjj-");
+    $validGroups= array("ServiceTag" );
     
     // 1. get groups
     $sql= "SELECT `article_id`,`ftext` FROM `gk_article` WHERE `ftext`<>''";

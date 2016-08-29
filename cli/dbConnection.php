@@ -133,7 +133,7 @@
       
       $type_str = "";
       switch ($type){
-	case ASCII: $type_str = "VARCHAR(255)";break;
+	case ASCII: $type_str = "TEXT";break;
 	case FLOAT: $type_str = "FLOAT";break;
 	case TIMESTAMP: $type_str = "DATETIME";break;
 	case INDEX: $type_str= "BIGINT(32) NOT NULL AUTO_INCREMENT, PRIMARY KEY ($field)";break;
