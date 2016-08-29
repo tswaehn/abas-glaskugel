@@ -29,6 +29,17 @@ define ("CACHE_FOLDER", "../article/cache/");
   $articlesWithoutThumbnails= 0;
   
   /*
+   * check if an url exists
+   */
+  function url_exists($url) {
+    if (!$fp = curl_init($url)){
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  /*
    * this routine takes the dataset of an article and will find
    * all relevant attachement files/folders
    * all links will be checked to be valid
@@ -54,7 +65,7 @@ define ("CACHE_FOLDER", "../article/cache/");
       }
       
       // get the value
-      $filename = strtolower( $article[$field] );
+      $filename = mb_strtolower( $article[$field], "UTF-8" );
       
       // check the value against our ignore list
       $ignore=0;
@@ -68,7 +79,20 @@ define ("CACHE_FOLDER", "../article/cache/");
         // try next field
         continue;
       }
-
+      
+      // check if this is an URL
+      if (preg_match("/(https?|ftp)\:\/\//", $filename)){
+        $url= $filename;
+        if (!url_exists($url)){
+          error("filterValidMedia();", "url does not exists ".$url );
+          continue;
+        } else {
+          error("filterValidMedia();", "url check OK ".$url );
+          $media[] = $filename;
+          continue;
+        }
+      }
+      
       // replace mapped drive by unc
       $filename=str_ireplace("w:\\", "\\\\192.168.0.241\\Daten\\", $filename);
       $filename=str_ireplace("o:\\", "\\\\192.168.0.6\\Daten\\", $filename);
@@ -86,7 +110,7 @@ define ("CACHE_FOLDER", "../article/cache/");
       // if we found a directory then check all files within directory
       // php file access is always ISO-8859-1 
       if (is_dir(utf8_decode($filename))){
-	$result=dir_contents_recursive( $filename );
+	dir_contents_recursive( $filename, $result, $fileCount );
         // add all files from subdir
 	foreach ($result as $newitem){
 	  $media[] = $newitem;
@@ -199,11 +223,12 @@ define ("CACHE_FOLDER", "../article/cache/");
       return;
     }
     
-    // just get the first entry
+    // search preferably for an image
     $imageFile= $imageMedia[0];
     foreach ($imageMedia as $fileitem ){
       $info = pathinfo( $fileitem );
-      if ($info["extension"] != 'pdf'){
+      $ext = $info["extension"];
+      if (strcasecmp( $ext, 'pdf')==0){
         $imageFile= $fileitem;
         break;
       }
@@ -224,7 +249,7 @@ define ("CACHE_FOLDER", "../article/cache/");
 
       try {
         
-        if (strcasecmp( $ext, "pdf")){
+        if (strcasecmp( $ext, "pdf")==0){
           // load PDF
           $img->readImage($imageFile.'[0]');
         } else {
@@ -304,7 +329,7 @@ function dbCreateArticleThumbnails(){
       continue;
     }
     
-    cacheThumbnail( $imageMedia, CACHE_FOLDER.$filename, 320, 240 );    
+    cacheThumbnail( $imageMedia, CACHE_FOLDER.$filename, 320/2, 240/2 );    
 
 	lg( $count ."/". $totalCount. " ".ceil($count/$totalCount*100)."%" );
 

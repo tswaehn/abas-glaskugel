@@ -26,6 +26,7 @@ offene Punkte
   - reduzieren des standard logs
   - zeilenendezeichen vom log
   - reduzieren der thumbnail erzeugung
+  - URL check in artikel anhängen
 
 2015 feb.?? - v0.2.5
   - darstellung von bestellinformationen
