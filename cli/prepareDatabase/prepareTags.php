@@ -25,6 +25,44 @@
       "m5", "m3", "m4"
       
       );
+  
+  /*
+   * insert a groups defined by an array
+   *    array( groupA => array( tag1, tag2, ...), groupB => array( tag3, tag2, ...) )
+   * 
+   * into database and return the suiting tagID for latter use of tagging
+   * 
+   * return:
+   *      array of groupName=> tagName => tagID
+   */
+  function addGroupsAndTagsToDB( $groups ){
+    
+    // convert groups into dataSet
+    $dataSet= array();
+    foreach ($groups as $group=>$tagNameArray){
+      foreach ($tagNameArray as $tagName){
+        $dataSet[]= array( 0, $group, $tagName );
+      }
+    }
+    
+    // insert groups into table
+    $fields = array( "tag", "group_name", "tag_name" );
+    insertIntoTable( DB_ARTICLE_GROUPS, $fields, $dataSet );
+    
+    
+    // 3. get correct tag IDs and tag names => create array with GroupName=>TagName=>Tag
+    $result= dbGetFromTable(DB_ARTICLE_GROUPS, array("tag", "group_name", "tag_name"), "" , 100000 );
+    $tags= array();
+    foreach ($result as $item){
+      $tag= $item["tag"];
+      $groupName= $item["group_name"];
+      $tagName= $item["tag_name"];
+      $tags[$groupName][$tagName]= $tag;
+    }
+    
+    return $tags;
+  }
+  
   /*
    * go in these steps
    *   1. get the unique groups that need be associated
@@ -136,6 +174,128 @@
   }
   
   
+  function getTagsFromFreeText( $ftext ){
+   
+    echo "--\n".$ftext."\n";
+    $lines= preg_split( "/\[-10-\]/", $ftext );
+    //print_r($lines);
+
+    $result= array();
+    foreach ($lines as $line){
+      $hits= array();
+      $test= preg_match_all( "/\[(.*)\](.*)/", $line, $hits);
+
+      if ($test != 0){
+        //print_r($hits);
+        $result[ $hits[1][0] ][]= $hits[2][0];
+      }
+    }
+    
+    if (!empty($result)){
+      print_r( $result );
+    } else {
+      $result= NULL;
+    }
+    return $result;   
+  }
+  
+  
+/*
+   * go in these steps
+   *   1. get the unique groups that need be associated
+   *   2. insert groups into group table
+   *   3. get the correct tag IDs and tag names
+   *   4. get all articles and attach correct group-tag-id
+   *   5. store into tag table
+   * 
+   */
+  function fill_serviceTags(){
+    
+    $validGroups= array("Steck", "Pin", "kab", "pt", "jjjj-");
+    
+    // 1. get groups
+    $sql= "SELECT `article_id`,`ftext` FROM `gk_article` WHERE `ftext`<>''";
+    $result= dbExecute($sql);
+    
+    $articles= array();
+    $groups= array();
+    $match= "/".implode("|",$validGroups)."/i";
+    
+    // go through all found articles that have some text in "T1" - free text field
+    foreach ($result as $item ){
+      $article_id= $item["article_id"];
+      $ftext= $item["ftext"];
+      
+      // split full text into "[EtiLi]" or "[ServiceTag-Axiospect]", ...
+      $serviceTags= getTagsFromFreeText($ftext);
+      
+      // add found tags to groups
+      if (is_array($serviceTags)){
+        foreach ($serviceTags as $key=>$serviceTagArray ){
+          // compare found key to valid keys
+          if (preg_match( $match, $key)){
+            // add each single tag for that key==group
+            foreach ($serviceTagArray as $serviceTag){
+              // remove spaces
+              $serviceTag= trim($serviceTag);
+              // if non-empty actually add
+              if (!empty($serviceTag)){
+                // add to group
+                $groups[$key][]= $serviceTag;
+                // add to article
+                $articles[$article_id][$key][]= $serviceTag;
+              }
+            }
+          }
+        }
+      }
+    } // end going through all articles
+    
+    // make all tags unique
+    foreach ($groups as $group=>$serviceTags){
+      $groups[$group]= array_unique($serviceTags);
+    }
+    
+    $groupTags= addGroupsAndTagsToDB( $groups );
+    
+    print_r($articles);
+    
+    // go through all articles and attach the correct tagID
+    $dataSet= array();
+    foreach ($articles as $article_id=>$groups ){
+      foreach( $groups as $groupName=>$tagNameArray ){
+        foreach( $tagNameArray as $tagName ){
+          // lookup tagID
+          $tagID= $groupTags[$groupName][$tagName];
+          // add to array
+          $dataSet[]= array(0, $article_id, $tagID );
+        }
+      }
+    }
+    
+    /*
+    // 4. get all articles and tag them
+    $articleFields = array( "article_id", "ersatzt" );    
+    $result = dbGetFromTable( DB_ARTICLE, $articleFields, "", 100000 );
+    $count = $result->rowCount();
+    // start with empty dataset
+    $dataSet= array();
+    foreach( $result as $item ){
+      
+      $article_id = $item["article_id"];
+      $tag= $tags[ $item["ersatzt"] ];
+      
+      $dataSet[]= array(0, $article_id, $tag );
+      
+    }
+*/    
+    // 5. finally write each single (str,article_id,frequency)-pair to database (including reference to article)
+    $fields = array( "tid", "article_id", "tag" );
+    insertIntoTable( DB_ARTICLE_TAGS, $fields, $dataSet );
+  
+  }
+  
+  
   function dbCreateTableTags(){
 
     $table = DB_ARTICLE_TAGS;
@@ -199,5 +359,6 @@
     fill_beschaffungsart();   
     //
     fill_serviceParts();
-   
+    //
+    fill_serviceTags();
  }

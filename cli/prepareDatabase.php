@@ -74,13 +74,14 @@
    */
   function prepareDatabase(){
     
+    /*
     dbCreateTableArticle();
     dbCreateProductionList();
     dbCreateTableStoragePlaces();
     dbCreateDict();
     dbCreateOrders();
     dbCreateArticleThumbnails();
-    
+    */
     dbCreateTags();
 
   }
