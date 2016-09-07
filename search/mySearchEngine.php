@@ -1,5 +1,132 @@
 <?php
   
+  define("SESSION_VAR_SEARCH_TEXT", "search_text");
+  define("SESSION_VAR_FOUND_ARTICLES", "found_articles");
+  define("SESSION_VAR_SEARCH_FILTERS", "serach_filters");
+  define("SESSION_VAR_NEED_NEW_SEARCH", "need_new_search");
+  define("SESSION_VAR_VALID_ARTICLES", "valid_articles");
+  define("SESSION_VAR_SEARCH_PAGE", "search_page");
+  define("SESSION_VAR_SEARCH_RESULT_TEXT", "search_result_text");
+  
+class SearchEngine {
+  
+  var $searchText;
+  var $foundArticles;
+  var $searchFilters;
+  var $needNewSearchFlag;
+  var $validArticles;
+  var $searchPage;
+  var $searchResultText;
+  
+  function __construct(){
+    
+    $this->searchText= getSessionVar(SESSION_VAR_SEARCH_TEXT);
+    $this->foundArticles= getSessionVar(SESSION_VAR_FOUND_ARTICLES);
+    $this->searchFilters= getSessionVar(SESSION_VAR_SEARCH_FILTERS);
+    $this->needNewSearchFlag= getSessionVar(SESSION_VAR_NEED_NEW_SEARCH);
+    $this->validArticles= getSessionVar(SESSION_VAR_VALID_ARTICLES);
+    $this->searchPage= getSessionVar(SESSION_VAR_SEARCH_PAGE);
+    $this->searchResultText= getSessionVar(SESSION_VAR_SEARCH_RESULT_TEXT);
+    
+    if (!isset($this->foundArticles)){
+      $this->foundArticles= array();
+    }
+    
+    if (!isset($this->searchFilters)){
+      $this->searchFilters= array();
+    }
+    
+    if (!isset($this->needNewSearchFlag)){
+      $this->needNewSearchFlag= 1;
+    }
+    
+    if (!isset($this->validArticles)){
+      $this->validArticles= array();
+    }
+    
+    if (!isset($this->searchPage)){
+      $this->searchPage= 0;
+    }
+  }
+
+  function setSearchText( $text ){
+    
+    // replace unwanted chars
+    $text = preg_replace( ALLOWED_ASCII, " ", $text );
+    $this->searchText = trim( $text );
+    // save search text
+    setSessionVar( SESSION_VAR_SEARCH_TEXT, $this->searchText);
+    
+    $this->needNewSearchFlag= 1;
+  }
+
+  function addFilter( $filter, $caption ){
+    
+    // add a new filter
+    $this->searchFilters[$filter]= $caption ;
+    setSessionVar(SESSION_VAR_SEARCH_FILTERS, $this->searchFilters);
+    
+    // load all filter tags
+    $this->validArticles= getAllTagFilteredArticles( $this->searchFilters );  
+    setSessionVar(SESSION_VAR_VALID_ARTICLES, $this->validArticles);
+    
+    $this->needNewSearchFlag= 1;
+  }
+
+  function removeFilter( $filter ){
+    
+    // remove existing filter
+    if (isset($this->searchFilters[$filter])){
+      unset($this->searchFilters[$filter]);
+    }
+    setSessionVar(SESSION_VAR_SEARCH_FILTERS, $this->searchFilters);
+    
+    // load all filter tags
+    $this->validArticles= getAllTagFilteredArticles( $this->searchFilters );  
+    setSessionVar(SESSION_VAR_VALID_ARTICLES, $this->validArticles);
+    
+    $this->needNewSearchFlag= 1;
+  }
+
+  function setSearchPage( $page ){
+    if ($page < 0){
+      $page= 0;
+    }
+    if ($page > floor((count($this->foundArticles)/5)-1)){
+      $page= floor(count($this->foundArticles)/5)-1;
+    }
+    $this->searchPage= $page;
+    setSessionVar(SESSION_VAR_SEARCH_PAGE, $this->searchPage);
+  }
+  
+  function search(){
+    
+    if ($this->needNewSearchFlag == 0){
+      // do nothing
+      echo "skip searching";
+      return;
+    }
+    echo "really searching";
+
+    // 
+    if (empty($this->validArticles)){
+      $this->validArticles= getAllTagFilteredArticles( $this->searchFilters );  
+      setSessionVar(SESSION_VAR_VALID_ARTICLES, $this->validArticles);
+    }
+    
+    // actually search for the article_ids
+    $this->foundArticles= $this->mySearch($this->searchText, $this->validArticles);
+    setSessionVar(SESSION_VAR_FOUND_ARTICLES, $this->foundArticles);
+
+    // reset search flag
+    $this->needNewSearchFlag= 0;
+    setSessionVar(SESSION_VAR_NEED_NEW_SEARCH, $this->needNewSearchFlag);
+
+    //
+    $this->setSearchPage(0);
+    
+  }
+  
   function createLike( $cols, $value ){
     
     $likeStatement='';
@@ -22,7 +149,7 @@
     
   function mySearchInArticles( $search, $validArticles ){
     global $pdo;
-    
+    //print_r($validArticles);
     $searches = preg_split( "/( )/", $search, -1, PREG_SPLIT_NO_EMPTY );
     //print_r($searches);
     
@@ -31,7 +158,7 @@
     // define all columns which need to be searched through
     $whereArr= array();
     foreach ($searches as $search ){
-      $whereArr[]= createLike( $columns, $search);
+      $whereArr[]= $this->createLike( $columns, $search);
     }
     $where= implode(" AND ", $whereArr);
     
@@ -76,7 +203,7 @@
       $count = 0;
       
       $start=microtime(true);
-      $result = mySearchInArticles( $search, $validArticles );
+      $result = $this->mySearchInArticles( $search, $validArticles );
       $end=microtime(true);
       
       $diff = number_format( $end-$start, 3) ;      
@@ -84,7 +211,8 @@
       if (!empty($result)){
 	$count=$result->rowCount();
       
-        $searchResultText= '<span class="search_report">Habe '.$count.' Ergebnisse in '.$diff.' Sekunden gefunden. </span>';
+        $this->searchResultText= '<span class="search_report">Habe '.$count.' Ergebnisse in '.$diff.' Sekunden gefunden. </span>';
+        setSessionVar(SESSION_VAR_SEARCH_RESULT_TEXT, $this->searchResultText);
       }
       
       addClientInfo( $search );
@@ -101,18 +229,50 @@
       return $result_arr;
   }
   
-  function renderSearchResult( $foundArticleIDs ){
+  function renderSearchResult(  ){
 
+      $foundArticleIDs= $this->foundArticles;
+      $searchPage= $this->searchPage;
+      
       // define search restriction
       if (!is_array( $foundArticleIDs )){
         return;
       }
       
+      // items per page
+      $searchItemsPerPage= 5;
+      
+      // create a numbered copy
+      $array = array_values($foundArticleIDs);
+      
+      // prepare limits
+      $a= ($searchPage* $searchItemsPerPage);
+      if ($a < 0){
+        $a= 0;
+      }
+      if ($a >= count($array)){
+        $a= count($array)-1;
+      }
+      $b= $a + $searchItemsPerPage;
+      if ($b >= count($array)){
+        $b= count($array)-1;
+      }
+      
+      
+      $article_ids_limited= array();
+      // copy only valid articles
+      for ($i=$a;$i<$b;$i++){
+        $article_ids_limited[]= $array[$i];
+      }
+
+      echo "display items ".$a." to ".$b."<br>";
+      $this->renderPageNumbers();
+      
       // prepare the article_id
-      $article_ids= implode(",", $foundArticleIDs);
+      $article_ids= implode(",", $article_ids_limited);
 
       // query for the full articles
-      $sql = 'SELECT * FROM '.q(DB_ARTICLE).' WHERE (`article_id` IN ('.$article_ids.')) ORDER BY rank ASC;';
+      $sql = 'SELECT * FROM '.q(DB_ARTICLE).' WHERE (`article_id` IN ('.$article_ids.')) ORDER BY rank ASC';
       $result= dbExecute($sql);
       
       
@@ -141,78 +301,45 @@
       if (empty($result)){
         return;
       }
-      
-      echo '<script>
-
-          $(document).ready(function() {
-            console.log("start");
-
-            $("#div_search_filters").on("click", ".remove_filter", function(event){
-              var item= $(this);
-              var id= $(this).attr("id");
-              
-              console.log("removing "+ name );
-              
-              var ip= $( "[id="+id+"]");
-              ip.remove();
-              item.remove();
-              
-              document.getElementById("search_form").submit();
-
-            });
-
-            $(".filtersX").on("click", function(event){
-              var name= $(this).attr("id");
-              console.log("testing"+ name);
-              
-              $("#filters").append( name );
-              
-              $("<input>").attr({
-                  type: "hidden",
-                  name: "searchFilters[]",
-                  value: name
-              }).appendTo("form");
-
-              document.getElementById("search_form").submit();
-            });
-
-          });
-          
-          
-        </script>';
-      
   
       // prepare all groups with tag names
       $groups= array();
       foreach ($result as $item){
+        $tagID= $item["tag"];
         $group_name= $item["group_name"];
         $tag_name= $item["tag_name"];
-        $groups[$group_name][]= $tag_name;
+        $caption= $item["tag_name"];
+        
+        $groups[$group_name][]= array( "name"=>$tag_name, "tagID"=> $tagID);
       }
-
-      // load all existing/already enabled filters
-      global $searchFilters;
-      
+    
       // print groups and tags
-      $keys= array_keys( $groups );
-      foreach ($keys as $group_name){
-        echo "<br>".$group_name."<br>";
-          echo '<ul class="navi-li">';
-          foreach( $groups[$group_name] as $tag_name){
-            if (isset($searchFilters[$group_name]) && (in_array( $tag_name, $searchFilters[$group_name]))){
-              echo '<li ><span class="ui-button ui-state-disabled">'.$tag_name.'</span></li>';
-            } else {
-              echo '<li><a id="filter_'.$group_name.'_'.$tag_name.'" class="filtersX ui-button" href="#">'.$tag_name.'</a></li>';
-            }
+      foreach ($groups as $groupName=>$group){
+        echo "<br>".$groupName."<br>";
+        echo '<ul class="navi-li">';
+
+        foreach ($group as $item){
+          $tagName= $item["name"];
+          $tagID= $item["tagID"];
+          if (isset($this->searchFilters[$tagID])){
+            echo '<li ><span class="ui-button ui-state-disabled">'.$tagName.'</span></li>';
+          } else {
+            echo '<li><a class="ui-button" href="?add_filter='.$tagID.'">'.$tagName.'</a></li>';
           }
-          echo "</ul>";
-        echo "</li>";
+          //echo "</ul>";
+            
+        }
+        echo "</ul>";
+          
       }
+      
         
   }
   
-  function renderSearchTags( $article_IDs ){
+  function renderSearchTags(){
   
+      $article_IDs= $this->foundArticles;
+      
       if (empty($article_IDs)){
         return;
       }
@@ -231,40 +358,108 @@
       $sql= "SELECT * FROM `gk_article_groups` WHERE `tag` IN (".$search.")";
       $result = dbExecute( $sql );
       
-      renderFullTags( $result );
+      $this->renderFullTags( $result );
+    
+  }
+
+  function renderSearchFilters(){
+    
+    
+        // --- 
+    echo '<div id="div_search_filters">';
+    if (is_array($this->searchFilters)){
+      
+      foreach ($this->searchFilters as $filter=>$caption ){
+        
+        echo ' <span class="remove_filter">['.$caption.'<a href="?del_filter='.$filter.'"><img src="./search/cross.png"></a>]</span> ';
+        
+      }
+    }
+    echo '</div>';
+
+  }
+  
+  function renderPageNumbers(){
+    
+    $maxPageIndex= floor(count($this->foundArticles)/5-1);
+    
+    if ($maxPageIndex < 20){
+      echo '<a href="./?search_page='.($this->searchPage-1).'"> &lt </a>';
+      for ($i=0;$i<=$maxPageIndex;$i++){
+        if ($i == $this->searchPage){
+          $class= "selectedSearchPage";
+        } else {
+          $class= "searchPage";
+        }
+        echo '<span class="'.$class.'"><a href="./?search_page='.($i).'"> '.$i.'</a></span>';
+      } 
+      echo '<a href="./?search_page='.($this->searchPage+1).'"> &gt </a>';
+      
+    } else {
+      /*
+      echo '<a href="./?search_page='.($searchPage-1).'">prev page</a>';
+      echo '<a href="./?search_page='.($searchPage+1).'">next page</a>';
+      */
+    }
+      
+
     
   }
   
+  
+}
+
+  // create the search engine object
+  $searchEngine= new SearchEngine();
+  
+  
   // ---
+  // decide if we have a new request or changed request
+  $url_form_search_text = getUrlParam( "form_search_text" );
   
-  $search = getUrlParam('search');
-  if ($search ==''){
-    $search ='';
+  if ($url_form_search_text != ""){
+    // we have a new request
+    $searchEngine->setSearchText($url_form_search_text);
   }
-  
-  $search = preg_replace( ALLOWED_ASCII, " ", $search );
-  $search = trim( $search );
-  
-  
-  // apply all filter tags
-  $searchFilters;
-  $tagIDs= getAllTagIDs( $searchFilters );
-  $validArticles= getAllTagFilteredArticles( $tagIDs );  
-  
-  // actually search for the article_ids
-  $foundArticleIDs= mySearch($search, $validArticles);
-  
+
+  // check for new filters
+  $url_add_filter= getUrlParam("add_filter");
+  if ($url_add_filter != ""){
+    // we have a request to add a filter
+    $searchEngine->addFilter( $url_add_filter, $url_add_filter );
+  }
+
+  // check for removed filters
+  $url_del_filter= getUrlParam("del_filter");
+  if ($url_del_filter != ""){
+    // we have a request to remove a filter
+    $searchEngine->removeFilter( $url_del_filter );
+  }
+
+  // check for search page
+  $url_search_page= getUrlParam("search_page");
+  if ($url_search_page != ""){
+    // we have a change in search page
+    $searchEngine->setSearchPage( $url_search_page );
+  }
+
+  // just display all active filters
+  $searchEngine->renderSearchFilters();
+   
+  // based on all new information, check if we need to execute a complete research
+  $searchEngine->search();
+    
   
   echo '<table>';
   echo '<tr><td>';
       echo '<div id="search_navi">';
-      renderSearchTags($foundArticleIDs);
+      $searchEngine->renderSearchTags();
       echo '</div>';
 
   echo '</td><td>';
       echo '<div id="searchresult">';
-      echo $searchResultText;
-      renderSearchResult($foundArticleIDs);
+      echo $searchEngine->searchResultText;
+      $searchEngine->renderSearchResult();
       echo '</div>';
       
   echo '</td></tr>';

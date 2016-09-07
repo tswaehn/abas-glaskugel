@@ -166,9 +166,9 @@
     }
     
     $searchArr= array();
-    foreach ($searchFilters as $group_name=>$item){
+    foreach ($searchFilters as $tagID=>$caption){
       foreach ($item as $tag_name){
-        $searchArr[]= "(`group_name`='".$group_name."' AND `tag_name`='".$tag_name."')";
+        $searchArr[]= "(`tag`='".$tagID." )";
       }
     }
     $search= implode(" OR ", $searchArr);
@@ -189,6 +189,11 @@
       return;
     }
     
+    if (empty($tagIDs)){
+      return;
+    }
+    
+    print_r($tagIDs);
     // get all articles that have at least one of the tags
     $search= implode(",", $tagIDs);
     //$sql= "SELECT * FROM `gk_article_tags` WHERE `tag` IN (".$search."); ";

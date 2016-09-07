@@ -34,7 +34,7 @@
   </div>
 
   <div id="search">
-    <?php include('./search/search.php'); ?>
+    <?php include('./search/searchForm.php'); ?>
   </div>
 
   <div id="main">

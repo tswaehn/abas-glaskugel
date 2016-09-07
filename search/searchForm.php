@@ -10,42 +10,21 @@
 
     // --- search block
     echo '<div id="searchformfield">';
-    $search = getUrlParam('search');
+    $form_search_text = getUrlParam('form_search_text');
     $searchFilters= getUrlParam('searchFilters');
+    
+    if ($form_search_text == ""){
+      $search= getSessionVar("search");
+    } else {
+      $search= $form_search_text;
+    }
+    setSessionVar( "search", $search);
     
     echo '<form id="search_form" action="?action=search" method="POST">
           <span style="margin-right:10px">Suchbegriff </span>
-	  <input type="text" name="search" value="'.$search.'" size="40">
+	  <input type="text" name="form_search_text" value="'.$search.'" size="40">
 	  <input type="submit" value="suchen"> ';
-    echo '<p>';
     
-    
-    
-    // --- 
-    echo '<div id="div_search_filters">';
-    if (is_array($searchFilters)){
-      // check if there is something to do for filters
-      $temp= $searchFilters;
-      $searchFilters= array();
-      // go through all items
-      foreach ($temp as $item){
-        // filters come like "filter_Ersatzteil_ja" so need to cut them into pieces
-        $itemArr= explode("_", $item);
-        
-        // add filter
-        $searchFilters[$itemArr[1]][]= $itemArr[2];
-        
-        // create display text
-        $dispText= $itemArr[1].":".$itemArr[2];
-        
-        // render the filter text
-        echo ' <span id="'.$item.'" class="remove_filter">['.$dispText.'<a href="#"><img src="./search/cross.png"></a>]</span> ';
-        echo '<input id="'.$item.'" type="hidden" name="searchFilters[]" value="'.$item.'"> ';
-      }
-    }
-    echo '</div>';
-
-  
     echo '</form>';    
     echo "</div>";
 

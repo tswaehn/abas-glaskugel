@@ -175,3 +175,13 @@ input[type=text] {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.searchPage {
+  padding:5px;
+  background-color: white;
+}
+
+.selectedSearchPage {
+  padding:5px;
+  background-color: red;
+}

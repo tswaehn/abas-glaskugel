@@ -5,6 +5,7 @@
   include( './cli/config.php');
 
   include('./lib/logging.php');
+  include('./lib/session.php');
   include('./lib/browserCheck.php');
   include('./lib/lib.php');
   include('./cli/dbConnection.php');  
