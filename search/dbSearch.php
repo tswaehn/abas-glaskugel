@@ -183,17 +183,19 @@
     return $tagIDs;
   }
   
-  function getAllTagFilteredArticles( $tagIDs ){
+  function getAllTagFilteredArticles( $filters ){
     
-    if (!is_array($tagIDs)){
+    if (!is_array($filters)){
       return;
     }
     
-    if (empty($tagIDs)){
+    if (empty($filters)){
       return;
     }
     
-    print_r($tagIDs);
+    // the tagIDs are the keys of the filters
+    $tagIDs= array_keys( $filters );
+    
     // get all articles that have at least one of the tags
     $search= implode(",", $tagIDs);
     //$sql= "SELECT * FROM `gk_article_tags` WHERE `tag` IN (".$search."); ";

@@ -18,7 +18,7 @@
     $( "input[type=submit], button" ).button();
   } );
   </script>
-  <link rel="stylesheet" type="text/css" href="format.css">  
+  <link rel="stylesheet" type="text/css" href="./css/format.css">  
   
 <?php include('./lib/main.php'); ?>
 

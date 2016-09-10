@@ -7,6 +7,11 @@
   define("SESSION_VAR_VALID_ARTICLES", "valid_articles");
   define("SESSION_VAR_SEARCH_PAGE", "search_page");
   define("SESSION_VAR_SEARCH_RESULT_TEXT", "search_result_text");
+
+  
+  // config
+  define("ITEM_COUNT_PER_PAGE", 100);
+  define("LONG_PAGE_COUNT", 11);
   
 class SearchEngine {
   
@@ -62,6 +67,10 @@ class SearchEngine {
 
   function addFilter( $filter, $caption ){
     
+    if (empty($caption)){
+      $caption= $filter;
+    }
+    
     // add a new filter
     $this->searchFilters[$filter]= $caption ;
     setSessionVar(SESSION_VAR_SEARCH_FILTERS, $this->searchFilters);
@@ -92,8 +101,8 @@ class SearchEngine {
     if ($page < 0){
       $page= 0;
     }
-    if ($page > floor((count($this->foundArticles)/5)-1)){
-      $page= floor(count($this->foundArticles)/5)-1;
+    if ($page > ceil((count($this->foundArticles)/ITEM_COUNT_PER_PAGE)-1)){
+      $page= ceil(count($this->foundArticles)/ITEM_COUNT_PER_PAGE)-1;
     }
     $this->searchPage= $page;
     setSessionVar(SESSION_VAR_SEARCH_PAGE, $this->searchPage);
@@ -103,10 +112,10 @@ class SearchEngine {
     
     if ($this->needNewSearchFlag == 0){
       // do nothing
-      echo "skip searching";
+      //echo "skip searching";
       return;
     }
-    echo "really searching";
+    //echo "really searching";
 
     // 
     if (empty($this->validArticles)){
@@ -199,7 +208,6 @@ class SearchEngine {
 
   function mySearch( $search, $validArticles ){
       
-      global $searchResultText;
       $count = 0;
       
       $start=microtime(true);
@@ -239,8 +247,12 @@ class SearchEngine {
         return;
       }
       
+      if (empty( $foundArticleIDs)){
+        return;
+      }
+      
       // items per page
-      $searchItemsPerPage= 5;
+      $searchItemsPerPage= ITEM_COUNT_PER_PAGE;
       
       // create a numbered copy
       $array = array_values($foundArticleIDs);
@@ -253,19 +265,19 @@ class SearchEngine {
       if ($a >= count($array)){
         $a= count($array)-1;
       }
-      $b= $a + $searchItemsPerPage;
-      if ($b >= count($array)){
+      $b= $a + $searchItemsPerPage-1;
+      if ($b > count($array)){
         $b= count($array)-1;
       }
       
       
       $article_ids_limited= array();
       // copy only valid articles
-      for ($i=$a;$i<$b;$i++){
+      for ($i=$a;$i<=$b;$i++){
         $article_ids_limited[]= $array[$i];
       }
 
-      echo "display items ".$a." to ".$b."<br>";
+      //echo "display items ".$a." to ".$b."<br>";
       $this->renderPageNumbers();
       
       // prepare the article_id
@@ -320,11 +332,12 @@ class SearchEngine {
 
         foreach ($group as $item){
           $tagName= $item["name"];
+          $caption= $groupName.':'.$tagName;
           $tagID= $item["tagID"];
           if (isset($this->searchFilters[$tagID])){
             echo '<li ><span class="ui-button ui-state-disabled">'.$tagName.'</span></li>';
           } else {
-            echo '<li><a class="ui-button" href="?add_filter='.$tagID.'">'.$tagName.'</a></li>';
+            echo '<li><a class="ui-button" href="?add_filter='.$tagID.'&filter_caption='.$caption.'">'.$tagName.'</a></li>';
           }
           //echo "</ul>";
             
@@ -346,7 +359,7 @@ class SearchEngine {
       
       // lookup all suiting tags of articles
       $search= implode(",", $article_IDs);
-      $sql= "SELECT * FROM `gk_article_tags` WHERE `article_id` IN (".$search.") GROUP BY `tag`";
+      $sql= "SELECT `tag` FROM `gk_article_tags` WHERE `article_id` IN (".$search.") GROUP BY `tag`";
       $result = dbExecute( $sql );
       $tags= array();
       foreach( $result as $item){
@@ -369,9 +382,9 @@ class SearchEngine {
     echo '<div id="div_search_filters">';
     if (is_array($this->searchFilters)){
       
-      foreach ($this->searchFilters as $filter=>$caption ){
+      foreach ($this->searchFilters as $tagID=>$caption ){
         
-        echo ' <span class="remove_filter">['.$caption.'<a href="?del_filter='.$filter.'"><img src="./search/cross.png"></a>]</span> ';
+        echo ' <span class="remove_filter">['.$caption.'<a href="?del_filter='.$tagID.'"><img src="./search/cross.png"></a>]</span> ';
         
       }
     }
@@ -379,27 +392,84 @@ class SearchEngine {
 
   }
   
+  function renderPageLink( $pageNo,$caption="", $selected= false, $enabled= true ){
+    
+    if (empty($caption)){
+      $caption= $pageNo;
+    }
+    
+    $class= "searchPage";
+    
+    if ($selected){
+      $class.= " selectedSearchPage";
+    }
+    
+    if ($enabled==false){
+      $class.= " not-active";
+    }
+    
+    echo '<a class="'.$class.'" href="./?search_page='.($pageNo).'">'.($caption).'</a>';
+  }
+  
   function renderPageNumbers(){
+   
+    $maxPageIndex= ceil(count($this->foundArticles)/ITEM_COUNT_PER_PAGE)-1;
+    if ($maxPageIndex <= 0){
+        /* no page slider needed */
+      return;
+    }
+  
+    echo "<br>";
     
-    $maxPageIndex= floor(count($this->foundArticles)/5-1);
-    
-    if ($maxPageIndex < 20){
-      echo '<a href="./?search_page='.($this->searchPage-1).'"> &lt </a>';
+    if ($maxPageIndex < (LONG_PAGE_COUNT)){
+      /* small page slider needed */
+      //
+      $this->renderPageLink( $this->searchPage - 1, "&lt;prev" );
+              
       for ($i=0;$i<=$maxPageIndex;$i++){
         if ($i == $this->searchPage){
-          $class= "selectedSearchPage";
+          $this->renderPageLink($i, ($i+1), true);
         } else {
-          $class= "searchPage";
+          $this->renderPageLink($i, ($i+1));
         }
-        echo '<span class="'.$class.'"><a href="./?search_page='.($i).'"> '.$i.'</a></span>';
       } 
-      echo '<a href="./?search_page='.($this->searchPage+1).'"> &gt </a>';
+
+      $this->renderPageLink( $this->searchPage + 1, "&gt;next" );
       
     } else {
-      /*
-      echo '<a href="./?search_page='.($searchPage-1).'">prev page</a>';
-      echo '<a href="./?search_page='.($searchPage+1).'">next page</a>';
-      */
+      /* large page slider needed */
+      //
+      $a= $this->searchPage - floor(LONG_PAGE_COUNT/2);
+      
+      if($a < 0){
+        $a= 0;
+      }
+      $b= $a+ LONG_PAGE_COUNT - 1;
+      if ($b >= ($maxPageIndex)){
+        $b= $maxPageIndex;
+        $a= $b - LONG_PAGE_COUNT+1;
+      }
+
+
+      if ($this->searchPage == 0){
+        $enabled= false;
+      } else { 
+        $enabled= true;
+      }        
+      $this->renderPageLink( $this->searchPage - 1, "&lt;prev" , false, $enabled );
+
+      for ($i=$a;$i<=$b;$i++){
+        $this->renderPageLink( $i, $i+1, ($this->searchPage==$i)?true:false );
+      }
+      
+      if ($this->searchPage >= $maxPageIndex){
+        $enabled= false;
+      } else { 
+        $enabled= true;
+      }        
+      $this->renderPageLink( $this->searchPage + 1, "next&gt;", false, $enabled );
+      
+      
     }
       
 
@@ -426,7 +496,8 @@ class SearchEngine {
   $url_add_filter= getUrlParam("add_filter");
   if ($url_add_filter != ""){
     // we have a request to add a filter
-    $searchEngine->addFilter( $url_add_filter, $url_add_filter );
+    $url_caption= getUrlParam("filter_caption");
+    $searchEngine->addFilter( $url_add_filter, $url_caption );
   }
 
   // check for removed filters
