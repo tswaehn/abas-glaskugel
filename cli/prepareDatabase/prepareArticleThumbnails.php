@@ -87,7 +87,7 @@ define ("CACHE_FOLDER", "../pages/article/cache/");
           error("filterValidMedia();", "url does not exists ".$url );
           continue;
         } else {
-          error("filterValidMedia();", "url check OK ".$url );
+          // url check OK
           $media[] = $filename;
           continue;
         }
