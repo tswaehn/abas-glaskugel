@@ -3,8 +3,8 @@
   
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   
-  <link rel="stylesheet" type="text/css" href="./article/article.css">
-  <link rel="stylesheet" type="text/css" href="./stats/stats.css">
+  <link rel="stylesheet" type="text/css" href="./pages/article/article.css">
+  <link rel="stylesheet" type="text/css" href="./pages/stats/stats.css">
   <link rel="stylesheet" type="text/css" href="./lib/sorttable.css">
 
 
@@ -34,7 +34,7 @@
   </div>
 
   <div id="search">
-    <?php include('./search/searchForm.php'); ?>
+    <?php include('./pages/search/searchForm.php'); ?>
   </div>
 
   <div id="main">

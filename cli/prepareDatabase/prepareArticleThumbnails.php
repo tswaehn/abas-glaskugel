@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-define ("CACHE_FOLDER", "../article/cache/");
+define ("CACHE_FOLDER", "../pages/article/cache/");
 
 
 // ----------------

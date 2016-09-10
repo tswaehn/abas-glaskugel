@@ -1,7 +1,7 @@
 <?php
 
-  include('../lib/lib.php');
-  include('../cli/dbConnection.php');
+  include('../../lib/lib.php');
+  include('../../cli/dbConnection.php');
   include('./dbSearch.php');
   
   $query=getUrlParam( "q" );

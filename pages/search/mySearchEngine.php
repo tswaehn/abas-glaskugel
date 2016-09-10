@@ -384,7 +384,7 @@ class SearchEngine {
       
       foreach ($this->searchFilters as $tagID=>$caption ){
         
-        echo ' <span class="remove_filter">['.$caption.'<a href="?del_filter='.$tagID.'"><img src="./search/cross.png"></a>]</span> ';
+        echo ' <span class="remove_filter">['.$caption.'<a href="?del_filter='.$tagID.'"><img src="./pages/search/cross.png"></a>]</span> ';
         
       }
     }

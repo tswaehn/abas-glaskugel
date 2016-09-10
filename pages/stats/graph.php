@@ -4,11 +4,15 @@
   extract( $_POST, EXTR_PREFIX_ALL, "url" );
 
   function lg($str){
-    // do nothing
+    // do nothing (dummy function)
   }
   
-  include('../cli/config.php');
-  include('../cli/dbConnection.php');
+  function debug($str){
+    // do nothing (dummy function)
+  }
+  
+  include('../../cli/config.php');
+  include('../../cli/dbConnection.php');
   
   // http://www.goat1000.com/svggraph-using.php
   include('./SVGGraph/SVGGraph.php');

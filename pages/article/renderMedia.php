@@ -50,7 +50,7 @@
     $name = basename( $file );
     //$dir = dirname( $file );
     
-    disp('<a href="./article/download.php?file='.urlencode($file).'">'.$name.'</a>');
+    disp('<a href="./pages/article/download.php?file='.urlencode($file).'">'.$name.'</a>');
   
   }
 
@@ -141,7 +141,7 @@
 	$image_width=$min_width;
       }
       foreach ($images as $image){
-	$file_link='./article/download.php?file='.urlencode($image);
+	$file_link='./pages/article/download.php?file='.urlencode($image);
 	
 	echo ('<a href="'.$file_link.'"><img src="'.$file_link.'" width="'.$image_width.'"  ></a>');
       }
@@ -156,16 +156,15 @@
 	if (in_arrayi( $info, array("pdf"))){
 	  echo "converting pdf2jpg";
 	  $found_something_to_display=1;
-	  $file_dllink='./article/download.php?file='.urlencode($item);	  
-	  $file_link='./article/pdfToJpeg.php?file='.urlencode($item);
+	  $file_dllink='./pages/article/download.php?file='.urlencode($item);	  
+	  $file_link='./pages/article/pdfToJpeg.php?file='.urlencode($item);
 	  echo ('<a href="'.$file_dllink.'"><img src="'.$file_link.'" width="'.$max_width.'"  ></a>');
 	  break;
 	}	
       }
       
       if ($found_something_to_display==0){
-	$file_link="./article/image_placeholder.png";
-	//$file_link="./article/download.php?file=/home/tswaehn/public_html/git_dev/abas/website/article/image_placeholder.png";
+	$file_link="./pages/article/image_placeholder.png";
 	echo ('<img src="'.$file_link.'" width="'.$max_width.'" >');
       }
     }
@@ -178,11 +177,6 @@
     div("media","articleview");
   
     $media = filterValidMedia( $article );
-    
-    //disp( '<a href="./article/pdfToJpeg.php?file=test.pdf">download</a>' );
-    
-    // add test folder
-    //$media[] = "/home/tswaehn/public_html/git_dev/abas/website/";
     
     // find a thumbnail for display
     renderThumbnail( $media );

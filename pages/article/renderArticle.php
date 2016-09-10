@@ -105,10 +105,10 @@
     
     // if empty
     if (empty($thumbnail)){
-      $thumbnail= "./article/image_placeholder.png";      
+      $thumbnail= "./pages/article/image_placeholder.png";      
     } else {
       // get thumbnail from DB
-      $cacheDir= "./article/cache/";
+      $cacheDir= "./pages/article/cache/";
       $thumbnail= $cacheDir. $article["thumbnail"];
     }
     

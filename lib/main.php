@@ -13,20 +13,20 @@
       
   include('./lib/jsUpdate.php');
 
-    include('./search/dbSearch.php');
+    include('./pages/search/dbSearch.php');
     
-    include('./article/dbArticle.php');
-    include('./article/dbFertigung.php');
+    include('./pages/article/dbArticle.php');
+    include('./pages/article/dbFertigung.php');
     
-    include('./article/articleHelpers.php');
-    include('./article/renderMedia.php');
-    include('./article/renderLager.php');
-    include('./article/renderFertigung.php');
-    include('./article/renderVerwendung.php');
-    include('./article/renderOrders.php');
-    include('./article/renderArticle.php');    
+    include('./pages/article/articleHelpers.php');
+    include('./pages/article/renderMedia.php');
+    include('./pages/article/renderLager.php');
+    include('./pages/article/renderFertigung.php');
+    include('./pages/article/renderVerwendung.php');
+    include('./pages/article/renderOrders.php');
+    include('./pages/article/renderArticle.php');    
 
-    include('./stats/getRemoteInfo.php');
+    include('./pages/stats/getRemoteInfo.php');
  
   $action = getUrlParam("action");
   if (empty($action)){
@@ -41,27 +41,27 @@
   switch ($action){	
     case "raw": 
 		$title="Raw";
-		$script="./article/raw.php";
+		$script="./pages/article/raw.php";
 		break;
 		
     case "article": 
 		$title ="Artikel";
-		$script="./article/articleView.php";
+		$script="./pages/article/articleView.php";
 		break;
 		
     case "overdrive":
 		$title="oVerdRive Search";
-		$script="./overdrive/search.php";
+		$script="./pages/overdrive/search.php";
 		break;
 		
     case "stats":
 		$title="Statistik";
-		$script="./stats/stats.php";
+		$script="./pages/stats/stats.php";
 		break;
 		
     default:
 	      $title="Suchen";
-	      $script="./search/mySearchEngine.php";
+	      $script="./pages/search/mySearchEngine.php";
   
   }
   
