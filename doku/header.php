@@ -1,1 +1,0 @@
-<h1>Svens ABAS Glaskugel</h1>
