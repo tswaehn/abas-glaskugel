@@ -173,7 +173,21 @@
     
   }
   
-  
+  /*
+   * this functions splits a text into lines and searches for tags and values.
+   * 
+   * tags and values are represented by ex. 
+   *  [ServiceTag1] 1234
+   * 
+   * where the tag is [ServiceTag1]
+   * and the value is 1234
+   * 
+   * return: array with tag as keys and values as array; one tag can have multiple values
+   * 
+   *  ex.
+   *  
+   *  array( "ServiceTag1" => array( "1234", "3432" ) ) ;
+   */
   function getTagsFromFreeText( $ftext ){
    
     echo "--\n".$ftext."\n";
@@ -184,7 +198,9 @@
     foreach ($lines as $line){
       $hits= array();
       $test= preg_match_all( "/\[(.*)\](.*)/", $line, $hits);
-
+      
+      // now $hits[1] has the values within brackets - namely the tags
+      // and $higs[2] has the values after the brackets - namely the values
       if ($test != 0){
         //print_r($hits);
         $result[ $hits[1][0] ][]= $hits[2][0];
@@ -192,7 +208,7 @@
     }
     
     if (!empty($result)){
-      print_r( $result );
+      //print_r( $result );
     } else {
       $result= NULL;
     }
@@ -211,7 +227,7 @@
    */
   function fill_serviceTags(){
     
-    $validGroups= array("ServiceTag" );
+    $validGroups= array("ServiceTag-" );
     
     // 1. get groups
     $sql= "SELECT `article_id`,`ftext` FROM `gk_article` WHERE `ftext`<>''";
@@ -231,21 +247,23 @@
       
       // add found tags to groups
       if (is_array($serviceTags)){
-        foreach ($serviceTags as $key=>$serviceTagArray ){
+        foreach ($serviceTags as $serviceTag=>$serviceValueArray ){
           // compare found key to valid keys
-          if (preg_match( $match, $key)){
-            // add each single tag for that key==group
-            foreach ($serviceTagArray as $serviceTag){
-              // remove spaces
-              $serviceTag= trim($serviceTag);
-              // if non-empty actually add
-              if (!empty($serviceTag)){
-                // add to group
-                $groups[$key][]= $serviceTag;
-                // add to article
-                $articles[$article_id][$key][]= $serviceTag;
-              }
+          if (preg_match( $match, $serviceTag)){
+
+            // split name like ServiceTag-Tool-Axiospect 202-
+            $t= explode("-",$serviceTag);
+            if (count($t) < 3){
+              continue;
             }
+            $groupName= $t[1];
+            $tagName= $t[2];
+            
+            // add to group
+            $groups[$groupName][]= $tagName;
+
+            // add to article
+            $articles[$article_id][$groupName][]= $tagName;
           }
         }
       }
@@ -258,7 +276,7 @@
     
     $groupTags= addGroupsAndTagsToDB( $groups );
     
-    print_r($articles);
+    file_put_contents( "./logging/article_tags.txt", print_r($articles, true) );
     
     // go through all articles and attach the correct tagID
     $dataSet= array();
@@ -356,9 +374,9 @@
    
    
     // 
-    fill_beschaffungsart();   
+    //fill_beschaffungsart();   
     //
-    fill_serviceParts();
+    //fill_serviceParts();
     //
     fill_serviceTags();
  }

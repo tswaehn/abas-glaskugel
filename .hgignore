@@ -4,3 +4,4 @@ article/cache/
 cli/data/
 *.log
 cli/EDP/edp.ini
+nbproject
