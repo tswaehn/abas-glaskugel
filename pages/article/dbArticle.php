@@ -78,7 +78,13 @@
 	//$data = array( ":nummer"=> '%'.substr($article["nummer"],0,-1).'%', ":abas_nr"=> 'x'.$article["nummer"] );
 	$data = array( ":abasNr"=> $s_abasNr, ":nummer" => $article["nummer"] );
 
+	
+	$starttime = microtime(true);
 	$result->execute( $data );
+	$endtime = microtime(true);
+	$timediff = $endtime-$starttime;
+	
+	debug('exec time is '.($timediff) );
 	
     } catch (Exception $e) {
 	lg("search failed");
