@@ -3,6 +3,7 @@
   extract( $_GET, EXTR_PREFIX_ALL, "url" );
   extract( $_POST, EXTR_PREFIX_ALL, "url" );
 
+  
   function lg($str){
     // do nothing (dummy function)
   }
@@ -10,6 +11,10 @@
   function debug($str){
     // do nothing (dummy function)
   }
+  function error($str) {
+  	// do nothing (dummy function)
+  }
+  
   
   include('../../cli/config.php');
   include('../../cli/dbConnection.php');
