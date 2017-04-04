@@ -95,7 +95,9 @@
     if (!empty($result)){
       debug('found '.$result->rowCount().' rows' );
     } else {
-      error("dbExecute", 'result empty');
+    	if (substr($sql, 0, 11) != 'INSERT INTO') {
+    		error("dbExecute", 'result empty: ' . $sql);
+    	}
     }
     
     return $result;  
