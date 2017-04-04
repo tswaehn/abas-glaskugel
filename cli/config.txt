@@ -16,4 +16,11 @@
                  "s.ginka@hseb-dresden.de",
 				 "r.zaspel@hseb-dresden.de"
                 );
+                
+  $statsIpBlacklist = array(
+  		'127.0.0.1',
+  		'192.168.0.90',
+  		'192.168.6.60',
+  );
+
 ?>

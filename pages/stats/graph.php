@@ -26,10 +26,11 @@
   
   function graphByDay(){
   
-    
+  	$qryBlacklist = getIpBlacklistQueryString();
+  	
     $values=array();
   
-    $sql = "SELECT DATE(`timestamp`) as date,count(*) AS cnt FROM ".q(DB_CLIENT_ACCESS)." WHERE `info` LIKE '%article%' GROUP BY `date` ORDER BY `date` ASC";
+    $sql = "SELECT DATE(`timestamp`) as date,count(*) AS cnt FROM ".q(DB_CLIENT_ACCESS)." WHERE " . $qryBlacklist . " `info` LIKE '%article%' GROUP BY `date` ORDER BY `date` ASC";
     //$sql = "SELECT DATE(timestamp) as date,max(request_time) AS rmax, min(request_time) AS rmin, count(*) AS cnt FROM ".q($table)." WHERE 1 GROUP BY ip,DATE(timestamp) ORDER BY date DESC, ip ASC";
     $result = dbExecute( $sql );
     
@@ -43,7 +44,7 @@
       $values[] = $line;
     }
 
-    $sql = "SELECT DATE(`timestamp`) as date,count(*) AS cnt FROM ".q(DB_CLIENT_ACCESS)." WHERE `info` LIKE '%search%' GROUP BY `date` ORDER BY `date` ASC";
+    $sql = "SELECT DATE(`timestamp`) as date,count(*) AS cnt FROM ".q(DB_CLIENT_ACCESS)." WHERE " . $qryBlacklist . " `info` LIKE '%search%' GROUP BY `date` ORDER BY `date` ASC";
     //$sql = "SELECT DATE(timestamp) as date,max(request_time) AS rmax, min(request_time) AS rmin, count(*) AS cnt FROM ".q($table)." WHERE 1 GROUP BY ip,DATE(timestamp) ORDER BY date DESC, ip ASC";
     $result = dbExecute( $sql );
 
@@ -57,7 +58,7 @@
       $values[] = $line;
     }
 
-    $sql = "SELECT DATE(`timestamp`) as date,count(*) AS cnt FROM ".q(DB_CLIENT_ACCESS)." WHERE `info` LIKE '%stats%' GROUP BY `date` ORDER BY `date` ASC";
+    $sql = "SELECT DATE(`timestamp`) as date,count(*) AS cnt FROM ".q(DB_CLIENT_ACCESS)." WHERE " . $qryBlacklist . " `info` LIKE '%stats%' GROUP BY `date` ORDER BY `date` ASC";
     //$sql = "SELECT DATE(timestamp) as date,max(request_time) AS rmax, min(request_time) AS rmin, count(*) AS cnt FROM ".q($table)." WHERE 1 GROUP BY ip,DATE(timestamp) ORDER BY date DESC, ip ASC";
     $result = dbExecute( $sql );
 
@@ -115,9 +116,10 @@
   
   function graphTopUsers(){
 
+  	$qryBlacklist = getIpBlacklistQueryString();
     $values=array();
   
-    $sql = "SELECT host,count(*) as cnt FROM ".q(DB_CLIENT_ACCESS)." WHERE 1 GROUP BY `host` ORDER BY cnt DESC";
+    $sql = "SELECT host,count(*) as cnt FROM ".q(DB_CLIENT_ACCESS)." WHERE " . $qryBlacklist . " 1 GROUP BY `host` ORDER BY cnt DESC";
     //$sql = "SELECT DATE(timestamp) as date,max(request_time) AS rmax, min(request_time) AS rmin, count(*) AS cnt FROM ".q($table)." WHERE 1 GROUP BY ip,DATE(timestamp) ORDER BY date DESC, ip ASC";
     $result = dbExecute( $sql );
     
@@ -172,10 +174,10 @@
 
   function graphAccessTime(){
   
-    
+  	$qryBlacklist = getIpBlacklistQueryString();
     $values=array();
   
-    $sql = "SELECT `timestamp`,request_time FROM ".q(DB_CLIENT_ACCESS)." WHERE `info` LIKE '%article%' ORDER BY `timestamp` DESC";
+    $sql = "SELECT `timestamp`,request_time FROM ".q(DB_CLIENT_ACCESS)." WHERE " . $qryBlacklist . " `info` LIKE '%article%' ORDER BY `timestamp` DESC";
     $result = dbExecute( $sql );
     
     if ($result->rowCount() > 0){
@@ -192,7 +194,7 @@
       $values[] = $line;
     }
 
-    $sql = "SELECT `timestamp`,request_time FROM ".q(DB_CLIENT_ACCESS)." WHERE `info` LIKE '%search%' ORDER BY `timestamp` DESC";
+    $sql = "SELECT `timestamp`,request_time FROM ".q(DB_CLIENT_ACCESS)." WHERE " . $qryBlacklist . " `info` LIKE '%search%' ORDER BY `timestamp` DESC";
     $result = dbExecute( $sql );
     
     if ($result->rowCount() > 0){
@@ -209,7 +211,7 @@
       $values[] = $line;
     }
 
-    $sql = "SELECT `timestamp`,request_time FROM ".q(DB_CLIENT_ACCESS)." WHERE `info` LIKE '%stats%' ORDER BY `timestamp` DESC";
+    $sql = "SELECT `timestamp`,request_time FROM ".q(DB_CLIENT_ACCESS)." WHERE " . $qryBlacklist . " `info` LIKE '%stats%' ORDER BY `timestamp` DESC";
     $result = dbExecute( $sql );
     
     if ($result->rowCount() > 0){
@@ -269,6 +271,24 @@
     
   }
     
+  
+  /**
+   * prepare sql query from ip blacklist (fetched from config file)
+   * insert after WHERE
+   * 
+   * @return String first where clause
+   */
+  function getIpBlacklistQueryString() {
+  	global $statsIpBlacklist;
+  	
+  	$ips = implode("', '", $statsIpBlacklist);
+  	$strBlacklist = "'" . $ips . "'";
+  	
+  	$qryBlacklist = ' ip NOT in (' . $strBlacklist. ') AND ';
+  	
+  	return $qryBlacklist;
+  }
+  
   
   switch( $url_type){
     
