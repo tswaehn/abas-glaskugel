@@ -53,30 +53,27 @@
 
   if (empty($article)){
     echo 'Artikel nicht gefunden. Bitte korrekte Artikelnummer eingeben, oder vielleicht einen Artikel <a href="?action=search">suchen</a>?';
-    die();
-  }
+  } else {
    
-
-  echo "<table>";
-    echo "<tr><td>";
-      renderMedia( $article );
-      
-      renderEinkaufBestellung( $article );
-    echo "</td><td>";
-      renderInfo( $article );
-      renderLager($article );    
-    
-      renderSimilar( $article );
-    echo "</td></tr>";
-
-  echo "</table>";
-  
-  renderVerwendungen($article );
-
-  //renderFertigung($article);
-  
-  renderFertingsliste( $article );  
-  
+	  echo "<table>";
+	    echo "<tr><td>";
+	      renderMedia( $article );
+	      
+	      renderEinkaufBestellung( $article );
+	    echo "</td><td>";
+	      renderInfo( $article );
+	      renderLager($article );    
+	    
+	      renderSimilar( $article );
+	    echo "</td></tr>";
+	
+	  echo "</table>";
+	  
+	  renderVerwendungen($article );
+	
+	  //renderFertigung($article);
+	  
+	  renderFertingsliste( $article );  
+  }
   echo '</div>';
-  
 ?>

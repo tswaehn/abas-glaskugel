@@ -31,7 +31,7 @@
 
 
     // --- direct article block
-    echo '<div id="searchformfield">';
+    echo '<div id="searchformfieldarticle">';
     
     $abas_nr = getUrlParam("search_abas_nr");
     if (!empty($abas_nr)){

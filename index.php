@@ -26,7 +26,7 @@
 ..::Glaskugel::..
 </title>
 </head>
-
+<body>
   <div id="head">
     
     <?php include('./lib/head.php'); ?>
@@ -48,4 +48,5 @@
   <?php footer(); ?>
  
   <?php writeLogToDisk(); ?>
+</body>
 </html>
