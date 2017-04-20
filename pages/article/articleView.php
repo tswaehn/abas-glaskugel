@@ -57,23 +57,42 @@
    
 	  echo "<table>";
 	    echo "<tr><td>";
-	      renderMedia( $article );
-	      
-	      renderEinkaufBestellung( $article );
+	    	$starttime = microtime(true);
+	    	renderMedia( $article );
+	    	$endtime = microtime(true);
+	    	$timeDiffMedia = $endtime-$starttime;
+	    	
+	    	$starttime = microtime(true);
+	      	renderEinkaufBestellung( $article );
+	      	$endtime = microtime(true);
+	      	$timeDiffBest = $endtime-$starttime;
 	    echo "</td><td>";
 	      renderInfo( $article );
+	      $starttime = microtime(true);
 	      renderLager($article );    
-	    
+	      $endtime = microtime(true);
+	      $timeDiffLager = $endtime-$starttime;
+	      
+	      $starttime = microtime(true);
 	      renderSimilar( $article );
+	      $endtime = microtime(true);
+	      $timeDiffSim = $endtime-$starttime;
 	    echo "</td></tr>";
 	
 	  echo "</table>";
-	  
+	  $starttime = microtime(true);
 	  renderVerwendungen($article );
-	
-	  //renderFertigung($article);
+	  $endtime = microtime(true);
+	  $timeDiffVerw = $endtime-$starttime;
 	  
+	  //renderFertigung($article);
+	  $starttime = microtime(true);
 	  renderFertingsliste( $article );  
+	  $endtime = microtime(true);
+	  $timeDiffFertigung = $endtime-$starttime;
+	  
+	  echo '<!-- media: '.$timeDiffMedia.' Bestellung: '.$timeDiffBest.' Lager: '.$timeDiffLager.' similar: '.$timeDiffSim.' verwendung: '.$timeDiffVerw.' fertigung: '.$timeDiffFertigung.' -->';
+	  echo '<!-- all: '.($timeDiffMedia+$timeDiffBest+$timeDiffLager+$timeDiffSim+$timeDiffVerw+$timeDiffFertigung).' -->';
   }
   echo '</div>';
 ?>
