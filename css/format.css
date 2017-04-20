@@ -212,3 +212,8 @@ input[type=text] {
    pointer-events: none;
    cursor: default;
 }
+
+
+.sortable td {
+	vertical-align: middle;
+}

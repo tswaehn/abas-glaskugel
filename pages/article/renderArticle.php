@@ -93,8 +93,24 @@
     return $text ;
   }
   
-  function showThumbnail( $article ){
+  /**
+   *  Render thumbnail image with link
+   * 
+   * @param array $article 
+   * @param number $width (optional) width of image
+   * @return string html code clickable image
+   */
+  function showThumbnail( $article, $width = 0 ){
     
+  	//adjust size if given
+  	if (is_int($width) && $width > 0) {
+  		$size = ' width="'.$width.'"';
+  	} else {
+  		//no size given, use original image dimensions
+  		$size = '';
+  	}
+  	
+  	
     // check if thumbnail exists
     if (!isset($article["thumbnail"])){
       $thumbnail= "";
@@ -114,7 +130,7 @@
     
     $link = "?action=article&article_id=".$article["article_id"];
     
-    $text= '<a href="'.$link.'"><img src="'.$thumbnail.'"/></a>';
+    $text= '<a href="'.$link.'"><img border="0" src="'.$thumbnail.'"'.$size.'/></a>';
     
     return $text;
   }

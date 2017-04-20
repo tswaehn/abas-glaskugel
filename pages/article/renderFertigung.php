@@ -92,13 +92,14 @@
     if (!empty($result)){
       
       echo  '<table class="sortable">';
-      echo "<tr><th>Pos</th><th>Nummer</th><th>Typ</th><th>Kurzname</th><th>Anzahl</th><th>Einheit</th><th>Bestand</th></tr>";
+      echo "<tr><th>Pos</th><th>Bild</th><th>Nummer</th><th>Typ</th><th>Kurzname</th><th>Anzahl</th><th>Einheit</th><th>Bestand</th></tr>";
       
       foreach ($result as $part ){
 
 	//disp( $item["zn"]." ".$item["tabnr"]." ".$item["anzahl"]." ".$item["elanzahl"]." ".$item["elart"]." ".$item["elarta"]." ".$item["elem"]." ".$item["elex"] );
 	echo "<tr>";
 	echo "<td>".$part["tabnr"]."</td>";
+	echo '<td>'.showThumbnail($part, 50).'</td>';
 	echo '<td><a href="?action=article&article_id='.$part["article_id"].'">'.$part["nummer"]."</td>";
 	switch ($part["elem_type"]){
 	  case 1: echo "<td>Artikel</td>";break;
