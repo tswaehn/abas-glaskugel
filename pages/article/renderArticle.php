@@ -77,7 +77,7 @@
     $name= explode( "@@", $article["name"]);
     $name= $name[0];
     
-	$strings = array( '['.strtolower($article["such"]).']', $name, $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
+    $strings = array( '['.mb_strtolower($article["such"], 'UTF-8').']', $name, $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
 	
     $text = '<span id="abas_nr"><a href="'.$link.'">'.$article["nummer"].'</a></span>';
     $text .= ' <span id="caption_L">'.renderCaption($article).'</span>';
