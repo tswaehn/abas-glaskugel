@@ -9,3 +9,5 @@ nbproject
 .project
 .settings
 cli/config-dev.txt
+cli/EDP/consoleCfg.ini
+cli/EDP/log.txt
