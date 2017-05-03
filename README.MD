@@ -16,6 +16,12 @@ offene Punkte
   - import von arbeitsgängen
   - import von interner fertigung aus "Betr-Auftrag:Betriebsaufträge"
 
+
+2017 may.03 - v0.2.6
+  - thumbnails in Fertigungsliste
+  - Designanpassungen
+   
+
 2016 aug
   - anstelle Artikelbezeichnung die Verkaufsbezeichnung, wenn vorhanden
     - Bezeichnung
