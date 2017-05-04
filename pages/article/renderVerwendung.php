@@ -73,7 +73,11 @@
       }
       
 
-      renderRecursive( $articles, $tree );                  
+	 if (empty($tree) || empty(reset($tree))) {
+	 	echo '<div class="list">Artikel wird nicht verwendet</div>';
+	 } else {
+      	renderRecursive( $articles, $tree );
+	 }
 
             echo "<script>
                 $('.Collapsable').click(function () {
