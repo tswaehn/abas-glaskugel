@@ -47,7 +47,7 @@
     disp('<span id="caption">Verwendung</span><br>');
     
       // get all production list entries
-      $sql= "SELECT `list_nr`, `article_id`, `elem_id` FROM ".q(DB_PRODUCTION_LIST)." WHERE 1 ORDER BY `article_id` ASC";
+      $sql= "SELECT `list_nr`, `article_id`, `elem_id` FROM ".q(DB_PRODUCTION_LIST)." WHERE 1";
       $result= dbExecute($sql);
       // load them into an array
       $allLinks=array();
