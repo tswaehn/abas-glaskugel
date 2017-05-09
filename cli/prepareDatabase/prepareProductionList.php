@@ -21,8 +21,8 @@
 
     $fieldinfo=array();
     
-    $fieldinfo["list_nr"]["type"]=ASCII;
-    $fieldinfo["list_nr"]["size"]=15;
+    $fieldinfo["list_nr"]["type"]=INT;
+    $fieldinfo["list_nr"]["size"]=0;
 
     
     $fieldinfo["article_id"]["type"]=INT;
