@@ -94,7 +94,8 @@ define ("CACHE_FOLDER", "../pages/article/cache/");
       }
       
       // replace mapped drive by unc
-      $filename=str_ireplace("w:\\", "\\\\192.168.0.241\\Daten\\", $filename);
+      $filename=str_ireplace("w:\\", "\\\\192.168.0.243\\Daten\\", $filename);
+      $filename=str_ireplace("m:\\", "\\\\192.168.0.243\\DemoDaten\\", $filename);
       $filename=str_ireplace("o:\\", "\\\\192.168.0.6\\Daten\\", $filename);
       $filename=str_ireplace("t:\\", "\\\\192.168.0.252\\HSEB-temp\\", $filename);
       
