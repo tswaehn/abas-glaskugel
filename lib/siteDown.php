@@ -7,7 +7,8 @@
     
 	echo '<div id="down">';
 	echo "<h1>Service ist momentan nicht verfügbar</h1>";
-	echo date("r");
+	//echo date("r");
+	echo getConfigDb("lastSync");
 	echo '</div>';
 	die();
     }

@@ -30,7 +30,7 @@ sortasc=1
 search-and=1
 
 [Einkauf:Bestellung]
-fieldlist=id,nummer,such,artikel,bem,ysenddat,ysendusr,yztterm,lief,aumge,limge,he,lehe
+fieldlist=id,nummer,such,artikel,bem,ysenddat,ysendusr,yztterm,wtterm,lief,aumge,limge,he,lehe
 sortby=
 maxdatasize=100000
 byrows=1

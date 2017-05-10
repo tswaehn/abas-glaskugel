@@ -93,13 +93,19 @@
       echo "<tr><th>Bestellnummer</th><th>Lieferant</th><th>Bedarf</th><th>Offen</th><th>VPE</th><th>Liefer- termin</th></tr>";
       foreach ($result as $part ){
 
-	echo "<tr>";
-	echo "<td>".$part["nummer"]."</td>";
-	echo "<td>".$part["such"]."</td>";    
-	echo "<td>".$part["bedmge"]."</td>";
-	echo "<td>".$part["limge"]."</td>";
-	echo "<td>".$part["vpe"]."</td>";
-	echo "<td>".$part["term"]."</td>";
+      	if (empty($part["termconfirmed"])) {
+      		$termin = $part["term"];
+      	} else {
+      		$termin = $part["termconfirmed"];
+      	}
+      	
+		echo "<tr>";
+		echo "<td>".$part["nummer"]."</td>";
+		echo "<td>".$part["such"]."</td>";    
+		echo "<td>".$part["bedmge"]."</td>";
+		echo "<td>".$part["limge"]."</td>";
+		echo "<td>".$part["vpe"]."</td>";
+		echo "<td>".$termin."</td>";
         echo "</tr>";
       }
       disp( "</table>" ); 

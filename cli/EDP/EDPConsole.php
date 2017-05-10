@@ -70,6 +70,10 @@
   
   function executeEDP( $cmdLine ){
 	
+  	if (!is_dir('./data')) {
+  		mkdir('./data');
+  	}
+  	
     // create local backup filename
     $filename='./data/edp-'.preg_replace("/[^A-Za-z0-9\ ]/", "-",$cmdLine).'.dat';
     $filename = preg_replace("/[^A-Za-z0-9\.\/\-]/", " ", $filename);

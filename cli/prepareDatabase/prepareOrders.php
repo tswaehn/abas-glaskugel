@@ -10,7 +10,7 @@
       if (tableExists( $table )== true ){
          removeTable ($table );
       }
-      $fields = array("article_id", "nummer", "such", "lief", "bedmge", "term", "limge", "factor", "vpe"  );
+      $fields = array("article_id", "nummer", "such", "lief", "bedmge", "term", "termconfirmed", "limge", "factor", "vpe"  );
       
       $fieldinfo= array();
       
@@ -31,6 +31,9 @@
       
       $fieldinfo["term"]["type"]=ASCII;
       $fieldinfo["term"]["size"]=15;
+      
+      $fieldinfo["termconfirmed"]["type"]=ASCII;
+      $fieldinfo["termconfirmed"]["size"]=15;
       
       $fieldinfo["limge"]["type"]=FLOAT;
       $fieldinfo["limge"]["size"]=0;
@@ -75,7 +78,8 @@
                             $item["such"], 
                             $item["lief"],
                             $item["aumge"]/$item["lehe"], // bedarf mge
-                            $item["yztterm"], 
+                            $item["yztterm"],
+          					$item["wtterm"],
                             $item["limge"],
                             $item["lehe"], // umrechnung liefeinheit - handelseinheit
                             $item["he"]);
