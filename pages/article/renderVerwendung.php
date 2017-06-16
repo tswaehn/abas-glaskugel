@@ -41,59 +41,72 @@
     echo "</ul>";
   }
   
-  function renderVerwendungen( $article ){
-
-    div("", "articleview");
-    disp('<span id="caption">Verwendung</span><br>');
-    
-      // get all production list entries
-      $sql= "SELECT `list_nr`, `article_id`, `elem_id` FROM ".q(DB_PRODUCTION_LIST)." WHERE 1";
-      $result= dbExecute($sql);
-      // load them into an array
-      $allLinks=array();
-      foreach ($result as $item){
-        $parent= $item["article_id"];
-        $child= $item["elem_id"];
-        $allLinks[$child][]= $parent;
-      }
-      
-      // now generate the tree
-      $tree= array( $article["article_id"]=> array() );
-      findRecursiveParents($allLinks, $tree);
-
-      // get all article infos
-      $sql= "SELECT `article_id`,`nummer`,`such` FROM `gk_article` WHERE 1";
-      $result= dbExecute($sql);
-      $articles= array();
-      foreach ($result as $item){
-        $article_id= $item["article_id"];
-        $such= $item["such"];
-        $nummer= $item["nummer"];
-        $articles[$article_id]= array("nummer"=>$nummer, "such"=>$such);
-      }
-      
-
-	 if (empty($tree) || empty(reset($tree))) {
-	 	echo '<div class="list">Artikel wird nicht verwendet</div>';
-	 } else {
-      	renderRecursive( $articles, $tree );
-	 }
-
-            echo "<script>
+  function renderVerwendungTree($article) {
+  	
+  	// get all production list entries
+  	$sql= "SELECT `list_nr`, `article_id`, `elem_id` FROM ".q(DB_PRODUCTION_LIST)." WHERE 1";
+  	$result= dbExecute($sql);
+  	// load them into an array
+  	$allLinks=array();
+  	foreach ($result as $item){
+  		$parent= $item["article_id"];
+  		$child= $item["elem_id"];
+  		$allLinks[$child][]= $parent;
+  	}
+  	
+  	// now generate the tree
+  	$tree= array( $article["article_id"]=> array() );
+  	findRecursiveParents($allLinks, $tree);
+  	
+  	// get all article infos
+  	$sql= "SELECT `article_id`,`nummer`,`such` FROM `gk_article` WHERE 1";
+  	$result= dbExecute($sql);
+  	$articles= array();
+  	foreach ($result as $item){
+  		$article_id= $item["article_id"];
+  		$such= $item["such"];
+  		$nummer= $item["nummer"];
+  		$articles[$article_id]= array("nummer"=>$nummer, "such"=>$such);
+  	}
+  	
+  	
+  	if (empty($tree) || empty(reset($tree))) {
+  		echo '<div class="list">Artikel wird nicht verwendet</div>';
+  	} else {
+  		renderRecursive( $articles, $tree );
+  	}
+  	
+  	echo "<script>
                 $('.Collapsable').click(function () {
-
+  			
                     $(this).parent().children().toggle();
                     $(this).toggle();
-
+  			
                 });
-
+  			
                 $('.Collapsable').each(function(){
-
+  			
                         $(this).parent().children().toggle();
                         $(this).toggle();
                 });
         </script>";
-            
+  	
+  }
+  
+  
+  
+  function renderVerwendungen($article) {
+  	
+    div("", "articleview");
+    disp('<span id="caption">Verwendung</span><br>');
+    	
+    div('ajaxverwendung');
+    echo 'wird geladen... <img src="css/load.gif" alt="..." width="20">';
+    ediv();
+    
+    echo '<script type="text/javascript" async="async">';
+    echo '$("#ajaxverwendung").load("ajax.php?action=verwendung&article_id='.$article["article_id"].'");';
+    echo '</script>';
     
     ediv();
   }
