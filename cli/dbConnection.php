@@ -49,7 +49,8 @@
       //PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"
     );
     
-    $pdo = new PDO('mysql:host=localhost;dbname='.$dbname.';', $user, $pass, $opt);  
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname='.$dbname.';', $user, $pass, $opt);  
+    //$pdo = new PDO('mysql:host=192.168.5.47;dbname=glaskugel;', 'glaskugel', 'abas', $opt);
     // set connection to be able to communicate in UTF8
     $pdo->exec("set names utf8");
     

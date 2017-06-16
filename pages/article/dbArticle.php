@@ -69,7 +69,7 @@
     //$s_such = '%'. preg_replace("/[^A-Za-z\.\/]/", '%', $article["such"]) .'%';  
     $table=DB_ARTICLE;
     
-    $fields = "such,ebez,nummer,kenn,rank,bsart,ynlief,zeichn,article_id,name,vkbez,vbezbspr,vkbez2,vbez2,ve,dbestand,lgdbestand,dbestand,zbestand,bestand,dbestand";
+    $fields = "such,ebez,nummer,kenn,rank,bsart,ynlief,zeichn,article_id,name,vkbez,vbezbspr,vkbez2,vbez2,ve,dbestand,lgdbestand,dbestand,zbestand,bestand,dbestand,lgbestand";
     $sql = "SELECT " . $fields. " FROM ".q($table)." WHERE ( nummer like :abasNr AND nummer <> :nummer ) GROUP BY (`nummer`);";
     
     try {

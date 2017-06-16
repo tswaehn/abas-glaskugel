@@ -59,6 +59,6 @@ function report( $text ){
 
 function debug( $text ){
   
-  //$text.= "\n";
-
+  $text.= "\n";
+  lg($text);
 }
