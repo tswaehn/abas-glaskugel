@@ -99,7 +99,7 @@
   echo "</pre>";  
 
   $emailText= "<h3>Glaskugel Sync Report</h3>";
-  $emailText.= "host ".$_SERVER["COMPUTERNAME"]." (".$_SERVER["HLS_IPADDR"].")<br>";
+  $emailText.= "host ".$_SERVER["COMPUTERNAME"]." (".BUILD_NR.")<br>";
   $emailText.= '<pre style="border:thin solid gray; background-color:#DDDDDD;margin:10px;padding:10px;font-size:15px">';
   $emailText.= file_get_contents( REPORT_FILE );
   $emailText.= '</pre>';

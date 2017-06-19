@@ -49,7 +49,8 @@
 
     // now connect to db and check lock
     connectToDb();
-
+	
+    $text = '';
     $databaseIsUnlocked= getConfigDb( "dbLink" );
     if (!$databaseIsUnlocked){
       $text= '<span style="color:red;background-color:#DDDDDD;border:thin solid red;padding:10px;margin:10px;">database is unexpectedly still blocked!</span>';
@@ -66,7 +67,7 @@
     
     $emailText= "<h3>Glaskugel Sync Problem</h3>";
     $emailText.= "It looks like I need some help.\n";
-    $emailText.= "host ".$_SERVER["COMPUTERNAME"]." (".$_SERVER["HLS_IPADDR"].")<br>";
+    $emailText.= "host ".$_SERVER["COMPUTERNAME"]." (".BUILD_NR.")<br>";
     
     $emailText.= date("r", $startTime). " +". ceil(($endTime-$startTime)/60)."min\n<p><p>";
     $emailText.= $text;
@@ -77,7 +78,7 @@
 
     echo $emailText;
     
-    sendMail( $emailNotificationRecipients, "Glaskugel <> SuperVisor" , $emailText, array( LOG_FILE, ERROR_FILE, REPORT_FILE, DEBUG_FILE ) );
+    sendMail( $emailNotificationRecipients, "Glaskugel ".BUILD_NR." <> SuperVisor" , $emailText, array( LOG_FILE, ERROR_FILE, REPORT_FILE, DEBUG_FILE ) );
     
   }
   
