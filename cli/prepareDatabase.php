@@ -84,6 +84,28 @@
     dbCreateTags();
 
   }
+  
+  /**
+   * create table for last editors
+   */
+  function dbCreateTableLastEdit() {
+  	$table = DB_LASTEDIT;
+  	
+  	$new_table_fields = array("article_id", "editor", "edittime");
+  	
+  	$fieldinfo=array();
+  		
+  	$fieldinfo["article_id"]["type"]=INDEX;
+  	$fieldinfo["article_id"]["size"]=0;
+  	
+  	$fieldinfo["editor"]["type"]=ASCII;
+  	$fieldinfo["editor"]["size"]=30;
+  	
+  	$fieldinfo["edittime"]["type"]=ASCII;
+  	
+  	createTable( $table, $new_table_fields, $fieldinfo);    
+  	
+  }
  
 
   ?>

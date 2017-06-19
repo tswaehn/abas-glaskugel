@@ -59,6 +59,36 @@
     return $result;
   
   }
+  
+  /**
+   * return last 'human' editor
+   * (not in botlist)
+   * 
+   * @param unknown $articleId
+   * @return Array last editor and time
+   */
+  function getLastEditor($article) {
+  	global $pdo;
+  	
+  	$sql = 'SELECT * FROM ' . DB_LASTEDIT . ' WHERE (article_id = :article_id) LIMIT 1';
+  
+  	$result = $pdo->prepare($sql);
+  	$data = array(":article_id" => $article['article_id']);
+  	$ret = $result->execute($data);
+  	//if no result (no real editor known by now)
+  	if (!$ret || $result->rowCount() == 0) {
+  		//use original (bot) data
+  		$result = array(
+  					'article_id' => $article['article_id'],
+  					'edittime' => $article['stand'],
+  					'editor' => $article['zeichen'],
+  				);
+  	} else {
+  		$result = $result->fetch();
+  	}
+  	
+  	return $result;
+  }
 
   
   function getSimilarItems( $article ){

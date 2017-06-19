@@ -22,6 +22,13 @@
   define( "DB_CLIENT_ACCESS", "gk_client_access" );
   define( "DB_ORDERS", "gk_orders" );
   define( "DB_STORAGE", "gk_storage_places" );
+  /**
+   * Table name for last editor
+   * persistent (will NOT be deleted at cli import)
+   * 
+   * @var String
+   */
+  define( "DB_LASTEDIT", "gk_lastedit" );
   
   
   // allowed characters for any ASCII text field formated as regex for replace

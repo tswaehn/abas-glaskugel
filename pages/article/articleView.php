@@ -4,14 +4,21 @@
 
 
   function renderInfo( $article ){
-    div("artikel","articleview");
+    global $botList;
+  	  	
+  	div("artikel","articleview");
     disp( shortArticle( $article ));
     //disp( '<span id="abas_nr">'.$article["nummer"].'</span>'.'<span id="such">'.$article["such"].'</span>' );
     //disp( $article["sucherw"] );
     disp();
     
     disp( "Erstellt ".$article["erfass"]." von ".$article["yersteller"] );
-    disp( "Änderung ".$article["stand"]." von ".$article["zeichen"] );
+    $editData = getLastEditor($article);
+    if (in_array($article['zeichen'], $botList) && $editData["editor"] != $article["zeichen"]) {
+    	disp( "Änderung ".$editData["edittime"]." von ".$editData["editor"].' <span style="color:grey;">('.$article["zeichen"].' am '.$article["stand"].')</span>');
+    } else {
+    	disp( "Änderung ".$article["stand"]." von ".$article["zeichen"] );
+    }
     //disp( "Version ".$na );
     ediv();
   }

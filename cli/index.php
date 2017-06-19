@@ -71,9 +71,17 @@
   }
   
   lg("preare database started");
+  
+  $lastEditorTable = DB_LASTEDIT;
+  if (!tableExists($lastEditorTable)) {
+  	lg("create table last editor");
+  	dbCreateTableLastEdit();
+  }
+  
   prepareDatabase();
-  lg("prepare databease done");
-
+  
+  lg("prepare database done");
+  
   //
   unlockDb();
   

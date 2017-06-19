@@ -169,11 +169,21 @@
     
     // this is mainly because we need to calculate the articleID from "nummer"
     $dataSet= array();
+    global $botList;
     foreach ($result as $item){
       $output=array();
       // set article_id
       $articleID= str_replace( "-", "", $item["nummer"] );
       $output[]= $articleID;
+      
+      //save last editor
+      if (!in_array($item['zeichen'], $botList)) {
+      	//no bot -> safe 'zeichen' (editor name) and 'stand' (edit time)
+      	$sql = 'INSERT INTO '.DB_LASTEDIT.' VALUES ('.$articleID.', "'.$item['zeichen'].'", "'.$item['stand'].'") '.
+      		   ' ON DUPLICATE KEY UPDATE editor="'.$item['zeichen'].'", edittime="'.$item['stand'].'"';
+      	dbExecute($sql);
+      }
+      	
       
       // transfer all known fields
       foreach ($copy_fields as $field){
