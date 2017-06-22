@@ -19,6 +19,9 @@
   } );
   </script>
   <link rel="stylesheet" type="text/css" href="./css/format.css">  
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="./css/ie.css">
+  <![endif]-->
   
 <?php include('./lib/main.php'); ?>
 

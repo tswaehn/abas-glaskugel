@@ -217,3 +217,16 @@ input[type=text] {
 .sortable td {
 	vertical-align: middle;
 }
+
+
+.prepost-article {
+	width: 49%;
+	float: left;
+	margin-bottom: 1em;
+	align-items: stretch;
+}
+#prepost-article {
+	display: flex;
+	background-color: #eeeeee;
+}
+

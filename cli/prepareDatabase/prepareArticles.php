@@ -37,7 +37,8 @@
         
                      "thumbnail",
         
-                     "vkbez", "vbezbspr", "vkbez2", "vbez2", "zoll", "ycatsale", "ersatzt", "verschlt", "mpr", "vpr9", "urland", "urregion"
+                     "vkbez", "vbezbspr", "vkbez2", "vbez2", "zoll", "ycatsale", "ersatzt", "verschlt", "mpr", "vpr9", "urland", "urregion",
+    		 "yersatza", "yprepart",
         
 		     );
     
@@ -147,6 +148,11 @@
     $fieldinfo["urland"]["type"]=ASCII;
     $fieldinfo["urregion"]["type"]=ASCII;
     
+    $fieldinfo["yersatza"]["type"]=ASCII;
+    $fieldinfo["yersatza"]["size"]=15;
+    $fieldinfo["yprepart"]["type"]=ASCII;
+    $fieldinfo["yprepart"]["size"]=15;
+    
     createTable( $table, $new_table_fields, $fieldinfo );
 
     $copy_fields = array( "nummer", "such", "name", "ebez", 
@@ -158,7 +164,8 @@
 		     "erfass", "stand","zeichen",
 		     "bem", "kenn", "bstnr", "vkbezbspr", "ftext",
 		     
-                     "vbezbspr", "vkbez", "vkbez2", "vbez2", "zoll", "ycatsale", "ersatzt", "verschlt", "mpr", "vpr9", "urland", "urregion"
+                     "vbezbspr", "vkbez", "vkbez2", "vbez2", "zoll", "ycatsale", "ersatzt", "verschlt", "mpr", "vpr9", "urland", "urregion",
+    		 "yersatza", "yprepart",
 		     );
 
     // get all entries which need to be copied

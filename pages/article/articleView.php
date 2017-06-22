@@ -26,17 +26,62 @@
   
 
 
-  function renderSimilar( $article ){
+  function renderSimilar( $article ){  	
     div("","articleview");  
     disp('<span id="caption">Ähnliche Artikel</span><br>');
-          
-    $result = getSimilarItems( $article );
     
+    
+    //vorgänger/nachfolger suchen
+    $hasPreArticle = false;
+    $hasErsatzArticle = false;
+    if (!empty($article['yprepart'])) {
+    	$hasPreArticle = true;
+    	$preArticle = getArticleByAbasNr($article['yprepart']);
+    	$preArticle = $preArticle->fetch();
+    }
+    if (!empty($article['yersatza'])) {
+    	$hasErsatzArticle = true;
+    	$ersatzArticle = getArticleByAbasNr($article['yersatza']);
+    	$ersatzArticle = $ersatzArticle->fetch();
+    }
+    
+    
+    if ($hasPreArticle || $hasErsatzArticle) {
+    	div("prepost-article");
+    	if ($hasPreArticle && $hasErsatzArticle) {
+    		//both
+    		div("pre-article", 'prepost-article');
+		    	disp('<i>Vorgänger:</i>');
+		    	disp(shortArticle($preArticle));
+		    ediv();
+		    
+		    div("post-article", 'prepost-article');
+		    	disp('<i>Nachfolger:</i>');
+		    	disp(shortArticle($ersatzArticle));
+		    ediv();
+    	} elseif ($hasPreArticle) {
+    		//only pre
+    		div("pre-article");
+    		disp('<i>Vorgänger:</i>');
+    		disp(shortArticle($preArticle));
+    		ediv();
+    	} else {
+    		//only ersatz
+    		div("post-article");
+    		disp('<i>Nachfolger:</i>');
+    		disp(shortArticle($ersatzArticle));
+    		ediv();
+    	}  	
+	    ediv();
+    }
+    
+    $result = getSimilarItems( $article );
+    div('similar-article');
     foreach ($result as $item ){
     
       disp( shortArticle( $item ) );
     }
-    
+    ediv();
     ediv();
   }
 
