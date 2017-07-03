@@ -184,19 +184,18 @@
 
     // render each item
     foreach ($media as $item){
-      if (is_file( utf8_decode($item) )){	// php file access is always ISO-8859-1 
-	renderMediaFile( $item );
-      } else if (is_dir( utf8_decode( $item ))){	// php file access is always ISO-8859-1 
-	renderMediaDir( $item );
-      } else {
-	disp("non-existent media ".$item );
-      }
-      
+    	if (is_file( utf8_decode($item) )){	// php file access is always ISO-8859-1 
+			renderMediaFile( $item );
+      	} else if (is_dir( utf8_decode( $item ))){	// php file access is always ISO-8859-1 
+			renderMediaDir( $item );
+      	} else if ('http' == substr($item, 0, 4)) {
+      		disp('<a href="'.$item.'" title="Link" target="_blank">' . $item . '</a>');
+      	} else {
+			disp("non-existent media ".$item );
+     	}
     }
     
     ediv();  
-    
-    
     
   }
   

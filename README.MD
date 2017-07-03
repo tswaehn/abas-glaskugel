@@ -21,6 +21,7 @@ offene Punkte
   - Wording in Verwendungsliste verbessert
   - bestaetigter Liefertermin bei Bestellungen 
   - leichte Performance Verbesserungen
+  - Links in Medien sind nun klickbar
 
 2017 may.03 - v0.2.6
   - thumbnails in Fertigungsliste
