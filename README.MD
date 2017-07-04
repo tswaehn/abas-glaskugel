@@ -22,6 +22,7 @@ offene Punkte
   - bestaetigter Liefertermin bei Bestellungen 
   - leichte Performance Verbesserungen
   - Links in Medien sind nun klickbar
+  - Anzeige von Vorgaenger und Nachfolger 
 
 2017 may.03 - v0.2.6
   - thumbnails in Fertigungsliste
