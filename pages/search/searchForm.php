@@ -25,6 +25,14 @@
 	  <input type="text" name="form_search_text" value="'.$search.'" size="40">
 	  <input type="submit" value="suchen"> ';
     
+    $stockChecked = '';
+    $stockValue = getUrlParam('searchwithstock');
+    if (isset($stockValue) && !empty($stockValue)) {
+    	$stockChecked = ' checked';
+    }
+    echo '<br /><input type="checkbox" name="searchwithstock" id="searchwithstock"'.$stockChecked.'>';
+    echo '<label for="searchwithstock">nur Artikel mit Bestand suchen</label>';
+    
     echo '</form>';    
     echo "</div>";
 

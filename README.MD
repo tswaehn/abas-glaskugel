@@ -23,6 +23,7 @@ offene Punkte
   - leichte Performance Verbesserungen
   - Links in Medien sind nun klickbar
   - Anzeige von Vorgaenger und Nachfolger 
+  - Suche mit Bestand
 
 2017 may.03 - v0.2.6
   - thumbnails in Fertigungsliste

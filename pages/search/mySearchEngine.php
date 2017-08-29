@@ -22,6 +22,12 @@ class SearchEngine {
   var $validArticles;
   var $searchPage;
   var $searchResultText;
+  /**
+   * if this is true only articles with non empty stock are searched for
+   * 
+   * @var boolean
+   */
+  var $withStock;
   
   function __construct(){
     
@@ -32,6 +38,7 @@ class SearchEngine {
     $this->validArticles= getSessionVar(SESSION_VAR_VALID_ARTICLES);
     $this->searchPage= getSessionVar(SESSION_VAR_SEARCH_PAGE);
     $this->searchResultText= getSessionVar(SESSION_VAR_SEARCH_RESULT_TEXT);
+    $this->withStock = false;
     
     if (!isset($this->foundArticles)){
       $this->foundArticles= array();
@@ -170,6 +177,10 @@ class SearchEngine {
       $whereArr[]= $this->createLike( $columns, $search);
     }
     $where= implode(" AND ", $whereArr);
+    
+    if ($this->withStock) {
+    	$where.= ' AND bestand != 0';
+    }
     
     // define search restriction
     if (is_array( $validArticles )){
@@ -486,6 +497,13 @@ class SearchEngine {
   // ---
   // decide if we have a new request or changed request
   $url_form_search_text = getUrlParam( "form_search_text" );
+  
+  //checkbox "only with stock" set?
+  $stockValue = getUrlParam('searchwithstock');
+  if (isset($stockValue) && !empty($stockValue)) {
+  	//var_dump(getUrlParam('searchwithstock'));
+  	$searchEngine->withStock = true;
+  }
   
   if ($url_form_search_text != ""){
     // we have a new request
