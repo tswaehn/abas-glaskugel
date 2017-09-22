@@ -17,7 +17,7 @@ offene Punkte
   - import von interner fertigung aus "Betr-Auftrag:Betriebsaufträge"
 
 
-2017 ??? - v0.2.7
+2017 sep.22 - v0.2.7
   - Wording in Verwendungsliste verbessert
   - bestaetigter Liefertermin bei Bestellungen 
   - leichte Performance Verbesserungen
