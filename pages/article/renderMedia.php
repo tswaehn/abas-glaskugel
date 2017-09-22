@@ -5,7 +5,7 @@
 		  "catpicl", "catpiclz", "caturl", "ystromp" );
 
   $mediaIgnore = array("W:\DXF\\", "W:\Bilder\\", "W:\PDF\\", "W:\Doku\\", "W:\Datenblaetter\\", "W:\XLS\\", "WWW.", "W:\\", "W:", "",
-					   "W:\DXF", "W:\Bilder", "W:\PDF", "W:\DOKU", "W:\Datenblaetter", "W:\XLS");
+  		"W:\DXF", "W:\Bilder", "W:\PDF", "W:\DOKU", "W:\Datenblaetter", "W:\XLS", "W:\PDF\Stromlaufplaene", "W:\PDF\Stromlaufplaene\\");
   
   $mediaThumbnail = array( "png", "jpg", "jpeg", "gif", "tif" );
   
