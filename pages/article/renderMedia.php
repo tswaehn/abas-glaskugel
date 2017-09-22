@@ -61,7 +61,7 @@
 
       foreach( $iter as $item ) {
 	  // make sure you don't try to access the current dir or the parent
-	  if ($item != '.' && $item != '..') {
+	  if ($item != '.' && $item != '..' && $item != 'Thumbs.db') {
 		  if( $item->isDir() ) {
 			  // call the function on the folder
 			  dir_contents_recursive("$dir/$item", $result);
