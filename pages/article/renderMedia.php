@@ -2,7 +2,7 @@
 
   $mediaFields = array("ypdf1", "ydxf", "yxls", "ytpdf", "ytlink", "bild",
 		  "bbesch", "foto", "fotoz", "catpics", "catpicsz", 
-		  "catpicl", "catpiclz", "caturl" );
+		  "catpicl", "catpiclz", "caturl", "ystromp" );
 
   $mediaIgnore = array("W:\DXF\\", "W:\Bilder\\", "W:\PDF\\", "W:\Doku\\", "W:\Datenblaetter\\", "W:\XLS\\", "WWW.", "W:\\", "W:", "",
 					   "W:\DXF", "W:\Bilder", "W:\PDF", "W:\DOKU", "W:\Datenblaetter", "W:\XLS");

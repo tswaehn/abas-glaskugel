@@ -15,7 +15,7 @@ define ("CACHE_FOLDER", "../pages/article/cache/");
   $mediaFields = array("bild",
 		  "bbesch", "foto", "fotoz", "catpics", "catpicsz", 
 		  "catpicl", "catpiclz", "caturl",
-                  "ypdf1", "ydxf", "yxls", "ytpdf", "ytlink" );
+                  "ypdf1", "ydxf", "yxls", "ytpdf", "ytlink", "ystromp" );
 
   // value fields that need to be skipped as these are some default values only
   $mediaIgnore = array("W:\DXF\\", "W:\Bilder\\", "W:\PDF\\", "W:\Doku\\", "W:\Datenblaetter\\", "W:\XLS\\", "WWW.", "W:\\", "W:", "",

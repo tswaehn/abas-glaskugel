@@ -38,7 +38,7 @@
                      "thumbnail",
         
                      "vkbez", "vbezbspr", "vkbez2", "vbez2", "zoll", "ycatsale", "ersatzt", "verschlt", "mpr", "vpr9", "urland", "urregion",
-    		 "yersatza", "yprepart",
+    		 "yersatza", "yprepart", "ystromp",
         
 		     );
     
@@ -152,6 +152,7 @@
     $fieldinfo["yersatza"]["size"]=15;
     $fieldinfo["yprepart"]["type"]=ASCII;
     $fieldinfo["yprepart"]["size"]=15;
+    $fieldinfo["ystromp"]["type"]=ASCII;
     
     createTable( $table, $new_table_fields, $fieldinfo );
 
@@ -165,7 +166,7 @@
 		     "bem", "kenn", "bstnr", "vkbezbspr", "ftext",
 		     
                      "vbezbspr", "vkbez", "vkbez2", "vbez2", "zoll", "ycatsale", "ersatzt", "verschlt", "mpr", "vpr9", "urland", "urregion",
-    		 "yersatza", "yprepart",
+    		 "yersatza", "yprepart", "ystromp",
 		     );
 
     // get all entries which need to be copied
