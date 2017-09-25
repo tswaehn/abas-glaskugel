@@ -32,7 +32,7 @@
   if (DO_IMPORT_FROM_EDP > 0){
     // 
     backTrace("EDP import");
-    lg("EPD import started");
+    lg("EDP import started");
     
     include( './EDP/EDPDefinition.php');
     include( './EDP/EDPConsole.php');
