@@ -229,7 +229,8 @@ define ("CACHE_FOLDER", "../pages/article/cache/");
     foreach ($imageMedia as $fileitem ){
       $info = pathinfo( $fileitem );
       $ext = $info["extension"];
-      if (strcasecmp( $ext, 'pdf')==0){
+      //if (strcasecmp( $ext, 'pdf')==0){
+      if (strcasecmp( $ext, 'jpg')==0 || strcasecmp( $ext, 'jpeg')==0 || strcasecmp( $ext, 'png')==0){
         $imageFile= $fileitem;
         break;
       }
