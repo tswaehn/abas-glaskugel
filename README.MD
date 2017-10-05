@@ -18,6 +18,7 @@ offene Punkte
 
 2018 ???.?? - v0.2.8
   - added "Stromlaufplan"
+  - improved thumbnail creation
   - 
 
 2017 sep.22 - v0.2.7
