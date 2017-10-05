@@ -93,6 +93,30 @@
     return $text ;
   }
   
+  
+  function filterImageMedia($media) {
+	
+  	$mediaThumbnail = array( "png", "jpg", "jpeg", "gif", "tif", "pdf");
+  	$imageMedia = array();
+  	
+  	foreach ($media as $fileitem) {
+  		if (is_file( utf8_decode( $fileitem ))){ // php file access is always ISO-8859-1
+  			$info = pathinfo( $fileitem );
+  			
+  			if (isset($info["extension"])) {
+  				$ext = $info["extension"];
+  				if (in_arrayi($ext, $mediaThumbnail)) {
+  					$imageMedia[] = $fileitem;
+  				}
+  			}
+  		}
+  	}
+  	
+  	$imageMedia = array_unique($imageMedia);
+  	return $imageMedia;
+  }
+  
+  
   /**
    *  Render thumbnail image with link
    * 
@@ -121,11 +145,52 @@
     
     // if empty
     if (empty($thumbnail)){
-      $thumbnail= "./pages/article/image_placeholder.png";      
+      $thumbnail= "./pages/article/image_placeholder.png";  
     } else {
       // get thumbnail from DB
       $cacheDir= "./pages/article/cache/";
       $thumbnail= $cacheDir. $article["thumbnail"];
+    }
+    
+    if (!is_readable($thumbnail)) {
+    	//generate new thumbnail
+    	$imageMedia = filterImageMedia(filterValidMedia($article)); 	
+    	//$imageFile = array_pop($imageMedia);
+    	$imageFile = $imageMedia[0];
+    	
+    	$img = new imagick(); // [0] can be used to set page number
+    	$img->setResolution(90,90);
+    	
+    	// load image
+    	$info = pathinfo($imageFile);
+    	$ext = $info["extension"];
+    	
+    	try {
+    		if (strcasecmp( $ext, "pdf")==0){
+    			// load PDF
+    			$img->readImage($imageFile.'[0]');
+    		} else {
+    			// load other image
+    			$img->readImage($imageFile);
+    		}
+    	} catch (Exception $ex) {
+    		error("cacheThumbnail();", "failed to load from file ".$imageFile);
+    		return;
+    	}
+    	
+    	// setup image parameters
+    	$img->setImageFormat( "jpeg" );
+    	$img->setImageCompression(imagick::COMPRESSION_JPEG);
+    	$img->setImageCompressionQuality(90);
+    	$img->setImageUnits(imagick::RESOLUTION_PIXELSPERINCH);
+    	
+    	// scale down to final size
+    	$img = $img->flattenImages();
+    	$img->resizeimage(160, 120, Imagick::FILTER_LANCZOS, 0.9, true);
+    	
+    	// write file to disk
+    	$thumbnail = realpath($cacheDir).DIRECTORY_SEPARATOR.$article["thumbnail"];
+    	$img->writeimage($thumbnail);
     }
     
     $link = "?action=article&article_id=".$article["article_id"];
