@@ -16,10 +16,9 @@ offene Punkte
   - import von arbeitsgängen
   - import von interner fertigung aus "Betr-Auftrag:Betriebsaufträge"
 
-2018 ???.?? - v0.2.8
+2017 nov.14 - v0.2.8
   - added "Stromlaufplan"
   - improved thumbnail creation
-  - 
 
 2017 sep.22 - v0.2.7
   - Wording in Verwendungsliste verbessert
