@@ -59,6 +59,11 @@
 		$script="./pages/stats/stats.php";
 		break;
 		
+    case "order":
+    	$title="Bestellungen";
+    	$script="./pages/order/overdue.php";
+    	break;
+		
     default:
 	      $title="Suchen";
 	      $script="./pages/search/mySearchEngine.php";
