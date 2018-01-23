@@ -10,6 +10,7 @@ function getOverdueOrders() {
 	
 	if ($result) {
 		$i = 0;
+		$now = time();
 		foreach($result as $item ) {
 			$i++;
 			if ($item['article_id'] < 1) {
@@ -27,9 +28,11 @@ function getOverdueOrders() {
 			
 			//var_dump($item);
 			//var_dump($timestamp);
-
-			$orders[$timestamp + $i] = $item;
-			//$orders[$item['nummer']] = $item;
+			if ($timestamp < $now) {
+				$orders[$timestamp + $i] = $item;
+				//$orders[$item['nummer']] = $item;
+			}
+			
 		}
 	} 
 	ksort($orders);
