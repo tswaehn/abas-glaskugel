@@ -55,7 +55,7 @@ if (empty($orders)) {
 		
 		$artNr = $order['article_id'];
 		$bestellung = $order['nummer'];
-		$lieferant = $order['such'];
+		$lieferant = substr($order['such'], 1);
 		$termin = $order['termconfirmed'];
 		
 		$article = getArticle($artNr)->fetch();
