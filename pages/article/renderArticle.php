@@ -78,11 +78,13 @@
     $name= $name[0];
     
     $strings = array( '['.mb_strtolower($article["such"], 'UTF-8').']', $name, $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
-	
+    $desc = implode( $strings, " ");
+    $desc = linkArticleNumbers($desc);
+    
     $text = '<span id="abas_nr"><a href="'.$link.'">'.$article["nummer"].'</a></span>';
     $text .= ' <span id="caption_L">'.renderCaption($article).'</span>';
     $text .= ' <span id="desc">';
-	$text .=  implode( $strings, " ");
+	$text .=  $desc;
 	$text .= ' '.renderKennzeichen( $article["kenn"] );
 	$text .= ' rank:'.$article["rank"];
 	
