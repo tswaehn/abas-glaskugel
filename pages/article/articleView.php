@@ -10,6 +10,22 @@
     disp( shortArticle( $article ));
     //disp( '<span id="abas_nr">'.$article["nummer"].'</span>'.'<span id="such">'.$article["such"].'</span>' );
     //disp( $article["sucherw"] );
+    if (isset($article['ftext']) && !empty($article['ftext'])) {
+    	disp('Text1:');
+    	
+    	//check for service tags
+    	$tmpText1 = explode('====== service tags begin =====', $article['ftext']);
+    	if (sizeof($tmpText1) > 1) {
+    		$text1 = $tmpText1[0];
+    		$tmptxt = explode('====== service tags end =====', $tmpText1[1]);
+    		$text1.= $tmptxt[1];
+    	} else {
+    		//no service tags
+    		$text1 = $article['ftext'];
+    	}
+    	
+    	disp($text1);
+    }
     disp();
     
     disp( "Erstellt ".$article["erfass"]." von ".$article["yersteller"] );
