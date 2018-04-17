@@ -18,6 +18,7 @@ offene Punkte
 
 2018 ?? - v.0.2.9
   - ABAS Artikelnummern werden automatisch verlinkt
+  - Bemerkungsfeld wird angezeigt
 
 2017 nov.14 - v0.2.8
   - added "Stromlaufplan"
