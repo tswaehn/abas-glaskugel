@@ -79,7 +79,9 @@
     
     $strings = array( '['.mb_strtolower($article["such"], 'UTF-8').']', $name, $article["ebez"], $article["bsart"], $article["ynlief"], $article["zeichn"] );
     $desc = implode( $strings, " ");
-    $desc.= '  ' . $article["bem"];
+    if (isset($article["bem"]) && !empty($article["bem"])) {
+    	$desc.= '  ' . $article["bem"];
+    }
     $desc = linkArticleNumbers($desc);
     
     $text = '<span id="abas_nr"><a href="'.$link.'">'.$article["nummer"].'</a></span>';
