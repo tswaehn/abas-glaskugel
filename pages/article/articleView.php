@@ -24,7 +24,7 @@
     		$text1 = $article['ftext'];
     	}
     	
-    	disp($text1);
+    	disp(linkArticleNumbers($text1));
     }
     disp();
     
