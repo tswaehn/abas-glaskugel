@@ -24,7 +24,7 @@
     		$text1 = $article['ftext'];
     	}
     	
-    	disp(linkArticleNumbers($text1));
+    	disp(linkArticleNumbers(removeLineFeed($text1)));
     }
     disp();
     

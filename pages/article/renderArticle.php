@@ -9,6 +9,12 @@
   
   }
   
+  /**
+   * Remove [-10-] as new line from text
+   * 
+   * @param String $text 
+   * @return String text without ABAS pseudo code
+   */
   function removeLineFeed( $text ){
     $text= preg_replace("/\[-10-\]/", " ", $text );
     return $text;
@@ -95,6 +101,7 @@
     $text .= '</span>';
     $text .= '<br>';
     
+    $text = removeLineFeed($text);
     return $text ;
   }
   
